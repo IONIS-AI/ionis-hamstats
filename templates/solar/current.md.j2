@@ -1,5 +1,15 @@
 # Current Solar Conditions
 
+{% set solar = data.solar_current[0] if data.solar_current else {} %}
+{% set sfi_color = 'teal' if sfi and sfi >= 150 else '2ea043' if sfi and sfi >= 100 else 'ffea00' if sfi and sfi >= 80 else 'orange' if sfi and sfi >= 70 else 'red' %}
+{% set kp_color = 'red' if kp and kp >= 5 else 'orange' if kp and kp >= 4 else 'ffea00' if kp and kp >= 3 else 'teal' %}
+{% set cond_color = 'red' if kp and kp >= 5 else 'orange' if kp and kp >= 4 else 'ffea00' if kp and kp >= 3 else 'teal' %}
+![SFI](https://img.shields.io/badge/SFI_{{ sfi | default('--') }}-{{ sfi | classify_sfi | replace(' ', '_') }}-{{ sfi_color }}?style=flat-square)
+![Kp](https://img.shields.io/badge/Kp_{{ kp | default('--') }}-{{ kp | classify_kp | replace(' ', '_') }}-{{ kp_color }}?style=flat-square)
+![Conditions](https://img.shields.io/badge/Conditions-{{ conditions | default('Unknown') | replace(' ', '_') }}-{{ cond_color }}?style=flat-square)
+
+*Updated {{ now.strftime('%H:%M UTC %Y-%m-%d') }} · NOAA SWPC*
+
 Solar indices sourced from NOAA SWPC (`wspr.live_conditions`) updated every 15
 minutes. SFI is published once daily (~20:00 UTC from Penticton, BC). Kp is
 updated every 3 hours.
@@ -7,14 +17,6 @@ updated every 3 hours.
 ---
 
 ## Current Values
-
-{% set solar = data.solar_current[0] if data.solar_current else {} %}
-| Index | Value | Class | Updated |
-|-------|-------|-------|---------|
-| **Solar Flux Index (SFI)** | {{ solar.solar_flux | default('—') }} | {{ solar.solar_flux | classify_sfi }} | {{ now.strftime('%Y-%m-%d') }} |
-| **Planetary K-index (Kp)** | {{ solar.kp_index | default('—') }} | {{ solar.kp_index | classify_kp }} | {{ now.strftime('%Y-%m-%d') }} |
-| **Sunspot Number (SSN)** | — | — | — |
-| **X-ray Flux (GOES)** | — | — | — |
 
 ---
 
@@ -42,7 +44,8 @@ conditions — see [Storm Impact](storms.md) for measured SNR effects.
 | Date | Max Kp | Storm Level | HF Impact |
 |------|--------|-------------|-----------|
 {% for row in data.kp_trend_7d %}
-| {{ row.date | fmt_date }} | {{ row.max_kp }} | {{ row.max_kp | classify_kp }} | {{ row.max_kp | kp_impact }} |
+{% set kpc = 'red' if row.max_kp >= 5 else 'orange' if row.max_kp >= 4 else 'ffea00' if row.max_kp >= 3 else 'teal' %}
+| {{ row.date | fmt_date }} | {{ row.max_kp }} | ![{{ row.max_kp | classify_kp }}](https://img.shields.io/badge/{{ row.max_kp | classify_kp | replace(' ', '_') }}-{{ kpc }}?style=flat-square) | {{ row.max_kp | kp_impact }} |
 {% else %}
 | — | — | — | — |
 {% endfor %}

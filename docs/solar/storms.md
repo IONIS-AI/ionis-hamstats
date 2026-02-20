@@ -1,6 +1,6 @@
 # Storm Impact Analysis
 
-*Updated 23:39 UTC 2026-02-20*
+*Updated 23:45 UTC 2026-02-20*
 
 This page shows measured SNR degradation during geomagnetic storms. All values
 come from actual signal measurements — WSPR, RBN, and PSK Reporter spots

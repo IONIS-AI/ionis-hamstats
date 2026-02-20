@@ -1,5 +1,11 @@
 # Solar Reports
 
+![SFI](https://img.shields.io/badge/SFI_111-Moderate-2ea043?style=flat-square)
+![Kp](https://img.shields.io/badge/Kp_2.67-Quiet-teal?style=flat-square)
+![Conditions](https://img.shields.io/badge/Conditions-Quiet-teal?style=flat-square)
+
+*Updated 23:45 UTC 2026-02-20 · NOAA SWPC*
+
 Solar conditions directly affect HF propagation. These reports correlate real
 solar indices with measured spot data — not theoretical models. Every solar
 value shown here is joined against actual signal measurements at 3-hour

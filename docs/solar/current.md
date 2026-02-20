@@ -1,5 +1,11 @@
 # Current Solar Conditions
 
+![SFI](https://img.shields.io/badge/SFI_111-Moderate-2ea043?style=flat-square)
+![Kp](https://img.shields.io/badge/Kp_2.67-Quiet-teal?style=flat-square)
+![Conditions](https://img.shields.io/badge/Conditions-Quiet-teal?style=flat-square)
+
+*Updated 23:45 UTC 2026-02-20 · NOAA SWPC*
+
 Solar indices sourced from NOAA SWPC (`wspr.live_conditions`) updated every 15
 minutes. SFI is published once daily (~20:00 UTC from Penticton, BC). Kp is
 updated every 3 hours.
@@ -7,11 +13,6 @@ updated every 3 hours.
 ---
 
 ## Current Values
-
-![SFI](https://img.shields.io/badge/SFI_111-Moderate-2ea043?style=flat-square)
-![Kp](https://img.shields.io/badge/Kp_2.67-Quiet-teal?style=flat-square)
-
-*Updated 2026-02-20 22:00 UTC · NOAA SWPC*
 
 ---
 
