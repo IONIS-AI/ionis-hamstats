@@ -1,12 +1,12 @@
 # Ham Stats
 
-**HF propagation reports generated from real data — not models, not opinions.**
+**HF propagation predictions trained on 13 billion real observations — not theory, not opinions.**
 
 ![SFI](https://img.shields.io/badge/SFI_111-Moderate-2ea043?style=flat-square)
 ![Kp](https://img.shields.io/badge/Kp_2.33-Quiet-teal?style=flat-square)
 ![Conditions](https://img.shields.io/badge/Conditions-Quiet-teal?style=flat-square)
 
-*Updated 21:01 UTC · NOAA SWPC*
+*Updated 21:04 UTC · NOAA SWPC*
 
 ---
 
@@ -35,15 +35,15 @@ RBN archives lag ~24 hours; zeroes indicate no data in the window, not band clos
 
 | Band | WSPR Spots | RBN Spots | PSKR Spots | Peak SNR | Status |
 |------|-----------|-----------|------------|----------|--------|
-| 10m | 43,396 | 0 | 5.7M | +61 dB | Strong |
-| 12m | 20,674 | 0 | 1.7M | +59 dB | Strong |
-| 15m | 63,367 | 0 | 4.1M | +87 dB | Strong |
-| 17m | 64,683 | 0 | 1.7M | +62 dB | Strong |
-| 20m | 255,284 | 0 | 7.4M | +80 dB | Strong |
-| 30m | 108,137 | 0 | 2.1M | +58 dB | Strong |
-| 40m | 153,591 | 0 | 7.2M | +86 dB | Strong |
+| 10m | 43,388 | 0 | 5.7M | +61 dB | Strong |
+| 12m | 20,672 | 0 | 1.7M | +59 dB | Strong |
+| 15m | 63,332 | 0 | 4.1M | +87 dB | Strong |
+| 17m | 64,648 | 0 | 1.7M | +62 dB | Strong |
+| 20m | 255,136 | 0 | 7.4M | +80 dB | Strong |
+| 30m | 108,098 | 0 | 2.1M | +58 dB | Strong |
+| 40m | 153,521 | 0 | 7.2M | +86 dB | Strong |
 | 80m | 81,564 | 0 | 1.7M | +87 dB | Strong |
-| 160m | 22,927 | 0 | 238,008 | +54 dB | Strong |
+| 160m | 22,927 | 0 | 234,177 | +54 dB | Strong |
 
 ---
 
