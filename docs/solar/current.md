@@ -8,11 +8,9 @@ updated every 3 hours.
 
 ## Current Values
 
-<!-- AUTO-GENERATED: current solar values -->
-
 | Index | Value | Class | Updated |
 |-------|-------|-------|---------|
-| **Solar Flux Index (SFI)** | 116 | Moderate | 2026-02-19 |
+| **Solar Flux Index (SFI)** | 116 | Moderate | 2026-02-20 |
 | **Planetary K-index (Kp)** | 2.33 | Quiet | 2026-02-20 |
 | **Sunspot Number (SSN)** | — | — | — |
 | **X-ray Flux (GOES)** | — | — | — |
@@ -20,8 +18,6 @@ updated every 3 hours.
 ---
 
 ## 7-Day SFI Trend
-
-<!-- AUTO-GENERATED: 7-day SFI trend table -->
 
 | Date | SFI | Change |
 |------|-----|--------|
@@ -37,26 +33,22 @@ updated every 3 hours.
 
 ## 7-Day Kp Trend
 
-<!-- AUTO-GENERATED: 7-day Kp trend table -->
-
 Daily maximum Kp over the past 7 days. Values >= 5 indicate geomagnetic storm
 conditions — see [Storm Impact](storms.md) for measured SNR effects.
 
 | Date | Max Kp | Storm Level | HF Impact |
 |------|--------|-------------|-----------|
-| 2026-02-13 | 4.00 | Unsettled | Minor |
+| 2026-02-13 | 4.0 | Active | Moderate |
 | 2026-02-14 | 4.33 | Active | Moderate |
 | 2026-02-15 | 5.33 | G1 Storm | Degraded |
-| 2026-02-16 | 6.00 | G2 Storm | Significant |
-| 2026-02-17 | 3.00 | Quiet | Normal |
+| 2026-02-16 | 6.0 | G2 Storm | Significant |
+| 2026-02-17 | 3.0 | Unsettled | Minor |
 | 2026-02-18 | 3.33 | Unsettled | Minor |
 | 2026-02-19 | 3.33 | Unsettled | Minor |
 
 ---
 
 ## Current Band Impact Assessment
-
-<!-- AUTO-GENERATED: band impact by solar conditions -->
 
 Estimated propagation impact based on current SFI and Kp, derived from
 measured historical correlations in the IONIS dataset — not modeled

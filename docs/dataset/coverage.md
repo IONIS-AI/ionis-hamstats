@@ -7,14 +7,12 @@ spots per pair means better characterization of that path across varying
 conditions.
 
 Grid squares are 4-character Maidenhead (e.g., EN52), giving approximately
-111 km × 111 km resolution. There are 32,400 possible 4-character grid
+111 km x 111 km resolution. There are 32,400 possible 4-character grid
 squares globally.
 
 ---
 
 ## Unique Grid Pairs by Source
-
-<!-- AUTO-GENERATED: unique grid pair counts -->
 
 | Source | Unique TX Grids | Unique RX Grids | Unique Grid Pairs | Pct of Possible |
 |--------|----------------|----------------|------------------|----------------|
@@ -24,11 +22,11 @@ squares globally.
 | Contest | — | — | — | — |
 | **Union (all sources)** | — | — | — | — |
 
+*Coming soon — requires geographic coverage query.*
+
 ---
 
 ## Coverage by Continent
-
-<!-- AUTO-GENERATED: coverage by continent -->
 
 *Unique transmitter grid squares with at least 100 spots in the WSPR dataset.*
 
@@ -42,11 +40,11 @@ squares globally.
 | Africa | — | — | — |
 | Antarctica | — | — | — |
 
+*Coming soon — requires continental coverage query.*
+
 ---
 
 ## Top 20 Most-Observed Grid Pairs (WSPR)
-
-<!-- AUTO-GENERATED: top grid pairs WSPR -->
 
 *Grid pairs with the most total WSPR spots. High spot count means a
 well-characterized path with solar context across many conditions.*
@@ -54,14 +52,12 @@ well-characterized path with solar context across many conditions.*
 | Rank | TX Grid | RX Grid | Distance (km) | Total Spots | Bands |
 |------|---------|---------|--------------|-------------|-------|
 | — | — | — | — | — | — |
-| — | — | — | — | — | — |
-| — | — | — | — | — | — |
+
+*Coming soon — requires top grid pairs query.*
 
 ---
 
 ## Coverage Density — Spots per Grid Pair
-
-<!-- AUTO-GENERATED: coverage density histogram -->
 
 *Distribution of how many spots exist per unique grid pair.*
 
@@ -72,6 +68,8 @@ well-characterized path with solar context across many conditions.*
 | 101–1,000 | — | — |
 | 1,001–10,000 | — | — |
 | 10,001+ | — | — |
+
+*Coming soon — requires coverage density histogram query.*
 
 ---
 
@@ -90,3 +88,5 @@ active on WSPR.
 | PSK Reporter | — |
 | Contest | — |
 | **Total** | — |
+
+*Coming soon — requires callsign_grid breakdown query.*

@@ -15,14 +15,12 @@ beacons, below the contest-grade SSB ceiling.
 
 ## Dataset Statistics
 
-<!-- AUTO-GENERATED: RBN dataset stats -->
-
 | Metric | Value |
 |--------|-------|
-| **Total Rows (`rbn.bronze`)** | 2,252,717,106 |
+| **Total Rows (`rbn.bronze`)** | 2.25B |
 | **Date Range** | 2009-02-21 to 2026-02-18 |
 | **Daily Spot Rate (recent)** | ~2M spots/day |
-| **Unique Transmitter Callsigns** | 2,117,335 |
+| **Unique Transmitter Callsigns** | 2.1M |
 | **Unique Receiver Callsigns (skimmers)** | 3,050 |
 | **Unique Grid Pairs** | 960K |
 | **Modes** | CW, RTTY, PSK31 |
@@ -31,25 +29,21 @@ beacons, below the contest-grade SSB ceiling.
 
 ## Band Breakdown
 
-<!-- AUTO-GENERATED: RBN band breakdown -->
-
-| Band | Spots | Pct of Total | Primary Mode |
-|------|-------|-------------|-------------|
-| 160m | 98.7M | 4.38% | CW |
-| 80m | 287.5M | 12.76% | CW |
-| 40m | 669.9M | 29.74% | CW |
-| 30m | 111.0M | 4.93% | CW |
-| 20m | 684.9M | 30.40% | CW |
-| 17m | 58.4M | 2.59% | CW |
-| 15m | 207.5M | 9.21% | CW |
-| 12m | 16.0M | 0.71% | CW |
-| 10m | 107.0M | 4.75% | CW |
+| Band | Spots | Pct of Total |
+|------|-------|-------------|
+| 160m | 98.7M | 4.38% |
+| 80m | 287.5M | 12.76% |
+| 40m | 669.9M | 29.74% |
+| 30m | 111.0M | 4.93% |
+| 20m | 684.9M | 30.4% |
+| 17m | 58.4M | 2.59% |
+| 15m | 207.5M | 9.21% |
+| 12m | 16.0M | 0.71% |
+| 10m | 107.0M | 4.75% |
 
 ---
 
 ## Mode Breakdown
-
-<!-- AUTO-GENERATED: RBN mode breakdown -->
 
 | Mode | Spots | Pct | Notes |
 |------|-------|-----|-------|
@@ -58,11 +52,11 @@ beacons, below the contest-grade SSB ceiling.
 | PSK31 | — | — | — |
 | (empty) | — | — | 2009–2010 era, RBN was CW-only; mode field unpopulated |
 
+*Coming soon — requires RBN mode breakdown query.*
+
 ---
 
 ## Geographic Coverage
-
-<!-- AUTO-GENERATED: RBN geographic coverage -->
 
 | Metric | Value |
 |--------|-------|
@@ -70,6 +64,8 @@ beacons, below the contest-grade SSB ceiling.
 | **Unique Skimmer (Receiver) Grids** | — |
 | **Unique Grid Pairs** | — |
 | **Skimmer Count (active)** | — |
+
+*Coming soon — requires RBN geographic coverage query.*
 
 ---
 

@@ -20,12 +20,10 @@ resolution.
 
 ## Current Solar Indices
 
-<!-- AUTO-GENERATED: solar index summary -->
-
 | Metric | Value | Updated |
 |--------|-------|---------|
-| **SFI** | — | — |
-| **Kp** | — | — |
+| **SFI** | 116 | 2026-02-20 |
+| **Kp** | 2.33 | 2026-02-20 |
 | **SSN** | — | — |
 | **X-ray** | — | — |
 

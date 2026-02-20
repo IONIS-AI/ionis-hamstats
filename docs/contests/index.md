@@ -13,12 +13,8 @@ conditions during the event, geographic reach, and comparison to prior years.
 
 ## Upcoming Contests
 
-<!-- AUTO-GENERATED: upcoming contest schedule -->
-
 | Contest | Start (UTC) | End (UTC) | Modes | Bands |
 |---------|------------|----------|-------|-------|
-| — | — | — | — | — |
-| — | — | — | — | — |
 | — | — | — | — | — |
 
 *Contest schedule derived from published CQ and ARRL calendars.*
@@ -27,19 +23,15 @@ conditions during the event, geographic reach, and comparison to prior years.
 
 ## Past Recaps
 
-<!-- AUTO-GENERATED: past contest recap list -->
-
 | Contest | Date | Peak Band | RBN Spots | Solar Conditions | Recap |
 |---------|------|----------|-----------|-----------------|-------|
 | — | — | — | — | — | — |
-| — | — | — | — | — | — |
-| — | — | — | — | — | — |
+
+*Coming soon — requires contest recap generation.*
 
 ---
 
 ## Next Recap
-
-<!-- AUTO-GENERATED: next contest recap placeholder -->
 
 *No recap available yet. Check back after the next major contest weekend.*
 

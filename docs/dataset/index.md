@@ -17,9 +17,9 @@ cleaned it, and joined it with solar indices at 3-hour resolution.
 |--------|---------|------------|----------|-------|
 | WSPR (`wspr.bronze`) | 10.92B | 93.3M | Measured (-30 to +20 dB) | 2008–2026 |
 | RBN (`rbn.bronze`) | 2.25B | 56.7M | Measured (8–29 dB) | 2009–2026 |
-| Contest (`contest.bronze`) | 234M | 6.3M | Anchored (+10/0 dB) | 2005–2025 |
-| DXpedition | 3.9M paths | 260K (×50) | Measured | 2009–2025 |
-| PSK Reporter (`pskr.bronze`) | 354M (26M/day) | Pending | Measured (-34 to +38 dB) | Feb 2026+ |
+| Contest (`contest.bronze`) | 234.3M | 6.3M | Anchored (+10/0 dB) | 2005–2025 |
+| DXpedition | 3.9M paths | 260K (x50) | Measured | 2009–2025 |
+| PSK Reporter (`pskr.bronze`) | 356.2M (26M/day) | Pending | Measured (-34 to +38 dB) | Feb 2026+ |
 | **Total** | **13.76B+** | **156.4M+** | Full range | 2005–present |
 
 ---
@@ -37,7 +37,7 @@ You can ask "what was the SNR on 20m when SFI was 180 and Kp was 3?" and get
 real measured answers.
 
 **Geographic resolution.** Maidenhead grid squares (4-character) give ~111 km
-× ~111 km resolution globally. 8.3M unique grid pairs in WSPR alone — true
+x ~111 km resolution globally. 8.3M unique grid pairs in WSPR alone — true
 global coverage with density wherever amateur radio is active.
 
 **No cloud dependencies.** All data is collected and stored on hardware we
@@ -55,12 +55,10 @@ own. No API rate limits, no subscription fees, no vendor lock-in.
 
 ## Current Totals
 
-<!-- AUTO-GENERATED: dataset totals -->
-
 | Source | Total Rows | Last Updated |
 |--------|-----------|-------------|
-| WSPR | 10,916,787,061 | 2026-02-19 |
-| RBN | 2,252,717,106 | 2026-02-18 |
-| PSK Reporter | 354,221,455 | 2026-02-20 |
-| Contest | 234,280,065 | Archive |
-| Solar (`solar.bronze`) | 76,871 | 2026-02-20 |
+| WSPR | 10.92B | 2026-02-19 |
+| RBN | 2.25B | 2026-02-18 |
+| PSK Reporter | 356.2M | 2026-02-20 |
+| Contest | 234.3M | 2088-11-30 |
+| Solar | 76,628 | 2026-02-20 |

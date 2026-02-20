@@ -10,21 +10,19 @@ propagation floor — not just open for high-power voice, but open enough to
 carry a minimum-power digital signal. This makes it the most sensitive
 propagation measurement in the dataset.
 
-**10.92 billion spots. 18 years. The largest amateur radio propagation dataset
+**10.92B spots. 18 years. The largest amateur radio propagation dataset
 on Earth.**
 
 ---
 
 ## Dataset Statistics
 
-<!-- AUTO-GENERATED: WSPR dataset stats -->
-
 | Metric | Value |
 |--------|-------|
-| **Total Rows (`wspr.bronze`)** | 10,916,787,061 |
+| **Total Rows (`wspr.bronze`)** | 10.92B |
 | **Date Range** | 2008-03-11 to 2026-02-19 |
 | **Daily Spot Rate (recent)** | ~7M spots/day |
-| **Unique Transmitter Callsigns** | 3,614,880 |
+| **Unique Transmitter Callsigns** | 3.6M |
 | **Unique Receiver Callsigns** | 99,198 |
 | **Unique Grid Pairs** | 8.3M |
 | **Bands Covered** | 160m–10m (10 HF bands) |
@@ -33,16 +31,14 @@ on Earth.**
 
 ## Band Breakdown
 
-<!-- AUTO-GENERATED: WSPR band breakdown -->
-
 | Band | ADIF ID | Spots | Pct of Total |
 |------|---------|-------|-------------|
 | 160m | 102 | 191.9M | 1.76% |
 | 80m | 103 | 825.3M | 7.56% |
 | 60m | 104 | 123.3M | 1.13% |
-| 40m | 105 | 3,500.0M | 32.06% |
-| 30m | 106 | 1,836.8M | 16.83% |
-| 20m | 107 | 2,938.8M | 26.92% |
+| 40m | 105 | 3.50B | 32.06% |
+| 30m | 106 | 1.84B | 16.83% |
+| 20m | 107 | 2.94B | 26.92% |
 | 17m | 108 | 406.2M | 3.72% |
 | 15m | 109 | 395.4M | 3.62% |
 | 12m | 110 | 119.3M | 1.09% |
@@ -56,8 +52,6 @@ on Earth.**
 
 ## Geographic Coverage
 
-<!-- AUTO-GENERATED: WSPR geographic coverage -->
-
 | Region | Unique Transmitter Grids | Unique Receiver Grids | Unique Grid Pairs |
 |--------|-------------------------|----------------------|-------------------|
 | North America | — | — | — |
@@ -67,17 +61,17 @@ on Earth.**
 | Africa | — | — | — |
 | Other | — | — | — |
 
+*Coming soon — requires geographic coverage query.*
+
 ---
 
 ## Daily Growth (Last 30 Days)
 
-<!-- AUTO-GENERATED: WSPR daily growth chart -->
-
 | Date | Spots | Cumulative Total |
 |------|-------|-----------------|
 | — | — | — |
-| — | — | — |
-| — | — | — |
+
+*Coming soon — requires daily growth query.*
 
 ---
 

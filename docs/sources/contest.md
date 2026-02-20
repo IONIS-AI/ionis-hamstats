@@ -18,23 +18,19 @@ scale for IONIS model training.
 
 ## Dataset Statistics
 
-<!-- AUTO-GENERATED: contest dataset stats -->
-
 | Metric | Value |
 |--------|-------|
-| **Total QSOs (`contest.bronze`)** | 234,280,065 |
+| **Total QSOs (`contest.bronze`)** | 234.3M |
 | **Unique Log Files** | 407K |
 | **Contests Covered** | 15 |
-| **Date Range** | 2005–2025 |
-| **Unique Callsigns** | — |
+| **Date Range** | 1970-01-01 to 2088-11-30 |
+| **Unique Callsigns** | 1.5M |
 | **Unique Grid Pairs** | 613K |
 | **Modes** | SSB, RTTY, CW |
 
 ---
 
 ## Contest Coverage
-
-<!-- AUTO-GENERATED: contest coverage by event -->
 
 | Contest | Years | QSOs | Primary Mode |
 |---------|-------|------|-------------|
@@ -46,11 +42,11 @@ scale for IONIS model training.
 | ARRL DX (CW) | — | — | CW |
 | Other | — | — | Mixed |
 
+*Coming soon — requires per-contest breakdown query.*
+
 ---
 
 ## Band Breakdown
-
-<!-- AUTO-GENERATED: contest band breakdown -->
 
 | Band | QSOs | Pct of Total | Modes |
 |------|------|-------------|-------|
@@ -61,11 +57,11 @@ scale for IONIS model training.
 | 80m | — | — | — |
 | 160m | — | — | — |
 
+*Coming soon — requires contest band breakdown query.*
+
 ---
 
 ## Mode Breakdown
-
-<!-- AUTO-GENERATED: contest mode breakdown -->
 
 | Mode | QSOs | Pct | SNR Anchor |
 |------|------|-----|-----------|
@@ -73,17 +69,19 @@ scale for IONIS model training.
 | RTTY | — | — | +10 dB |
 | CW | — | — | +10 dB |
 
+*Coming soon — requires contest mode breakdown query.*
+
 ---
 
 ## Geographic Coverage
-
-<!-- AUTO-GENERATED: contest geographic coverage -->
 
 | Metric | Value |
 |--------|-------|
 | **Unique DXCC Entities** | — |
 | **Unique Grid Pairs** | — |
 | **Unique Transmitter Grids** | — |
+
+*Coming soon — requires contest geographic coverage query.*
 
 ---
 

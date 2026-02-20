@@ -9,22 +9,18 @@ contest weekend.
 
 ## Daily Growth — Last 30 Days
 
-<!-- AUTO-GENERATED: daily growth table (last 30 days) -->
-
 *Rows ingested per source per day. WSPR and RBN ingest run daily as new
 archive files become available. PSKR ingest runs hourly.*
 
 | Date | WSPR | RBN | PSKR | Contest | Total |
 |------|------|-----|------|---------|-------|
 | — | — | — | — | — | — |
-| — | — | — | — | — | — |
-| — | — | — | — | — | — |
+
+*Coming soon — requires daily growth query.*
 
 ---
 
 ## Monthly Growth — All Time
-
-<!-- AUTO-GENERATED: monthly growth table (all time) -->
 
 *Total rows added per source per month. Historical ingests (WSPR backfill,
 RBN backfill) appear as large single-month spikes.*
@@ -32,14 +28,12 @@ RBN backfill) appear as large single-month spikes.*
 | Month | WSPR | RBN | PSKR | Contest | Running Total |
 |-------|------|-----|------|---------|---------------|
 | — | — | — | — | — | — |
-| — | — | — | — | — | — |
-| — | — | — | — | — | — |
+
+*Coming soon — requires monthly growth query.*
 
 ---
 
 ## Growth Rate by Source
-
-<!-- AUTO-GENERATED: growth rate summary -->
 
 | Source | Avg Daily (last 30 days) | Avg Daily (last 7 days) | Trend |
 |--------|------------------------|------------------------|-------|
@@ -48,11 +42,11 @@ RBN backfill) appear as large single-month spikes.*
 | PSKR | — | — | — |
 | Contest | — | — | — |
 
+*Coming soon — requires growth rate query.*
+
 ---
 
 ## Cumulative Total by Source
-
-<!-- AUTO-GENERATED: cumulative growth chart data -->
 
 | Source | 2022 | 2023 | 2024 | 2025 | Current |
 |--------|------|------|------|------|---------|
@@ -60,6 +54,8 @@ RBN backfill) appear as large single-month spikes.*
 | RBN | — | — | — | — | — |
 | Contest | — | — | — | — | — |
 | PSKR | — | — | — | — | — |
+
+*Coming soon — requires cumulative growth query.*
 
 ---
 

@@ -12,21 +12,32 @@ during the respective window.
 
 ## Recent Storm Events
 
-<!-- AUTO-GENERATED: recent storm events table -->
-
-| Storm Start (UTC) | Peak Kp | Duration (hrs) | Classification | Bands Affected |
-|-------------------|---------|----------------|----------------|----------------|
-| — | — | — | — | — |
-| — | — | — | — | — |
-| — | — | — | — | — |
-| — | — | — | — | — |
-| — | — | — | — | — |
+| Storm Date (UTC) | Peak Kp | Classification |
+|------------------|---------|----------------|
+| 2026-02-16 | 6.0 | G2 Moderate |
+| 2026-02-15 | 5.33 | G1 Minor |
+| 2026-01-11 | 5.33 | G1 Minor |
+| 2026-01-10 | 5.67 | G1 Minor |
+| 2026-01-02 | 5.0 | G1 Minor |
+| 2025-12-12 | 5.0 | G1 Minor |
+| 2025-12-11 | 6.0 | G2 Moderate |
+| 2025-12-10 | 6.0 | G2 Moderate |
+| 2025-12-04 | 5.0 | G1 Minor |
+| 2025-12-03 | 6.67 | G2 Moderate |
+| 2025-11-13 | 7.33 | G3 Strong |
+| 2025-11-12 | 8.67 | G4 Severe |
+| 2025-11-08 | 6.0 | G2 Moderate |
+| 2025-11-07 | 5.33 | G1 Minor |
+| 2025-11-06 | 6.67 | G2 Moderate |
+| 2025-11-05 | 5.67 | G1 Minor |
+| 2025-10-30 | 5.33 | G1 Minor |
+| 2025-10-19 | 5.0 | G1 Minor |
+| 2025-10-18 | 6.33 | G2 Moderate |
+| 2025-10-12 | 5.0 | G1 Minor |
 
 ---
 
 ## SNR Before / During / After — Most Recent Storm
-
-<!-- AUTO-GENERATED: SNR comparison table for most recent storm -->
 
 *Median SNR (dB) measured from WSPR spots in the 24-hour window before,
 during, and 24-hour window after peak Kp.*
@@ -40,11 +51,11 @@ during, and 24-hour window after peak Kp.*
 | 80m | — | — | — | — | — |
 | 160m | — | — | — | — | — |
 
+*Coming soon — requires per-storm SNR comparison query.*
+
 ---
 
 ## Recovery Timeline
-
-<!-- AUTO-GENERATED: recovery timeline table -->
 
 Hours after peak Kp until median SNR returns to within 1 dB of pre-storm
 baseline, by band. Averaged across all storms in the dataset where Kp >= 5.
@@ -58,17 +69,15 @@ baseline, by band. Averaged across all storms in the dataset where Kp >= 5.
 | 80m | — | — | — |
 | 160m | — | — | — |
 
+*Coming soon — requires recovery analysis query.*
+
 ---
 
 ## Storm Frequency by Year
 
-<!-- AUTO-GENERATED: storm frequency by year -->
-
 | Year | Kp>=5 Events | Kp>=7 Events | Peak Kp | Cycle Phase |
 |------|-------------|-------------|---------|-------------|
 | — | — | — | — | — |
-| — | — | — | — | — |
-| — | — | — | — | — |
 
 *Storm counts derived from `solar.bronze` (GFZ Potsdam historical data,
-backfilled 2000–2026).*
+backfilled 2000–2026). Coming soon.*

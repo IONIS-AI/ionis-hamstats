@@ -11,8 +11,6 @@ theoretical predictions.
 
 ## Current Conditions
 
-<!-- AUTO-GENERATED: solar conditions block -->
-
 | Metric | Value | Status |
 |--------|-------|--------|
 | **SFI** | 116 | Moderate |
@@ -25,35 +23,50 @@ theoretical predictions.
 
 ## Data Pipeline
 
-<!-- AUTO-GENERATED: bronze table status -->
-
 | Source | Latest Date | Total Rows | Status |
 |--------|------------|------------|--------|
 | WSPR | 2026-02-19 | 10.92B | Current |
-| RBN | 2026-02-18 | 2.25B | 1 day behind |
-| PSK Reporter | 2026-02-20 | 354M | Live |
-| Contest | Archive | 234M | Static |
-| Solar | 2026-02-20 | 76.9K | Live |
+| RBN | 2026-02-18 | 2.25B | 2 days behind |
+| PSK Reporter | 2026-02-20 | 356.2M | Live |
+| Contest | Archive | 234.3M | Static |
+| Solar | 2026-02-20 | 76,628 | Live |
 
 ---
 
 ## Band Activity (Last 24 Hours)
 
-<!-- AUTO-GENERATED: band activity summary -->
-
 *Which bands had propagation in the last 24 hours, based on spots from all sources.*
 
 | Band | WSPR Spots | RBN Spots | PSKR Spots | Peak SNR | Status |
 |------|-----------|-----------|------------|----------|--------|
-| 10m | 71,718 | — | 5,596,149 | +61 dB | Open |
-| 12m | 35,919 | — | 1,680,441 | +59 dB | Open |
-| 15m | 100,070 | — | 4,044,066 | +87 dB | Strong |
-| 17m | 100,789 | — | 1,800,918 | +62 dB | Open |
-| 20m | 400,496 | — | 7,595,376 | +65 dB | Strong |
-| 30m | 167,179 | — | 2,042,957 | +58 dB | Open |
-| 40m | 237,134 | — | 7,329,802 | +86 dB | Strong |
-| 80m | 119,072 | — | 1,860,231 | +87 dB | Strong |
-| 160m | 33,668 | — | 277,565 | +54 dB | Open |
+| 10m | 54,988 | 0 | 5.8M | +61 dB | Strong |
+| 12m | 26,996 | 0 | 1.7M | +59 dB | Strong |
+| 15m | 78,190 | 0 | 4.2M | +87 dB | Strong |
+| 17m | 79,357 | 0 | 1.8M | +62 dB | Strong |
+| 20m | 316,375 | 0 | 7.7M | +80 dB | Strong |
+| 30m | 132,299 | 0 | 2.1M | +58 dB | Strong |
+| 40m | 185,194 | 0 | 7.4M | +86 dB | Strong |
+| 80m | 97,744 | 0 | 1.8M | +87 dB | Strong |
+| 160m | 27,543 | 0 | 271,231 | +54 dB | Strong |
+
+---
+
+## IONIS Predictions — KI7MT (DN26) Contest Paths
+
+*V20 model predictions for the current solar conditions (SFI 116, Kp 2.33).
+Which bands can work which continents right now?*
+
+| Destination | 10m | 15m | 20m | 40m |
+|-------------|-----|-----|-----|-----|
+| Europe (JN48) | CW | CW | CW | CW |
+| Japan (PM95) | CW | CW | CW | CW |
+| S. America (GG87) | CW | CW | CW | CW |
+| Africa (KG33) | FT8 | FT8 | FT8 | FT8 |
+| Oceania (QF56) | FT8 | FT8 | FT8 | FT8 |
+| Caribbean (FK68) | CW | CW | CW | CW |
+
+*Mode thresholds: SSB &ge; +3 dB, RTTY &ge; -5 dB, CW &ge; -15 dB, FT8 &ge; -21 dB, WSPR &ge; -28 dB.
+Predictions update every 3 hours with current solar conditions.*
 
 ---
 
@@ -67,10 +80,10 @@ Every query runs against data we collected and maintain.
 The data comes from four independent networks, each measuring a different layer
 of HF propagation:
 
-- **WSPR** (10.9B spots, 2008–present) — the SNR floor at minimum power
+- **WSPR** (10.92B spots, 2008–present) — the SNR floor at minimum power
 - **Reverse Beacon Network** (2.25B spots, 2009–present) — CW/RTTY measured signals
-- **PSK Reporter** (354M spots, live since Feb 2026) — FT8/digital operational contacts
-- **Contest Logs** (234M QSOs, 2005–present) — the SSB/RTTY ceiling at contest power
+- **PSK Reporter** (356.2M spots, live since Feb 2026) — FT8/digital operational contacts
+- **Contest Logs** (234.3M QSOs, 2005–present) — the SSB/RTTY ceiling at contest power
 
 Solar indices (SFI, Kp, SSN) are joined at 3-hour resolution so every
 propagation measurement has its solar context.
