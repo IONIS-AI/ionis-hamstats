@@ -3,7 +3,7 @@
 ![SFI](https://img.shields.io/badge/SFI_111-Moderate-2ea043?style=flat-square)
 ![Kp](https://img.shields.io/badge/Kp_2.67-Quiet-teal?style=flat-square)
 
-*Updated 22:06 UTC 2026-02-20*
+*Updated 22:25 UTC 2026-02-20*
 
 ---
 
@@ -25,14 +25,14 @@
 
 **IONIS V20 predictions from KI7MT (DN13) — current conditions (SFI 111, Kp 2.67)**
 
-| Destination | 10m | 15m | 20m | 40m | 
-|-------------|-----|-----|-----|-----|
-| Europe (JN48) | CW | CW | CW | CW | 
-| Japan (PM95) | CW | CW | CW | CW | 
-| S. America (GG87) | FT8 | FT8 | FT8 | FT8 | 
-| Africa (KG33) | FT8 | WSPR | WSPR | WSPR | 
-| Oceania (QF56) | FT8 | FT8 | FT8 | FT8 | 
-| Caribbean (FK68) | CW | CW | CW | CW | 
+| Destination | 10m | 15m | 20m | 40m | 80m | 160m | 
+|-------------|-----|-----|-----|-----|-----|-----|
+| Europe (JN48) | CW | CW | CW | CW | CW | CW | 
+| Japan (PM95) | CW | CW | CW | CW | CW | CW | 
+| S. America (GG87) | FT8 | FT8 | FT8 | FT8 | FT8 | FT8 | 
+| Africa (KG33) | FT8 | WSPR | WSPR | WSPR | WSPR | WSPR | 
+| Oceania (QF56) | FT8 | FT8 | FT8 | FT8 | WSPR | WSPR | 
+| Caribbean (FK68) | CW | CW | CW | CW | CW | CW | 
 
 ---
 
@@ -50,6 +50,16 @@
 
 *Top Band SSB — 160m only, Friday evening start*
 
+**IONIS V20 predictions from KI7MT (DN13) — current conditions (SFI 111, Kp 2.67)**
+
+| Destination | 160m | 
+|-------------|-----|
+| Europe (JN48) | CW | 
+| Japan (PM95) | CW | 
+| S. America (GG87) | FT8 | 
+| Africa (KG33) | WSPR | 
+| Oceania (QF56) | WSPR | 
+| Caribbean (FK68) | CW | 
 
 ---
 
@@ -69,14 +79,14 @@
 
 **IONIS V20 predictions from KI7MT (DN13) — current conditions (SFI 111, Kp 2.67)**
 
-| Destination | 10m | 15m | 20m | 40m | 
-|-------------|-----|-----|-----|-----|
-| Europe (JN48) | CW | CW | CW | CW | 
-| Japan (PM95) | CW | CW | CW | CW | 
-| S. America (GG87) | FT8 | FT8 | FT8 | FT8 | 
-| Africa (KG33) | FT8 | WSPR | WSPR | WSPR | 
-| Oceania (QF56) | FT8 | FT8 | FT8 | FT8 | 
-| Caribbean (FK68) | CW | CW | CW | CW | 
+| Destination | 10m | 15m | 20m | 40m | 80m | 160m | 
+|-------------|-----|-----|-----|-----|-----|-----|
+| Europe (JN48) | CW | CW | CW | CW | CW | CW | 
+| Japan (PM95) | CW | CW | CW | CW | CW | CW | 
+| S. America (GG87) | FT8 | FT8 | FT8 | FT8 | FT8 | FT8 | 
+| Africa (KG33) | FT8 | WSPR | WSPR | WSPR | WSPR | WSPR | 
+| Oceania (QF56) | FT8 | FT8 | FT8 | FT8 | WSPR | WSPR | 
+| Caribbean (FK68) | CW | CW | CW | CW | CW | CW | 
 
 ---
 

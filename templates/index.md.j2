@@ -1,43 +1,36 @@
 # Ham Stats
 
-**HF propagation reports generated from real data — not models, not opinions.**
-
-Every number on this site comes from measured amateur radio observations: WSPR
-beacons, Reverse Beacon Network skimmers, PSK Reporter decodes, and contest
-logs. Solar conditions are correlated with actual signal measurements, not
-theoretical predictions.
-
----
-
-## Current Conditions
+**HF propagation predictions trained on 13 billion real observations — not theory, not opinions.**
 
 {% set solar = data.solar_current[0] if data.solar_current else {} %}
-{% set sfi_type = 'success' if sfi and sfi >= 150 else 'info' if sfi and sfi >= 80 else 'warning' %}
-{% set kp_type = 'danger' if kp and kp >= 5 else 'warning' if kp and kp >= 3 else 'success' %}
-!!! {{ sfi_type }} inline "SFI {{ sfi | default('—') }}"
-    {{ sfi | classify_sfi }}
+{% set sfi_color = 'teal' if sfi and sfi >= 150 else '2ea043' if sfi and sfi >= 100 else 'ffea00' if sfi and sfi >= 80 else 'orange' if sfi and sfi >= 70 else 'red' %}
+{% set kp_color = 'red' if kp and kp >= 5 else 'orange' if kp and kp >= 4 else 'ffea00' if kp and kp >= 3 else 'teal' %}
+{% set cond_color = 'red' if kp and kp >= 5 else 'orange' if kp and kp >= 4 else 'ffea00' if kp and kp >= 3 else 'teal' %}
+![SFI](https://img.shields.io/badge/SFI_{{ sfi | default('--') }}-{{ sfi | classify_sfi | replace(' ', '_') }}-{{ sfi_color }}?style=flat-square)
+![Kp](https://img.shields.io/badge/Kp_{{ kp | default('--') }}-{{ kp | classify_kp | replace(' ', '_') }}-{{ kp_color }}?style=flat-square)
+![Conditions](https://img.shields.io/badge/Conditions-{{ conditions | default('Unknown') | replace(' ', '_') }}-{{ cond_color }}?style=flat-square)
 
-!!! {{ kp_type }} inline end "Kp {{ kp | default('—') }}"
-    {{ kp | classify_kp }}
-
-<div style="clear: both;"></div>
-
-*{{ conditions }} · Updated {{ now.strftime('%H:%M UTC') }} from NOAA SWPC*
+*Updated {{ now.strftime('%H:%M UTC') }} · NOAA SWPC*
 
 ---
 
-## Data Pipeline
+{% if predictions %}
+## What Can You Work Right Now?
 
-| Source | Latest Date | Total Rows | Status |
-|--------|------------|------------|--------|
-{% for row in data.bronze_status %}
-| {{ row.source_name }} | {{ row.latest_display | default('—') }} | {{ row.total_rows | fmt }} | {{ row.status | default('—') }} |
-{% else %}
-| — | — | — | — |
+*IONIS V20 predictions from KI7MT (DN13) for the current solar conditions (SFI {{ sfi | default('—') }}, Kp {{ kp | default('—') }}).*
+
+| Destination | 10m | 15m | 20m | 40m | 80m | 160m |
+|-------------|-----|-----|-----|-----|-----|------|
+{% for dest in predictions %}
+| {{ dest.label }} | {{ dest.bands["10m"] }} | {{ dest.bands["15m"] }} | {{ dest.bands["20m"] }} | {{ dest.bands["40m"] }} | {{ dest.bands["80m"] }} | {{ dest.bands["160m"] }} |
 {% endfor %}
 
+*Mode thresholds: SSB &ge; +3 dB, RTTY &ge; -5 dB, CW &ge; -15 dB, FT8 &ge; -21 dB, WSPR &ge; -28 dB.
+Predictions update every 3 hours with current solar conditions.*
+
 ---
 
+{% endif %}
 ## Band Activity (Last 24 Hours)
 
 *Which bands had propagation in the last 24 hours, based on spots from all sources.
@@ -53,29 +46,23 @@ RBN archives lag ~24 hours; zeroes indicate no data in the window, not band clos
 
 ---
 
-{% if predictions %}
-## IONIS Predictions — KI7MT (DN26) Contest Paths
+## Data Pipeline
 
-*V20 model predictions for the current solar conditions (SFI {{ sfi | default('—') }}, Kp {{ kp | default('—') }}).
-Which bands can work which continents right now?*
-
-| Destination | 10m | 15m | 20m | 40m |
-|-------------|-----|-----|-----|-----|
-{% for dest in predictions %}
-| {{ dest.label }} | {{ dest.bands["10m"] }} | {{ dest.bands["15m"] }} | {{ dest.bands["20m"] }} | {{ dest.bands["40m"] }} |
+| Source | Latest Date | Total Rows | Status |
+|--------|------------|------------|--------|
+{% for row in data.bronze_status %}
+| {{ row.source_name }} | {{ row.latest_display | default('—') }} | {{ row.total_rows | fmt }} | {{ row.status | default('—') }} |
+{% else %}
+| — | — | — | — |
 {% endfor %}
-
-*Mode thresholds: SSB &ge; +3 dB, RTTY &ge; -5 dB, CW &ge; -15 dB, FT8 &ge; -21 dB, WSPR &ge; -28 dB.
-Predictions update every 3 hours with current solar conditions.*
 
 ---
 
-{% endif %}
 ## About This Site
 
 Ham Stats is generated every 3 hours from a self-hosted ClickHouse database
-containing **13+ billion** amateur radio propagation observations — the largest
-curated dataset of its kind on Earth. No cloud services. No third-party APIs.
+containing **13+ billion** amateur radio propagation observations — one of the
+largest curated datasets of its kind. No cloud services. No third-party APIs.
 Every query runs against data we collected and maintain.
 
 The data comes from four independent networks, each measuring a different layer

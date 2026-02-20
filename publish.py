@@ -79,7 +79,7 @@ PREDICTION_DESTINATIONS = [
     {"label": "Oceania (QF56)",   "grid": "QF56"},
     {"label": "Caribbean (FK68)", "grid": "FK68"},
 ]
-PREDICTION_BANDS = ["10m", "15m", "20m", "40m"]
+PREDICTION_BANDS = ["10m", "15m", "20m", "40m", "80m", "160m"]
 
 # Sigma-to-dB conversion (V20 training normalization)
 WSPR_MEAN_DB = -17.53

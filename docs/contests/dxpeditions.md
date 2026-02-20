@@ -3,7 +3,7 @@
 ![SFI](https://img.shields.io/badge/SFI_111-Moderate-2ea043?style=flat-square)
 ![Kp](https://img.shields.io/badge/Kp_2.67-Quiet-teal?style=flat-square)
 
-*Updated 22:13 UTC 2026-02-20*
+*Updated 22:25 UTC 2026-02-20*
 
 ---
 
@@ -34,9 +34,9 @@
 
 **IONIS V20: KI7MT (DN13) to Desecheo Island (FK68) — SFI 111, Kp 2.67**
 
-| 10m | 15m | 20m | 40m |
-|-----|-----|-----|-----|
-| CW | CW | CW | CW |
+| 10m | 15m | 20m | 40m | 80m | 160m |
+|-----|-----|-----|-----|-----|------|
+| CW | CW | CW | CW | CW | CW |
 
 ---
 
@@ -53,9 +53,9 @@
 
 **IONIS V20: KI7MT (DN13) to Bouvet Island (JD04) — SFI 111, Kp 2.67**
 
-| 10m | 15m | 20m | 40m |
-|-----|-----|-----|-----|
-| FT8 | FT8 | FT8 | FT8 |
+| 10m | 15m | 20m | 40m | 80m | 160m |
+|-----|-----|-----|-----|-----|------|
+| FT8 | FT8 | FT8 | FT8 | FT8 | FT8 |
 
 ---
 
@@ -72,9 +72,9 @@
 
 **IONIS V20: KI7MT (DN13) to Austral Islands (BH42) — SFI 111, Kp 2.67**
 
-| 10m | 15m | 20m | 40m |
-|-----|-----|-----|-----|
-| CW | CW | CW | CW |
+| 10m | 15m | 20m | 40m | 80m | 160m |
+|-----|-----|-----|-----|-----|------|
+| CW | CW | CW | CW | CW | CW |
 
 ---
 
@@ -91,9 +91,9 @@
 
 **IONIS V20: KI7MT (DN13) to Sable Island (FN83) — SFI 111, Kp 2.67**
 
-| 10m | 15m | 20m | 40m |
-|-----|-----|-----|-----|
-| CW | CW | CW | CW |
+| 10m | 15m | 20m | 40m | 80m | 160m |
+|-----|-----|-----|-----|-----|------|
+| CW | CW | CW | CW | CW | CW |
 
 ---
 
@@ -110,9 +110,9 @@
 
 **IONIS V20: KI7MT (DN13) to Marquesas Islands (BH54) — SFI 111, Kp 2.67**
 
-| 10m | 15m | 20m | 40m |
-|-----|-----|-----|-----|
-| CW | CW | CW | CW |
+| 10m | 15m | 20m | 40m | 80m | 160m |
+|-----|-----|-----|-----|-----|------|
+| CW | CW | CW | CW | CW | CW |
 
 ---
 
