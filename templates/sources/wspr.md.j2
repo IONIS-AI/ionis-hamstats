@@ -1,0 +1,82 @@
+# WSPR — Weak Signal Propagation Reporter
+
+WSPR (pronounced "whisper") uses highly compressed digital transmissions at
+roughly 200 mW to probe HF propagation paths. Stations transmit a 2-minute
+beacon containing callsign, grid square, and power level. Receiving stations
+decode these beacons and report the measured SNR to wsprnet.org.
+
+Because WSPR uses such low power, a decoded spot means the path is open at the
+propagation floor — not just open for high-power voice, but open enough to
+carry a minimum-power digital signal. This makes it the most sensitive
+propagation measurement in the dataset.
+
+{% set stats = data.wspr_stats[0] if data.wspr_stats else {} %}
+**{{ stats.total_rows | fmt }} spots. 18 years. The largest amateur radio propagation dataset
+on Earth.**
+
+---
+
+## Dataset Statistics
+
+| Metric | Value |
+|--------|-------|
+| **Total Rows (`wspr.bronze`)** | {{ stats.total_rows | fmt }} |
+| **Date Range** | {{ stats.date_min | fmt_date }} to {{ stats.date_max | fmt_date }} |
+| **Daily Spot Rate (recent)** | ~7M spots/day |
+| **Unique Transmitter Callsigns** | {{ stats.unique_tx_calls | fmt }} |
+| **Unique Receiver Callsigns** | {{ stats.unique_rx_calls | fmt }} |
+| **Unique Grid Pairs** | 8.3M |
+| **Bands Covered** | 160m–10m (10 HF bands) |
+
+---
+
+## Band Breakdown
+
+| Band | ADIF ID | Spots | Pct of Total |
+|------|---------|-------|-------------|
+{% for row in data.wspr_band_breakdown %}
+| {{ row.band_name }} | {{ row.adif_id }} | {{ row.spots | fmt }} | {{ row.pct }}% |
+{% else %}
+| — | — | — | — |
+{% endfor %}
+
+*Band IDs are ADIF standard. Band assignment uses frequency-to-band lookup
+(single source of truth in `bands.GetBand()`). Fixed as of v2.1.0 re-ingest
+(2026-02-03) — all 10.8B rows carry correct ADIF IDs.*
+
+---
+
+## Geographic Coverage
+
+| Region | Unique Transmitter Grids | Unique Receiver Grids | Unique Grid Pairs |
+|--------|-------------------------|----------------------|-------------------|
+| North America | — | — | — |
+| Europe | — | — | — |
+| Asia/Pacific | — | — | — |
+| South America | — | — | — |
+| Africa | — | — | — |
+| Other | — | — | — |
+
+*Coming soon — requires geographic coverage query.*
+
+---
+
+## Daily Growth (Last 30 Days)
+
+| Date | Spots | Cumulative Total |
+|------|-------|-----------------|
+| — | — | — |
+
+*Coming soon — requires daily growth query.*
+
+---
+
+## Data Quality Notes
+
+- SNR range in raw data: -99 to +60 dB. Real WSPR is typically -30 to +20 dB.
+- Ground-wave spots (< 500 km) are present in bronze but filtered from
+  signatures to focus on ionospheric skip.
+- Balloon/telemetry callsigns removed: 1,443 entries identified in
+  `wspr.balloon_callsigns_v2`, covering ~950K spots (0.009% of bronze).
+- 93.3M rows promoted to `wspr.signatures_v2_terrestrial` after quality
+  filtering and solar joining.

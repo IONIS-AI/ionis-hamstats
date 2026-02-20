@@ -1,0 +1,72 @@
+# Current Solar Conditions
+
+Solar indices sourced from NOAA SWPC (`wspr.live_conditions`) updated every 15
+minutes. SFI is published once daily (~20:00 UTC from Penticton, BC). Kp is
+updated every 3 hours.
+
+---
+
+## Current Values
+
+{% set solar = data.solar_current[0] if data.solar_current else {} %}
+| Index | Value | Class | Updated |
+|-------|-------|-------|---------|
+| **Solar Flux Index (SFI)** | {{ solar.solar_flux | default('—') }} | {{ solar.solar_flux | classify_sfi }} | {{ now.strftime('%Y-%m-%d') }} |
+| **Planetary K-index (Kp)** | {{ solar.kp_index | default('—') }} | {{ solar.kp_index | classify_kp }} | {{ now.strftime('%Y-%m-%d') }} |
+| **Sunspot Number (SSN)** | — | — | — |
+| **X-ray Flux (GOES)** | — | — | — |
+
+---
+
+## 7-Day SFI Trend
+
+| Date | SFI | Change |
+|------|-----|--------|
+{% for row in data.sfi_trend_7d %}
+{% if loop.first %}
+| {{ row.date | fmt_date }} | {{ row.sfi | int }} | — |
+{% else %}
+| {{ row.date | fmt_date }} | {{ row.sfi | int }} | {{ (row.sfi - data.sfi_trend_7d[loop.index0 - 1].sfi) | int | fmt_delta }} |
+{% endif %}
+{% else %}
+| — | — | — |
+{% endfor %}
+
+---
+
+## 7-Day Kp Trend
+
+Daily maximum Kp over the past 7 days. Values >= 5 indicate geomagnetic storm
+conditions — see [Storm Impact](storms.md) for measured SNR effects.
+
+| Date | Max Kp | Storm Level | HF Impact |
+|------|--------|-------------|-----------|
+{% for row in data.kp_trend_7d %}
+| {{ row.date | fmt_date }} | {{ row.max_kp }} | {{ row.max_kp | classify_kp }} | {{ row.max_kp | kp_impact }} |
+{% else %}
+| — | — | — | — |
+{% endfor %}
+
+---
+
+## Current Band Impact Assessment
+
+Estimated propagation impact based on current SFI and Kp, derived from
+measured historical correlations in the IONIS dataset — not modeled
+predictions.
+
+| Band | SFI Effect | Kp Effect | Net Assessment |
+|------|-----------|-----------|----------------|
+| 10m (28 MHz) | — | — | — |
+| 12m (24.9 MHz) | — | — | — |
+| 15m (21 MHz) | — | — | — |
+| 17m (18.1 MHz) | — | — | — |
+| 20m (14 MHz) | — | — | — |
+| 30m (10.1 MHz) | — | — | — |
+| 40m (7 MHz) | — | — | — |
+| 80m (3.5 MHz) | — | — | — |
+| 160m (1.8 MHz) | — | — | — |
+
+*Assessment is based on measured SNR correlations across 10.8B WSPR spots and
+2.18B RBN spots. Higher bands respond more strongly to SFI. Lower bands
+are more sensitive to geomagnetic disturbance.*

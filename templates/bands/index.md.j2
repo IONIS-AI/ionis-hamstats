@@ -1,0 +1,16 @@
+# Band Reports
+
+Per-band propagation reports generated from measured spot data across all
+sources. Each page shows activity from the last 24 hours with spot volume,
+SNR distribution, geographic reach, and solar conditions at the time.
+
+Select a band from the navigation to see its current report.
+
+## Band Activity Summary
+
+| Band | Freq (MHz) | WSPR | RBN | PSKR | Peak SNR | Status |
+|------|-----------|------|-----|------|----------|--------|
+{% for b in bands %}
+{% set row = band_activity.get(b.name, {}) %}
+| [{{ b.name }}]({{ b.name }}.md) | {{ b.freq_mhz }} | {{ row.wspr_spots | fmt if row.wspr_spots is defined else '—' }} | {{ row.rbn_spots | fmt if row.rbn_spots is defined else '—' }} | {{ row.pskr_spots | fmt if row.pskr_spots is defined else '—' }} | {{ row.peak_snr | fmt_snr if row.peak_snr is defined else '—' }} | {{ row.total_spots | band_status if row.total_spots is defined else '—' }} |
+{% endfor %}

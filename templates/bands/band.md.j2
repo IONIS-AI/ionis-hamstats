@@ -1,0 +1,42 @@
+# {{ band.name }} Band Report
+
+**{{ band.freq_mhz }} MHz** — {{ band.desc }}
+
+---
+
+## Activity (Last 24 Hours)
+
+{% set activity = band_activity.get(band.name, {}) %}
+| Source | Spots | Peak SNR |
+|--------|-------|----------|
+| WSPR | {{ activity.wspr_spots | fmt if activity.wspr_spots is defined else '—' }} | — |
+| RBN | {{ activity.rbn_spots | fmt if activity.rbn_spots is defined else '—' }} | — |
+| PSKR | {{ activity.pskr_spots | fmt if activity.pskr_spots is defined else '—' }} | — |
+| **Total** | **{{ activity.total_spots | fmt if activity.total_spots is defined else '—' }}** | {{ activity.peak_snr | fmt_snr if activity.peak_snr is defined else '—' }} |
+
+## Solar Context
+
+{% set solar = data.solar_current[0] if data.solar_current else {} %}
+| Metric | Value |
+|--------|-------|
+| SFI | {{ solar.solar_flux | default('—') }} ({{ solar.solar_flux | classify_sfi }}) |
+| Kp | {{ solar.kp_index | default('—') }} ({{ solar.kp_index | classify_kp }}) |
+| Conditions | {{ solar.conditions | default('—') }} |
+
+## SNR Distribution
+
+*SNR distribution across all sources for the last 24 hours.*
+
+*Coming soon — requires per-band SNR histogram query.*
+
+## Top Paths
+
+| TX Grid | RX Grid | Distance (km) | Avg SNR | Spots |
+|---------|---------|--------------|---------|-------|
+| — | — | — | — | — |
+
+*Coming soon — requires per-band top-paths query.*
+
+---
+
+*Auto-generated from ClickHouse. Last updated: {{ now.strftime('%Y-%m-%d %H:%M UTC') }}*

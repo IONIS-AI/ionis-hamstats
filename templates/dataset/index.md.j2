@@ -1,0 +1,68 @@
+# Dataset Overview
+
+13+ billion amateur radio propagation observations. Four independent networks.
+17 years of HF history. All solar-joined. All self-hosted.
+
+This is the largest curated amateur radio propagation dataset on Earth. It did
+not exist as a single queryable resource before this project. The data was
+always there — scattered across wsprnet.org, the RBN archive, individual
+contest log repositories, and pskreporter.info — but nobody had assembled it,
+cleaned it, and joined it with solar indices at 3-hour resolution.
+
+---
+
+## Source Summary
+
+{% set wspr_row = data.dataset_totals | selectattr("source_name", "equalto", "WSPR") | first | default({}) %}
+{% set rbn_row = data.dataset_totals | selectattr("source_name", "equalto", "RBN") | first | default({}) %}
+{% set pskr_row = data.dataset_totals | selectattr("source_name", "equalto", "PSK Reporter") | first | default({}) %}
+{% set contest_row = data.dataset_totals | selectattr("source_name", "equalto", "Contest") | first | default({}) %}
+| Source | Raw Rows | Signatures | SNR Type | Years |
+|--------|---------|------------|----------|-------|
+| WSPR (`wspr.bronze`) | {{ wspr_row.total_rows | fmt }} | 93.3M | Measured (-30 to +20 dB) | 2008–2026 |
+| RBN (`rbn.bronze`) | {{ rbn_row.total_rows | fmt }} | 56.7M | Measured (8–29 dB) | 2009–2026 |
+| Contest (`contest.bronze`) | {{ contest_row.total_rows | fmt }} | 6.3M | Anchored (+10/0 dB) | 2005–2025 |
+| DXpedition | 3.9M paths | 260K (x50) | Measured | 2009–2025 |
+| PSK Reporter (`pskr.bronze`) | {{ pskr_row.total_rows | fmt }} (26M/day) | Pending | Measured (-34 to +38 dB) | Feb 2026+ |
+| **Total** | **13.76B+** | **156.4M+** | Full range | 2005–present |
+
+---
+
+## What Makes This Dataset Unique
+
+**Multi-source coverage of the full SNR dynamic range.** WSPR establishes
+the propagation floor. RBN adds the skilled-operator layer. Contest logs
+anchor the voice-workable ceiling. PSK Reporter fills in real-time digital
+operational contacts. No existing public dataset combines all four.
+
+**Solar context at measurement time.** Every spot has SFI, Kp, and SSN
+attached from `solar.bronze` at the 3-hour bucket containing the measurement.
+You can ask "what was the SNR on 20m when SFI was 180 and Kp was 3?" and get
+real measured answers.
+
+**Geographic resolution.** Maidenhead grid squares (4-character) give ~111 km
+x ~111 km resolution globally. 8.3M unique grid pairs in WSPR alone — true
+global coverage with density wherever amateur radio is active.
+
+**No cloud dependencies.** All data is collected and stored on hardware we
+own. No API rate limits, no subscription fees, no vendor lock-in.
+
+---
+
+## Pages
+
+- [**Dataset Growth**](growth.md) — Daily and monthly growth rates per source.
+- [**Geographic Coverage**](coverage.md) — Unique grid pair counts, coverage
+  density, and heatmaps by source.
+
+---
+
+## Current Totals
+
+| Source | Total Rows | Last Updated |
+|--------|-----------|-------------|
+{% for row in data.dataset_totals %}
+| {{ row.source_name }} | {{ row.total_rows | fmt }} | {{ row.latest_date | fmt_date }} |
+{% else %}
+| — | — | — |
+{% endfor %}
