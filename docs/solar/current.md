@@ -12,8 +12,8 @@ updated every 3 hours.
 
 | Index | Value | Class | Updated |
 |-------|-------|-------|---------|
-| **Solar Flux Index (SFI)** | — | — | — |
-| **Planetary K-index (Kp)** | — | — | — |
+| **Solar Flux Index (SFI)** | 116 | Moderate | 2026-02-19 |
+| **Planetary K-index (Kp)** | 2.33 | Quiet | 2026-02-20 |
 | **Sunspot Number (SSN)** | — | — | — |
 | **X-ray Flux (GOES)** | — | — | — |
 
@@ -25,13 +25,13 @@ updated every 3 hours.
 
 | Date | SFI | Change |
 |------|-----|--------|
-| — | — | — |
-| — | — | — |
-| — | — | — |
-| — | — | — |
-| — | — | — |
-| — | — | — |
-| — | — | — |
+| 2026-02-13 | 117 | — |
+| 2026-02-14 | 117 | 0 |
+| 2026-02-15 | 118 | +1 |
+| 2026-02-16 | 118 | 0 |
+| 2026-02-17 | 122 | +4 |
+| 2026-02-18 | 119 | -3 |
+| 2026-02-19 | 116 | -3 |
 
 ---
 
@@ -44,13 +44,13 @@ conditions — see [Storm Impact](storms.md) for measured SNR effects.
 
 | Date | Max Kp | Storm Level | HF Impact |
 |------|--------|-------------|-----------|
-| — | — | — | — |
-| — | — | — | — |
-| — | — | — | — |
-| — | — | — | — |
-| — | — | — | — |
-| — | — | — | — |
-| — | — | — | — |
+| 2026-02-13 | 4.00 | Unsettled | Minor |
+| 2026-02-14 | 4.33 | Active | Moderate |
+| 2026-02-15 | 5.33 | G1 Storm | Degraded |
+| 2026-02-16 | 6.00 | G2 Storm | Significant |
+| 2026-02-17 | 3.00 | Quiet | Normal |
+| 2026-02-18 | 3.33 | Unsettled | Minor |
+| 2026-02-19 | 3.33 | Unsettled | Minor |
 
 ---
 

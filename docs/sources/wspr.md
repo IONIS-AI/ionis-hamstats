@@ -10,7 +10,7 @@ propagation floor — not just open for high-power voice, but open enough to
 carry a minimum-power digital signal. This makes it the most sensitive
 propagation measurement in the dataset.
 
-**10.8 billion spots. 17 years. The largest amateur radio propagation dataset
+**10.92 billion spots. 18 years. The largest amateur radio propagation dataset
 on Earth.**
 
 ---
@@ -21,13 +21,13 @@ on Earth.**
 
 | Metric | Value |
 |--------|-------|
-| **Total Rows (`wspr.bronze`)** | — |
-| **Date Range** | — |
-| **Daily Spot Rate (recent 30 days)** | — |
-| **Unique Transmitter Callsigns** | — |
-| **Unique Receiver Callsigns** | — |
-| **Unique Grid Pairs** | — |
-| **Bands Covered** | — |
+| **Total Rows (`wspr.bronze`)** | 10,916,787,061 |
+| **Date Range** | 2008-03-11 to 2026-02-19 |
+| **Daily Spot Rate (recent)** | ~7M spots/day |
+| **Unique Transmitter Callsigns** | 3,614,880 |
+| **Unique Receiver Callsigns** | 99,198 |
+| **Unique Grid Pairs** | 8.3M |
+| **Bands Covered** | 160m–10m (10 HF bands) |
 
 ---
 
@@ -37,16 +37,16 @@ on Earth.**
 
 | Band | ADIF ID | Spots | Pct of Total |
 |------|---------|-------|-------------|
-| 160m | 102 | — | — |
-| 80m | 103 | — | — |
-| 60m | 104 | — | — |
-| 40m | 105 | — | — |
-| 30m | 106 | — | — |
-| 20m | 107 | — | — |
-| 17m | 108 | — | — |
-| 15m | 109 | — | — |
-| 12m | 110 | — | — |
-| 10m | 111 | — | — |
+| 160m | 102 | 191.9M | 1.76% |
+| 80m | 103 | 825.3M | 7.56% |
+| 60m | 104 | 123.3M | 1.13% |
+| 40m | 105 | 3,500.0M | 32.06% |
+| 30m | 106 | 1,836.8M | 16.83% |
+| 20m | 107 | 2,938.8M | 26.92% |
+| 17m | 108 | 406.2M | 3.72% |
+| 15m | 109 | 395.4M | 3.62% |
+| 12m | 110 | 119.3M | 1.09% |
+| 10m | 111 | 323.3M | 2.96% |
 
 *Band IDs are ADIF standard. Band assignment uses frequency-to-band lookup
 (single source of truth in `bands.GetBand()`). Fixed as of v2.1.0 re-ingest

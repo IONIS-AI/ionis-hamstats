@@ -15,12 +15,12 @@ cleaned it, and joined it with solar indices at 3-hour resolution.
 
 | Source | Raw Rows | Signatures | SNR Type | Years |
 |--------|---------|------------|----------|-------|
-| WSPR (`wspr.bronze`) | 10.8B | 93.3M | Measured (-30 to +20 dB) | 2008–2025 |
-| RBN (`rbn.bronze`) | 2.18B | 56.7M | Measured (8–29 dB) | 2009–2025 |
-| Contest (`contest.bronze`) | 195M | 6.3M | Anchored (+10/0 dB) | 2005–2025 |
+| WSPR (`wspr.bronze`) | 10.92B | 93.3M | Measured (-30 to +20 dB) | 2008–2026 |
+| RBN (`rbn.bronze`) | 2.25B | 56.7M | Measured (8–29 dB) | 2009–2026 |
+| Contest (`contest.bronze`) | 234M | 6.3M | Anchored (+10/0 dB) | 2005–2025 |
 | DXpedition | 3.9M paths | 260K (×50) | Measured | 2009–2025 |
-| PSK Reporter (`pskr.bronze`) | ~26M/day | Pending | Measured (-34 to +38 dB) | Feb 2026+ |
-| **Total** | **13.18B+** | **156.4M+** | Full range | 2005–present |
+| PSK Reporter (`pskr.bronze`) | 354M (26M/day) | Pending | Measured (-34 to +38 dB) | Feb 2026+ |
+| **Total** | **13.76B+** | **156.4M+** | Full range | 2005–present |
 
 ---
 
@@ -59,8 +59,8 @@ own. No API rate limits, no subscription fees, no vendor lock-in.
 
 | Source | Total Rows | Last Updated |
 |--------|-----------|-------------|
-| WSPR | — | — |
-| RBN | — | — |
-| PSK Reporter | — | — |
-| Contest | — | — |
-| Solar (`solar.bronze`) | — | — |
+| WSPR | 10,916,787,061 | 2026-02-19 |
+| RBN | 2,252,717,106 | 2026-02-18 |
+| PSK Reporter | 354,221,455 | 2026-02-20 |
+| Contest | 234,280,065 | Archive |
+| Solar (`solar.bronze`) | 76,871 | 2026-02-20 |

@@ -33,14 +33,14 @@ unit. Ingest to ClickHouse (`pskr.bronze`) runs hourly.
 
 | Metric | Value |
 |--------|-------|
-| **Total Rows (`pskr.bronze`)** | — |
+| **Total Rows (`pskr.bronze`)** | 354,221,455 |
 | **Collection Start** | 2026-02-10 |
-| **Days Collected** | — |
-| **Daily Spot Rate (recent 7 days)** | — |
+| **Days Collected** | 11 |
+| **Daily Spot Rate (recent 7 days)** | ~26M spots/day |
 | **Peak Spots/Second (observed)** | ~300 |
-| **Unique Transmitter Callsigns** | — |
-| **Unique Receiver Callsigns** | — |
-| **Unique Grid Pairs** | — |
+| **Unique Transmitter Callsigns** | 153,274 |
+| **Unique Receiver Callsigns** | 42,040 |
+| **Unique Grid Pairs** | 694K |
 
 ---
 
@@ -50,10 +50,13 @@ unit. Ingest to ClickHouse (`pskr.bronze`) runs hourly.
 
 | Mode | Spots | Pct | Notes |
 |------|-------|-----|-------|
-| FT8 | — | — | Dominant mode |
-| WSPR | — | — | Overlap with wsprnet.org feed |
-| FT4 | — | — | — |
-| Other | — | — | — |
+| FT8 | 326.1M | 92.05% | Dominant mode |
+| WSPR | 14.3M | 4.03% | Overlap with wsprnet.org feed |
+| FT4 | 9.7M | 2.73% | Contest/rapid QSO mode |
+| CW | 1.4M | 0.39% | Overlap with RBN |
+| JS8 | 1.2M | 0.34% | Keyboard-to-keyboard digital |
+| VARAC | 1.1M | 0.31% | Peer-to-peer digital |
+| Other | 0.5M | 0.14% | RTTY, FT2, FreeDV, JT65 |
 
 ---
 
@@ -63,15 +66,15 @@ unit. Ingest to ClickHouse (`pskr.bronze`) runs hourly.
 
 | Band | Spots | Pct of Total |
 |------|-------|-------------|
-| 10m | — | — |
-| 12m | — | — |
-| 15m | — | — |
-| 17m | — | — |
-| 20m | — | — |
-| 30m | — | — |
-| 40m | — | — |
-| 80m | — | — |
-| 160m | — | — |
+| 20m | 83.5M | 23.58% |
+| 40m | 76.0M | 21.47% |
+| 10m | 54.9M | 15.51% |
+| 15m | 45.3M | 12.80% |
+| 30m | 24.3M | 6.87% |
+| 17m | 23.3M | 6.57% |
+| 12m | 18.6M | 5.25% |
+| 80m | 20.4M | 5.76% |
+| 160m | 3.5M | 1.00% |
 
 ---
 
