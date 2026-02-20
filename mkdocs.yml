@@ -50,6 +50,8 @@ copyright: "&copy; 2026 KI7MT — Powered by IONIS"
 
 nav:
   - Home: index.md
+  - Contests: contests/index.md
+  - DXpeditions: contests/dxpeditions.md
   - Bands:
     - bands/index.md
     - 160m: bands/160m.md
@@ -76,8 +78,6 @@ nav:
     - dataset/index.md
     - Growth: dataset/growth.md
     - Coverage: dataset/coverage.md
-  - Contests: contests/index.md
-  - DXpeditions: contests/dxpeditions.md
   - Methodology:
     - methodology/index.md
     - Signatures: methodology/signatures.md
