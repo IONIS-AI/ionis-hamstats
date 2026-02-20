@@ -3,54 +3,28 @@
 ![SFI](https://img.shields.io/badge/SFI_111-Moderate-2ea043?style=flat-square)
 ![Kp](https://img.shields.io/badge/Kp_2.67-Quiet-teal?style=flat-square)
 
-*Updated 22:06 UTC 2026-02-20*
+*Updated 22:11 UTC 2026-02-20*
 
 ---
 
 ## Tracked DXpeditions
 
-### VK0AI — Heard Island
+### KP5/NP3VI — Desecheo Island
 
-**3w 2d** until start
+!!! success "Active Now"
+    KP5/NP3VI is on the air from Desecheo Island. Operation ends 2026-03-03.
 
 | | |
 |---|---|
-| **Callsign** | [VK0AI](https://heardisland.org/) |
-| **Entity** | Heard Island |
-| **Grid** | MC36 |
-| **Dates** | 2026-03-15 to 2026-04-15 |
+| **Callsign** | [KP5/NP3VI](https://desecheo2026.com/kp5/) |
+| **Entity** | Desecheo Island |
+| **Grid** | FK68 |
+| **Dates** | 2026-01-12 to 2026-03-03 |
 | **Modes** | SSB, CW, FT8 |
 | **Bands** | 160m, 80m, 40m, 20m, 15m, 10m |
-| **Notes** | Second most wanted DXCC entity |
+| **Notes** | Remote autonomous deployment, extended operation |
 
-**IONIS V20 band predictions: KI7MT (DN13) to Heard Island (MC36)**
-
-*Current conditions: SFI 111, Kp 2.67*
-
-| 10m | 15m | 20m | 40m |
-|-----|-----|-----|-----|
-| FT8 | FT8 | FT8 | FT8 |
-
-*Mode thresholds: SSB &ge; +3 dB, RTTY &ge; -5 dB, CW &ge; -15 dB, FT8 &ge; -21 dB, WSPR &ge; -28 dB.
-Predictions use current conditions — actual DXpedition conditions may differ.*
-
----
-
-### TX7L — Marquesas Islands
-
-**33w 6d** until start
-
-| | |
-|---|---|
-| **Callsign** | [TX7L](https://tx7l.com/) |
-| **Entity** | Marquesas Islands |
-| **Grid** | BH54 |
-| **Dates** | 2026-10-15 to 2026-10-29 |
-| **Modes** | SSB, CW, FT8, RTTY |
-| **Bands** | 80m, 40m, 20m, 15m, 10m |
-| **Notes** | French Polynesia — rare Pacific entity |
-
-**IONIS V20 band predictions: KI7MT (DN13) to Marquesas Islands (BH54)**
+**IONIS V20 band predictions: KI7MT (DN13) to Desecheo Island (FK68)**
 
 *Current conditions: SFI 111, Kp 2.67*
 
@@ -65,17 +39,17 @@ Predictions use current conditions — actual DXpedition conditions may differ.*
 
 ### 3Y0K — Bouvet Island
 
-**36w 2d** until start
+**9 days** until start
 
 | | |
 |---|---|
-| **Callsign** | [3Y0K](https://www.bouvetdx.org/) |
+| **Callsign** | [3Y0K](https://3y0k.com/) |
 | **Entity** | Bouvet Island |
 | **Grid** | JD04 |
-| **Dates** | 2026-11-01 to 2026-11-21 |
+| **Dates** | 2026-03-01 to 2026-03-14 |
 | **Modes** | SSB, CW, FT8, RTTY |
 | **Bands** | 160m, 80m, 40m, 20m, 15m, 10m |
-| **Notes** | Most wanted DXCC entity |
+| **Notes** | Most wanted DXCC entity — departs Cape Town Feb 1, dates tentative |
 
 **IONIS V20 band predictions: KI7MT (DN13) to Bouvet Island (JD04)**
 
@@ -84,6 +58,87 @@ Predictions use current conditions — actual DXpedition conditions may differ.*
 | 10m | 15m | 20m | 40m |
 |-----|-----|-----|-----|
 | FT8 | FT8 | FT8 | FT8 |
+
+*Mode thresholds: SSB &ge; +3 dB, RTTY &ge; -5 dB, CW &ge; -15 dB, FT8 &ge; -21 dB, WSPR &ge; -28 dB.
+Predictions use current conditions — actual DXpedition conditions may differ.*
+
+---
+
+### TX5EU — Austral Islands
+
+**3w** until start
+
+| | |
+|---|---|
+| **Callsign** | [TX5EU](https://www.ng3k.com/misc/adxo.html) |
+| **Entity** | Austral Islands |
+| **Grid** | BH42 |
+| **Dates** | 2026-03-13 to 2026-03-25 |
+| **Modes** | SSB, CW, FT8 |
+| **Bands** | 80m, 40m, 20m, 15m, 10m |
+| **Notes** | 3 stations, 24/7 operation |
+
+**IONIS V20 band predictions: KI7MT (DN13) to Austral Islands (BH42)**
+
+*Current conditions: SFI 111, Kp 2.67*
+
+| 10m | 15m | 20m | 40m |
+|-----|-----|-----|-----|
+| CW | CW | CW | CW |
+
+*Mode thresholds: SSB &ge; +3 dB, RTTY &ge; -5 dB, CW &ge; -15 dB, FT8 &ge; -21 dB, WSPR &ge; -28 dB.
+Predictions use current conditions — actual DXpedition conditions may differ.*
+
+---
+
+### CY0S — Sable Island
+
+**3w 6d** until start
+
+| | |
+|---|---|
+| **Callsign** | [CY0S](https://www.dx-world.net/cy0s-sable-island-dxpedition-2026/) |
+| **Entity** | Sable Island |
+| **Grid** | FN83 |
+| **Dates** | 2026-03-19 to 2026-03-31 |
+| **Modes** | SSB, CW, FT8 |
+| **Bands** | 160m, 80m, 40m, 20m, 15m, 10m |
+| **Notes** | WA4DAN and W0GJ team leads |
+
+**IONIS V20 band predictions: KI7MT (DN13) to Sable Island (FN83)**
+
+*Current conditions: SFI 111, Kp 2.67*
+
+| 10m | 15m | 20m | 40m |
+|-----|-----|-----|-----|
+| CW | CW | CW | CW |
+
+*Mode thresholds: SSB &ge; +3 dB, RTTY &ge; -5 dB, CW &ge; -15 dB, FT8 &ge; -21 dB, WSPR &ge; -28 dB.
+Predictions use current conditions — actual DXpedition conditions may differ.*
+
+---
+
+### TX9W — Marquesas Islands
+
+**8w 2d** until start
+
+| | |
+|---|---|
+| **Callsign** | [TX9W](https://www.ng3k.com/misc/adxo.html) |
+| **Entity** | Marquesas Islands |
+| **Grid** | BH54 |
+| **Dates** | 2026-04-19 to 2026-04-30 |
+| **Modes** | SSB, CW, FT8 |
+| **Bands** | 80m, 40m, 20m, 15m, 10m |
+| **Notes** | 6 stations |
+
+**IONIS V20 band predictions: KI7MT (DN13) to Marquesas Islands (BH54)**
+
+*Current conditions: SFI 111, Kp 2.67*
+
+| 10m | 15m | 20m | 40m |
+|-----|-----|-----|-----|
+| CW | CW | CW | CW |
 
 *Mode thresholds: SSB &ge; +3 dB, RTTY &ge; -5 dB, CW &ge; -15 dB, FT8 &ge; -21 dB, WSPR &ge; -28 dB.
 Predictions use current conditions — actual DXpedition conditions may differ.*

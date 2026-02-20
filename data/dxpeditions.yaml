@@ -2,7 +2,10 @@
 #
 # Grid is 4-char Maidenhead — same format grid4_to_latlon() accepts.
 # Past entries filtered automatically by end_date.
-# Add new DXpeditions as they are announced.
+# Add new DXpeditions as they are announced and verified.
+#
+# Sources: NG3K, DX-World, DXNews, official DXpedition sites.
+# Only include entries confirmed by the operating team.
 
 calendars:
   - name: "NG3K DX Calendar"
@@ -16,29 +19,49 @@ dxpeditions:
   - callsign: "3Y0K"
     entity: "Bouvet Island"
     grid: "JD04"
-    start_date: "2026-11-01"
-    end_date: "2026-11-21"
+    start_date: "2026-03-01"
+    end_date: "2026-03-14"
     modes: ["SSB", "CW", "FT8", "RTTY"]
     bands: ["160m", "80m", "40m", "20m", "15m", "10m"]
-    url: "https://www.bouvetdx.org/"
-    notes: "Most wanted DXCC entity"
+    url: "https://3y0k.com/"
+    notes: "Most wanted DXCC entity — departs Cape Town Feb 1, dates tentative"
 
-  - callsign: "VK0AI"
-    entity: "Heard Island"
-    grid: "MC36"
-    start_date: "2026-03-15"
-    end_date: "2026-04-15"
+  - callsign: "KP5/NP3VI"
+    entity: "Desecheo Island"
+    grid: "FK68"
+    start_date: "2026-01-12"
+    end_date: "2026-03-03"
     modes: ["SSB", "CW", "FT8"]
     bands: ["160m", "80m", "40m", "20m", "15m", "10m"]
-    url: "https://heardisland.org/"
-    notes: "Second most wanted DXCC entity"
+    url: "https://desecheo2026.com/kp5/"
+    notes: "Remote autonomous deployment, extended operation"
 
-  - callsign: "TX7L"
+  - callsign: "CY0S"
+    entity: "Sable Island"
+    grid: "FN83"
+    start_date: "2026-03-19"
+    end_date: "2026-03-31"
+    modes: ["SSB", "CW", "FT8"]
+    bands: ["160m", "80m", "40m", "20m", "15m", "10m"]
+    url: "https://www.dx-world.net/cy0s-sable-island-dxpedition-2026/"
+    notes: "WA4DAN and W0GJ team leads"
+
+  - callsign: "TX5EU"
+    entity: "Austral Islands"
+    grid: "BH42"
+    start_date: "2026-03-13"
+    end_date: "2026-03-25"
+    modes: ["SSB", "CW", "FT8"]
+    bands: ["80m", "40m", "20m", "15m", "10m"]
+    url: "https://www.ng3k.com/misc/adxo.html"
+    notes: "3 stations, 24/7 operation"
+
+  - callsign: "TX9W"
     entity: "Marquesas Islands"
     grid: "BH54"
-    start_date: "2026-10-15"
-    end_date: "2026-10-29"
-    modes: ["SSB", "CW", "FT8", "RTTY"]
+    start_date: "2026-04-19"
+    end_date: "2026-04-30"
+    modes: ["SSB", "CW", "FT8"]
     bands: ["80m", "40m", "20m", "15m", "10m"]
-    url: "https://tx7l.com/"
-    notes: "French Polynesia — rare Pacific entity"
+    url: "https://www.ng3k.com/misc/adxo.html"
+    notes: "6 stations"
