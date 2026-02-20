@@ -10,6 +10,20 @@ a specific query against that corpus.
 
 ---
 
+## Bronze → Silver → Gold
+
+| Layer | Table(s) | Rows | Content |
+|-------|---------|------|---------|
+| Bronze | `wspr.bronze`, `rbn.bronze`, `contest.bronze`, `pskr.bronze` | 13.18B+ | Raw ingested spots, minimal transformation |
+| Silver | `wspr.silver` | 4.4B | Float4 embeddings from CUDA signature engine |
+| Gold | `wspr.signatures_v2_terrestrial`, `rbn.signatures`, `contest.signatures` | 156.4M | Quality-filtered, solar-joined, ground-wave excluded |
+
+*Solar data: `solar.bronze` (GFZ Potsdam, 2000–present, ~1-day lag) for
+historical training; `wspr.live_conditions` (NOAA SWPC, 15-min updates) for
+current-conditions reporting.*
+
+---
+
 ## The Pipeline
 
 ```
@@ -41,17 +55,3 @@ conversion for distance calculations.
   raw spots become 93.3M signatures.
 - [**Data Quality**](data-quality.md) — What gets filtered and why: balloon
   callsigns, ground-wave spots, RBN AGC outliers, grid normalization.
-
----
-
-## Bronze → Silver → Gold
-
-| Layer | Table(s) | Rows | Content |
-|-------|---------|------|---------|
-| Bronze | `wspr.bronze`, `rbn.bronze`, `contest.bronze`, `pskr.bronze` | 13.18B+ | Raw ingested spots, minimal transformation |
-| Silver | `wspr.silver` | 4.4B | Float4 embeddings from CUDA signature engine |
-| Gold | `wspr.signatures_v2_terrestrial`, `rbn.signatures`, `contest.signatures` | 156.4M | Quality-filtered, solar-joined, ground-wave excluded |
-
-*Solar data: `solar.bronze` (GFZ Potsdam, 2000–present, ~1-day lag) for
-historical training; `wspr.live_conditions` (NOAA SWPC, 15-min updates) for
-current-conditions reporting.*
