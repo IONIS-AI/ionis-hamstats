@@ -11,13 +11,15 @@ theoretical predictions.
 
 ## Current Conditions
 
-| Metric | Value | Status |
-|--------|-------|--------|
-| **SFI** | 116 | Moderate |
-| **Kp** | 2.33 | Quiet |
-| **Conditions** | Quiet | Normal propagation |
+!!! info inline "SFI 116"
+    Moderate
 
-*Updated every 3 hours from NOAA SWPC via ClickHouse.*
+!!! success inline end "Kp 2.33"
+    Quiet
+
+<div style="clear: both;"></div>
+
+*Quiet · Updated 20:30 UTC from NOAA SWPC*
 
 ---
 
@@ -39,15 +41,15 @@ theoretical predictions.
 
 | Band | WSPR Spots | RBN Spots | PSKR Spots | Peak SNR | Status |
 |------|-----------|-----------|------------|----------|--------|
-| 10m | 54,988 | 0 | 5.8M | +61 dB | Strong |
-| 12m | 26,996 | 0 | 1.7M | +59 dB | Strong |
-| 15m | 78,190 | 0 | 4.2M | +87 dB | Strong |
-| 17m | 79,357 | 0 | 1.8M | +62 dB | Strong |
-| 20m | 316,375 | 0 | 7.7M | +80 dB | Strong |
-| 30m | 132,299 | 0 | 2.1M | +58 dB | Strong |
-| 40m | 185,194 | 0 | 7.4M | +86 dB | Strong |
-| 80m | 97,744 | 0 | 1.8M | +87 dB | Strong |
-| 160m | 27,543 | 0 | 271,231 | +54 dB | Strong |
+| 10m | 53,220 | 0 | 5.8M | +61 dB | Strong |
+| 12m | 25,986 | 0 | 1.7M | +59 dB | Strong |
+| 15m | 75,725 | 0 | 4.2M | +87 dB | Strong |
+| 17m | 76,799 | 0 | 1.8M | +62 dB | Strong |
+| 20m | 303,498 | 0 | 7.6M | +80 dB | Strong |
+| 30m | 126,925 | 0 | 2.1M | +58 dB | Strong |
+| 40m | 178,509 | 0 | 7.4M | +86 dB | Strong |
+| 80m | 94,901 | 0 | 1.8M | +87 dB | Strong |
+| 160m | 27,029 | 0 | 269,107 | +54 dB | Strong |
 
 ---
 
