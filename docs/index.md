@@ -3,23 +3,23 @@
 **HF propagation predictions trained on 13 billion real observations — not theory, not opinions.**
 
 ![SFI](https://img.shields.io/badge/SFI_111-Moderate-2ea043?style=flat-square)
-![Kp](https://img.shields.io/badge/Kp_2.33-Quiet-teal?style=flat-square)
+![Kp](https://img.shields.io/badge/Kp_2.67-Quiet-teal?style=flat-square)
 ![Conditions](https://img.shields.io/badge/Conditions-Quiet-teal?style=flat-square)
 
-*Updated 21:06 UTC · NOAA SWPC*
+*Updated 22:00 UTC · NOAA SWPC*
 
 ---
 
 ## What Can You Work Right Now?
 
-*IONIS V20 predictions from KI7MT (DN13) for the current solar conditions (SFI 111, Kp 2.33).*
+*IONIS V20 predictions from KI7MT (DN13) for the current solar conditions (SFI 111, Kp 2.67).*
 
 | Destination | 10m | 15m | 20m | 40m |
 |-------------|-----|-----|-----|-----|
 | Europe (JN48) | CW | CW | CW | CW |
 | Japan (PM95) | CW | CW | CW | CW |
-| S. America (GG87) | CW | CW | CW | FT8 |
-| Africa (KG33) | FT8 | FT8 | FT8 | WSPR |
+| S. America (GG87) | FT8 | FT8 | FT8 | FT8 |
+| Africa (KG33) | FT8 | WSPR | WSPR | WSPR |
 | Oceania (QF56) | FT8 | FT8 | FT8 | FT8 |
 | Caribbean (FK68) | CW | CW | CW | CW |
 
@@ -35,15 +35,15 @@ RBN archives lag ~24 hours; zeroes indicate no data in the window, not band clos
 
 | Band | WSPR Spots | RBN Spots | PSKR Spots | Peak SNR | Status |
 |------|-----------|-----------|------------|----------|--------|
-| 10m | 43,359 | 0 | 5.9M | +103 dB | Strong |
-| 12m | 20,649 | 0 | 1.7M | +59 dB | Strong |
-| 15m | 63,257 | 0 | 4.3M | +87 dB | Strong |
-| 17m | 64,605 | 0 | 1.8M | +62 dB | Strong |
-| 20m | 254,904 | 0 | 7.9M | +80 dB | Strong |
-| 30m | 108,027 | 0 | 2.2M | +58 dB | Strong |
-| 40m | 153,378 | 0 | 7.5M | +86 dB | Strong |
-| 80m | 81,496 | 0 | 1.9M | +87 dB | Strong |
-| 160m | 22,919 | 0 | 258,731 | +54 dB | Strong |
+| 10m | 26,640 | 0 | 5.7M | +103 dB | Strong |
+| 12m | 12,570 | 0 | 1.7M | +59 dB | Strong |
+| 15m | 40,750 | 0 | 4.1M | +87 dB | Strong |
+| 17m | 42,294 | 0 | 1.7M | +62 dB | Strong |
+| 20m | 165,839 | 0 | 7.5M | +80 dB | Strong |
+| 30m | 72,483 | 0 | 2.2M | +58 dB | Strong |
+| 40m | 109,084 | 0 | 7.2M | +86 dB | Strong |
+| 80m | 57,251 | 0 | 1.7M | +87 dB | Strong |
+| 160m | 15,347 | 0 | 202,501 | +54 dB | Strong |
 
 ---
 

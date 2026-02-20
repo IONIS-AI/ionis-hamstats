@@ -3,14 +3,15 @@
 ![SFI](https://img.shields.io/badge/SFI_111-Moderate-2ea043?style=flat-square)
 ![Kp](https://img.shields.io/badge/Kp_2.67-Quiet-teal?style=flat-square)
 
-*Updated 21:58 UTC 2026-02-20*
+*Updated 22:00 UTC 2026-02-20*
 
 ---
 
 ## Next 30 Days
 
-### CQ 160m SSB
-**0 days** until start
+### CQ 160m SSB — ON THE AIR
+!!! success "Active Now"
+    This contest is currently running. Ends 2026-02-22 22:00 UTC.
 
 | | |
 |---|---|
@@ -46,8 +47,8 @@
 |-------------|-----|-----|-----|-----|
 | Europe (JN48) | CW | CW | CW | CW | 
 | Japan (PM95) | CW | CW | CW | CW | 
-| S. America (GG87) | CW | CW | CW | FT8 | 
-| Africa (KG33) | FT8 | FT8 | FT8 | WSPR | 
+| S. America (GG87) | FT8 | FT8 | FT8 | FT8 | 
+| Africa (KG33) | FT8 | WSPR | WSPR | WSPR | 
 | Oceania (QF56) | FT8 | FT8 | FT8 | FT8 | 
 | Caribbean (FK68) | CW | CW | CW | CW | 
 
@@ -73,8 +74,8 @@
 |-------------|-----|-----|-----|-----|
 | Europe (JN48) | CW | CW | CW | CW | 
 | Japan (PM95) | CW | CW | CW | CW | 
-| S. America (GG87) | CW | CW | CW | FT8 | 
-| Africa (KG33) | FT8 | FT8 | FT8 | WSPR | 
+| S. America (GG87) | FT8 | FT8 | FT8 | FT8 | 
+| Africa (KG33) | FT8 | WSPR | WSPR | WSPR | 
 | Oceania (QF56) | FT8 | FT8 | FT8 | FT8 | 
 | Caribbean (FK68) | CW | CW | CW | CW | 
 
@@ -85,7 +86,7 @@
 
 | Contest | Date (UTC) | Start | Hours | Modes | Countdown |
 |---------|-----------|-------|-------|-------|-----------|
-| [CQ 160m SSB](https://www.cq160.com/) | Feb 20–22 | Fri 22:00 | 48 | SSB | 0 days |
+| [CQ 160m SSB](https://www.cq160.com/) | Feb 20–22 | Fri 22:00 | 48 | SSB | NOW |
 | [ARRL DX CW](https://www.arrl.org/arrl-dx) | Feb 21–23 | Sat 00:00 | 48 | CW | 0 days |
 | [ARRL DX SSB](https://www.arrl.org/arrl-dx) | Mar 07–09 | Sat 00:00 | 48 | SSB | 2w |
 | [CQ WPX SSB](https://www.cqwpx.com/) | Mar 28–30 | Sat 00:00 | 48 | SSB | 5w |
@@ -105,9 +106,9 @@
 | [WAE RTTY](https://www.darc.de/der-club/referate/conteste/wae-dx-contest/) | Nov 14–16 | Sat 00:00 | 48 | RTTY | 38w |
 | [JIDX SSB](https://jidx.org/) | Nov 14–15 | Sat 07:00 | 30 | SSB | 38w |
 | [CQ WW CW](https://www.cqww.com/) | Nov 28–30 | Sat 00:00 | 48 | CW | 40w |
-| [ARRL 160m](https://www.arrl.org/160-meter) | Dec 04–06 | Fri 22:00 | 42 | CW | 41w |
+| [ARRL 160m](https://www.arrl.org/160-meter) | Dec 04–06 | Fri 22:00 | 42 | CW | 40w 6d |
 | [ARRL 10m](https://www.arrl.org/10-meter) | Dec 12–14 | Sat 00:00 | 48 | SSB/CW | 42w |
-| [CQ 160m CW](https://www.cq160.com/) | Jan 29–31 | Fri 22:00 | 48 | CW | 49w |
+| [CQ 160m CW](https://www.cq160.com/) | Jan 29–31 | Fri 22:00 | 48 | CW | 48w 6d |
 | [CQ WPX RTTY](https://www.cqwpxrtty.com/) | Feb 13–15 | Sat 00:00 | 48 | RTTY | 51w |
 | [ARRL DX CW](https://www.arrl.org/arrl-dx) | Feb 20–22 | Sat 00:00 | 48 | CW | 52w |
 
