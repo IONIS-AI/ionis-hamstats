@@ -21,7 +21,10 @@ from pathlib import Path
 from typing import Optional
 
 import clickhouse_connect
+import yaml
 from jinja2 import Environment, FileSystemLoader, Undefined
+
+import contest_calendar
 
 # ---------------------------------------------------------------------------
 # Constants
@@ -66,8 +69,8 @@ BANDS = [
 
 ADIF_TO_BAND = {b["adif"]: b["name"] for b in BANDS}
 
-# IONIS prediction: KI7MT (DN26) → representative contest destinations
-TX_GRID = "DN26"
+# IONIS prediction: KI7MT (DN13) → representative contest destinations
+TX_GRID = "DN13"
 PREDICTION_DESTINATIONS = [
     {"label": "Europe (JN48)",    "grid": "JN48"},
     {"label": "Japan (PM95)",     "grid": "PM95"},
@@ -189,6 +192,44 @@ def generate_predictions(model, device, sfi: float, kp: float) -> list[dict] | N
             snr_db = sigma * WSPR_STD_DB + WSPR_MEAN_DB
             row["bands"][band] = classify_mode(snr_db)
         results.append(row)
+    return results
+
+
+def generate_dxpedition_predictions(
+    model, device, dxpeditions: list[dict], sfi: float, kp: float,
+) -> dict[str, list[dict]] | None:
+    """Run V20 from DN13 to each DXpedition grid across 4 bands.
+
+    Returns {callsign: [{"band": "10m", "mode": "CW"}, ...]}.
+    """
+    if model is None or not dxpeditions:
+        return None
+    import torch  # noqa: F811
+    from ionis_validate.model import grid4_to_latlon, build_features, BAND_FREQ_HZ
+
+    now = dt.datetime.utcnow()
+    hour, month = now.hour, now.month
+    tx_lat, tx_lon = grid4_to_latlon(TX_GRID)
+
+    results = {}
+    for dx in dxpeditions:
+        grid = dx.get("grid", "")
+        if len(grid) < 4:
+            continue
+        rx_lat, rx_lon = grid4_to_latlon(grid)
+        bands = {}
+        for band in PREDICTION_BANDS:
+            freq_hz = BAND_FREQ_HZ[band]
+            features = build_features(
+                tx_lat, tx_lon, rx_lat, rx_lon,
+                freq_hz, sfi, kp, hour, month,
+            )
+            x = torch.tensor(features, dtype=torch.float32, device=device).unsqueeze(0)
+            with torch.no_grad():
+                sigma = model(x).item()
+            snr_db = sigma * WSPR_STD_DB + WSPR_MEAN_DB
+            bands[band] = classify_mode(snr_db)
+        results[dx["callsign"]] = bands
     return results
 
 
@@ -336,6 +377,37 @@ def band_status(total_spots) -> str:
     return "Strong"
 
 
+def fmt_countdown(days) -> str:
+    """Format days until event: 'NOW', '3 days', '2w 1d', etc."""
+    if days is None:
+        return "\u2014"
+    try:
+        d = float(days)
+    except (TypeError, ValueError):
+        return str(days)
+    if d <= 0:
+        return "NOW"
+    d = int(d)
+    if d == 1:
+        return "1 day"
+    if d < 14:
+        return f"{d} days"
+    weeks = d // 7
+    remaining = d % 7
+    if remaining == 0:
+        return f"{weeks}w"
+    return f"{weeks}w {remaining}d"
+
+
+def fmt_utc(d) -> str:
+    """Format datetime as 'YYYY-MM-DD HH:MM UTC'."""
+    if d is None or isinstance(d, Undefined):
+        return "\u2014"
+    if hasattr(d, "strftime"):
+        return d.strftime("%Y-%m-%d %H:%M UTC")
+    return str(d)
+
+
 # ---------------------------------------------------------------------------
 # Context Building
 # ---------------------------------------------------------------------------
@@ -375,7 +447,17 @@ def enrich_bronze_status(data: dict, now: dt.datetime):
             row["status"] = f"{delta} days behind"
 
 
-def build_context(data: dict, predictions, now: dt.datetime) -> dict:
+def build_context(
+    data: dict,
+    predictions,
+    now: dt.datetime,
+    contest_schedule=None,
+    upcoming_30d=None,
+    full_year=None,
+    dxpeditions=None,
+    dx_calendars=None,
+    dxpedition_predictions=None,
+) -> dict:
     """Assemble the full Jinja2 template context."""
     enrich_bronze_status(data, now)
 
@@ -408,6 +490,12 @@ def build_context(data: dict, predictions, now: dt.datetime) -> dict:
         "prediction_bands": PREDICTION_BANDS,
         "band_activity": band_activity,
         "adif_to_band": ADIF_TO_BAND,
+        "contest_schedule": contest_schedule or [],
+        "upcoming_30d": upcoming_30d or [],
+        "full_year": full_year or [],
+        "dxpeditions": dxpeditions or [],
+        "dx_calendars": dx_calendars or [],
+        "dxpedition_predictions": dxpedition_predictions or {},
     }
 
 
@@ -436,6 +524,7 @@ def render_all(env: Environment, context: dict) -> dict[str, str]:
         "dataset/growth.md.j2",
         "dataset/coverage.md.j2",
         "contests/index.md.j2",
+        "contests/dxpeditions.md.j2",
     ]
     for tmpl_name in simple:
         out_name = tmpl_name.removesuffix(".j2")
@@ -545,8 +634,37 @@ def main():
     env.filters["classify_sfi"] = classify_sfi
     env.filters["kp_impact"] = kp_impact
     env.filters["band_status"] = band_status
+    env.filters["fmt_countdown"] = fmt_countdown
+    env.filters["fmt_utc"] = fmt_utc
 
-    context = build_context(data, predictions, now)
+    # 4. Contest calendar + DXpeditions
+    print("Loading contest calendar...")
+    contests_data = contest_calendar.load_contests()
+    full_year = contest_calendar.build_contest_schedule(contests_data, now)
+    upcoming_30d = contest_calendar.upcoming_contests(full_year, days=30)
+    print(f"  {len(full_year)} contest dates resolved, {len(upcoming_30d)} in next 30 days")
+
+    dx_data = contest_calendar.load_dxpeditions()
+    dx_calendars = dx_data.get("calendars", [])
+    dx_list = contest_calendar.build_dxpedition_schedule(
+        dx_data.get("dxpeditions", []), now,
+    )
+    print(f"  {len(dx_list)} active/upcoming DXpeditions")
+
+    # DXpedition predictions
+    dx_predictions = generate_dxpedition_predictions(model, device, dx_list, sfi, kp)
+    if dx_predictions:
+        print(f"  Generated predictions for {len(dx_predictions)} DXpeditions")
+
+    context = build_context(
+        data, predictions, now,
+        contest_schedule=full_year,
+        upcoming_30d=upcoming_30d,
+        full_year=full_year,
+        dxpeditions=dx_list,
+        dx_calendars=dx_calendars,
+        dxpedition_predictions=dx_predictions or {},
+    )
     outputs = render_all(env, context)
 
     if args.dry_run:

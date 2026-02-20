@@ -1,0 +1,354 @@
+# Contest scheduling rules for ham-stats.com
+#
+# Rule types:
+#   last_full_weekend  - last weekend where both Sat+Sun fall in the named month
+#   first_full_weekend - first weekend where both Sat+Sun fall in the named month
+#   nth_full_weekend   - Nth such weekend (n: 1, 2, 3, ...)
+#
+# "Full weekend" = Saturday and Sunday both within the calendar month.
+# Most contests start Saturday 0000 UTC and run 48 hours unless noted.
+
+# ---------------------------------------------------------------------------
+# CQ Contests (8)
+# ---------------------------------------------------------------------------
+
+- name: "CQ WW SSB"
+  sponsor: "CQ"
+  modes: ["SSB"]
+  bands: ["160m", "80m", "40m", "20m", "15m", "10m"]
+  rule:
+    weekend_rule: "last_full_weekend"
+    month: 10
+    start_day: "saturday"
+    start_utc: "00:00"
+    duration_hours: 48
+  url: "https://www.cqww.com/"
+  description: "Largest SSB contest — worldwide activity on all HF bands"
+
+- name: "CQ WW CW"
+  sponsor: "CQ"
+  modes: ["CW"]
+  bands: ["160m", "80m", "40m", "20m", "15m", "10m"]
+  rule:
+    weekend_rule: "last_full_weekend"
+    month: 11
+    start_day: "saturday"
+    start_utc: "00:00"
+    duration_hours: 48
+  url: "https://www.cqww.com/"
+  description: "Largest CW contest — worldwide activity on all HF bands"
+
+- name: "CQ WW RTTY"
+  sponsor: "CQ"
+  modes: ["RTTY"]
+  bands: ["80m", "40m", "20m", "15m", "10m"]
+  rule:
+    weekend_rule: "last_full_weekend"
+    month: 9
+    start_day: "saturday"
+    start_utc: "00:00"
+    duration_hours: 48
+  url: "https://www.cqwwrtty.com/"
+  description: "Major RTTY contest — worldwide digital activity"
+
+- name: "CQ WPX SSB"
+  sponsor: "CQ"
+  modes: ["SSB"]
+  bands: ["160m", "80m", "40m", "20m", "15m", "10m"]
+  rule:
+    weekend_rule: "last_full_weekend"
+    month: 3
+    start_day: "saturday"
+    start_utc: "00:00"
+    duration_hours: 48
+  url: "https://www.cqwpx.com/"
+  description: "Prefix multiplier contest — SSB worldwide"
+
+- name: "CQ WPX CW"
+  sponsor: "CQ"
+  modes: ["CW"]
+  bands: ["160m", "80m", "40m", "20m", "15m", "10m"]
+  rule:
+    weekend_rule: "last_full_weekend"
+    month: 5
+    start_day: "saturday"
+    start_utc: "00:00"
+    duration_hours: 48
+  url: "https://www.cqwpx.com/"
+  description: "Prefix multiplier contest — CW worldwide"
+
+- name: "CQ WPX RTTY"
+  sponsor: "CQ"
+  modes: ["RTTY"]
+  bands: ["80m", "40m", "20m", "15m", "10m"]
+  rule:
+    weekend_rule: "nth_full_weekend"
+    n: 2
+    month: 2
+    start_day: "saturday"
+    start_utc: "00:00"
+    duration_hours: 48
+  url: "https://www.cqwpxrtty.com/"
+  description: "Prefix multiplier contest — RTTY worldwide"
+
+- name: "CQ 160m CW"
+  sponsor: "CQ"
+  modes: ["CW"]
+  bands: ["160m"]
+  rule:
+    weekend_rule: "last_full_weekend"
+    month: 1
+    start_day: "friday"
+    start_utc: "22:00"
+    duration_hours: 48
+  url: "https://www.cq160.com/"
+  description: "Top Band CW — 160m only, Friday evening start"
+
+- name: "CQ 160m SSB"
+  sponsor: "CQ"
+  modes: ["SSB"]
+  bands: ["160m"]
+  rule:
+    weekend_rule: "last_full_weekend"
+    month: 2
+    start_day: "friday"
+    start_utc: "22:00"
+    duration_hours: 48
+  url: "https://www.cq160.com/"
+  description: "Top Band SSB — 160m only, Friday evening start"
+
+# ---------------------------------------------------------------------------
+# ARRL Contests (4)
+# ---------------------------------------------------------------------------
+
+- name: "ARRL DX CW"
+  sponsor: "ARRL"
+  modes: ["CW"]
+  bands: ["160m", "80m", "40m", "20m", "15m", "10m"]
+  rule:
+    weekend_rule: "nth_full_weekend"
+    n: 3
+    month: 2
+    start_day: "saturday"
+    start_utc: "00:00"
+    duration_hours: 48
+  url: "https://www.arrl.org/arrl-dx"
+  description: "ARRL International DX — CW, W/VE work the world"
+
+- name: "ARRL DX SSB"
+  sponsor: "ARRL"
+  modes: ["SSB"]
+  bands: ["160m", "80m", "40m", "20m", "15m", "10m"]
+  rule:
+    weekend_rule: "nth_full_weekend"
+    n: 1
+    month: 3
+    start_day: "saturday"
+    start_utc: "00:00"
+    duration_hours: 48
+  url: "https://www.arrl.org/arrl-dx"
+  description: "ARRL International DX — SSB, W/VE work the world"
+
+- name: "ARRL 10m"
+  sponsor: "ARRL"
+  modes: ["SSB", "CW"]
+  bands: ["10m"]
+  rule:
+    weekend_rule: "nth_full_weekend"
+    n: 2
+    month: 12
+    start_day: "saturday"
+    start_utc: "00:00"
+    duration_hours: 48
+  url: "https://www.arrl.org/10-meter"
+  description: "10 meters only — SSB and CW, great solar cycle indicator"
+
+- name: "ARRL 160m"
+  sponsor: "ARRL"
+  modes: ["CW"]
+  bands: ["160m"]
+  rule:
+    weekend_rule: "nth_full_weekend"
+    n: 1
+    month: 12
+    start_day: "friday"
+    start_utc: "22:00"
+    duration_hours: 42
+  url: "https://www.arrl.org/160-meter"
+  description: "Top Band CW — 160m only, 42 hours from Friday evening"
+
+# ---------------------------------------------------------------------------
+# JA Contests (4)
+# ---------------------------------------------------------------------------
+
+- name: "JIDX CW"
+  sponsor: "JARL"
+  modes: ["CW"]
+  bands: ["80m", "40m", "20m", "15m", "10m"]
+  rule:
+    weekend_rule: "nth_full_weekend"
+    n: 2
+    month: 4
+    start_day: "saturday"
+    start_utc: "07:00"
+    duration_hours: 30
+  url: "https://jidx.org/"
+  description: "Japan International DX — CW, JA stations work the world"
+
+- name: "JIDX SSB"
+  sponsor: "JARL"
+  modes: ["SSB"]
+  bands: ["80m", "40m", "20m", "15m", "10m"]
+  rule:
+    weekend_rule: "nth_full_weekend"
+    n: 2
+    month: 11
+    start_day: "saturday"
+    start_utc: "07:00"
+    duration_hours: 30
+  url: "https://jidx.org/"
+  description: "Japan International DX — SSB, JA stations work the world"
+
+- name: "All Asian DX CW"
+  sponsor: "JARL"
+  modes: ["CW"]
+  bands: ["160m", "80m", "40m", "20m", "15m", "10m"]
+  rule:
+    weekend_rule: "nth_full_weekend"
+    n: 3
+    month: 6
+    start_day: "saturday"
+    start_utc: "00:00"
+    duration_hours: 48
+  url: "https://www.jarl.org/English/4_Library/A-4-3_Contests/"
+  description: "All Asian DX — CW, Asian stations work the world"
+
+- name: "All Asian DX SSB"
+  sponsor: "JARL"
+  modes: ["SSB"]
+  bands: ["160m", "80m", "40m", "20m", "15m", "10m"]
+  rule:
+    weekend_rule: "nth_full_weekend"
+    n: 1
+    month: 9
+    start_day: "saturday"
+    start_utc: "00:00"
+    duration_hours: 48
+  url: "https://www.jarl.org/English/4_Library/A-4-3_Contests/"
+  description: "All Asian DX — SSB, Asian stations work the world"
+
+# ---------------------------------------------------------------------------
+# Other Major Contests (7)
+# ---------------------------------------------------------------------------
+
+- name: "IARU HF Championship"
+  sponsor: "IARU"
+  modes: ["SSB", "CW"]
+  bands: ["160m", "80m", "40m", "20m", "15m", "10m"]
+  rule:
+    weekend_rule: "nth_full_weekend"
+    n: 2
+    month: 7
+    start_day: "saturday"
+    start_utc: "12:00"
+    duration_hours: 24
+  url: "https://www.arrl.org/iaru-hf-championship"
+  description: "IARU society stations on all bands — 24 hour worldwide event"
+
+- name: "WAE CW"
+  sponsor: "DARC"
+  modes: ["CW"]
+  bands: ["80m", "40m", "20m", "15m", "10m"]
+  rule:
+    weekend_rule: "nth_full_weekend"
+    n: 2
+    month: 8
+    start_day: "saturday"
+    start_utc: "00:00"
+    duration_hours: 48
+  url: "https://www.darc.de/der-club/referate/conteste/wae-dx-contest/"
+  description: "Worked All Europe — CW, unique QTC exchange system"
+
+- name: "WAE SSB"
+  sponsor: "DARC"
+  modes: ["SSB"]
+  bands: ["80m", "40m", "20m", "15m", "10m"]
+  rule:
+    weekend_rule: "nth_full_weekend"
+    n: 2
+    month: 9
+    start_day: "saturday"
+    start_utc: "00:00"
+    duration_hours: 48
+  url: "https://www.darc.de/der-club/referate/conteste/wae-dx-contest/"
+  description: "Worked All Europe — SSB, unique QTC exchange system"
+
+- name: "WAE RTTY"
+  sponsor: "DARC"
+  modes: ["RTTY"]
+  bands: ["80m", "40m", "20m", "15m", "10m"]
+  rule:
+    weekend_rule: "nth_full_weekend"
+    n: 2
+    month: 11
+    start_day: "saturday"
+    start_utc: "00:00"
+    duration_hours: 48
+  url: "https://www.darc.de/der-club/referate/conteste/wae-dx-contest/"
+  description: "Worked All Europe — RTTY, unique QTC exchange system"
+
+- name: "SAC CW"
+  sponsor: "SAC"
+  modes: ["CW"]
+  bands: ["160m", "80m", "40m", "20m", "15m", "10m"]
+  rule:
+    weekend_rule: "nth_full_weekend"
+    n: 3
+    month: 9
+    start_day: "saturday"
+    start_utc: "12:00"
+    duration_hours: 24
+  url: "https://www.sactest.net/"
+  description: "Scandinavian Activity Contest — CW, Nordic stations work the world"
+
+- name: "SAC SSB"
+  sponsor: "SAC"
+  modes: ["SSB"]
+  bands: ["160m", "80m", "40m", "20m", "15m", "10m"]
+  rule:
+    weekend_rule: "nth_full_weekend"
+    n: 3
+    month: 10
+    start_day: "saturday"
+    start_utc: "12:00"
+    duration_hours: 24
+  url: "https://www.sactest.net/"
+  description: "Scandinavian Activity Contest — SSB, Nordic stations work the world"
+
+- name: "Oceania DX SSB"
+  sponsor: "OCDXC"
+  modes: ["SSB"]
+  bands: ["160m", "80m", "40m", "20m", "15m", "10m"]
+  rule:
+    weekend_rule: "nth_full_weekend"
+    n: 1
+    month: 10
+    start_day: "saturday"
+    start_utc: "06:00"
+    duration_hours: 24
+  url: "https://www.oceaniadxcontest.com/"
+  description: "Oceania DX — SSB, VK/ZL stations work the world"
+
+- name: "Oceania DX CW"
+  sponsor: "OCDXC"
+  modes: ["CW"]
+  bands: ["160m", "80m", "40m", "20m", "15m", "10m"]
+  rule:
+    weekend_rule: "nth_full_weekend"
+    n: 2
+    month: 10
+    start_day: "saturday"
+    start_utc: "06:00"
+    duration_hours: 24
+  url: "https://www.oceaniadxcontest.com/"
+  description: "Oceania DX — CW, VK/ZL stations work the world"

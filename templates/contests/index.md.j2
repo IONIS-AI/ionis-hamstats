@@ -1,57 +1,94 @@
-# Contest Recaps
+# Contest Calendar
 
-During major HF contest weekends, spot volume across all sources spikes
-dramatically. Operators run high power on all bands for 24–48 hours. The RBN
-skimmer network processes millions of CW and RTTY exchanges. The result is a
-compressed snapshot of global HF propagation at high activity — every path
-that can support a QSO gets tested.
+{% set sfi_color = 'teal' if sfi and sfi >= 150 else '2ea043' if sfi and sfi >= 100 else 'ffea00' if sfi and sfi >= 80 else 'orange' if sfi and sfi >= 70 else 'red' %}
+{% set kp_color = 'red' if kp and kp >= 5 else 'orange' if kp and kp >= 4 else 'ffea00' if kp and kp >= 3 else 'teal' %}
+![SFI](https://img.shields.io/badge/SFI_{{ sfi | default('--') }}-{{ sfi | classify_sfi | replace(' ', '_') }}-{{ sfi_color }}?style=flat-square)
+![Kp](https://img.shields.io/badge/Kp_{{ kp | default('--') }}-{{ kp | classify_kp | replace(' ', '_') }}-{{ kp_color }}?style=flat-square)
 
-This section publishes post-contest recaps: spot volume, band activity, solar
-conditions during the event, geographic reach, and comparison to prior years.
+*Updated {{ now.strftime('%H:%M UTC %Y-%m-%d') }}*
 
 ---
 
-## Upcoming Contests
+{% if upcoming_30d %}
+## Next 30 Days
 
-| Contest | Start (UTC) | End (UTC) | Modes | Bands |
-|---------|------------|----------|-------|-------|
-| — | — | — | — | — |
+{% for contest in upcoming_30d %}
+### {{ contest.name }}{% if contest.status == 'active' %} — ON THE AIR{% endif %}
 
-*Contest schedule derived from published CQ and ARRL calendars.*
+{% if contest.status == 'active' %}
+!!! success "Active Now"
+    This contest is currently running. Ends {{ contest.end | fmt_utc }}.
+{% else %}
+**{{ contest.days_until | fmt_countdown }}** until start
+{% endif %}
+
+| | |
+|---|---|
+| **Start** | {{ contest.start | fmt_utc }} |
+| **End** | {{ contest.end | fmt_utc }} |
+| **Duration** | {{ contest.duration_hours }} hours |
+| **Modes** | {{ contest.modes | join(', ') }} |
+| **Bands** | {{ contest.bands | join(', ') }} |
+| **Sponsor** | [{{ contest.sponsor }}]({{ contest.url }}) |
+
+*{{ contest.description }}*
+
+{% set contest_pred_bands = [] %}
+{% for band in prediction_bands %}{% if band in contest.bands %}{% if contest_pred_bands.append(band) %}{% endif %}{% endif %}{% endfor %}
+{% if predictions and contest_pred_bands %}
+**IONIS V20 predictions from KI7MT (DN13) — current conditions (SFI {{ sfi }}, Kp {{ kp }})**
+
+| Destination | {% for band in contest_pred_bands %}{{ band }} | {% endfor %}
+
+|-------------|{% for band in contest_pred_bands %}-----|{% endfor %}
+
+{% for dest in predictions %}
+| {{ dest.label }} | {% for band in contest_pred_bands %}{{ dest.bands[band] }} | {% endfor %}
+
+{% endfor %}
+{% endif %}
 
 ---
 
-## Past Recaps
+{% endfor %}
+{% else %}
+## Next 30 Days
 
-| Contest | Date | Peak Band | RBN Spots | Solar Conditions | Recap |
-|---------|------|----------|-----------|-----------------|-------|
+*No major contests in the next 30 days.*
+
+---
+
+{% endif %}
+
+## Full Year Calendar
+
+| Contest | Date (UTC) | Start | Hours | Modes | Countdown |
+|---------|-----------|-------|-------|-------|-----------|
+{% for contest in full_year %}
+| [{{ contest.name }}]({{ contest.url }}) | {{ contest.start.strftime('%b %d') }}–{{ contest.end.strftime('%d') }} | {{ contest.start.strftime('%a %H:%M') }} | {{ contest.duration_hours }} | {{ contest.modes | join('/') }} | {{ contest.days_until | fmt_countdown }} |
+{% else %}
 | — | — | — | — | — | — |
-
-*Coming soon — requires contest recap generation.*
-
----
-
-## Next Recap
-
-*No recap available yet. Check back after the next major contest weekend.*
-
-The recap will include:
-
-- Total spot volume by source (WSPR, RBN, PSKR) vs 24-hour baseline
-- Band-by-band activity comparison (spots per hour over the contest window)
-- Solar conditions (SFI, Kp, SSN) during the event
-- Geographic heatmap of activity (unique grid pairs active)
-- Year-over-year comparison for the same contest
-- Notable propagation events (unexpected openings, shutdowns)
+{% endfor %}
 
 ---
 
-## What Contest Data Shows
+## DXpeditions
 
-A contest recap is a propagation stress test. Tens of thousands of operators
-run simultaneously on all bands with consistent power and timing. When 20m
-goes long, you see it in the RBN spot latitudes. When 10m opens to a new
-region, the spot map shows it within minutes.
+See the [DXpeditions page](dxpeditions.md) for upcoming DXpedition tracking with IONIS band predictions.
 
-The contest database (`contest.bronze`, 195M QSOs) is the historical record.
-Recaps draw from it to place current events in context.
+---
+
+## About This Calendar
+
+Contest dates are computed from fixed scheduling rules — "last full weekend
+of October," "first full weekend of March," etc. The rules rarely change.
+A [YAML file](https://github.com/IONIS-AI/ionis-hamstats/blob/main/data/contests.yaml)
+plus Python date math produces a calendar that stays current without manual updates.
+
+"Full weekend" means both Saturday and Sunday fall within the named month.
+Some contests start Friday evening (CQ 160m, ARRL 160m). Durations range
+from 24 hours (IARU, SAC, Oceania) to 48 hours (CQ WW, WPX).
+
+Predictions use IONIS V20 — a neural network trained on 13 billion real
+propagation observations. They reflect current solar conditions and update
+every 3 hours.

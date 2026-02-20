@@ -1,0 +1,44 @@
+# DXpedition tracking for ham-stats.com
+#
+# Grid is 4-char Maidenhead — same format grid4_to_latlon() accepts.
+# Past entries filtered automatically by end_date.
+# Add new DXpeditions as they are announced.
+
+calendars:
+  - name: "NG3K DX Calendar"
+    url: "https://www.ng3k.com/misc/adxo.html"
+  - name: "DX-World"
+    url: "https://dx-world.net/calendar/"
+  - name: "DXNews Calendar"
+    url: "https://dxnews.com/calendar/"
+
+dxpeditions:
+  - callsign: "3Y0K"
+    entity: "Bouvet Island"
+    grid: "JD04"
+    start_date: "2026-11-01"
+    end_date: "2026-11-21"
+    modes: ["SSB", "CW", "FT8", "RTTY"]
+    bands: ["160m", "80m", "40m", "20m", "15m", "10m"]
+    url: "https://www.bouvetdx.org/"
+    notes: "Most wanted DXCC entity"
+
+  - callsign: "VK0AI"
+    entity: "Heard Island"
+    grid: "MC36"
+    start_date: "2026-03-15"
+    end_date: "2026-04-15"
+    modes: ["SSB", "CW", "FT8"]
+    bands: ["160m", "80m", "40m", "20m", "15m", "10m"]
+    url: "https://heardisland.org/"
+    notes: "Second most wanted DXCC entity"
+
+  - callsign: "TX7L"
+    entity: "Marquesas Islands"
+    grid: "BH54"
+    start_date: "2026-10-15"
+    end_date: "2026-10-29"
+    modes: ["SSB", "CW", "FT8", "RTTY"]
+    bands: ["80m", "40m", "20m", "15m", "10m"]
+    url: "https://tx7l.com/"
+    notes: "French Polynesia — rare Pacific entity"

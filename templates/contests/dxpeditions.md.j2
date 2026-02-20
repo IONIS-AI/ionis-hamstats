@@ -1,0 +1,84 @@
+# DXpeditions
+
+{% set sfi_color = 'teal' if sfi and sfi >= 150 else '2ea043' if sfi and sfi >= 100 else 'ffea00' if sfi and sfi >= 80 else 'orange' if sfi and sfi >= 70 else 'red' %}
+{% set kp_color = 'red' if kp and kp >= 5 else 'orange' if kp and kp >= 4 else 'ffea00' if kp and kp >= 3 else 'teal' %}
+![SFI](https://img.shields.io/badge/SFI_{{ sfi | default('--') }}-{{ sfi | classify_sfi | replace(' ', '_') }}-{{ sfi_color }}?style=flat-square)
+![Kp](https://img.shields.io/badge/Kp_{{ kp | default('--') }}-{{ kp | classify_kp | replace(' ', '_') }}-{{ kp_color }}?style=flat-square)
+
+*Updated {{ now.strftime('%H:%M UTC %Y-%m-%d') }}*
+
+---
+
+{% if dxpeditions %}
+## Tracked DXpeditions
+
+{% for dx in dxpeditions %}
+### {{ dx.callsign }} — {{ dx.entity }}
+
+{% if dx.status == 'active' %}
+!!! success "Active Now"
+    {{ dx.callsign }} is on the air from {{ dx.entity }}. Operation ends {{ dx.end.strftime('%Y-%m-%d') }}.
+{% else %}
+**{{ dx.days_until | fmt_countdown }}** until start
+{% endif %}
+
+| | |
+|---|---|
+| **Callsign** | [{{ dx.callsign }}]({{ dx.url }}) |
+| **Entity** | {{ dx.entity }} |
+| **Grid** | {{ dx.grid }} |
+| **Dates** | {{ dx.start.strftime('%Y-%m-%d') }} to {{ dx.end.strftime('%Y-%m-%d') }} |
+| **Modes** | {{ dx.modes | join(', ') }} |
+| **Bands** | {{ dx.bands | join(', ') }} |
+{% if dx.notes %}
+| **Notes** | {{ dx.notes }} |
+{% endif %}
+
+{% if dxpedition_predictions and dx.callsign in dxpedition_predictions %}
+**IONIS V20 band predictions: KI7MT (DN13) to {{ dx.entity }} ({{ dx.grid }})**
+
+*Current conditions: SFI {{ sfi }}, Kp {{ kp }}*
+
+| 10m | 15m | 20m | 40m |
+|-----|-----|-----|-----|
+| {{ dxpedition_predictions[dx.callsign].get("10m", "\u2014") }} | {{ dxpedition_predictions[dx.callsign].get("15m", "\u2014") }} | {{ dxpedition_predictions[dx.callsign].get("20m", "\u2014") }} | {{ dxpedition_predictions[dx.callsign].get("40m", "\u2014") }} |
+
+*Mode thresholds: SSB &ge; +3 dB, RTTY &ge; -5 dB, CW &ge; -15 dB, FT8 &ge; -21 dB, WSPR &ge; -28 dB.
+Predictions use current conditions — actual DXpedition conditions may differ.*
+{% endif %}
+
+---
+
+{% endfor %}
+{% else %}
+*No upcoming DXpeditions tracked. Check the DX calendars below for announcements.*
+
+---
+
+{% endif %}
+
+## DX Calendars
+
+These sites maintain comprehensive DXpedition calendars:
+
+{% for cal in dx_calendars %}
+- [{{ cal.name }}]({{ cal.url }})
+{% endfor %}
+
+---
+
+## About This Page
+
+DXpeditions are manually curated from public announcements. Each entry includes a
+4-character Maidenhead grid, which IONIS V20 uses to predict band conditions
+from KI7MT (DN13) to the DXpedition location.
+
+Predictions reflect current solar conditions (SFI and Kp) and update every 3
+hours. They show the best decodable mode per band — what you can realistically
+work given current propagation.
+
+Past DXpeditions are filtered automatically by end date.
+
+Want to add a DXpedition? Submit a PR to the
+[dxpeditions.yaml](https://github.com/IONIS-AI/ionis-hamstats/blob/main/data/dxpeditions.yaml)
+file — just callsign, entity, grid, dates, and modes.
