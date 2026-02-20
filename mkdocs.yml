@@ -1,0 +1,85 @@
+site_name: Ham Stats — HF Propagation from Real Data
+site_description: Band conditions, propagation reports, and solar impact analysis generated from 13+ billion amateur radio observations
+site_author: Greg Beam, KI7MT
+site_url: https://ham-stats.com/
+repo_url: https://github.com/IONIS-AI/ionis-hamstats
+
+theme:
+  name: material
+  palette:
+    - scheme: default
+      primary: teal
+      accent: orange
+      toggle:
+        icon: material/brightness-7
+        name: Switch to dark mode
+    - scheme: slate
+      primary: teal
+      accent: orange
+      toggle:
+        icon: material/brightness-4
+        name: Switch to light mode
+  features:
+    - navigation.tabs
+    - navigation.sections
+    - navigation.indexes
+    - navigation.top
+    - content.code.copy
+
+markdown_extensions:
+  - tables
+  - admonition
+  - pymdownx.highlight:
+      anchor_linenums: true
+  - pymdownx.superfences
+  - pymdownx.details
+  - pymdownx.tabbed:
+      alternate_style: true
+  - attr_list
+  - md_in_html
+  - toc:
+      permalink: true
+
+extra:
+  social:
+    - icon: fontawesome/brands/github
+      link: https://github.com/IONIS-AI
+  generator: false
+
+copyright: "&copy; 2026 KI7MT — Powered by IONIS"
+
+nav:
+  - Home: index.md
+  - Bands:
+    - bands/index.md
+    - 160m: bands/160m.md
+    - 80m: bands/80m.md
+    - 40m: bands/40m.md
+    - 30m: bands/30m.md
+    - 20m: bands/20m.md
+    - 17m: bands/17m.md
+    - 15m: bands/15m.md
+    - 12m: bands/12m.md
+    - 10m: bands/10m.md
+  - Solar:
+    - solar/index.md
+    - Current Conditions: solar/current.md
+    - Storm Impact: solar/storms.md
+    - Solar Cycle: solar/cycle.md
+  - Sources:
+    - sources/index.md
+    - WSPR: sources/wspr.md
+    - RBN: sources/rbn.md
+    - PSK Reporter: sources/pskr.md
+    - Contest: sources/contest.md
+  - Dataset:
+    - dataset/index.md
+    - Growth: dataset/growth.md
+    - Coverage: dataset/coverage.md
+  - Contests:
+    - contests/index.md
+  - Methodology:
+    - methodology/index.md
+    - Signatures: methodology/signatures.md
+    - Data Quality: methodology/data-quality.md
+  - About: about.md

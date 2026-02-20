@@ -1,0 +1,65 @@
+# Contest Recaps
+
+During major HF contest weekends, spot volume across all sources spikes
+dramatically. Operators run high power on all bands for 24–48 hours. The RBN
+skimmer network processes millions of CW and RTTY exchanges. The result is a
+compressed snapshot of global HF propagation at high activity — every path
+that can support a QSO gets tested.
+
+This section publishes post-contest recaps: spot volume, band activity, solar
+conditions during the event, geographic reach, and comparison to prior years.
+
+---
+
+## Upcoming Contests
+
+<!-- AUTO-GENERATED: upcoming contest schedule -->
+
+| Contest | Start (UTC) | End (UTC) | Modes | Bands |
+|---------|------------|----------|-------|-------|
+| — | — | — | — | — |
+| — | — | — | — | — |
+| — | — | — | — | — |
+
+*Contest schedule derived from published CQ and ARRL calendars.*
+
+---
+
+## Past Recaps
+
+<!-- AUTO-GENERATED: past contest recap list -->
+
+| Contest | Date | Peak Band | RBN Spots | Solar Conditions | Recap |
+|---------|------|----------|-----------|-----------------|-------|
+| — | — | — | — | — | — |
+| — | — | — | — | — | — |
+| — | — | — | — | — | — |
+
+---
+
+## Next Recap
+
+<!-- AUTO-GENERATED: next contest recap placeholder -->
+
+*No recap available yet. Check back after the next major contest weekend.*
+
+The recap will include:
+
+- Total spot volume by source (WSPR, RBN, PSKR) vs 24-hour baseline
+- Band-by-band activity comparison (spots per hour over the contest window)
+- Solar conditions (SFI, Kp, SSN) during the event
+- Geographic heatmap of activity (unique grid pairs active)
+- Year-over-year comparison for the same contest
+- Notable propagation events (unexpected openings, shutdowns)
+
+---
+
+## What Contest Data Shows
+
+A contest recap is a propagation stress test. Tens of thousands of operators
+run simultaneously on all bands with consistent power and timing. When 20m
+goes long, you see it in the RBN spot latitudes. When 10m opens to a new
+region, the spot map shows it within minutes.
+
+The contest database (`contest.bronze`, 195M QSOs) is the historical record.
+Recaps draw from it to place current events in context.
