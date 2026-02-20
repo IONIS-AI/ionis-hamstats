@@ -8,10 +8,10 @@ updated every 3 hours.
 
 ## Current Values
 
-![SFI](https://img.shields.io/badge/SFI_116-Moderate-2ea043?style=flat-square)
+![SFI](https://img.shields.io/badge/SFI_111-Moderate-2ea043?style=flat-square)
 ![Kp](https://img.shields.io/badge/Kp_2.33-Quiet-teal?style=flat-square)
 
-*Updated 2026-02-20 20:51 UTC · NOAA SWPC*
+*Updated 2026-02-20 21:01 UTC · NOAA SWPC*
 
 ---
 

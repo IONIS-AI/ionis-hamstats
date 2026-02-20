@@ -2,20 +2,48 @@
 
 **HF propagation reports generated from real data — not models, not opinions.**
 
-Every number on this site comes from measured amateur radio observations: WSPR
-beacons, Reverse Beacon Network skimmers, PSK Reporter decodes, and contest
-logs. Solar conditions are correlated with actual signal measurements, not
-theoretical predictions.
-
----
-
-## Current Conditions
-
-![SFI](https://img.shields.io/badge/SFI_116-Moderate-2ea043?style=flat-square)
+![SFI](https://img.shields.io/badge/SFI_111-Moderate-2ea043?style=flat-square)
 ![Kp](https://img.shields.io/badge/Kp_2.33-Quiet-teal?style=flat-square)
 ![Conditions](https://img.shields.io/badge/Conditions-Quiet-teal?style=flat-square)
 
-*Updated 20:51 UTC · NOAA SWPC*
+*Updated 21:01 UTC · NOAA SWPC*
+
+---
+
+## What Can You Work Right Now?
+
+*IONIS V20 predictions from KI7MT (DN26) for the current solar conditions (SFI 111, Kp 2.33).*
+
+| Destination | 10m | 15m | 20m | 40m |
+|-------------|-----|-----|-----|-----|
+| Europe (JN48) | CW | CW | CW | CW |
+| Japan (PM95) | CW | CW | CW | CW |
+| S. America (GG87) | CW | CW | CW | FT8 |
+| Africa (KG33) | FT8 | FT8 | FT8 | WSPR |
+| Oceania (QF56) | FT8 | FT8 | FT8 | FT8 |
+| Caribbean (FK68) | CW | CW | CW | CW |
+
+*Mode thresholds: SSB &ge; +3 dB, RTTY &ge; -5 dB, CW &ge; -15 dB, FT8 &ge; -21 dB, WSPR &ge; -28 dB.
+Predictions update every 3 hours with current solar conditions.*
+
+---
+
+## Band Activity (Last 24 Hours)
+
+*Which bands had propagation in the last 24 hours, based on spots from all sources.
+RBN archives lag ~24 hours; zeroes indicate no data in the window, not band closure.*
+
+| Band | WSPR Spots | RBN Spots | PSKR Spots | Peak SNR | Status |
+|------|-----------|-----------|------------|----------|--------|
+| 10m | 43,396 | 0 | 5.7M | +61 dB | Strong |
+| 12m | 20,674 | 0 | 1.7M | +59 dB | Strong |
+| 15m | 63,367 | 0 | 4.1M | +87 dB | Strong |
+| 17m | 64,683 | 0 | 1.7M | +62 dB | Strong |
+| 20m | 255,284 | 0 | 7.4M | +80 dB | Strong |
+| 30m | 108,137 | 0 | 2.1M | +58 dB | Strong |
+| 40m | 153,591 | 0 | 7.2M | +86 dB | Strong |
+| 80m | 81,564 | 0 | 1.7M | +87 dB | Strong |
+| 160m | 22,927 | 0 | 238,008 | +54 dB | Strong |
 
 ---
 
@@ -28,44 +56,6 @@ theoretical predictions.
 | PSK Reporter | 2026-02-20 | 356.2M | Live |
 | Contest | Archive | 234.3M | Static |
 | Solar | 2026-02-20 | 76,628 | Live |
-
----
-
-## Band Activity (Last 24 Hours)
-
-*Which bands had propagation in the last 24 hours, based on spots from all sources.
-RBN archives lag ~24 hours; zeroes indicate no data in the window, not band closure.*
-
-| Band | WSPR Spots | RBN Spots | PSKR Spots | Peak SNR | Status |
-|------|-----------|-----------|------------|----------|--------|
-| 10m | 46,277 | 0 | 5.7M | +61 dB | Strong |
-| 12m | 22,516 | 0 | 1.7M | +59 dB | Strong |
-| 15m | 67,169 | 0 | 4.1M | +87 dB | Strong |
-| 17m | 68,137 | 0 | 1.7M | +62 dB | Strong |
-| 20m | 267,907 | 0 | 7.5M | +80 dB | Strong |
-| 30m | 112,707 | 0 | 2.1M | +58 dB | Strong |
-| 40m | 160,206 | 0 | 7.3M | +86 dB | Strong |
-| 80m | 85,162 | 0 | 1.8M | +87 dB | Strong |
-| 160m | 24,043 | 0 | 249,875 | +54 dB | Strong |
-
----
-
-## IONIS Predictions — KI7MT (DN26) Contest Paths
-
-*V20 model predictions for the current solar conditions (SFI 116, Kp 2.33).
-Which bands can work which continents right now?*
-
-| Destination | 10m | 15m | 20m | 40m |
-|-------------|-----|-----|-----|-----|
-| Europe (JN48) | CW | CW | CW | CW |
-| Japan (PM95) | CW | CW | CW | CW |
-| S. America (GG87) | CW | CW | CW | CW |
-| Africa (KG33) | FT8 | FT8 | FT8 | FT8 |
-| Oceania (QF56) | FT8 | FT8 | FT8 | FT8 |
-| Caribbean (FK68) | CW | CW | CW | CW |
-
-*Mode thresholds: SSB &ge; +3 dB, RTTY &ge; -5 dB, CW &ge; -15 dB, FT8 &ge; -21 dB, WSPR &ge; -28 dB.
-Predictions update every 3 hours with current solar conditions.*
 
 ---
 
