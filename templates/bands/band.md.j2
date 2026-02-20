@@ -2,6 +2,15 @@
 
 **{{ band.freq_mhz }} MHz** — {{ band.desc }}
 
+{% set sfi_color = 'teal' if sfi and sfi >= 150 else '2ea043' if sfi and sfi >= 100 else 'ffea00' if sfi and sfi >= 80 else 'orange' if sfi and sfi >= 70 else 'red' %}
+{% set kp_color = 'red' if kp and kp >= 5 else 'orange' if kp and kp >= 4 else 'ffea00' if kp and kp >= 3 else 'teal' %}
+{% set cond_color = 'red' if kp and kp >= 5 else 'orange' if kp and kp >= 4 else 'ffea00' if kp and kp >= 3 else 'teal' %}
+![SFI](https://img.shields.io/badge/SFI_{{ sfi | default('--') }}-{{ sfi | classify_sfi | replace(' ', '_') }}-{{ sfi_color }}?style=flat-square)
+![Kp](https://img.shields.io/badge/Kp_{{ kp | default('--') }}-{{ kp | classify_kp | replace(' ', '_') }}-{{ kp_color }}?style=flat-square)
+![Conditions](https://img.shields.io/badge/Conditions-{{ conditions | default('Unknown') | replace(' ', '_') }}-{{ cond_color }}?style=flat-square)
+
+*Updated {{ now.strftime('%H:%M UTC %Y-%m-%d') }}*
+
 ---
 
 ## Activity (Last 24 Hours)
@@ -13,15 +22,6 @@
 | RBN | {{ activity.rbn_spots | fmt if activity.rbn_spots is defined else '—' }} | — |
 | PSKR | {{ activity.pskr_spots | fmt if activity.pskr_spots is defined else '—' }} | — |
 | **Total** | **{{ activity.total_spots | fmt if activity.total_spots is defined else '—' }}** | {{ activity.peak_snr | fmt_snr if activity.peak_snr is defined else '—' }} |
-
-## Solar Context
-
-{% set solar = data.solar_current[0] if data.solar_current else {} %}
-| Metric | Value |
-|--------|-------|
-| SFI | {{ solar.solar_flux | default('—') }} ({{ solar.solar_flux | classify_sfi }}) |
-| Kp | {{ solar.kp_index | default('—') }} ({{ solar.kp_index | classify_kp }}) |
-| Conditions | {{ solar.conditions | default('—') }} |
 
 ## SNR Distribution
 

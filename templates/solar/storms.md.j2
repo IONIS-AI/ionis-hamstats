@@ -1,5 +1,7 @@
 # Storm Impact Analysis
 
+*Updated {{ now.strftime('%H:%M UTC %Y-%m-%d') }}*
+
 This page shows measured SNR degradation during geomagnetic storms. All values
 come from actual signal measurements — WSPR, RBN, and PSK Reporter spots
 collected during storm events — joined against Kp index at 3-hour resolution.
@@ -15,7 +17,8 @@ during the respective window.
 | Storm Date (UTC) | Peak Kp | Classification |
 |------------------|---------|----------------|
 {% for row in data.storm_events %}
-| {{ row.storm_date | fmt_date }} | {{ row.peak_kp }} | {{ row.classification }} |
+{% set storm_color = 'red' if row.peak_kp >= 7 else 'orange' if row.peak_kp >= 5 else 'ffea00' %}
+| {{ row.storm_date | fmt_date }} | {{ row.peak_kp }} | ![{{ row.classification }}](https://img.shields.io/badge/{{ row.classification | replace(' ', '_') }}-{{ storm_color }}?style=flat-square) |
 {% else %}
 | — | — | — |
 {% endfor %}
