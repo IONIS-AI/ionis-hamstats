@@ -12,13 +12,17 @@ theoretical predictions.
 ## Current Conditions
 
 {% set solar = data.solar_current[0] if data.solar_current else {} %}
-| Metric | Value | Status |
-|--------|-------|--------|
-| **SFI** | {{ solar.solar_flux | default('—') }} | {{ solar.solar_flux | classify_sfi }} |
-| **Kp** | {{ solar.kp_index | default('—') }} | {{ solar.kp_index | classify_kp }} |
-| **Conditions** | {{ solar.conditions | default('—') }} | Normal propagation |
+{% set sfi_type = 'success' if sfi and sfi >= 150 else 'info' if sfi and sfi >= 80 else 'warning' %}
+{% set kp_type = 'danger' if kp and kp >= 5 else 'warning' if kp and kp >= 3 else 'success' %}
+!!! {{ sfi_type }} inline "SFI {{ sfi | default('—') }}"
+    {{ sfi | classify_sfi }}
 
-*Updated every 3 hours from NOAA SWPC via ClickHouse.*
+!!! {{ kp_type }} inline end "Kp {{ kp | default('—') }}"
+    {{ kp | classify_kp }}
+
+<div style="clear: both;"></div>
+
+*{{ conditions }} · Updated {{ now.strftime('%H:%M UTC') }} from NOAA SWPC*
 
 ---
 
