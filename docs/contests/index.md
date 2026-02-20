@@ -4,7 +4,7 @@
 ![Kp](https://img.shields.io/badge/Kp_2.67-Quiet-teal?style=flat-square)
 ![Conditions](https://img.shields.io/badge/Conditions-Quiet-teal?style=flat-square)
 
-*Updated 23:34 UTC 2026-02-20*
+*Updated 23:52 UTC 2026-02-20*
 
 ---
 
@@ -144,3 +144,5 @@ from 24 hours (IARU, SAC, Oceania) to 48 hours (CQ WW, WPX).
 Predictions use IONIS V20 — a neural network trained on 13 billion real
 propagation observations. They reflect current solar conditions and update
 every 3 hours.
+
+**Want predictions from your grid?** Custom prediction tool coming soon — enter your grid and get personalized band/mode forecasts for any contest weekend.

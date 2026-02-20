@@ -4,7 +4,7 @@
 ![Kp](https://img.shields.io/badge/Kp_2.67-Quiet-teal?style=flat-square)
 ![Conditions](https://img.shields.io/badge/Conditions-Quiet-teal?style=flat-square)
 
-*Updated 23:34 UTC 2026-02-20*
+*Updated 23:52 UTC 2026-02-20*
 
 ---
 
@@ -131,3 +131,5 @@ with current solar conditions — actual DXpedition conditions may differ.
 Mode thresholds: SSB &ge; +3 dB, RTTY &ge; -5 dB, CW &ge; -15 dB, FT8 &ge; -21 dB, WSPR &ge; -28 dB.
 Past entries are filtered automatically. Add a DXpedition via
 [PR to dxpeditions.yaml](https://github.com/IONIS-AI/ionis-hamstats/blob/main/data/dxpeditions.yaml).*
+
+**Want predictions from your grid?** Custom prediction tool coming soon — enter your grid and get personalized band/mode forecasts to any DXpedition.
