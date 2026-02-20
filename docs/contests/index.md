@@ -3,29 +3,11 @@
 ![SFI](https://img.shields.io/badge/SFI_111-Moderate-2ea043?style=flat-square)
 ![Kp](https://img.shields.io/badge/Kp_2.67-Quiet-teal?style=flat-square)
 
-*Updated 22:00 UTC 2026-02-20*
+*Updated 22:06 UTC 2026-02-20*
 
 ---
 
 ## Next 30 Days
-
-### CQ 160m SSB — ON THE AIR
-!!! success "Active Now"
-    This contest is currently running. Ends 2026-02-22 22:00 UTC.
-
-| | |
-|---|---|
-| **Start** | 2026-02-20 22:00 UTC |
-| **End** | 2026-02-22 22:00 UTC |
-| **Duration** | 48 hours |
-| **Modes** | SSB |
-| **Bands** | 160m |
-| **Sponsor** | [CQ](https://www.cq160.com/) |
-
-*Top Band SSB — 160m only, Friday evening start*
-
-
----
 
 ### ARRL DX CW
 **0 days** until start
@@ -51,6 +33,23 @@
 | Africa (KG33) | FT8 | WSPR | WSPR | WSPR | 
 | Oceania (QF56) | FT8 | FT8 | FT8 | FT8 | 
 | Caribbean (FK68) | CW | CW | CW | CW | 
+
+---
+
+### CQ 160m SSB
+**6 days** until start
+
+| | |
+|---|---|
+| **Start** | 2026-02-27 22:00 UTC |
+| **End** | 2026-03-01 22:00 UTC |
+| **Duration** | 48 hours |
+| **Modes** | SSB |
+| **Bands** | 160m |
+| **Sponsor** | [CQ](https://www.cq160.com/) |
+
+*Top Band SSB — 160m only, Friday evening start*
+
 
 ---
 
@@ -86,8 +85,8 @@
 
 | Contest | Date (UTC) | Start | Hours | Modes | Countdown |
 |---------|-----------|-------|-------|-------|-----------|
-| [CQ 160m SSB](https://www.cq160.com/) | Feb 20–22 | Fri 22:00 | 48 | SSB | NOW |
 | [ARRL DX CW](https://www.arrl.org/arrl-dx) | Feb 21–23 | Sat 00:00 | 48 | CW | 0 days |
+| [CQ 160m SSB](https://www.cq160.com/) | Feb 27–01 | Fri 22:00 | 48 | SSB | 6 days |
 | [ARRL DX SSB](https://www.arrl.org/arrl-dx) | Mar 07–09 | Sat 00:00 | 48 | SSB | 2w |
 | [CQ WPX SSB](https://www.cqwpx.com/) | Mar 28–30 | Sat 00:00 | 48 | SSB | 5w |
 | [JIDX CW](https://jidx.org/) | Apr 11–12 | Sat 07:00 | 30 | CW | 7w |

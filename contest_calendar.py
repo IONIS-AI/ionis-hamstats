@@ -35,12 +35,21 @@ def _full_weekends_in_month(year: int, month: int) -> list[dt.date]:
     return saturdays
 
 
-def resolve_contest_date(rule: dict, year: int) -> dt.datetime | None:
+def resolve_contest_date(
+    rule: dict, year: int, overrides: dict | None = None,
+) -> dt.datetime | None:
     """Resolve a contest rule to a start datetime for the given year.
+
+    Checks overrides first (exact date pinned by organizers), then
+    falls back to the weekend rule.
 
     Returns UTC datetime of the contest start, or None if the rule
     can't be resolved (e.g., not enough weekends).
     """
+    # Check for a year-specific override
+    if overrides and year in overrides:
+        return dt.datetime.fromisoformat(overrides[year])
+
     month = rule["month"]
     weekends = _full_weekends_in_month(year, month)
     if not weekends:
@@ -95,9 +104,11 @@ def build_contest_schedule(
     for contest in contests:
         rule = contest["rule"]
         duration = dt.timedelta(hours=rule.get("duration_hours", 48))
+        # Override keys are ints in YAML (2026: "..."), pass through as-is
+        overrides = contest.get("overrides")
 
         for year in (current_year, current_year + 1):
-            start = resolve_contest_date(rule, year)
+            start = resolve_contest_date(rule, year, overrides)
             if start is None:
                 continue
             end = start + duration

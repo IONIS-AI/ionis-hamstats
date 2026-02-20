@@ -7,6 +7,10 @@
 #
 # "Full weekend" = Saturday and Sunday both within the calendar month.
 # Most contests start Saturday 0000 UTC and run 48 hours unless noted.
+#
+# Overrides: Contest organizers occasionally move dates to avoid conflicts.
+# Use the "overrides" list to pin specific years to exact dates. The date
+# engine checks overrides first, then falls back to the rule.
 
 # ---------------------------------------------------------------------------
 # CQ Contests (8)
@@ -114,6 +118,9 @@
     start_day: "friday"
     start_utc: "22:00"
     duration_hours: 48
+  overrides:
+    # Moved one week to avoid ARRL DX CW conflict (3rd == last full weekend)
+    2026: "2026-02-27T22:00"
   url: "https://www.cq160.com/"
   description: "Top Band SSB — 160m only, Friday evening start"
 
