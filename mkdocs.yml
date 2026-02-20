@@ -76,9 +76,8 @@ nav:
     - dataset/index.md
     - Growth: dataset/growth.md
     - Coverage: dataset/coverage.md
-  - Contests:
-    - contests/index.md
-    - DXpeditions: contests/dxpeditions.md
+  - Contests: contests/index.md
+  - DXpeditions: contests/dxpeditions.md
   - Methodology:
     - methodology/index.md
     - Signatures: methodology/signatures.md
