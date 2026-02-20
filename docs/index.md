@@ -19,7 +19,7 @@ theoretical predictions.
 
 <div style="clear: both;"></div>
 
-*Quiet · Updated 20:40 UTC from NOAA SWPC*
+*Quiet · Updated 20:46 UTC from NOAA SWPC*
 
 ---
 
@@ -42,15 +42,15 @@ RBN archives lag ~24 hours; zeroes indicate no data in the window, not band clos
 
 | Band | WSPR Spots | RBN Spots | PSKR Spots | Peak SNR | Status |
 |------|-----------|-----------|------------|----------|--------|
-| 10m | 49,423 | 0 | 5.7M | +61 dB | Strong |
-| 12m | 23,974 | 0 | 1.7M | +59 dB | Strong |
-| 15m | 70,743 | 0 | 4.1M | +87 dB | Strong |
-| 17m | 72,163 | 0 | 1.8M | +62 dB | Strong |
-| 20m | 286,522 | 0 | 7.6M | +80 dB | Strong |
-| 30m | 120,399 | 0 | 2.1M | +58 dB | Strong |
-| 40m | 170,038 | 0 | 7.3M | +86 dB | Strong |
-| 80m | 90,177 | 0 | 1.8M | +87 dB | Strong |
-| 160m | 25,543 | 0 | 262,498 | +54 dB | Strong |
+| 10m | 47,461 | 0 | 5.7M | +61 dB | Strong |
+| 12m | 23,042 | 0 | 1.7M | +59 dB | Strong |
+| 15m | 68,505 | 0 | 4.1M | +87 dB | Strong |
+| 17m | 69,512 | 0 | 1.8M | +62 dB | Strong |
+| 20m | 276,429 | 0 | 7.5M | +80 dB | Strong |
+| 30m | 116,422 | 0 | 2.1M | +58 dB | Strong |
+| 40m | 163,140 | 0 | 7.3M | +86 dB | Strong |
+| 80m | 86,977 | 0 | 1.8M | +87 dB | Strong |
+| 160m | 24,605 | 0 | 257,911 | +54 dB | Strong |
 
 ---
 
@@ -76,8 +76,8 @@ Predictions update every 3 hours with current solar conditions.*
 ## About This Site
 
 Ham Stats is generated every 3 hours from a self-hosted ClickHouse database
-containing **13+ billion** amateur radio propagation observations — the largest
-curated dataset of its kind on Earth. No cloud services. No third-party APIs.
+containing **13+ billion** amateur radio propagation observations — one of the
+largest curated datasets of its kind. No cloud services. No third-party APIs.
 Every query runs against data we collected and maintain.
 
 The data comes from four independent networks, each measuring a different layer

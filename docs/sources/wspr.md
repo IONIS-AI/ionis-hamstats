@@ -10,8 +10,8 @@ propagation floor — not just open for high-power voice, but open enough to
 carry a minimum-power digital signal. This makes it the most sensitive
 propagation measurement in the dataset.
 
-**10.92B spots. 18 years. The largest amateur radio propagation dataset
-on Earth.**
+**10.92B spots. 18 years. One of the largest amateur radio propagation
+datasets of its kind.**
 
 ---
 

@@ -3,7 +3,7 @@
 13+ billion amateur radio propagation observations. Four independent networks.
 17 years of HF history. All solar-joined. All self-hosted.
 
-This is the largest curated amateur radio propagation dataset on Earth. It did
+This is one of the largest curated amateur radio propagation datasets of its kind. It did
 not exist as a single queryable resource before this project. The data was
 always there — scattered across wsprnet.org, the RBN archive, individual
 contest log repositories, and pskreporter.info — but nobody had assembled it,
