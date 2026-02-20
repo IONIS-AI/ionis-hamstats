@@ -55,6 +55,17 @@ Site content is regenerated every 3 hours from live ClickHouse queries.
 
 ---
 
+## Ethos, Credits & Data Privacy
+
+These policies are maintained at the IONIS project documentation site and
+apply to all IONIS products including Ham Stats:
+
+- **[The Sovereign AI Lab Ethos](https://ionis-ai.com/about/ethos/)** — Sovereign infrastructure, ethical data stewardship, physics-first ML, reproducible science, community utility.
+- **[Credits & Attribution](https://ionis-ai.com/about/credits/)** — Data sources (WSPRNet, RBN, PSK Reporter, CQ/ARRL contest logs), solar data providers (NOAA SWPC, GFZ Potsdam), and references.
+- **[Data Privacy & GDPR](https://ionis-ai.com/about/data-privacy/)** — How we handle callsign data, our GDPR compliance framework, and what IONIS does and does not redistribute.
+
+---
+
 ## Contact
 
 This site is operated by KI7MT. Questions, corrections, and data quality
