@@ -17,35 +17,108 @@ The site is auto-generated every 3 hours from a ClickHouse database containing *
 
 Solar indices (SFI, Kp, SSN) are joined at 3-hour resolution so every measurement has its solar context.
 
+## Publish Pipeline
+
+The site is fully automated via `publish.py` — a Jinja2 template engine that queries ClickHouse, renders markdown, and pushes to GitHub where Actions deploys via `mkdocs gh-deploy`.
+
+```
+ClickHouse (13B+ spots)
+    ↓
+queries/*.sql (15 SQL files)
+    ↓
+publish.py → Jinja2 render
+    ↓
+templates/**/*.md.j2 (16 templates → 24 pages)
+    ↓
+docs/*.md (generated output)
+    ↓
+git push → GH Actions → mkdocs gh-deploy → ham-stats.com
+```
+
+**CLI usage:**
+
+```bash
+python publish.py              # render only (preview)
+python publish.py --push       # render + commit + push
+python publish.py --build      # render + mkdocs build (local preview)
+python publish.py --dry-run    # list what would change
+python publish.py --host X     # custom ClickHouse host (default: 192.168.1.90)
+```
+
+**Cron (9975WX):**
+
+```
+0 */3 * * * .venv/bin/python publish.py --push 2>&1 | logger -t hamstats-publish
+```
+
+## IONIS V20 Predictions
+
+The homepage includes a live prediction table from the IONIS V20 model (IonisGate, 203K params). For each publish cycle, the model predicts SNR from KI7MT (DN26) to six representative contest destinations across four bands, using the current SFI and Kp from `wspr.live_conditions`.
+
+Predicted SNR is classified into the best decodable mode:
+
+| Mode | SNR Threshold |
+|------|--------------|
+| SSB | >= +3 dB |
+| RTTY | >= -5 dB |
+| CW | >= -15 dB |
+| FT8 | >= -21 dB |
+| WSPR | >= -28 dB |
+| Closed | < -28 dB |
+
+The model loads from [ionis-validate](https://github.com/IONIS-AI/ionis-validate) — 24 inferences per cycle, under 1 second on CPU.
+
+## Project Structure
+
+```
+ionis-hamstats/
+├── publish.py              # Main script: query → render → push
+├── requirements.txt        # mkdocs-material, clickhouse-connect, Jinja2
+├── mkdocs.yml              # MkDocs Material configuration
+├── queries/                # SQL files (15), one per logical query
+│   ├── solar_current.sql
+│   ├── bronze_status.sql
+│   ├── band_activity_24h.sql
+│   ├── sfi_trend_7d.sql
+│   ├── kp_trend_7d.sql
+│   └── ...
+├── templates/              # Jinja2 source templates (16 → 24 pages)
+│   ├── index.md.j2
+│   ├── bands/
+│   │   ├── index.md.j2
+│   │   └── band.md.j2     # Rendered 9x (one per HF band)
+│   ├── solar/
+│   ├── sources/
+│   ├── dataset/
+│   └── contests/
+└── docs/                   # Generated output (committed, deployed)
+    ├── about.md            # Static — never overwritten
+    ├── methodology/        # Static — never overwritten
+    └── (everything else generated from templates/)
+```
+
 ## Site Sections
 
 | Section | Content |
 |---------|---------|
-| **Bands** | Per-band propagation reports (160m–10m) with spot volume, SNR, and geographic reach |
-| **Solar** | Current conditions, storm impact analysis (actual dB cost), solar cycle tracking |
-| **Sources** | Per-source statistics, growth rates, and collection status |
-| **Dataset** | Total row counts, daily growth, geographic coverage |
+| **Home** | Color-coded SFI/Kp badges, data pipeline status, band activity, IONIS predictions |
+| **Bands** | Per-band propagation reports (160m–10m) with spot volume, SNR, and solar context |
+| **Solar** | Current conditions, 7-day trends, storm impact analysis, solar cycle tracking |
+| **Sources** | Per-source statistics (WSPR, RBN, PSKR, Contest) with band/mode breakdowns |
+| **Dataset** | Total row counts, growth tracking, geographic coverage |
 | **Contests** | Weekend recaps with spot volume spikes and band breakdowns |
 | **Methodology** | How raw spots become signatures, data quality filtering |
 
 ## Building Locally
 
 ```bash
-pip install mkdocs-material
+python -m venv --system-site-packages .venv
+.venv/bin/pip install -r requirements.txt
+.venv/bin/python publish.py --build
 mkdocs serve
 ```
 
-Open `http://localhost:8000` to preview.
-
-## Publishing
-
-The publish workflow runs on a cron schedule:
-
-1. Query ClickHouse for current data
-2. Inject results into page templates (replacing `<!-- AUTO-GENERATED -->` markers)
-3. `mkdocs build`
-4. Push to `gh-pages` branch
-5. GitHub Pages rebuilds automatically
+Open `http://localhost:8000` to preview. Requires ClickHouse access for live data.
 
 ## Part of the IONIS Project
 
