@@ -2,8 +2,9 @@
 
 ![SFI](https://img.shields.io/badge/SFI_111-Moderate-2ea043?style=flat-square)
 ![Kp](https://img.shields.io/badge/Kp_2.67-Quiet-teal?style=flat-square)
+![Conditions](https://img.shields.io/badge/Conditions-Quiet-teal?style=flat-square)
 
-*Updated 22:25 UTC 2026-02-20*
+*Updated 23:34 UTC 2026-02-20*
 
 ---
 
@@ -30,8 +31,8 @@
 | Europe (JN48) | CW | CW | CW | CW | CW | CW | 
 | Japan (PM95) | CW | CW | CW | CW | CW | CW | 
 | S. America (GG87) | FT8 | FT8 | FT8 | FT8 | FT8 | FT8 | 
-| Africa (KG33) | FT8 | WSPR | WSPR | WSPR | WSPR | WSPR | 
-| Oceania (QF56) | FT8 | FT8 | FT8 | FT8 | WSPR | WSPR | 
+| Africa (KG33) | WSPR | WSPR | WSPR | WSPR | WSPR | WSPR | 
+| Oceania (QF56) | FT8 | FT8 | FT8 | WSPR | WSPR | WSPR | 
 | Caribbean (FK68) | CW | CW | CW | CW | CW | CW | 
 
 ---
@@ -84,8 +85,8 @@
 | Europe (JN48) | CW | CW | CW | CW | CW | CW | 
 | Japan (PM95) | CW | CW | CW | CW | CW | CW | 
 | S. America (GG87) | FT8 | FT8 | FT8 | FT8 | FT8 | FT8 | 
-| Africa (KG33) | FT8 | WSPR | WSPR | WSPR | WSPR | WSPR | 
-| Oceania (QF56) | FT8 | FT8 | FT8 | FT8 | WSPR | WSPR | 
+| Africa (KG33) | WSPR | WSPR | WSPR | WSPR | WSPR | WSPR | 
+| Oceania (QF56) | FT8 | FT8 | FT8 | WSPR | WSPR | WSPR | 
 | Caribbean (FK68) | CW | CW | CW | CW | CW | CW | 
 
 ---

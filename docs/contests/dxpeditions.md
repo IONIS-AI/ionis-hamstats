@@ -2,8 +2,9 @@
 
 ![SFI](https://img.shields.io/badge/SFI_111-Moderate-2ea043?style=flat-square)
 ![Kp](https://img.shields.io/badge/Kp_2.67-Quiet-teal?style=flat-square)
+![Conditions](https://img.shields.io/badge/Conditions-Quiet-teal?style=flat-square)
 
-*Updated 22:25 UTC 2026-02-20*
+*Updated 23:34 UTC 2026-02-20*
 
 ---
 
@@ -74,7 +75,7 @@
 
 | 10m | 15m | 20m | 40m | 80m | 160m |
 |-----|-----|-----|-----|-----|------|
-| CW | CW | CW | CW | CW | CW |
+| CW | CW | CW | CW | CW | FT8 |
 
 ---
 
