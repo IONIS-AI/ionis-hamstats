@@ -8,12 +8,10 @@ updated every 3 hours.
 
 ## Current Values
 
-| Index | Value | Class | Updated |
-|-------|-------|-------|---------|
-| **Solar Flux Index (SFI)** | 116 | Moderate | 2026-02-20 |
-| **Planetary K-index (Kp)** | 2.33 | Quiet | 2026-02-20 |
-| **Sunspot Number (SSN)** | — | — | — |
-| **X-ray Flux (GOES)** | — | — | — |
+![SFI](https://img.shields.io/badge/SFI_116-Moderate-2ea043?style=flat-square)
+![Kp](https://img.shields.io/badge/Kp_2.33-Quiet-teal?style=flat-square)
+
+*Updated 2026-02-20 20:51 UTC · NOAA SWPC*
 
 ---
 
@@ -38,13 +36,13 @@ conditions — see [Storm Impact](storms.md) for measured SNR effects.
 
 | Date | Max Kp | Storm Level | HF Impact |
 |------|--------|-------------|-----------|
-| 2026-02-13 | 4.0 | Active | Moderate |
-| 2026-02-14 | 4.33 | Active | Moderate |
-| 2026-02-15 | 5.33 | G1 Storm | Degraded |
-| 2026-02-16 | 6.0 | G2 Storm | Significant |
-| 2026-02-17 | 3.0 | Unsettled | Minor |
-| 2026-02-18 | 3.33 | Unsettled | Minor |
-| 2026-02-19 | 3.33 | Unsettled | Minor |
+| 2026-02-13 | 4.0 | ![Active](https://img.shields.io/badge/Active-orange?style=flat-square) | Moderate |
+| 2026-02-14 | 4.33 | ![Active](https://img.shields.io/badge/Active-orange?style=flat-square) | Moderate |
+| 2026-02-15 | 5.33 | ![G1 Storm](https://img.shields.io/badge/G1_Storm-red?style=flat-square) | Degraded |
+| 2026-02-16 | 6.0 | ![G2 Storm](https://img.shields.io/badge/G2_Storm-red?style=flat-square) | Significant |
+| 2026-02-17 | 3.0 | ![Unsettled](https://img.shields.io/badge/Unsettled-ffea00?style=flat-square) | Minor |
+| 2026-02-18 | 3.33 | ![Unsettled](https://img.shields.io/badge/Unsettled-ffea00?style=flat-square) | Minor |
+| 2026-02-19 | 3.33 | ![Unsettled](https://img.shields.io/badge/Unsettled-ffea00?style=flat-square) | Minor |
 
 ---
 
