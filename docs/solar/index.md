@@ -4,7 +4,7 @@
 ![Kp](https://img.shields.io/badge/Kp_1.67-Quiet-teal?style=flat-square)
 ![Conditions](https://img.shields.io/badge/Conditions-Quiet-teal?style=flat-square)
 
-*Updated 18:25 UTC 2026-02-21 · NOAA SWPC*
+*Updated 18:31 UTC 2026-02-21 · NOAA SWPC*
 
 Solar conditions directly affect HF propagation. These reports correlate real
 solar indices with measured spot data — not theoretical models. Every solar
