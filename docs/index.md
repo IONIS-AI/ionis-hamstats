@@ -3,30 +3,56 @@
 **HF propagation predictions trained on 13 billion real observations — not theory, not opinions.**
 
 ![SFI](https://img.shields.io/badge/SFI_111-Moderate-2ea043?style=flat-square)
-![Kp](https://img.shields.io/badge/Kp_1.0-Quiet-teal?style=flat-square)
+![Kp](https://img.shields.io/badge/Kp_1.67-Quiet-teal?style=flat-square)
 ![Conditions](https://img.shields.io/badge/Conditions-Quiet-teal?style=flat-square)
 
-*Updated 16:00 UTC · NOAA SWPC*
+*Updated 18:25 UTC · NOAA SWPC*
 
 ---
 
 ## What Can You Work Right Now?
 
-*IONIS V20 predictions from KI7MT (DN13) for the current solar conditions (SFI 111, Kp 1.0).*
+*IONIS V20 predictions from KI7MT (DN13) for the current solar conditions (SFI 111, Kp 1.67).*
 
 | Destination | 10m | 15m | 20m | 40m | 80m | 160m |
 |-------------|-----|-----|-----|-----|-----|------|
 | Europe (JN48) | CW | CW | CW | CW | CW | CW |
 | Japan (PM95) | CW | CW | CW | CW | CW | CW |
 | S. America (GG87) | CW | CW | CW | CW | CW | CW |
-| Africa (KG33) | CW | CW | FT8 | FT8 | FT8 | FT8 |
-| Oceania (QF56) | CW | CW | CW | CW | CW | CW |
-| Caribbean (FK68) | RTTY | CW | CW | CW | CW | CW |
+| Africa (KG33) | FT8 | FT8 | FT8 | FT8 | FT8 | FT8 |
+| Oceania (QF56) | FT8 | FT8 | FT8 | FT8 | FT8 | FT8 |
+| Caribbean (FK68) | CW | CW | CW | CW | CW | CW |
 
 *Mode thresholds: SSB &ge; +3 dB, RTTY &ge; -5 dB, CW &ge; -15 dB, FT8 &ge; -21 dB, WSPR &ge; -28 dB.
 Predictions update every 3 hours with current solar conditions.*
 
 **Want predictions from your grid?** Custom prediction tool coming soon — enter your grid and get personalized band/mode forecasts.
+
+??? info "How do these predictions work?"
+
+    IONIS predicts the **ionospheric SNR floor** for a given path — it has no concept
+    of your station, antenna, power, or receiver. It answers one question:
+    *"Can the ionosphere support this path right now, and how much signal can it carry?"*
+
+    The model considers five things:
+
+    - **Where** are the two grid squares? (distance, azimuth, latitude, midpoint)
+    - **When** is it? (hour of day, season, day/night geometry)
+    - **What frequency?**
+    - **What's the sun doing?** (Solar Flux Index &rarr; MUF lift)
+    - **What's the magnetosphere doing?** (Kp index &rarr; storm penalty)
+
+    From these inputs, the model outputs a predicted SNR in dB. That value is then
+    matched against the minimum decode thresholds for each mode — SSB needs a
+    strong signal (+3 dB), while WSPR can pull signals out of the noise floor (-28 dB).
+
+    The model was trained on 13+ billion WSPR spots where every station transmits
+    at the same power (~200 mW) into similar antennas. This controls for the station
+    variable — what the model learned is the ionosphere itself, not the operator.
+
+    Any station at the same grid square would see the same propagation physics.
+    A bigger antenna or more power shifts *your* results, but the path is either
+    open or it isn't.
 
 ---
 
@@ -37,15 +63,15 @@ RBN archives lag ~24 hours; zeroes indicate no data in the window, not band clos
 
 | Band | WSPR Spots | RBN Spots | PSKR Spots | Peak SNR | Status |
 |------|-----------|-----------|------------|----------|--------|
-| 10m | 161,259 | 0 | 4.6M | +103 dB | Strong |
-| 12m | 84,049 | 0 | 1.4M | +87 dB | Strong |
-| 15m | 222,485 | 0 | 3.8M | +66 dB | Strong |
-| 17m | 203,217 | 0 | 1.6M | +87 dB | Strong |
-| 20m | 845,241 | 0 | 7.7M | +80 dB | Strong |
-| 30m | 368,798 | 0 | 2.3M | +72 dB | Strong |
-| 40m | 552,968 | 0 | 8.0M | +80 dB | Strong |
-| 80m | 181,622 | 0 | 2.2M | +76 dB | Strong |
-| 160m | 57,559 | 0 | 391,809 | +67 dB | Strong |
+| 10m | 98,930 | 0 | 4.7M | +103 dB | Strong |
+| 12m | 59,990 | 0 | 1.6M | +87 dB | Strong |
+| 15m | 146,378 | 0 | 4.1M | +66 dB | Strong |
+| 17m | 135,061 | 0 | 1.8M | +87 dB | Strong |
+| 20m | 531,123 | 0 | 8.3M | +95 dB | Strong |
+| 30m | 223,578 | 0 | 2.3M | +72 dB | Strong |
+| 40m | 343,475 | 0 | 8.2M | +80 dB | Strong |
+| 80m | 140,694 | 0 | 2.1M | +76 dB | Strong |
+| 160m | 47,608 | 0 | 386,109 | +67 dB | Strong |
 
 ---
 
@@ -55,7 +81,7 @@ RBN archives lag ~24 hours; zeroes indicate no data in the window, not band clos
 |--------|------------|------------|--------|
 | WSPR | 2026-02-20 | 10.92B | Current |
 | RBN | 2026-02-19 | 2.25B | 2 days behind |
-| PSK Reporter | 2026-02-21 | 382.4M | Live |
+| PSK Reporter | 2026-02-21 | 388.9M | Live |
 | Contest | Archive | 234.3M | Static |
 | Solar | 2026-02-21 | 76,632 | Live |
 
@@ -73,7 +99,7 @@ of HF propagation:
 
 - **WSPR** (10.92B spots, 2008–present) — the SNR floor at minimum power
 - **Reverse Beacon Network** (2.25B spots, 2009–present) — CW/RTTY measured signals
-- **PSK Reporter** (382.4M spots, live since Feb 2026) — FT8/digital operational contacts
+- **PSK Reporter** (388.9M spots, live since Feb 2026) — FT8/digital operational contacts
 - **Contest Logs** (234.3M QSOs, 2005–present) — the SSB/RTTY ceiling at contest power
 
 Solar indices (SFI, Kp, SSN) are joined at 3-hour resolution so every
