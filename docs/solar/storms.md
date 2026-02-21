@@ -1,14 +1,15 @@
 # Storm Impact Analysis
 
-*Updated 23:45 UTC 2026-02-20*
+*Updated 01:00 UTC 2026-02-21*
 
 This page shows measured SNR degradation during geomagnetic storms. All values
-come from actual signal measurements — WSPR, RBN, and PSK Reporter spots
-collected during storm events — joined against Kp index at 3-hour resolution.
+come from actual WSPR signal measurements joined against Kp index at daily
+resolution.
 
-A geomagnetic storm is defined here as Kp >= 5, sustained for at least 3 hours.
-SNR before/during/after is the median across all recorded spots on each band
-during the respective window.
+A geomagnetic storm is defined here as Kp >= 5 (NOAA G1 or above). Consecutive
+storm days are merged into a single event. SNR before/during/after is the median
+across all recorded WSPR spots on each band during the respective window,
+filtered to ionospheric paths (> 500 km).
 
 ---
 
@@ -39,47 +40,78 @@ during the respective window.
 
 ---
 
-## SNR Before / During / After — Most Recent Storm
+## SNR Before / During / After — Storm of 2026-02-16 (Kp 6.0)
 
-*Median SNR (dB) measured from WSPR spots in the 24-hour window before,
-during, and 24-hour window after peak Kp.*
+*Median WSPR SNR (dB) on ionospheric paths (> 500 km) for the day before,
+day of, and day after peak Kp.*
 
-| Band | Before (dB) | During (dB) | After (dB) | Change During | Recovery |
-|------|------------|-------------|-----------|---------------|----------|
-| 10m | — | — | — | — | — |
-| 15m | — | — | — | — | — |
-| 20m | — | — | — | — | — |
-| 40m | — | — | — | — | — |
-| 80m | — | — | — | — | — |
-| 160m | — | — | — | — | — |
+| Band | Before (dB) | During (dB) | After (dB) | Change | Recovery vs Baseline |
+|------|------------|-------------|-----------|--------|---------------------|
+| 10m | -17 | -19 | -19 | -2 dB | -2 dB |
+| 15m | -17 | -18 | -18 | -1 dB | -1 dB |
+| 20m | -16 | -15 | -15 | +1 dB | +1 dB |
+| 40m | -16 | -17 | -17 | -1 dB | -1 dB |
+| 80m | -18 | -18 | -18 | 0 dB | 0 dB |
+| 160m | -18 | -18 | -18 | 0 dB | 0 dB |
 
-*Coming soon — requires per-storm SNR comparison query.*
+*Change = During − Before (negative = degradation). Recovery vs Baseline =
+After − Before (0 = full recovery, negative = still degraded).*
 
 ---
 
 ## Recovery Timeline
 
-Hours after peak Kp until median SNR returns to within 1 dB of pre-storm
-baseline, by band. Averaged across all storms in the dataset where Kp >= 5.
+Hours after storm end until median WSPR SNR returns to within 1 dB of
+pre-storm baseline, by band. Aggregated across all storms (Kp >= 5) in
+the last 2 years. Consecutive storm days are merged into single events.
 
 | Band | Median Recovery (hrs) | 90th Percentile (hrs) | Storm Count |
 |------|----------------------|----------------------|-------------|
-| 10m | — | — | — |
-| 15m | — | — | — |
-| 20m | — | — | — |
-| 40m | — | — | — |
-| 80m | — | — | — |
-| 160m | — | — | — |
+| 10m | 24 | 24 | 60 |
+| 15m | 24 | 24 | 60 |
+| 20m | 24 | 24 | 60 |
+| 40m | 24 | 48 | 60 |
+| 80m | 24 | 24 | 58 |
+| 160m | 24 | 26 | 60 |
 
-*Coming soon — requires recovery analysis query.*
+*Recovery = first day post-storm where band median SNR is within 1 dB of the
+day before the storm. Reported in hours (days × 24). Storms where SNR did not
+recover within 7 days are excluded.*
 
 ---
 
 ## Storm Frequency by Year
 
-| Year | Kp>=5 Events | Kp>=7 Events | Peak Kp | Cycle Phase |
-|------|-------------|-------------|---------|-------------|
-| — | — | — | — | — |
+| Year | Kp>=5 Days | Kp>=7 Days | Peak Kp | Cycle Phase |
+|------|-----------|-----------|---------|-------------|
+| 2026 | 5 | 0 | 6.0 | Minimum |
+| 2025 | 62 | 8 | 8.7 | Maximum |
+| 2024 | 36 | 13 | 9.0 | Maximum |
+| 2023 | 41 | 5 | 8.3 | Maximum |
+| 2022 | 36 | 0 | 6.7 | Active |
+| 2021 | 17 | 2 | 7.7 | Minimum |
+| 2020 | 3 | 0 | 5.7 | Minimum |
+| 2019 | 12 | 0 | 6.3 | Minimum |
+| 2018 | 13 | 1 | 7.3 | Minimum |
+| 2017 | 37 | 3 | 8.3 | Minimum |
+| 2016 | 43 | 0 | 6.3 | Minimum |
+| 2015 | 56 | 6 | 8.3 | Active |
+| 2014 | 12 | 0 | 6.3 | Minimum |
+| 2013 | 23 | 2 | 7.7 | Active |
+| 2012 | 35 | 2 | 8.0 | Active |
+| 2011 | 26 | 3 | 7.7 | Minimum |
+| 2010 | 11 | 1 | 7.7 | Minimum |
+| 2009 | 3 | 0 | 5.7 | Minimum |
+| 2008 | 11 | 0 | 6.3 | Minimum |
+| 2007 | 19 | 0 | 5.7 | Minimum |
+| 2006 | 28 | 3 | 8.3 | Minimum |
+| 2005 | 55 | 15 | 8.7 | Minimum |
+| 2004 | 41 | 10 | 8.7 | Minimum |
+| 2003 | 120 | 10 | 9.0 | Active |
+| 2002 | 50 | 9 | 8.3 | Maximum |
+| 2001 | 50 | 14 | 8.7 | Maximum |
+| 2000 | 67 | 14 | 9.0 | Maximum |
 
-*Storm counts derived from `solar.bronze` (GFZ Potsdam historical data,
-backfilled 2000–2026). Coming soon.*
+*Storm counts from `solar.bronze` (GFZ Potsdam historical data, backfilled
+2000–present). Each row counts the number of days in that year where the
+daily peak Kp reached the indicated threshold.*

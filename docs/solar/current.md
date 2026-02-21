@@ -1,10 +1,10 @@
 # Current Solar Conditions
 
 ![SFI](https://img.shields.io/badge/SFI_111-Moderate-2ea043?style=flat-square)
-![Kp](https://img.shields.io/badge/Kp_2.67-Quiet-teal?style=flat-square)
-![Conditions](https://img.shields.io/badge/Conditions-Quiet-teal?style=flat-square)
+![Kp](https://img.shields.io/badge/Kp_4.0-Active-orange?style=flat-square)
+![Conditions](https://img.shields.io/badge/Conditions-Unsettled-orange?style=flat-square)
 
-*Updated 23:45 UTC 2026-02-20 · NOAA SWPC*
+*Updated 01:00 UTC 2026-02-21 · NOAA SWPC*
 
 Solar indices sourced from NOAA SWPC (`wspr.live_conditions`) updated every 15
 minutes. SFI is published once daily (~20:00 UTC from Penticton, BC). Kp is
@@ -20,13 +20,13 @@ updated every 3 hours.
 
 | Date | SFI | Change |
 |------|-----|--------|
-| 2026-02-13 | 117 | — |
-| 2026-02-14 | 117 | 0 |
+| 2026-02-14 | 117 | — |
 | 2026-02-15 | 118 | +1 |
 | 2026-02-16 | 118 | 0 |
 | 2026-02-17 | 122 | +4 |
 | 2026-02-18 | 119 | -3 |
 | 2026-02-19 | 116 | -3 |
+| 2026-02-20 | 111 | -5 |
 
 ---
 
@@ -37,13 +37,13 @@ conditions — see [Storm Impact](storms.md) for measured SNR effects.
 
 | Date | Max Kp | Storm Level | HF Impact |
 |------|--------|-------------|-----------|
-| 2026-02-13 | 4.0 | ![Active](https://img.shields.io/badge/Active-orange?style=flat-square) | Moderate |
 | 2026-02-14 | 4.33 | ![Active](https://img.shields.io/badge/Active-orange?style=flat-square) | Moderate |
 | 2026-02-15 | 5.33 | ![G1 Storm](https://img.shields.io/badge/G1_Storm-red?style=flat-square) | Degraded |
 | 2026-02-16 | 6.0 | ![G2 Storm](https://img.shields.io/badge/G2_Storm-red?style=flat-square) | Significant |
 | 2026-02-17 | 3.0 | ![Unsettled](https://img.shields.io/badge/Unsettled-ffea00?style=flat-square) | Minor |
 | 2026-02-18 | 3.33 | ![Unsettled](https://img.shields.io/badge/Unsettled-ffea00?style=flat-square) | Minor |
 | 2026-02-19 | 3.33 | ![Unsettled](https://img.shields.io/badge/Unsettled-ffea00?style=flat-square) | Minor |
+| 2026-02-20 | 2.67 | ![Quiet](https://img.shields.io/badge/Quiet-teal?style=flat-square) | Normal |
 
 ---
 
