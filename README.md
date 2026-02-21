@@ -53,7 +53,7 @@ python publish.py --host X     # custom ClickHouse host (default: 192.168.1.90)
 
 ## IONIS V20 Predictions
 
-The homepage includes a live prediction table from the IONIS V20 model (IonisGate, 203K params). For each publish cycle, the model predicts SNR from KI7MT (DN26) to six representative contest destinations across four bands, using the current SFI and Kp from `wspr.live_conditions`.
+The homepage includes a live prediction table from the IONIS V20 model (IonisGate, 203K params). For each publish cycle, the model predicts SNR from KI7MT (DN13) to six representative contest destinations across four bands, using the current SFI and Kp from `wspr.live_conditions`.
 
 Predicted SNR is classified into the best decodable mode:
 

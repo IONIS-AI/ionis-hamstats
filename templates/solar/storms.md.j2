@@ -3,12 +3,13 @@
 *Updated {{ now.strftime('%H:%M UTC %Y-%m-%d') }}*
 
 This page shows measured SNR degradation during geomagnetic storms. All values
-come from actual signal measurements — WSPR, RBN, and PSK Reporter spots
-collected during storm events — joined against Kp index at 3-hour resolution.
+come from actual WSPR signal measurements joined against Kp index at daily
+resolution.
 
-A geomagnetic storm is defined here as Kp >= 5, sustained for at least 3 hours.
-SNR before/during/after is the median across all recorded spots on each band
-during the respective window.
+A geomagnetic storm is defined here as Kp >= 5 (NOAA G1 or above). Consecutive
+storm days are merged into a single event. SNR before/during/after is the median
+across all recorded WSPR spots on each band during the respective window,
+filtered to ionospheric paths (> 500 km).
 
 ---
 
@@ -25,47 +26,63 @@ during the respective window.
 
 ---
 
+{% if data.storm_snr_comparison %}
+{% set snr_sample = data.storm_snr_comparison[0] %}
+## SNR Before / During / After — Storm of {{ snr_sample.storm_date | fmt_date }} (Kp {{ snr_sample.peak_kp }})
+
+*Median WSPR SNR (dB) on ionospheric paths (> 500 km) for the day before,
+day of, and day after peak Kp.*
+
+| Band | Before (dB) | During (dB) | After (dB) | Change | Recovery vs Baseline |
+|------|------------|-------------|-----------|--------|---------------------|
+{% for row in data.storm_snr_comparison %}
+| {{ row.band_name }} | {{ row.before_snr | fmt_delta }} | {{ row.during_snr | fmt_delta }} | {{ row.after_snr | fmt_delta }} | {{ row.change_during | fmt_delta }} dB | {{ row.recovery_delta | fmt_delta }} dB |
+{% endfor %}
+
+*Change = During − Before (negative = degradation). Recovery vs Baseline =
+After − Before (0 = full recovery, negative = still degraded).*
+{% else %}
 ## SNR Before / During / After — Most Recent Storm
 
-*Median SNR (dB) measured from WSPR spots in the 24-hour window before,
-during, and 24-hour window after peak Kp.*
-
-| Band | Before (dB) | During (dB) | After (dB) | Change During | Recovery |
-|------|------------|-------------|-----------|---------------|----------|
-| 10m | — | — | — | — | — |
-| 15m | — | — | — | — | — |
-| 20m | — | — | — | — | — |
-| 40m | — | — | — | — | — |
-| 80m | — | — | — | — | — |
-| 160m | — | — | — | — | — |
-
-*Coming soon — requires per-storm SNR comparison query.*
+*No storms (Kp >= 5) recorded in the last 365 days.*
+{% endif %}
 
 ---
 
+{% if data.storm_recovery %}
 ## Recovery Timeline
 
-Hours after peak Kp until median SNR returns to within 1 dB of pre-storm
-baseline, by band. Averaged across all storms in the dataset where Kp >= 5.
+Hours after storm end until median WSPR SNR returns to within 1 dB of
+pre-storm baseline, by band. Aggregated across all storms (Kp >= 5) in
+the last 2 years. Consecutive storm days are merged into single events.
 
 | Band | Median Recovery (hrs) | 90th Percentile (hrs) | Storm Count |
 |------|----------------------|----------------------|-------------|
-| 10m | — | — | — |
-| 15m | — | — | — |
-| 20m | — | — | — |
-| 40m | — | — | — |
-| 80m | — | — | — |
-| 160m | — | — | — |
+{% for row in data.storm_recovery %}
+| {{ row.band_name }} | {{ row.median_recovery_hours }} | {{ row.p90_recovery_hours }} | {{ row.storm_count }} |
+{% endfor %}
 
-*Coming soon — requires recovery analysis query.*
+*Recovery = first day post-storm where band median SNR is within 1 dB of the
+day before the storm. Reported in hours (days × 24). Storms where SNR did not
+recover within 7 days are excluded.*
+{% else %}
+## Recovery Timeline
+
+*Insufficient storm data in the last 2 years to compute recovery statistics.*
+{% endif %}
 
 ---
 
 ## Storm Frequency by Year
 
-| Year | Kp>=5 Events | Kp>=7 Events | Peak Kp | Cycle Phase |
-|------|-------------|-------------|---------|-------------|
+| Year | Kp>=5 Days | Kp>=7 Days | Peak Kp | Cycle Phase |
+|------|-----------|-----------|---------|-------------|
+{% for row in data.storm_frequency_by_year %}
+| {{ row.year }} | {{ row.kp5_events }} | {{ row.kp7_events }} | {{ row.peak_kp }} | {{ row.cycle_phase }} |
+{% else %}
 | — | — | — | — | — |
+{% endfor %}
 
-*Storm counts derived from `solar.bronze` (GFZ Potsdam historical data,
-backfilled 2000–2026). Coming soon.*
+*Storm counts from `solar.bronze` (GFZ Potsdam historical data, backfilled
+2000–present). Each row counts the number of days in that year where the
+daily peak Kp reached the indicated threshold.*
