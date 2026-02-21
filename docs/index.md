@@ -2,6 +2,16 @@
 
 **HF propagation predictions trained on 13 billion real observations — not theory, not opinions.**
 
+![SFI](https://img.shields.io/badge/SFI_111-Moderate-2ea043?style=flat-square)
+![Kp](https://img.shields.io/badge/Kp_1.67-Quiet-teal?style=flat-square)
+![Conditions](https://img.shields.io/badge/Conditions-Quiet-teal?style=flat-square)
+
+*Updated 18:33 UTC · NOAA SWPC*
+
+---
+
+## What Can You Work Right Now?
+
 ??? info "How do these predictions work?"
 
     IONIS predicts the **ionospheric SNR floor** for a given path — it has no concept
@@ -28,16 +38,6 @@
     A bigger antenna or more power shifts *your* results, but the path is either
     open or it isn't.
 
-![SFI](https://img.shields.io/badge/SFI_111-Moderate-2ea043?style=flat-square)
-![Kp](https://img.shields.io/badge/Kp_1.67-Quiet-teal?style=flat-square)
-![Conditions](https://img.shields.io/badge/Conditions-Quiet-teal?style=flat-square)
-
-*Updated 18:31 UTC · NOAA SWPC*
-
----
-
-## What Can You Work Right Now?
-
 *IONIS V20 predictions from KI7MT (DN13) for the current solar conditions (SFI 111, Kp 1.67).*
 
 | Destination | 10m | 15m | 20m | 40m | 80m | 160m |
@@ -63,15 +63,15 @@ RBN archives lag ~24 hours; zeroes indicate no data in the window, not band clos
 
 | Band | WSPR Spots | RBN Spots | PSKR Spots | Peak SNR | Status |
 |------|-----------|-----------|------------|----------|--------|
-| 10m | 96,536 | 0 | 4.6M | +103 dB | Strong |
-| 12m | 58,530 | 0 | 1.5M | +87 dB | Strong |
-| 15m | 143,172 | 0 | 4.1M | +66 dB | Strong |
-| 17m | 132,174 | 0 | 1.8M | +87 dB | Strong |
-| 20m | 515,138 | 0 | 8.2M | +95 dB | Strong |
-| 30m | 216,319 | 0 | 2.3M | +72 dB | Strong |
-| 40m | 331,256 | 0 | 8.2M | +80 dB | Strong |
-| 80m | 137,777 | 0 | 2.1M | +76 dB | Strong |
-| 160m | 46,818 | 0 | 384,804 | +67 dB | Strong |
+| 10m | 95,720 | 0 | 4.6M | +103 dB | Strong |
+| 12m | 58,120 | 0 | 1.5M | +87 dB | Strong |
+| 15m | 142,320 | 0 | 4.1M | +66 dB | Strong |
+| 17m | 130,117 | 0 | 1.8M | +87 dB | Strong |
+| 20m | 510,964 | 0 | 8.2M | +95 dB | Strong |
+| 30m | 214,241 | 0 | 2.3M | +72 dB | Strong |
+| 40m | 327,807 | 0 | 8.2M | +80 dB | Strong |
+| 80m | 136,847 | 0 | 2.1M | +76 dB | Strong |
+| 160m | 46,257 | 0 | 384,113 | +67 dB | Strong |
 
 ---
 
