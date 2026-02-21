@@ -1,6 +1,6 @@
 # Storm Impact Analysis
 
-*Updated 01:00 UTC 2026-02-21*
+*Updated 04:00 UTC 2026-02-21*
 
 This page shows measured SNR degradation during geomagnetic storms. All values
 come from actual WSPR signal measurements joined against Kp index at daily
@@ -48,9 +48,9 @@ day of, and day after peak Kp.*
 | Band | Before (dB) | During (dB) | After (dB) | Change | Recovery vs Baseline |
 |------|------------|-------------|-----------|--------|---------------------|
 | 10m | -17 | -19 | -19 | -2 dB | -2 dB |
-| 15m | -17 | -18 | -18 | -1 dB | -1 dB |
-| 20m | -16 | -15 | -15 | +1 dB | +1 dB |
-| 40m | -16 | -17 | -17 | -1 dB | -1 dB |
+| 15m | -18 | -18 | -18 | 0 dB | 0 dB |
+| 20m | -16 | -16 | -15 | 0 dB | +1 dB |
+| 40m | -17 | -17 | -17 | 0 dB | 0 dB |
 | 80m | -18 | -18 | -18 | 0 dB | 0 dB |
 | 160m | -18 | -18 | -18 | 0 dB | 0 dB |
 
@@ -84,29 +84,29 @@ recover within 7 days are excluded.*
 
 | Year | Kp>=5 Days | Kp>=7 Days | Peak Kp | Cycle Phase |
 |------|-----------|-----------|---------|-------------|
-| 2026 | 5 | 0 | 6.0 | Minimum |
+| 2026 | 5 | 0 | 6.0 | Active |
 | 2025 | 62 | 8 | 8.7 | Maximum |
 | 2024 | 36 | 13 | 9.0 | Maximum |
 | 2023 | 41 | 5 | 8.3 | Maximum |
 | 2022 | 36 | 0 | 6.7 | Active |
-| 2021 | 17 | 2 | 7.7 | Minimum |
+| 2021 | 17 | 2 | 7.7 | Moderate |
 | 2020 | 3 | 0 | 5.7 | Minimum |
 | 2019 | 12 | 0 | 6.3 | Minimum |
 | 2018 | 13 | 1 | 7.3 | Minimum |
-| 2017 | 37 | 3 | 8.3 | Minimum |
-| 2016 | 43 | 0 | 6.3 | Minimum |
+| 2017 | 37 | 3 | 8.3 | Moderate |
+| 2016 | 43 | 0 | 6.3 | Moderate |
 | 2015 | 56 | 6 | 8.3 | Active |
-| 2014 | 12 | 0 | 6.3 | Minimum |
+| 2014 | 12 | 0 | 6.3 | Active |
 | 2013 | 23 | 2 | 7.7 | Active |
 | 2012 | 35 | 2 | 8.0 | Active |
-| 2011 | 26 | 3 | 7.7 | Minimum |
-| 2010 | 11 | 1 | 7.7 | Minimum |
+| 2011 | 26 | 3 | 7.7 | Active |
+| 2010 | 11 | 1 | 7.7 | Moderate |
 | 2009 | 3 | 0 | 5.7 | Minimum |
 | 2008 | 11 | 0 | 6.3 | Minimum |
 | 2007 | 19 | 0 | 5.7 | Minimum |
-| 2006 | 28 | 3 | 8.3 | Minimum |
-| 2005 | 55 | 15 | 8.7 | Minimum |
-| 2004 | 41 | 10 | 8.7 | Minimum |
+| 2006 | 28 | 3 | 8.3 | Moderate |
+| 2005 | 55 | 15 | 8.7 | Moderate |
+| 2004 | 41 | 10 | 8.7 | Active |
 | 2003 | 120 | 10 | 9.0 | Active |
 | 2002 | 50 | 9 | 8.3 | Maximum |
 | 2001 | 50 | 14 | 8.7 | Maximum |
