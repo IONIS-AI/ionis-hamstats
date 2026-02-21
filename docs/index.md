@@ -6,7 +6,7 @@
 ![Kp](https://img.shields.io/badge/Kp_1.67-Quiet-teal?style=flat-square)
 ![Conditions](https://img.shields.io/badge/Conditions-Quiet-teal?style=flat-square)
 
-*Updated 18:33 UTC · NOAA SWPC*
+*Updated 18:36 UTC · NOAA SWPC*
 
 ---
 
@@ -30,13 +30,13 @@
     matched against the minimum decode thresholds for each mode — SSB needs a
     strong signal (+3 dB), while WSPR can pull signals out of the noise floor (-28 dB).
 
-    The model was trained on 13+ billion WSPR spots where every station transmits
-    at the same power (~200 mW) into similar antennas. This controls for the station
-    variable — what the model learned is the ionosphere itself, not the operator.
+    The model was trained on 13+ billion WSPR spots across thousands of stations
+    with varying power levels and antennas. Because TX power is not a model input,
+    these station differences become noise that the model averages over — what it
+    learned is the ionosphere itself, not any particular operator's setup.
 
-    Any station at the same grid square would see the same propagation physics.
-    A bigger antenna or more power shifts *your* results, but the path is either
-    open or it isn't.
+    The predictions represent a typical path — your actual results will vary with
+    your antenna and power, but the path is either open or it isn't.
 
 *IONIS V20 predictions from KI7MT (DN13) for the current solar conditions (SFI 111, Kp 1.67).*
 
@@ -63,15 +63,15 @@ RBN archives lag ~24 hours; zeroes indicate no data in the window, not band clos
 
 | Band | WSPR Spots | RBN Spots | PSKR Spots | Peak SNR | Status |
 |------|-----------|-----------|------------|----------|--------|
-| 10m | 95,720 | 0 | 4.6M | +103 dB | Strong |
-| 12m | 58,120 | 0 | 1.5M | +87 dB | Strong |
-| 15m | 142,320 | 0 | 4.1M | +66 dB | Strong |
-| 17m | 130,117 | 0 | 1.8M | +87 dB | Strong |
-| 20m | 510,964 | 0 | 8.2M | +95 dB | Strong |
-| 30m | 214,241 | 0 | 2.3M | +72 dB | Strong |
-| 40m | 327,807 | 0 | 8.2M | +80 dB | Strong |
-| 80m | 136,847 | 0 | 2.1M | +76 dB | Strong |
-| 160m | 46,257 | 0 | 384,113 | +67 dB | Strong |
+| 10m | 94,478 | 0 | 4.6M | +103 dB | Strong |
+| 12m | 56,753 | 0 | 1.5M | +87 dB | Strong |
+| 15m | 138,953 | 0 | 4.1M | +66 dB | Strong |
+| 17m | 128,194 | 0 | 1.8M | +87 dB | Strong |
+| 20m | 502,951 | 0 | 8.2M | +95 dB | Strong |
+| 30m | 210,272 | 0 | 2.3M | +72 dB | Strong |
+| 40m | 321,245 | 0 | 8.1M | +80 dB | Strong |
+| 80m | 135,361 | 0 | 2.1M | +76 dB | Strong |
+| 160m | 45,739 | 0 | 383,508 | +67 dB | Strong |
 
 ---
 
