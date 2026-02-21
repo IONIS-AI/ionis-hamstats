@@ -4,7 +4,7 @@
 ![Kp](https://img.shields.io/badge/Kp_1.67-Quiet-teal?style=flat-square)
 ![Conditions](https://img.shields.io/badge/Conditions-Quiet-teal?style=flat-square)
 
-*Updated 18:36 UTC 2026-02-21*
+*Updated 19:00 UTC 2026-02-21*
 
 ---
 
@@ -56,7 +56,7 @@
 
 | 10m | 15m | 20m | 40m | 80m | 160m |
 |-----|-----|-----|-----|-----|------|
-| CW | CW | CW | CW | CW | FT8 |
+| CW | CW | CW | FT8 | FT8 | FT8 |
 
 ---
 
