@@ -1,10 +1,17 @@
+---
+description: >-
+  Active and upcoming DXpeditions with IONIS propagation predictions. Band-by-band
+  mode verdicts for each destination based on current solar conditions and
+  neural network inference.
+---
+
 # DXpeditions
 
 ![SFI](https://img.shields.io/badge/SFI_110-Moderate-2ea043?style=flat-square)
 ![Kp](https://img.shields.io/badge/Kp_4.0-Active-orange?style=flat-square)
 ![Conditions](https://img.shields.io/badge/Conditions-Unsettled-orange?style=flat-square)
 
-*Updated 19:00 UTC 2026-02-22*
+*Updated 22:00 UTC 2026-02-22*
 
 ---
 
@@ -56,7 +63,7 @@
 
 | 10m | 15m | 20m | 40m | 80m | 160m |
 |-----|-----|-----|-----|-----|------|
-| FT8 | FT8 | FT8 | FT8 | FT8 | FT8 |
+| FT8 | FT8 | FT8 | FT8 | FT8 | WSPR |
 
 ---
 
@@ -75,7 +82,7 @@
 
 | 10m | 15m | 20m | 40m | 80m | 160m |
 |-----|-----|-----|-----|-----|------|
-| CW | CW | CW | CW | CW | CW |
+| CW | CW | CW | FT8 | FT8 | FT8 |
 
 ---
 
@@ -113,7 +120,7 @@
 
 | 10m | 15m | 20m | 40m | 80m | 160m |
 |-----|-----|-----|-----|-----|------|
-| CW | CW | CW | CW | CW | CW |
+| CW | CW | CW | CW | FT8 | FT8 |
 
 ---
 

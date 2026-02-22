@@ -1,3 +1,10 @@
+---
+description: >-
+  Live HF band conditions and IONIS propagation predictions updated every 3 hours.
+  Current solar flux, Kp index, band activity from WSPR, RBN, and PSK Reporter,
+  and AI-powered predictions for 6 global destinations.
+---
+
 # Ham Stats
 
 **HF propagation predictions trained on 13 billion real observations — not theory, not opinions.**
@@ -6,7 +13,7 @@
 ![Kp](https://img.shields.io/badge/Kp_4.0-Active-orange?style=flat-square)
 ![Conditions](https://img.shields.io/badge/Conditions-Unsettled-orange?style=flat-square)
 
-*Updated 19:00 UTC · NOAA SWPC*
+*Updated 22:00 UTC · NOAA SWPC*
 
 ---
 
@@ -44,9 +51,9 @@
 |-------------|-----|-----|-----|-----|-----|------|
 | Europe (JN48) | CW | CW | CW | CW | CW | CW |
 | Japan (PM95) | CW | CW | CW | CW | CW | CW |
-| S. America (GG87) | CW | FT8 | FT8 | FT8 | FT8 | FT8 |
-| Africa (KG33) | FT8 | FT8 | WSPR | WSPR | WSPR | WSPR |
-| Oceania (QF56) | FT8 | FT8 | FT8 | FT8 | WSPR | WSPR |
+| S. America (GG87) | FT8 | FT8 | FT8 | FT8 | FT8 | FT8 |
+| Africa (KG33) | WSPR | WSPR | WSPR | WSPR | WSPR | WSPR |
+| Oceania (QF56) | WSPR | WSPR | WSPR | WSPR | WSPR | WSPR |
 | Caribbean (FK68) | CW | CW | CW | CW | CW | CW |
 
 *Mode thresholds: SSB &ge; +3 dB, RTTY &ge; -5 dB, CW &ge; -15 dB, FT8 &ge; -21 dB, WSPR &ge; -28 dB.
@@ -63,15 +70,15 @@ RBN archives lag ~24 hours; zeroes indicate no data in the window, not band clos
 
 | Band | WSPR Spots | RBN Spots | PSKR Spots | Peak SNR | Status |
 |------|-----------|-----------|------------|----------|--------|
-| 10m | 90,296 | 0 | 5.0M | +70 dB | Strong |
-| 12m | 49,488 | 0 | 1.6M | +56 dB | Strong |
-| 15m | 117,392 | 0 | 5.1M | +69 dB | Strong |
-| 17m | 127,118 | 0 | 1.8M | +54 dB | Strong |
-| 20m | 450,126 | 0 | 8.5M | +74 dB | Strong |
-| 30m | 175,293 | 0 | 2.5M | +60 dB | Strong |
-| 40m | 251,406 | 0 | 7.8M | +122 dB | Strong |
-| 80m | 115,416 | 0 | 2.2M | +69 dB | Strong |
-| 160m | 45,560 | 0 | 294,167 | +86 dB | Strong |
+| 10m | 32,851 | 0 | 5.2M | +70 dB | Strong |
+| 12m | 18,584 | 0 | 1.7M | +56 dB | Strong |
+| 15m | 45,275 | 0 | 5.4M | +69 dB | Strong |
+| 17m | 49,560 | 0 | 1.9M | +54 dB | Strong |
+| 20m | 164,298 | 0 | 8.9M | +70 dB | Strong |
+| 30m | 71,664 | 0 | 2.4M | +60 dB | Strong |
+| 40m | 92,237 | 0 | 7.7M | +122 dB | Strong |
+| 80m | 47,478 | 0 | 2.0M | +69 dB | Strong |
+| 160m | 18,909 | 0 | 234,829 | +86 dB | Strong |
 
 ---
 
@@ -81,9 +88,9 @@ RBN archives lag ~24 hours; zeroes indicate no data in the window, not band clos
 |--------|------------|------------|--------|
 | WSPR | 2026-02-21 | 10.93B | Current |
 | RBN | 2026-02-20 | 2.25B | 2 days behind |
-| PSK Reporter | 2026-02-22 | 427.9M | Live |
+| PSK Reporter | 2026-02-22 | 434.0M | Live |
 | Contest | Archive | 234.3M | Static |
-| Solar | 2026-02-22 | 76,640 | Live |
+| Solar | 2026-02-22 | 76,644 | Live |
 
 ---
 
@@ -99,7 +106,7 @@ of HF propagation:
 
 - **WSPR** (10.93B spots, 2008–present) — the SNR floor at minimum power
 - **Reverse Beacon Network** (2.25B spots, 2009–present) — CW/RTTY measured signals
-- **PSK Reporter** (427.9M spots, live since Feb 2026) — FT8/digital operational contacts
+- **PSK Reporter** (434.0M spots, live since Feb 2026) — FT8/digital operational contacts
 - **Contest Logs** (234.3M QSOs, 2005–present) — the SSB/RTTY ceiling at contest power
 
 Solar indices (SFI, Kp, SSN) are joined at 3-hour resolution so every
