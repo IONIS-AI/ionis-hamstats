@@ -1,0 +1,59 @@
+{% extends "base.html" %}
+
+{% block extrahead %}
+<meta property="og:type" content="website" />
+<meta property="og:site_name" content="Ham Stats — HF Propagation from Real Data" />
+<meta property="og:title" content="{{ page.title }} — Ham Stats" />
+<meta property="og:description" content="{{ config.site_description }}" />
+<meta property="og:url" content="{{ page.canonical_url }}" />
+<meta name="twitter:card" content="summary" />
+<meta name="twitter:site" content="@ki7mt" />
+<meta name="twitter:title" content="{{ page.title }} — Ham Stats" />
+<meta name="twitter:description" content="{{ config.site_description }}" />
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "WebApplication",
+  "name": "Ham Stats",
+  "description": "Live HF band conditions and propagation predictions generated from 13 billion amateur radio observations using the IONIS neural network.",
+  "url": "https://ham-stats.com/",
+  "applicationCategory": "UtilitiesApplication",
+  "operatingSystem": "Any",
+  "author": {
+    "@type": "Person",
+    "name": "Greg Beam",
+    "callSign": "KI7MT",
+    "url": "https://github.com/KI7MT"
+  },
+  "sourceOrganization": {
+    "@type": "Organization",
+    "name": "IONIS-AI",
+    "url": "https://github.com/IONIS-AI"
+  },
+  "isAccessibleForFree": true,
+  "license": "https://www.gnu.org/licenses/gpl-3.0.html"
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Dataset",
+  "name": "IONIS HF Propagation Dataset",
+  "description": "13 billion+ amateur radio observations from WSPR, Reverse Beacon Network, contest logs, and PSK Reporter used for HF propagation prediction and band condition reporting.",
+  "url": "https://ham-stats.com/dataset/",
+  "license": "https://www.gnu.org/licenses/gpl-3.0.html",
+  "creator": {
+    "@type": "Person",
+    "name": "Greg Beam",
+    "callSign": "KI7MT"
+  },
+  "temporalCoverage": "2005/2026",
+  "variableMeasured": [
+    "Signal-to-Noise Ratio (SNR)",
+    "Solar Flux Index (SFI)",
+    "Kp Geomagnetic Index",
+    "HF Band Conditions"
+  ]
+}
+</script>
+{% endblock %}

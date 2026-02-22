@@ -1,3 +1,10 @@
+---
+description: >-
+  About Ham Stats and the IONIS project. Live HF propagation reports from measured
+  amateur radio observations. Open source, self-hosted, powered by physics-constrained
+  neural networks. Built by KI7MT.
+---
+
 # About Ham Stats
 
 Ham Stats is a product of the [IONIS Project](https://github.com/IONIS-AI) —

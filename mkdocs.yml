@@ -1,11 +1,15 @@
 site_name: Ham Stats — HF Propagation from Real Data
-site_description: Band conditions, propagation reports, and solar impact analysis generated from 13+ billion amateur radio observations
+site_description: >-
+  Live HF band conditions and propagation predictions from 13 billion amateur radio
+  observations. Real-time solar flux, Kp index, storm impact, and band-by-band
+  activity from WSPR, RBN, PSK Reporter, and contest logs. Powered by IONIS.
 site_author: Greg Beam, KI7MT
 site_url: https://ham-stats.com/
 repo_url: https://github.com/IONIS-AI/ionis-hamstats
 
 theme:
   name: material
+  custom_dir: overrides
   palette:
     - scheme: default
       primary: indigo
@@ -40,10 +44,22 @@ markdown_extensions:
   - toc:
       permalink: true
 
+plugins:
+  - search
+  - social
+  - meta
+
 extra:
   social:
     - icon: fontawesome/brands/github
       link: https://github.com/IONIS-AI
+      name: IONIS-AI on GitHub
+    - icon: fontawesome/brands/python
+      link: https://pypi.org/project/ionis-validate/
+      name: ionis-validate on PyPI
+    - icon: material/book-open-variant
+      link: https://ionis-ai.com/
+      name: IONIS Documentation
   generator: false
 
 copyright: "&copy; 2026 KI7MT — Powered by IONIS"

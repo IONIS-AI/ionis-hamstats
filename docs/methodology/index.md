@@ -1,3 +1,10 @@
+---
+description: >-
+  How Ham Stats transforms raw radio spots into propagation intelligence. From
+  WSPR/RBN/PSKR ingestion through ClickHouse aggregation to IONIS neural network
+  predictions — the full data pipeline explained.
+---
+
 # Methodology
 
 How raw spots become propagation intelligence. This section describes the
