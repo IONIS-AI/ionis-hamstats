@@ -1,6 +1,6 @@
 # Storm Impact Analysis
 
-*Updated 10:00 UTC 2026-02-22*
+*Updated 13:00 UTC 2026-02-22*
 
 This page shows measured SNR degradation during geomagnetic storms. All values
 come from actual WSPR signal measurements joined against Kp index at daily
@@ -17,7 +17,7 @@ filtered to ionospheric paths (> 500 km).
 
 | Storm Date (UTC) | Peak Kp | Classification |
 |------------------|---------|----------------|
-| 2026-02-22 | 5.0 | ![G1 Minor](https://img.shields.io/badge/G1_Minor-orange?style=flat-square) |
+| 2026-02-22 | 5.33 | ![G1 Minor](https://img.shields.io/badge/G1_Minor-orange?style=flat-square) |
 | 2026-02-16 | 6.0 | ![G2 Moderate](https://img.shields.io/badge/G2_Moderate-orange?style=flat-square) |
 | 2026-02-15 | 5.33 | ![G1 Minor](https://img.shields.io/badge/G1_Minor-orange?style=flat-square) |
 | 2026-01-11 | 5.33 | ![G1 Minor](https://img.shields.io/badge/G1_Minor-orange?style=flat-square) |
@@ -40,7 +40,7 @@ filtered to ionospheric paths (> 500 km).
 
 ---
 
-## SNR Before / During / After — Storm of 2026-02-22 (Kp 5.0)
+## SNR Before / During / After — Storm of 2026-02-22 (Kp 5.33)
 
 *Median WSPR SNR (dB) on ionospheric paths (> 500 km) for the day before,
 day of, and day after peak Kp.*
@@ -72,7 +72,7 @@ the last 2 years. Consecutive storm days are merged into single events.
 | 20m | 24 | 24 | 60 |
 | 40m | 24 | 48 | 60 |
 | 80m | 24 | 24 | 58 |
-| 160m | 24 | 26 | 60 |
+| 160m | 24 | 48 | 60 |
 
 *Recovery = first day post-storm where band median SNR is within 1 dB of the
 day before the storm. Reported in hours (days × 24). Storms where SNR did not
