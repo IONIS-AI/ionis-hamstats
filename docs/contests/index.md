@@ -1,10 +1,10 @@
 # Contest Calendar
 
 ![SFI](https://img.shields.io/badge/SFI_110-Moderate-2ea043?style=flat-square)
-![Kp](https://img.shields.io/badge/Kp_5.0-G1_Storm-red?style=flat-square)
+![Kp](https://img.shields.io/badge/Kp_5.33-G1_Storm-red?style=flat-square)
 ![Conditions](https://img.shields.io/badge/Conditions-Storm-red?style=flat-square)
 
-*Updated 07:00 UTC 2026-02-22*
+*Updated 10:00 UTC 2026-02-22*
 
 ---
 
@@ -25,16 +25,16 @@
 
 *ARRL International DX — CW, W/VE work the world*
 
-**IONIS V20 predictions from KI7MT (DN13) — current conditions (SFI 110, Kp 5.0)**
+**IONIS V20 predictions from KI7MT (DN13) — current conditions (SFI 110, Kp 5.33)**
 
 | Destination | 10m | 15m | 20m | 40m | 80m | 160m | 
 |-------------|-----|-----|-----|-----|-----|-----|
 | Europe (JN48) | CW | CW | CW | CW | CW | CW | 
-| Japan (PM95) | CW | CW | CW | CW | CW | FT8 | 
-| S. America (GG87) | FT8 | FT8 | FT8 | FT8 | WSPR | WSPR | 
+| Japan (PM95) | CW | CW | CW | CW | FT8 | FT8 | 
+| S. America (GG87) | FT8 | FT8 | FT8 | FT8 | FT8 | FT8 | 
 | Africa (KG33) | FT8 | FT8 | FT8 | WSPR | WSPR | WSPR | 
-| Oceania (QF56) | FT8 | FT8 | FT8 | WSPR | WSPR | WSPR | 
-| Caribbean (FK68) | CW | FT8 | FT8 | FT8 | WSPR | WSPR | 
+| Oceania (QF56) | FT8 | FT8 | FT8 | FT8 | FT8 | WSPR | 
+| Caribbean (FK68) | CW | CW | CW | FT8 | FT8 | FT8 | 
 
 ---
 
@@ -52,16 +52,16 @@
 
 *Top Band SSB — 160m only, Friday evening start*
 
-**IONIS V20 predictions from KI7MT (DN13) — current conditions (SFI 110, Kp 5.0)**
+**IONIS V20 predictions from KI7MT (DN13) — current conditions (SFI 110, Kp 5.33)**
 
 | Destination | 160m | 
 |-------------|-----|
 | Europe (JN48) | CW | 
 | Japan (PM95) | FT8 | 
-| S. America (GG87) | WSPR | 
+| S. America (GG87) | FT8 | 
 | Africa (KG33) | WSPR | 
 | Oceania (QF56) | WSPR | 
-| Caribbean (FK68) | WSPR | 
+| Caribbean (FK68) | FT8 | 
 
 ---
 
@@ -79,16 +79,16 @@
 
 *ARRL International DX — SSB, W/VE work the world*
 
-**IONIS V20 predictions from KI7MT (DN13) — current conditions (SFI 110, Kp 5.0)**
+**IONIS V20 predictions from KI7MT (DN13) — current conditions (SFI 110, Kp 5.33)**
 
 | Destination | 10m | 15m | 20m | 40m | 80m | 160m | 
 |-------------|-----|-----|-----|-----|-----|-----|
 | Europe (JN48) | CW | CW | CW | CW | CW | CW | 
-| Japan (PM95) | CW | CW | CW | CW | CW | FT8 | 
-| S. America (GG87) | FT8 | FT8 | FT8 | FT8 | WSPR | WSPR | 
+| Japan (PM95) | CW | CW | CW | CW | FT8 | FT8 | 
+| S. America (GG87) | FT8 | FT8 | FT8 | FT8 | FT8 | FT8 | 
 | Africa (KG33) | FT8 | FT8 | FT8 | WSPR | WSPR | WSPR | 
-| Oceania (QF56) | FT8 | FT8 | FT8 | WSPR | WSPR | WSPR | 
-| Caribbean (FK68) | CW | FT8 | FT8 | FT8 | WSPR | WSPR | 
+| Oceania (QF56) | FT8 | FT8 | FT8 | FT8 | FT8 | WSPR | 
+| Caribbean (FK68) | CW | CW | CW | FT8 | FT8 | FT8 | 
 
 ---
 
