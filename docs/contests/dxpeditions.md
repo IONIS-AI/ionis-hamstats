@@ -8,10 +8,10 @@ description: >-
 # DXpeditions
 
 ![SFI](https://img.shields.io/badge/SFI_110-Moderate-2ea043?style=flat-square)
-![Kp](https://img.shields.io/badge/Kp_3.67-Unsettled-ffea00?style=flat-square)
-![Conditions](https://img.shields.io/badge/Conditions-Unsettled-ffea00?style=flat-square)
+![Kp](https://img.shields.io/badge/Kp_4.67-Active-orange?style=flat-square)
+![Conditions](https://img.shields.io/badge/Conditions-Unsettled-orange?style=flat-square)
 
-*Updated 04:00 UTC 2026-02-23*
+*Updated 07:00 UTC 2026-02-23*
 
 ---
 
@@ -40,11 +40,11 @@ description: >-
 | **Modes** | SSB, CW, FT8 |
 | **Notes** | Remote autonomous deployment, extended operation |
 
-**IONIS V20: KI7MT (DN13) to Desecheo Island (FK68) — SFI 110, Kp 3.67**
+**IONIS V20: KI7MT (DN13) to Desecheo Island (FK68) — SFI 110, Kp 4.67**
 
 | 10m | 15m | 20m | 40m | 80m | 160m |
 |-----|-----|-----|-----|-----|------|
-| CW | CW | CW | FT8 | FT8 | FT8 |
+| CW | FT8 | FT8 | FT8 | FT8 | WSPR |
 
 ---
 
@@ -59,11 +59,11 @@ description: >-
 | **Modes** | SSB, CW, FT8, RTTY |
 | **Notes** | Most wanted DXCC entity — departs Cape Town Feb 1, dates tentative |
 
-**IONIS V20: KI7MT (DN13) to Bouvet Island (JD04) — SFI 110, Kp 3.67**
+**IONIS V20: KI7MT (DN13) to Bouvet Island (JD04) — SFI 110, Kp 4.67**
 
 | 10m | 15m | 20m | 40m | 80m | 160m |
 |-----|-----|-----|-----|-----|------|
-| FT8 | FT8 | FT8 | WSPR | WSPR | WSPR |
+| FT8 | FT8 | FT8 | FT8 | FT8 | WSPR |
 
 ---
 
@@ -78,7 +78,7 @@ description: >-
 | **Modes** | SSB, CW, FT8 |
 | **Notes** | 3 stations, 24/7 operation |
 
-**IONIS V20: KI7MT (DN13) to Austral Islands (BH42) — SFI 110, Kp 3.67**
+**IONIS V20: KI7MT (DN13) to Austral Islands (BH42) — SFI 110, Kp 4.67**
 
 | 10m | 15m | 20m | 40m | 80m | 160m |
 |-----|-----|-----|-----|-----|------|
@@ -97,11 +97,11 @@ description: >-
 | **Modes** | SSB, CW, FT8 |
 | **Notes** | WA4DAN and W0GJ team leads |
 
-**IONIS V20: KI7MT (DN13) to Sable Island (FN83) — SFI 110, Kp 3.67**
+**IONIS V20: KI7MT (DN13) to Sable Island (FN83) — SFI 110, Kp 4.67**
 
 | 10m | 15m | 20m | 40m | 80m | 160m |
 |-----|-----|-----|-----|-----|------|
-| CW | CW | CW | CW | CW | CW |
+| CW | CW | CW | CW | CW | FT8 |
 
 ---
 
@@ -116,7 +116,7 @@ description: >-
 | **Modes** | SSB, CW, FT8 |
 | **Notes** | 6 stations |
 
-**IONIS V20: KI7MT (DN13) to Marquesas Islands (BH54) — SFI 110, Kp 3.67**
+**IONIS V20: KI7MT (DN13) to Marquesas Islands (BH54) — SFI 110, Kp 4.67**
 
 | 10m | 15m | 20m | 40m | 80m | 160m |
 |-----|-----|-----|-----|-----|------|
