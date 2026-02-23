@@ -8,10 +8,10 @@ description: >-
 # Contest Calendar
 
 ![SFI](https://img.shields.io/badge/SFI_110-Moderate-2ea043?style=flat-square)
-![Kp](https://img.shields.io/badge/Kp_3.67-Unsettled-ffea00?style=flat-square)
+![Kp](https://img.shields.io/badge/Kp_3.33-Unsettled-ffea00?style=flat-square)
 ![Conditions](https://img.shields.io/badge/Conditions-Unsettled-ffea00?style=flat-square)
 
-*Updated 13:00 UTC 2026-02-23*
+*Updated 16:00 UTC 2026-02-23*
 
 ---
 
@@ -31,7 +31,7 @@ description: >-
 
 *Top Band SSB — 160m only, Friday evening start*
 
-**IONIS V20 predictions from KI7MT (DN13) — current conditions (SFI 110, Kp 3.67)**
+**IONIS V20 predictions from KI7MT (DN13) — current conditions (SFI 110, Kp 3.33)**
 
 | Destination | 160m | 
 |-------------|-----|
@@ -58,7 +58,7 @@ description: >-
 
 *ARRL International DX — SSB, W/VE work the world*
 
-**IONIS V20 predictions from KI7MT (DN13) — current conditions (SFI 110, Kp 3.67)**
+**IONIS V20 predictions from KI7MT (DN13) — current conditions (SFI 110, Kp 3.33)**
 
 | Destination | 10m | 15m | 20m | 40m | 80m | 160m | 
 |-------------|-----|-----|-----|-----|-----|-----|
@@ -66,7 +66,7 @@ description: >-
 | Japan (PM95) | CW | CW | CW | CW | CW | CW | 
 | S. America (GG87) | CW | CW | CW | CW | CW | FT8 | 
 | Africa (KG33) | FT8 | FT8 | FT8 | FT8 | FT8 | FT8 | 
-| Oceania (QF56) | CW | CW | FT8 | FT8 | FT8 | FT8 | 
+| Oceania (QF56) | FT8 | FT8 | FT8 | FT8 | FT8 | FT8 | 
 | Caribbean (FK68) | CW | CW | CW | CW | CW | CW | 
 
 ---
