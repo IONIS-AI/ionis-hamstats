@@ -8,10 +8,10 @@ description: >-
 # Contest Calendar
 
 ![SFI](https://img.shields.io/badge/SFI_108-Moderate-2ea043?style=flat-square)
-![Kp](https://img.shields.io/badge/Kp_3.67-Unsettled-ffea00?style=flat-square)
-![Conditions](https://img.shields.io/badge/Conditions-Unsettled_+_Radio_Blackout-ffea00?style=flat-square)
+![Kp](https://img.shields.io/badge/Kp_2.67-Quiet-teal?style=flat-square)
+![Conditions](https://img.shields.io/badge/Conditions-Quiet_+_Radio_Blackout-teal?style=flat-square)
 
-*Updated 07:00 UTC 2026-02-24*
+*Updated 10:00 UTC 2026-02-24*
 
 ---
 
@@ -31,16 +31,16 @@ description: >-
 
 *Top Band SSB — 160m only, Friday evening start*
 
-**IONIS V20 predictions from KI7MT (DN13) — current conditions (SFI 108, Kp 3.67)**
+**IONIS V20 predictions from KI7MT (DN13) — current conditions (SFI 108, Kp 2.67)**
 
 | Destination | 160m | 
 |-------------|-----|
 | Europe (JN48) | CW | 
 | Japan (PM95) | CW | 
-| S. America (GG87) | WSPR | 
-| Africa (KG33) | WSPR | 
-| Oceania (QF56) | WSPR | 
-| Caribbean (FK68) | WSPR | 
+| S. America (GG87) | FT8 | 
+| Africa (KG33) | FT8 | 
+| Oceania (QF56) | FT8 | 
+| Caribbean (FK68) | FT8 | 
 
 ---
 
@@ -58,16 +58,16 @@ description: >-
 
 *ARRL International DX — SSB, W/VE work the world*
 
-**IONIS V20 predictions from KI7MT (DN13) — current conditions (SFI 108, Kp 3.67)**
+**IONIS V20 predictions from KI7MT (DN13) — current conditions (SFI 108, Kp 2.67)**
 
 | Destination | 10m | 15m | 20m | 40m | 80m | 160m | 
 |-------------|-----|-----|-----|-----|-----|-----|
 | Europe (JN48) | RTTY | RTTY | RTTY | CW | CW | CW | 
 | Japan (PM95) | CW | CW | CW | CW | CW | CW | 
-| S. America (GG87) | FT8 | FT8 | FT8 | FT8 | FT8 | WSPR | 
-| Africa (KG33) | FT8 | FT8 | FT8 | FT8 | WSPR | WSPR | 
-| Oceania (QF56) | FT8 | FT8 | FT8 | FT8 | FT8 | WSPR | 
-| Caribbean (FK68) | CW | CW | FT8 | FT8 | FT8 | WSPR | 
+| S. America (GG87) | CW | CW | CW | CW | FT8 | FT8 | 
+| Africa (KG33) | FT8 | FT8 | FT8 | FT8 | FT8 | FT8 | 
+| Oceania (QF56) | FT8 | FT8 | FT8 | FT8 | FT8 | FT8 | 
+| Caribbean (FK68) | CW | CW | CW | CW | CW | FT8 | 
 
 ---
 
