@@ -7,18 +7,18 @@ description: >-
 
 # Contest Calendar
 
-![SFI](https://img.shields.io/badge/SFI_108-Moderate-2ea043?style=flat-square)
-![Kp](https://img.shields.io/badge/Kp_2.33-Quiet-teal?style=flat-square)
-![Conditions](https://img.shields.io/badge/Conditions-Quiet-teal?style=flat-square)
+![SFI](https://img.shields.io/badge/SFI_120-Elevated-2ea043?style=flat-square)
+![Kp](https://img.shields.io/badge/Kp_3.33-Unsettled-ffea00?style=flat-square)
+![Conditions](https://img.shields.io/badge/Conditions-Unsettled-ffea00?style=flat-square)
 
-*Updated 19:00 UTC 2026-02-24*
+*Updated 22:00 UTC 2026-02-24*
 
 ---
 
 ## Next 30 Days
 
 ### CQ 160m SSB
-**3 days** until start
+**2 days** until start
 
 | | |
 |---|---|
@@ -31,15 +31,15 @@ description: >-
 
 *Top Band SSB — 160m only, Friday evening start*
 
-**IONIS V20 predictions from KI7MT (DN13) — current conditions (SFI 108, Kp 2.33)**
+**IONIS V20 predictions from KI7MT (DN13) — current conditions (SFI 120, Kp 3.33)**
 
 | Destination | 160m | 
 |-------------|-----|
 | Europe (JN48) | CW | 
 | Japan (PM95) | CW | 
-| S. America (GG87) | CW | 
-| Africa (KG33) | FT8 | 
-| Oceania (QF56) | FT8 | 
+| S. America (GG87) | FT8 | 
+| Africa (KG33) | WSPR | 
+| Oceania (QF56) | WSPR | 
 | Caribbean (FK68) | CW | 
 
 ---
@@ -58,15 +58,15 @@ description: >-
 
 *ARRL International DX — SSB, W/VE work the world*
 
-**IONIS V20 predictions from KI7MT (DN13) — current conditions (SFI 108, Kp 2.33)**
+**IONIS V20 predictions from KI7MT (DN13) — current conditions (SFI 120, Kp 3.33)**
 
 | Destination | 10m | 15m | 20m | 40m | 80m | 160m | 
 |-------------|-----|-----|-----|-----|-----|-----|
 | Europe (JN48) | CW | CW | CW | CW | CW | CW | 
 | Japan (PM95) | CW | CW | CW | CW | CW | CW | 
-| S. America (GG87) | CW | CW | CW | CW | CW | CW | 
-| Africa (KG33) | FT8 | FT8 | FT8 | FT8 | FT8 | FT8 | 
-| Oceania (QF56) | FT8 | FT8 | FT8 | FT8 | FT8 | FT8 | 
+| S. America (GG87) | FT8 | FT8 | FT8 | FT8 | FT8 | FT8 | 
+| Africa (KG33) | WSPR | WSPR | WSPR | WSPR | WSPR | WSPR | 
+| Oceania (QF56) | FT8 | FT8 | WSPR | WSPR | WSPR | WSPR | 
 | Caribbean (FK68) | CW | CW | CW | CW | CW | CW | 
 
 ---
@@ -76,7 +76,7 @@ description: >-
 
 | Contest | Date (UTC) | Start | Hours | Modes | Countdown |
 |---------|-----------|-------|-------|-------|-----------|
-| [CQ 160m SSB](https://www.cq160.com/) | Feb 27–01 | Fri 22:00 | 48 | SSB | 3 days |
+| [CQ 160m SSB](https://www.cq160.com/) | Feb 27–01 | Fri 22:00 | 48 | SSB | 2 days |
 | [ARRL DX SSB](https://www.arrl.org/arrl-dx) | Mar 07–09 | Sat 00:00 | 48 | SSB | 10 days |
 | [CQ WPX SSB](https://www.cqwpx.com/) | Mar 28–30 | Sat 00:00 | 48 | SSB | 4w 3d |
 | [JIDX CW](https://jidx.org/) | Apr 11–12 | Sat 07:00 | 30 | CW | 6w 3d |
@@ -95,9 +95,9 @@ description: >-
 | [WAE RTTY](https://www.darc.de/der-club/referate/conteste/wae-dx-contest/) | Nov 14–16 | Sat 00:00 | 48 | RTTY | 37w 3d |
 | [JIDX SSB](https://jidx.org/) | Nov 14–15 | Sat 07:00 | 30 | SSB | 37w 3d |
 | [CQ WW CW](https://www.cqww.com/) | Nov 28–30 | Sat 00:00 | 48 | CW | 39w 3d |
-| [ARRL 160m](https://www.arrl.org/160-meter) | Dec 04–06 | Fri 22:00 | 42 | CW | 40w 3d |
+| [ARRL 160m](https://www.arrl.org/160-meter) | Dec 04–06 | Fri 22:00 | 42 | CW | 40w 2d |
 | [ARRL 10m](https://www.arrl.org/10-meter) | Dec 12–14 | Sat 00:00 | 48 | SSB/CW | 41w 3d |
-| [CQ 160m CW](https://www.cq160.com/) | Jan 29–31 | Fri 22:00 | 48 | CW | 48w 3d |
+| [CQ 160m CW](https://www.cq160.com/) | Jan 29–31 | Fri 22:00 | 48 | CW | 48w 2d |
 | [CQ WPX RTTY](https://www.cqwpxrtty.com/) | Feb 13–15 | Sat 00:00 | 48 | RTTY | 50w 3d |
 | [ARRL DX CW](https://www.arrl.org/arrl-dx) | Feb 20–22 | Sat 00:00 | 48 | CW | 51w 3d |
 
