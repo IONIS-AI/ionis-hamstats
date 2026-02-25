@@ -9,6 +9,21 @@ description: >-
 
 **HF propagation predictions trained on 13 billion real observations — not theory, not opinions.**
 
+Ham Stats provides live HF propagation intelligence for amateur radio operators.
+Everything on this site is derived from measured radio observations — WSPR beacons,
+Reverse Beacon Network skimmers, PSK Reporter reception reports, and contest
+QSOs — combined with real-time solar conditions from NOAA.
+
+- **Predictions** — Which bands and modes can reach your target right now
+- **Band Activity** — What's actually being heard across the HF spectrum
+- **Solar Conditions** — Current SFI, Kp, and their impact on propagation
+- **Historical Data** — Band-by-band trends, contest schedules, and DXpedition tracking
+
+The predictions are powered by [IONIS](https://ionis-ai.com/) — a physics-constrained
+neural network trained on the largest curated amateur radio propagation dataset on Earth.
+For technical details on the model and methodology, see
+[ionis-ai.com](https://ionis-ai.com/).
+
 {% set solar = data.solar_current[0] if data.solar_current else {} %}
 {% set sfi_color = 'teal' if sfi and sfi >= 150 else '2ea043' if sfi and sfi >= 100 else 'ffea00' if sfi and sfi >= 80 else 'orange' if sfi and sfi >= 70 else 'red' %}
 {% set kp_color = 'red' if kp and kp >= 5 else 'orange' if kp and kp >= 4 else 'ffea00' if kp and kp >= 3 else 'teal' %}
@@ -50,7 +65,7 @@ description: >-
     The predictions represent a typical path — your actual results will vary with
     your antenna and power, but the path is either open or it isn't.
 
-*IONIS V20 predictions from KI7MT (DN13) for the current solar conditions (SFI {{ sfi | default('—') }}, Kp {{ kp | default('—') }}).*
+*IONIS predictions from KI7MT (DN13) for the current solar conditions (SFI {{ sfi | default('—') }}, Kp {{ kp | default('—') }}).*
 
 | Destination | 10m | 15m | 20m | 40m | 80m | 160m |
 |-------------|-----|-----|-----|-----|-----|------|
