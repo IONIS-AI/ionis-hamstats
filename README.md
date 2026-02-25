@@ -51,9 +51,9 @@ python publish.py --host X     # custom ClickHouse host (default: 192.168.1.90)
 0 */3 * * * .venv/bin/python publish.py --push 2>&1 | logger -t hamstats-publish
 ```
 
-## IONIS V20 Predictions
+## IONIS V22-gamma Predictions
 
-The homepage includes a live prediction table from the IONIS V20 model (IonisGate, 203K params). For each publish cycle, the model predicts SNR from KI7MT (DN13) to six representative contest destinations across four bands, using the current SFI and Kp from `wspr.live_conditions`.
+The homepage includes a live prediction table from the IONIS V22-gamma model with PhysicsOverrideLayer (IonisGate, 205K params). For each publish cycle, the model predicts SNR from KI7MT (DN13) to six representative contest destinations across four bands, using the current SFI and Kp from `wspr.live_conditions`.
 
 Predicted SNR is classified into the best decodable mode:
 
