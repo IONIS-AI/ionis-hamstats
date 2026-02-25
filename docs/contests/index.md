@@ -11,7 +11,7 @@ description: >-
 ![Kp](https://img.shields.io/badge/Kp_2.67-Quiet-teal?style=flat-square)
 ![Conditions](https://img.shields.io/badge/Conditions-Quiet-teal?style=flat-square)
 
-*Updated 01:00 UTC 2026-02-25*
+*Updated 03:05 UTC 2026-02-25*
 
 ---
 
@@ -35,12 +35,12 @@ description: >-
 
 | Destination | 160m | 
 |-------------|-----|
-| Europe (JN48) | CW | 
-| Japan (PM95) | CW | 
-| S. America (GG87) | FT8 | 
-| Africa (KG33) | WSPR | 
-| Oceania (QF56) | WSPR | 
-| Caribbean (FK68) | FT8 | 
+| Europe (JN48) | RTTY | 
+| Japan (PM95) | FT8 | 
+| S. America (GG87) | CW | 
+| Africa (KG33) | FT8 | 
+| Oceania (QF56) | FT8 | 
+| Caribbean (FK68) | CW | 
 
 ---
 
@@ -62,12 +62,12 @@ description: >-
 
 | Destination | 10m | 15m | 20m | 40m | 80m | 160m | 
 |-------------|-----|-----|-----|-----|-----|-----|
-| Europe (JN48) | CW | CW | CW | CW | CW | CW | 
-| Japan (PM95) | CW | CW | CW | CW | CW | CW | 
-| S. America (GG87) | FT8 | FT8 | FT8 | FT8 | FT8 | FT8 | 
-| Africa (KG33) | WSPR | WSPR | WSPR | WSPR | WSPR | WSPR | 
-| Oceania (QF56) | FT8 | FT8 | FT8 | FT8 | WSPR | WSPR | 
-| Caribbean (FK68) | CW | CW | CW | CW | CW | FT8 | 
+| Europe (JN48) | WSPR | WSPR | CW | CW | RTTY | RTTY | 
+| Japan (PM95) | SSB | RTTY | RTTY | CW | CW | FT8 | 
+| S. America (GG87) | WSPR | WSPR | CW | CW | CW | CW | 
+| Africa (KG33) | WSPR | WSPR | FT8 | FT8 | FT8 | FT8 | 
+| Oceania (QF56) | RTTY | CW | CW | CW | CW | FT8 | 
+| Caribbean (FK68) | WSPR | WSPR | FT8 | CW | CW | CW | 
 
 ---
 

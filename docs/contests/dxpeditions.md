@@ -11,7 +11,7 @@ description: >-
 ![Kp](https://img.shields.io/badge/Kp_2.67-Quiet-teal?style=flat-square)
 ![Conditions](https://img.shields.io/badge/Conditions-Quiet-teal?style=flat-square)
 
-*Updated 01:00 UTC 2026-02-25*
+*Updated 03:05 UTC 2026-02-25*
 
 ---
 
@@ -44,7 +44,7 @@ description: >-
 
 | 10m | 15m | 20m | 40m | 80m | 160m |
 |-----|-----|-----|-----|-----|------|
-| CW | CW | CW | CW | CW | FT8 |
+| WSPR | WSPR | FT8 | CW | CW | CW |
 
 ---
 
@@ -63,7 +63,7 @@ description: >-
 
 | 10m | 15m | 20m | 40m | 80m | 160m |
 |-----|-----|-----|-----|-----|------|
-| FT8 | FT8 | FT8 | FT8 | WSPR | WSPR |
+| WSPR | WSPR | CW | CW | CW | CW |
 
 ---
 
@@ -82,7 +82,7 @@ description: >-
 
 | 10m | 15m | 20m | 40m | 80m | 160m |
 |-----|-----|-----|-----|-----|------|
-| CW | CW | CW | FT8 | FT8 | FT8 |
+| CW | CW | CW | CW | CW | CW |
 
 ---
 
@@ -101,7 +101,7 @@ description: >-
 
 | 10m | 15m | 20m | 40m | 80m | 160m |
 |-----|-----|-----|-----|-----|------|
-| RTTY | CW | CW | CW | CW | CW |
+| WSPR | WSPR | CW | CW | CW | CW |
 
 ---
 
@@ -120,7 +120,7 @@ description: >-
 
 | 10m | 15m | 20m | 40m | 80m | 160m |
 |-----|-----|-----|-----|-----|------|
-| CW | CW | CW | CW | FT8 | FT8 |
+| CW | CW | CW | CW | CW | CW |
 
 ---
 

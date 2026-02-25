@@ -81,9 +81,15 @@ PREDICTION_DESTINATIONS = [
 ]
 PREDICTION_BANDS = ["10m", "15m", "20m", "40m", "80m", "160m"]
 
-# Sigma-to-dB conversion (V20 training normalization)
+# Sigma-to-dB conversion (WSPR 20m reference — within 1 dB of all bands)
 WSPR_MEAN_DB = -17.53
 WSPR_STD_DB = 6.7
+
+# Paths to IONIS model components (V22-gamma + PhysicsOverrideLayer)
+_TRAINING_DIR = Path("/mnt/ai-stack/ionis-ai/ionis-training")
+_COMMON_DIR = _TRAINING_DIR / "versions" / "common"
+_V22_CONFIG = _TRAINING_DIR / "versions" / "v22" / "config_v22.json"
+_V22_CHECKPOINT = _TRAINING_DIR / "versions" / "v22" / "ionis_v22_gamma.safetensors"
 
 # Best decodable mode by SNR threshold (descending)
 MODE_THRESHOLDS = [
@@ -141,17 +147,21 @@ def run_all_queries(client) -> dict:
 
 
 # ---------------------------------------------------------------------------
-# IONIS V20 Predictions
+# IONIS V22-gamma + PhysicsOverrideLayer Predictions
 # ---------------------------------------------------------------------------
 
 def load_ionis_model():
-    """Load IONIS V20 model for CPU inference."""
+    """Load IONIS V22-gamma model for CPU inference."""
     try:
         import torch  # noqa: F811
-        sys.path.insert(0, "/mnt/ai-stack/ionis-ai/ionis-validate/src")
-        from ionis_validate.model import load_model
+        sys.path.insert(0, str(_COMMON_DIR))
+        from model import load_model
         device = torch.device("cpu")
-        model, _config, _ckpt = load_model(device=device)
+        model, _config, _meta = load_model(
+            config_path=str(_V22_CONFIG),
+            checkpoint_path=str(_V22_CHECKPOINT),
+            device=device,
+        )
         return model, device
     except Exception as e:
         print(f"  WARNING: IONIS model not available: {e}")
@@ -166,14 +176,16 @@ def classify_mode(snr_db: float) -> str:
 
 
 def generate_predictions(model, device, sfi: float, kp: float) -> list[dict] | None:
-    """Run V20 on KI7MT → 6 destinations x 4 bands."""
+    """Run V22-gamma + PhysicsOverrideLayer on KI7MT → 6 destinations x 6 bands."""
     if model is None:
         return None
     import torch  # noqa: F811
-    from ionis_validate.model import grid4_to_latlon, build_features, BAND_FREQ_HZ
+    from model import grid4_to_latlon, build_features, BAND_FREQ_HZ, solar_elevation_deg
+    from physics_override import apply_override_to_prediction
 
     now = dt.datetime.utcnow()
     hour, month = now.hour, now.month
+    day_of_year = now.timetuple().tm_yday
     tx_lat, tx_lon = grid4_to_latlon(TX_GRID)
 
     results = []
@@ -185,10 +197,17 @@ def generate_predictions(model, device, sfi: float, kp: float) -> list[dict] | N
             features = build_features(
                 tx_lat, tx_lon, rx_lat, rx_lon,
                 freq_hz, sfi, kp, hour, month,
+                day_of_year=day_of_year,
+                include_solar_depression=True,
             )
             x = torch.tensor(features, dtype=torch.float32, device=device).unsqueeze(0)
             with torch.no_grad():
                 sigma = model(x).item()
+            # Apply physics override (clamps impossible high-band night predictions)
+            freq_mhz = freq_hz / 1e6
+            tx_solar = solar_elevation_deg(tx_lat, tx_lon, hour, day_of_year)
+            rx_solar = solar_elevation_deg(rx_lat, rx_lon, hour, day_of_year)
+            sigma, _ = apply_override_to_prediction(sigma, freq_mhz, tx_solar, rx_solar)
             snr_db = sigma * WSPR_STD_DB + WSPR_MEAN_DB
             row["bands"][band] = classify_mode(snr_db)
         results.append(row)
@@ -198,17 +217,19 @@ def generate_predictions(model, device, sfi: float, kp: float) -> list[dict] | N
 def generate_dxpedition_predictions(
     model, device, dxpeditions: list[dict], sfi: float, kp: float,
 ) -> dict[str, list[dict]] | None:
-    """Run V20 from DN13 to each DXpedition grid across 4 bands.
+    """Run V22-gamma + PhysicsOverrideLayer from DN13 to each DXpedition grid across 6 bands.
 
-    Returns {callsign: [{"band": "10m", "mode": "CW"}, ...]}.
+    Returns {callsign: {"10m": "CW", ...}}.
     """
     if model is None or not dxpeditions:
         return None
     import torch  # noqa: F811
-    from ionis_validate.model import grid4_to_latlon, build_features, BAND_FREQ_HZ
+    from model import grid4_to_latlon, build_features, BAND_FREQ_HZ, solar_elevation_deg
+    from physics_override import apply_override_to_prediction
 
     now = dt.datetime.utcnow()
     hour, month = now.hour, now.month
+    day_of_year = now.timetuple().tm_yday
     tx_lat, tx_lon = grid4_to_latlon(TX_GRID)
 
     results = {}
@@ -223,10 +244,17 @@ def generate_dxpedition_predictions(
             features = build_features(
                 tx_lat, tx_lon, rx_lat, rx_lon,
                 freq_hz, sfi, kp, hour, month,
+                day_of_year=day_of_year,
+                include_solar_depression=True,
             )
             x = torch.tensor(features, dtype=torch.float32, device=device).unsqueeze(0)
             with torch.no_grad():
                 sigma = model(x).item()
+            # Apply physics override
+            freq_mhz = freq_hz / 1e6
+            tx_solar = solar_elevation_deg(tx_lat, tx_lon, hour, day_of_year)
+            rx_solar = solar_elevation_deg(rx_lat, rx_lon, hour, day_of_year)
+            sigma, _ = apply_override_to_prediction(sigma, freq_mhz, tx_solar, rx_solar)
             snr_db = sigma * WSPR_STD_DB + WSPR_MEAN_DB
             bands[band] = classify_mode(snr_db)
         results[dx["callsign"]] = bands
@@ -610,7 +638,7 @@ def main():
     solar_row = solar[0] if solar else {}
     sfi = float(solar_row.get("solar_flux", 100))
     kp = float(solar_row.get("kp_index", 3))
-    print("Loading IONIS V20 model...")
+    print("Loading IONIS V22-gamma model...")
     model, device = load_ionis_model()
     predictions = generate_predictions(model, device, sfi, kp)
     if predictions:
