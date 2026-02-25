@@ -25,10 +25,10 @@ For technical details on the model and methodology, see
 [ionis-ai.com](https://ionis-ai.com/).
 
 ![SFI](https://img.shields.io/badge/SFI_120-Elevated-2ea043?style=flat-square)
-![Kp](https://img.shields.io/badge/Kp_2.67-Quiet-teal?style=flat-square)
-![Conditions](https://img.shields.io/badge/Conditions-Quiet-teal?style=flat-square)
+![Kp](https://img.shields.io/badge/Kp_3.67-Unsettled-ffea00?style=flat-square)
+![Conditions](https://img.shields.io/badge/Conditions-Unsettled-ffea00?style=flat-square)
 
-*Updated 03:05 UTC · NOAA SWPC*
+*Updated 04:00 UTC · NOAA SWPC*
 
 ---
 
@@ -60,16 +60,16 @@ For technical details on the model and methodology, see
     The predictions represent a typical path — your actual results will vary with
     your antenna and power, but the path is either open or it isn't.
 
-*IONIS predictions from KI7MT (DN13) for the current solar conditions (SFI 120, Kp 2.67).*
+*IONIS predictions from KI7MT (DN13) for the current solar conditions (SFI 120, Kp 3.67).*
 
 | Destination | 10m | 15m | 20m | 40m | 80m | 160m |
 |-------------|-----|-----|-----|-----|-----|------|
-| Europe (JN48) | WSPR | WSPR | CW | CW | RTTY | RTTY |
-| Japan (PM95) | SSB | RTTY | RTTY | CW | CW | FT8 |
-| S. America (GG87) | WSPR | WSPR | CW | CW | CW | CW |
-| Africa (KG33) | WSPR | WSPR | FT8 | FT8 | FT8 | FT8 |
-| Oceania (QF56) | RTTY | CW | CW | CW | CW | FT8 |
-| Caribbean (FK68) | WSPR | WSPR | FT8 | CW | CW | CW |
+| Europe (JN48) | WSPR | WSPR | CW | CW | CW | CW |
+| Japan (PM95) | RTTY | RTTY | CW | CW | CW | FT8 |
+| S. America (GG87) | WSPR | WSPR | FT8 | CW | CW | FT8 |
+| Africa (KG33) | FT8 | FT8 | FT8 | FT8 | FT8 | FT8 |
+| Oceania (QF56) | CW | CW | CW | CW | FT8 | FT8 |
+| Caribbean (FK68) | WSPR | WSPR | FT8 | FT8 | CW | CW |
 
 *Mode thresholds: SSB &ge; +3 dB, RTTY &ge; -5 dB, CW &ge; -15 dB, FT8 &ge; -21 dB, WSPR &ge; -28 dB.
 Predictions update every 3 hours with current solar conditions.*
@@ -87,13 +87,13 @@ RBN archives lag ~24 hours; zeroes indicate no data in the window, not band clos
 |------|-----------|-----------|------------|----------|--------|
 | 10m | 0 | 0 | 4.6M | +122 dB | Strong |
 | 12m | 0 | 0 | 1.8M | +51 dB | Strong |
-| 15m | 0 | 0 | 5.0M | +65 dB | Strong |
+| 15m | 0 | 0 | 4.9M | +65 dB | Strong |
 | 17m | 0 | 0 | 2.2M | +87 dB | Strong |
-| 20m | 0 | 0 | 8.1M | +67 dB | Strong |
-| 30m | 0 | 0 | 2.0M | +87 dB | Strong |
-| 40m | 0 | 0 | 6.7M | +87 dB | Strong |
-| 80m | 0 | 0 | 1.6M | +87 dB | Strong |
-| 160m | 0 | 0 | 289,784 | +51 dB | Strong |
+| 20m | 0 | 0 | 8.0M | +67 dB | Strong |
+| 30m | 0 | 0 | 1.9M | +87 dB | Strong |
+| 40m | 0 | 0 | 6.4M | +87 dB | Strong |
+| 80m | 0 | 0 | 1.5M | +87 dB | Strong |
+| 160m | 0 | 0 | 267,469 | +51 dB | Strong |
 
 ---
 
