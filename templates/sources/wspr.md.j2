@@ -42,32 +42,7 @@ datasets of its kind.**
 
 *Band IDs are ADIF standard. Band assignment uses frequency-to-band lookup
 (single source of truth in `bands.GetBand()`). Fixed as of v2.1.0 re-ingest
-(2026-02-03) — all 10.8B rows carry correct ADIF IDs.*
-
----
-
-## Geographic Coverage
-
-| Region | Unique Transmitter Grids | Unique Receiver Grids | Unique Grid Pairs |
-|--------|-------------------------|----------------------|-------------------|
-| North America | — | — | — |
-| Europe | — | — | — |
-| Asia/Pacific | — | — | — |
-| South America | — | — | — |
-| Africa | — | — | — |
-| Other | — | — | — |
-
-*Coming soon — requires geographic coverage query.*
-
----
-
-## Daily Growth (Last 30 Days)
-
-| Date | Spots | Cumulative Total |
-|------|-------|-----------------|
-| — | — | — |
-
-*Coming soon — requires daily growth query.*
+(2026-02-03) — all rows carry correct ADIF IDs.*
 
 ---
 
@@ -78,5 +53,5 @@ datasets of its kind.**
   signatures to focus on ionospheric skip.
 - Balloon/telemetry callsigns removed: 1,443 entries identified in
   `wspr.balloon_callsigns_v2`, covering ~950K spots (0.009% of bronze).
-- 93.3M rows promoted to `wspr.signatures_v2_terrestrial` after quality
+- 93.6M rows promoted to `wspr.signatures_v2_terrestrial` after quality
   filtering and solar joining.

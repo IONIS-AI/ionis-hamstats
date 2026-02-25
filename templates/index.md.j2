@@ -7,7 +7,7 @@ description: >-
 
 # Ham Stats
 
-**HF propagation predictions trained on 13 billion real observations — not theory, not opinions.**
+**HF propagation predictions trained on 14 billion real observations — not theory, not opinions.**
 
 Ham Stats provides live HF propagation intelligence for amateur radio operators.
 Everything on this site is derived from measured radio observations — WSPR beacons,
@@ -57,7 +57,7 @@ For technical details on the model and methodology, see
     matched against the minimum decode thresholds for each mode — SSB needs a
     strong signal (+3 dB), while WSPR can pull signals out of the noise floor (-28 dB).
 
-    The model was trained on 13+ billion WSPR spots across thousands of stations
+    The model was trained on 14+ billion observations across thousands of stations
     with varying power levels and antennas. Because TX power is not a model input,
     these station differences become noise that the model averages over — what it
     learned is the ionosphere itself, not any particular operator's setup.
@@ -75,8 +75,6 @@ For technical details on the model and methodology, see
 
 *Mode thresholds: SSB &ge; +3 dB, RTTY &ge; -5 dB, CW &ge; -15 dB, FT8 &ge; -21 dB, WSPR &ge; -28 dB.
 Predictions update every 3 hours with current solar conditions.*
-
-**Want predictions from your grid?** Custom prediction tool coming soon — enter your grid and get personalized band/mode forecasts.
 
 ---
 
@@ -111,7 +109,7 @@ RBN archives lag ~24 hours; zeroes indicate no data in the window, not band clos
 ## About This Site
 
 Ham Stats is generated every 3 hours from a self-hosted ClickHouse database
-containing **13+ billion** amateur radio propagation observations — one of the
+containing **14+ billion** amateur radio propagation observations — one of the
 largest curated datasets of its kind. No cloud services. No third-party APIs.
 Every query runs against data we collected and maintain.
 

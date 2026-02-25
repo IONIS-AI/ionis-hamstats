@@ -45,7 +45,7 @@ description: >-
 {% set contest_pred_bands = [] %}
 {% for band in prediction_bands %}{% if band in contest.bands %}{% if contest_pred_bands.append(band) %}{% endif %}{% endif %}{% endfor %}
 {% if predictions and contest_pred_bands %}
-**IONIS V20 predictions from KI7MT (DN13) — current conditions (SFI {{ sfi }}, Kp {{ kp }})**
+**IONIS predictions from KI7MT (DN13) — current conditions (SFI {{ sfi }}, Kp {{ kp }})**
 
 | Destination | {% for band in contest_pred_bands %}{{ band }} | {% endfor %}
 
@@ -98,8 +98,6 @@ plus Python date math produces a calendar that stays current without manual upda
 Some contests start Friday evening (CQ 160m, ARRL 160m). Durations range
 from 24 hours (IARU, SAC, Oceania) to 48 hours (CQ WW, WPX).
 
-Predictions use IONIS V20 — a neural network trained on 13 billion real
-propagation observations. They reflect current solar conditions and update
-every 3 hours.
-
-**Want predictions from your grid?** Custom prediction tool coming soon — enter your grid and get personalized band/mode forecasts for any contest weekend.
+Predictions use IONIS V22-gamma — a physics-constrained neural network trained
+on 14 billion real propagation observations. They reflect current solar
+conditions and update every 3 hours.

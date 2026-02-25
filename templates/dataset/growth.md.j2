@@ -7,58 +7,6 @@ contest weekend.
 
 ---
 
-## Daily Growth — Last 30 Days
-
-*Rows ingested per source per day. WSPR and RBN ingest run daily as new
-archive files become available. PSKR ingest runs hourly.*
-
-| Date | WSPR | RBN | PSKR | Contest | Total |
-|------|------|-----|------|---------|-------|
-| — | — | — | — | — | — |
-
-*Coming soon — requires daily growth query.*
-
----
-
-## Monthly Growth — All Time
-
-*Total rows added per source per month. Historical ingests (WSPR backfill,
-RBN backfill) appear as large single-month spikes.*
-
-| Month | WSPR | RBN | PSKR | Contest | Running Total |
-|-------|------|-----|------|---------|---------------|
-| — | — | — | — | — | — |
-
-*Coming soon — requires monthly growth query.*
-
----
-
-## Growth Rate by Source
-
-| Source | Avg Daily (last 30 days) | Avg Daily (last 7 days) | Trend |
-|--------|------------------------|------------------------|-------|
-| WSPR | — | — | — |
-| RBN | — | — | — |
-| PSKR | — | — | — |
-| Contest | — | — | — |
-
-*Coming soon — requires growth rate query.*
-
----
-
-## Cumulative Total by Source
-
-| Source | 2022 | 2023 | 2024 | 2025 | Current |
-|--------|------|------|------|------|---------|
-| WSPR | — | — | — | — | — |
-| RBN | — | — | — | — | — |
-| Contest | — | — | — | — | — |
-| PSKR | — | — | — | — | — |
-
-*Coming soon — requires cumulative growth query.*
-
----
-
 ## Pipeline Latency
 
 | Source | Data Delay | Ingest Schedule | Notes |

@@ -48,7 +48,7 @@ description: >-
 {% endif %}
 
 {% if dxpedition_predictions and dx.callsign in dxpedition_predictions %}
-**IONIS V20: KI7MT (DN13) to {{ dx.entity }} ({{ dx.grid }}) — SFI {{ sfi }}, Kp {{ kp }}**
+**IONIS: KI7MT (DN13) to {{ dx.entity }} ({{ dx.grid }}) — SFI {{ sfi }}, Kp {{ kp }}**
 
 | 10m | 15m | 20m | 40m | 80m | 160m |
 |-----|-----|-----|-----|-----|------|
@@ -73,10 +73,8 @@ description: >-
 
 ---
 
-*DXpeditions are curated from public announcements. Predictions use IONIS V20
-with current solar conditions — actual DXpedition conditions may differ.
-Mode thresholds: SSB &ge; +3 dB, RTTY &ge; -5 dB, CW &ge; -15 dB, FT8 &ge; -21 dB, WSPR &ge; -28 dB.
+*DXpeditions are curated from public announcements. Predictions use IONIS
+V22-gamma with current solar conditions — actual DXpedition conditions may
+differ. Mode thresholds: SSB &ge; +3 dB, RTTY &ge; -5 dB, CW &ge; -15 dB, FT8 &ge; -21 dB, WSPR &ge; -28 dB.
 Past entries are filtered automatically. Add a DXpedition via
 [PR to dxpeditions.yaml](https://github.com/IONIS-AI/ionis-hamstats/blob/main/data/dxpeditions.yaml).*
-
-**Want predictions from your grid?** Custom prediction tool coming soon — enter your grid and get personalized band/mode forecasts to any DXpedition.

@@ -1,14 +1,14 @@
 ---
 description: >-
-  13 billion amateur radio observations across 17 years of HF propagation history.
+  14 billion amateur radio observations across 18 years of HF propagation history.
   WSPR, RBN, contest logs, and PSK Reporter — all solar-joined, all self-hosted
   in ClickHouse on sovereign infrastructure.
 ---
 
 # Dataset Overview
 
-13+ billion amateur radio propagation observations. Four independent networks.
-17 years of HF history. All solar-joined. All self-hosted.
+14+ billion amateur radio propagation observations. Four independent networks.
+18 years of HF history. All solar-joined. All self-hosted.
 
 This is one of the largest curated amateur radio propagation datasets of its kind. It did
 not exist as a single queryable resource before this project. The data was
@@ -26,12 +26,12 @@ cleaned it, and joined it with solar indices at 3-hour resolution.
 {% set contest_row = data.dataset_totals | selectattr("source_name", "equalto", "Contest") | first | default({}) %}
 | Source | Raw Rows | Signatures | SNR Type | Years |
 |--------|---------|------------|----------|-------|
-| WSPR (`wspr.bronze`) | {{ wspr_row.total_rows | fmt }} | 93.3M | Measured (-30 to +20 dB) | 2008–2026 |
-| RBN (`rbn.bronze`) | {{ rbn_row.total_rows | fmt }} | 56.7M | Measured (8–29 dB) | 2009–2026 |
-| Contest (`contest.bronze`) | {{ contest_row.total_rows | fmt }} | 6.3M | Anchored (+10/0 dB) | 2005–2025 |
+| WSPR (`wspr.bronze`) | {{ wspr_row.total_rows | fmt }} | 93.6M | Measured (-30 to +20 dB) | 2008–2026 |
+| RBN (`rbn.bronze`) | {{ rbn_row.total_rows | fmt }} | 67.3M | Measured (8–29 dB) | 2009–2026 |
+| Contest (`contest.bronze`) | {{ contest_row.total_rows | fmt }} | 5.7M | Anchored (+10/0 dB) | 2005–2025 |
 | DXpedition | 3.9M paths | 260K (x50) | Measured | 2009–2025 |
 | PSK Reporter (`pskr.bronze`) | {{ pskr_row.total_rows | fmt }} (26M/day) | Pending | Measured (-34 to +38 dB) | Feb 2026+ |
-| **Total** | **13.76B+** | **156.4M+** | Full range | 2005–present |
+| **Total** | **14B+** | **166.9M+** | Full range | 2005–present |
 
 ---
 

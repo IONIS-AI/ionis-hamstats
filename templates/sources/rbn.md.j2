@@ -40,39 +40,13 @@ beacons, below the contest-grade SSB ceiling.
 
 ---
 
-## Mode Breakdown
-
-| Mode | Spots | Pct | Notes |
-|------|-------|-----|-------|
-| CW | — | — | — |
-| RTTY | — | — | — |
-| PSK31 | — | — | — |
-| (empty) | — | — | 2009–2010 era, RBN was CW-only; mode field unpopulated |
-
-*Coming soon — requires RBN mode breakdown query.*
-
----
-
-## Geographic Coverage
-
-| Metric | Value |
-|--------|-------|
-| **Unique Transmitter Grids** | — |
-| **Unique Skimmer (Receiver) Grids** | — |
-| **Unique Grid Pairs** | — |
-| **Skimmer Count (active)** | — |
-
-*Coming soon — requires RBN geographic coverage query.*
-
----
-
 ## Data Quality Notes
 
 - Raw SNR range: up to 233 dB (skimmer AGC artifacts). `rbn.signatures`
   filters to -20 to 80 dB.
 - 30M spots (2009–2010) have empty `tx_mode` — RBN was CW-only then.
   These spots are included in signatures as CW.
-- 56.7M rows promoted to `rbn.signatures` after quality filtering and
+- 67.3M rows promoted to `rbn.signatures` after quality filtering and
   solar joining.
 - DXpedition paths (rare, high-value paths) identified separately in
   `rbn.dxpedition_paths` and `rbn.dxpedition_signatures`.
