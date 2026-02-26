@@ -180,7 +180,7 @@ def generate_predictions(model, device, sfi: float, kp: float) -> list[dict] | N
     if model is None:
         return None
     import torch  # noqa: F811
-    from model import grid4_to_latlon, build_features, BAND_FREQ_HZ, solar_elevation_deg
+    from model import grid4_to_latlon, build_features, haversine_km, BAND_FREQ_HZ, solar_elevation_deg
     from physics_override import apply_override_to_prediction
 
     now = dt.datetime.utcnow()
@@ -191,6 +191,7 @@ def generate_predictions(model, device, sfi: float, kp: float) -> list[dict] | N
     results = []
     for dest in PREDICTION_DESTINATIONS:
         rx_lat, rx_lon = grid4_to_latlon(dest["grid"])
+        dist_km = haversine_km(tx_lat, tx_lon, rx_lat, rx_lon)
         row = {"label": dest["label"], "bands": {}}
         for band in PREDICTION_BANDS:
             freq_hz = BAND_FREQ_HZ[band]
@@ -203,11 +204,12 @@ def generate_predictions(model, device, sfi: float, kp: float) -> list[dict] | N
             x = torch.tensor(features, dtype=torch.float32, device=device).unsqueeze(0)
             with torch.no_grad():
                 sigma = model(x).item()
-            # Apply physics override (clamps impossible high-band night predictions)
+            # Apply physics override (Rules A/B: high-band night, Rule C: low-band day)
             freq_mhz = freq_hz / 1e6
             tx_solar = solar_elevation_deg(tx_lat, tx_lon, hour, day_of_year)
             rx_solar = solar_elevation_deg(rx_lat, rx_lon, hour, day_of_year)
-            sigma, _ = apply_override_to_prediction(sigma, freq_mhz, tx_solar, rx_solar)
+            sigma, _ = apply_override_to_prediction(
+                sigma, freq_mhz, tx_solar, rx_solar, distance_km=dist_km)
             snr_db = sigma * WSPR_STD_DB + WSPR_MEAN_DB
             row["bands"][band] = classify_mode(snr_db)
         results.append(row)
@@ -224,7 +226,7 @@ def generate_dxpedition_predictions(
     if model is None or not dxpeditions:
         return None
     import torch  # noqa: F811
-    from model import grid4_to_latlon, build_features, BAND_FREQ_HZ, solar_elevation_deg
+    from model import grid4_to_latlon, build_features, haversine_km, BAND_FREQ_HZ, solar_elevation_deg
     from physics_override import apply_override_to_prediction
 
     now = dt.datetime.utcnow()
@@ -238,6 +240,7 @@ def generate_dxpedition_predictions(
         if len(grid) < 4:
             continue
         rx_lat, rx_lon = grid4_to_latlon(grid)
+        dist_km = haversine_km(tx_lat, tx_lon, rx_lat, rx_lon)
         bands = {}
         for band in PREDICTION_BANDS:
             freq_hz = BAND_FREQ_HZ[band]
@@ -250,11 +253,12 @@ def generate_dxpedition_predictions(
             x = torch.tensor(features, dtype=torch.float32, device=device).unsqueeze(0)
             with torch.no_grad():
                 sigma = model(x).item()
-            # Apply physics override
+            # Apply physics override (Rules A/B: high-band night, Rule C: low-band day)
             freq_mhz = freq_hz / 1e6
             tx_solar = solar_elevation_deg(tx_lat, tx_lon, hour, day_of_year)
             rx_solar = solar_elevation_deg(rx_lat, rx_lon, hour, day_of_year)
-            sigma, _ = apply_override_to_prediction(sigma, freq_mhz, tx_solar, rx_solar)
+            sigma, _ = apply_override_to_prediction(
+                sigma, freq_mhz, tx_solar, rx_solar, distance_km=dist_km)
             snr_db = sigma * WSPR_STD_DB + WSPR_MEAN_DB
             bands[band] = classify_mode(snr_db)
         results[dx["callsign"]] = bands
