@@ -50,9 +50,12 @@ description: >-
 {% if dxpedition_predictions and dx.callsign in dxpedition_predictions %}
 **IONIS: KI7MT (DN13) to {{ dx.entity }} ({{ dx.grid }}) — SFI {{ sfi }}, Kp {{ kp }}**
 
-| 10m | 15m | 20m | 40m | 80m | 160m |
-|-----|-----|-----|-----|-----|------|
-| {{ dxpedition_predictions[dx.callsign].get("10m", "\u2014") }} | {{ dxpedition_predictions[dx.callsign].get("15m", "\u2014") }} | {{ dxpedition_predictions[dx.callsign].get("20m", "\u2014") }} | {{ dxpedition_predictions[dx.callsign].get("40m", "\u2014") }} | {{ dxpedition_predictions[dx.callsign].get("80m", "\u2014") }} | {{ dxpedition_predictions[dx.callsign].get("160m", "\u2014") }} |
+|{% for b in prediction_bands %} {{ b }} |{% endfor %}
+
+|{% for b in prediction_bands %}-----|{% endfor %}
+
+|{% for b in prediction_bands %} {{ dxpedition_predictions[dx.callsign].get(b, "\u2014") }} |{% endfor %}
+
 
 {% endif %}
 ---

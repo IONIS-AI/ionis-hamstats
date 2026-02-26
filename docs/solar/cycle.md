@@ -1,10 +1,10 @@
 # Solar Cycle 25
 
-![SFI](https://img.shields.io/badge/SFI_120-Elevated-2ea043?style=flat-square)
-![Kp](https://img.shields.io/badge/Kp_3.67-Unsettled-ffea00?style=flat-square)
-![Conditions](https://img.shields.io/badge/Conditions-Unsettled-ffea00?style=flat-square)
+![SFI](https://img.shields.io/badge/SFI_125-Elevated-2ea043?style=flat-square)
+![Kp](https://img.shields.io/badge/Kp_2.67-Quiet-teal?style=flat-square)
+![Conditions](https://img.shields.io/badge/Conditions-Quiet_+_Radio_Blackout-teal?style=flat-square)
 
-*Updated 04:00 UTC 2026-02-25 · NOAA SWPC*
+*Updated 16:55 UTC 2026-02-26 · NOAA SWPC*
 
 Solar Cycle 25 began in December 2019. It is tracking above initial predictions
 and is relevant to every propagation measurement in this dataset — the higher
@@ -15,57 +15,6 @@ This page tracks cycle position using monthly SSN and SFI averaged from
 
 ---
 
-## Cycle Position
-
-| Metric | Value |
-|--------|-------|
-| **Current Monthly SSN** | — |
-| **12-Month Smoothed SSN** | — |
-| **Cycle 25 Start** | December 2019 |
-| **Estimated Peak** | — |
-| **Months Since Cycle Start** | — |
-| **Predicted Peak SSN (NOAA)** | 137 |
-| **Actual Peak SSN (so far)** | — |
-
-*Coming soon — requires monthly SSN aggregation query.*
-
----
-
-## Monthly SSN and SFI — Solar Cycle 25
-
-*Monthly averages from `solar.bronze`. Smoothed SSN uses a 13-month
-centered running mean.*
-
-| Month | Monthly SSN | Smoothed SSN | Monthly SFI | Smoothed SFI |
-|-------|------------|--------------|------------|--------------|
-| — | — | — | — | — |
-
-*Coming soon — requires monthly solar aggregation query.*
-
----
-
-## Cycle 24 vs Cycle 25 Comparison
-
-Month-by-month comparison at the same point in each cycle. Cycle 24 peaked at
-SSN ~116 (April 2014). Cycle 25 comparison starts from December 2019.
-
-| Months Into Cycle | Cycle 24 SSN | Cycle 25 SSN | Cycle 25 Ahead/Behind |
-|-------------------|-------------|-------------|----------------------|
-| — | — | — | — |
-
-*Coming soon — requires cross-cycle comparison query.*
-
----
-
-## IONIS Prediction Accuracy Over the Cycle
-
-Pearson correlation between IONIS predictions and measured WSPR SNR, grouped
-by 6-month intervals. Higher solar activity generally improves prediction
-accuracy on upper bands.
-
-| Period | Avg SSN | IONIS Pearson | RMSE (sigma) | Sample Count |
-|--------|---------|---------------|--------------|--------------|
-| — | — | — | — | — |
-
-*V20 production model trained on data through 2025. Correlation metrics
-computed on held-out test sets.*
+Solar Cycle 25 began in December 2019 and is tracking well above NOAA's initial
+prediction of SSN 137. The current phase of high solar activity benefits
+upper HF bands (10m–17m) by raising the Maximum Usable Frequency.

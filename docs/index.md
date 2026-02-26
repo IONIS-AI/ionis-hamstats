@@ -7,7 +7,7 @@ description: >-
 
 # Ham Stats
 
-**HF propagation predictions trained on 13 billion real observations — not theory, not opinions.**
+**HF propagation predictions trained on 14 billion real observations — not theory, not opinions.**
 
 Ham Stats provides live HF propagation intelligence for amateur radio operators.
 Everything on this site is derived from measured radio observations — WSPR beacons,
@@ -24,11 +24,11 @@ neural network trained on the largest curated amateur radio propagation dataset 
 For technical details on the model and methodology, see
 [ionis-ai.com](https://ionis-ai.com/).
 
-![SFI](https://img.shields.io/badge/SFI_120-Elevated-2ea043?style=flat-square)
-![Kp](https://img.shields.io/badge/Kp_3.67-Unsettled-ffea00?style=flat-square)
-![Conditions](https://img.shields.io/badge/Conditions-Unsettled-ffea00?style=flat-square)
+![SFI](https://img.shields.io/badge/SFI_125-Elevated-2ea043?style=flat-square)
+![Kp](https://img.shields.io/badge/Kp_2.67-Quiet-teal?style=flat-square)
+![Conditions](https://img.shields.io/badge/Conditions-Quiet_+_Radio_Blackout-teal?style=flat-square)
 
-*Updated 04:00 UTC · NOAA SWPC*
+*Updated 16:55 UTC · NOAA SWPC*
 
 ---
 
@@ -52,7 +52,7 @@ For technical details on the model and methodology, see
     matched against the minimum decode thresholds for each mode — SSB needs a
     strong signal (+3 dB), while WSPR can pull signals out of the noise floor (-28 dB).
 
-    The model was trained on 13+ billion WSPR spots across thousands of stations
+    The model was trained on 14+ billion observations across thousands of stations
     with varying power levels and antennas. Because TX power is not a model input,
     these station differences become noise that the model averages over — what it
     learned is the ionosphere itself, not any particular operator's setup.
@@ -60,21 +60,19 @@ For technical details on the model and methodology, see
     The predictions represent a typical path — your actual results will vary with
     your antenna and power, but the path is either open or it isn't.
 
-*IONIS predictions from KI7MT (DN13) for the current solar conditions (SFI 120, Kp 3.67).*
+*IONIS predictions from KI7MT (DN13) for the current solar conditions (SFI 125, Kp 2.67).*
 
-| Destination | 10m | 15m | 20m | 40m | 80m | 160m |
-|-------------|-----|-----|-----|-----|-----|------|
-| Europe (JN48) | WSPR | WSPR | CW | CW | CW | CW |
-| Japan (PM95) | RTTY | RTTY | CW | CW | CW | FT8 |
-| S. America (GG87) | WSPR | WSPR | FT8 | CW | CW | FT8 |
-| Africa (KG33) | FT8 | FT8 | FT8 | FT8 | FT8 | FT8 |
-| Oceania (QF56) | CW | CW | CW | CW | FT8 | FT8 |
-| Caribbean (FK68) | WSPR | WSPR | FT8 | FT8 | CW | CW |
+| Destination | 10m | 12m | 15m | 17m | 20m | 30m | 40m | 60m | 80m | 160m |
+|-------------|-----|-----|-----|-----|-----|-----|-----|-----|-----|-----|
+| Europe (JN48) | SSB | SSB | SSB | SSB | RTTY | RTTY | — | — | — | — |
+| Japan (PM95) | FT8 | FT8 | FT8 | FT8 | FT8 | FT8 | FT8 | CW | — | — |
+| S. America (GG87) | RTTY | CW | CW | CW | CW | CW | — | — | — | — |
+| Africa (KG33) | CW | CW | CW | CW | CW | CW | — | — | — | — |
+| Oceania (QF56) | CW | FT8 | FT8 | FT8 | FT8 | FT8 | FT8 | FT8 | — | — |
+| Caribbean (FK68) | RTTY | CW | CW | CW | CW | FT8 | — | — | — | — |
 
 *Mode thresholds: SSB &ge; +3 dB, RTTY &ge; -5 dB, CW &ge; -15 dB, FT8 &ge; -21 dB, WSPR &ge; -28 dB.
 Predictions update every 3 hours with current solar conditions.*
-
-**Want predictions from your grid?** Custom prediction tool coming soon — enter your grid and get personalized band/mode forecasts.
 
 ---
 
@@ -85,15 +83,15 @@ RBN archives lag ~24 hours; zeroes indicate no data in the window, not band clos
 
 | Band | WSPR Spots | RBN Spots | PSKR Spots | Peak SNR | Status |
 |------|-----------|-----------|------------|----------|--------|
-| 10m | 0 | 0 | 4.6M | +122 dB | Strong |
-| 12m | 0 | 0 | 1.8M | +51 dB | Strong |
-| 15m | 0 | 0 | 4.9M | +65 dB | Strong |
-| 17m | 0 | 0 | 2.2M | +87 dB | Strong |
-| 20m | 0 | 0 | 8.0M | +67 dB | Strong |
-| 30m | 0 | 0 | 1.9M | +87 dB | Strong |
-| 40m | 0 | 0 | 6.4M | +87 dB | Strong |
-| 80m | 0 | 0 | 1.5M | +87 dB | Strong |
-| 160m | 0 | 0 | 267,469 | +51 dB | Strong |
+| 10m | 0 | 13,554 | 3.1M | +165 dB | Strong |
+| 12m | 0 | 2,206 | 982,306 | +56 dB | Strong |
+| 15m | 0 | 16,733 | 2.7M | +66 dB | Strong |
+| 17m | 0 | 7,751 | 1.0M | +61 dB | Strong |
+| 20m | 0 | 58,459 | 5.9M | +87 dB | Strong |
+| 30m | 0 | 11,162 | 1.5M | +61 dB | Strong |
+| 40m | 0 | 64,022 | 5.4M | +111 dB | Strong |
+| 80m | 0 | 49,715 | 1.3M | +87 dB | Strong |
+| 160m | 0 | 2,756 | 334,343 | +53 dB | Strong |
 
 ---
 
@@ -101,18 +99,18 @@ RBN archives lag ~24 hours; zeroes indicate no data in the window, not band clos
 
 | Source | Latest Date | Total Rows | Status |
 |--------|------------|------------|--------|
-| WSPR | 2026-02-23 | 10.94B | 2 days behind |
-| RBN | 2026-02-23 | 2.26B | 2 days behind |
-| PSK Reporter | 2026-02-25 | 511.6M | Live |
+| WSPR | 2026-02-23 | 10.94B | 3 days behind |
+| RBN | 2026-02-25 | 2.26B | Current |
+| PSK Reporter | 2026-02-26 | 546.6M | Live |
 | Contest | Archive | 234.3M | Static |
-| Solar | 2026-02-25 | 76,656 | Live |
+| Solar | 2026-02-26 | 76,670 | Live |
 
 ---
 
 ## About This Site
 
 Ham Stats is generated every 3 hours from a self-hosted ClickHouse database
-containing **13+ billion** amateur radio propagation observations — one of the
+containing **14+ billion** amateur radio propagation observations — one of the
 largest curated datasets of its kind. No cloud services. No third-party APIs.
 Every query runs against data we collected and maintain.
 
@@ -121,7 +119,7 @@ of HF propagation:
 
 - **WSPR** (10.94B spots, 2008–present) — the SNR floor at minimum power
 - **Reverse Beacon Network** (2.26B spots, 2009–present) — CW/RTTY measured signals
-- **PSK Reporter** (511.6M spots, live since Feb 2026) — FT8/digital operational contacts
+- **PSK Reporter** (546.6M spots, live since Feb 2026) — FT8/digital operational contacts
 - **Contest Logs** (234.3M QSOs, 2005–present) — the SSB/RTTY ceiling at contest power
 
 Solar indices (SFI, Kp, SSN) are joined at 3-hour resolution so every

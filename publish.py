@@ -51,6 +51,8 @@ BANDS = [
      "desc": "Top Band — nighttime DX, noise-limited"},
     {"name": "80m",  "freq_mhz": "3.5",  "adif": 103,
      "desc": "Nighttime domestic — reliable regional propagation"},
+    {"name": "60m",  "freq_mhz": "5.3",  "adif": 104,
+     "desc": "Channelized band — limited allocations, NVIS propagation studies"},
     {"name": "40m",  "freq_mhz": "7.0",  "adif": 105,
      "desc": "The workhorse — day and night, domestic and DX"},
     {"name": "30m",  "freq_mhz": "10.1", "adif": 106,
@@ -79,7 +81,7 @@ PREDICTION_DESTINATIONS = [
     {"label": "Oceania (QF56)",   "grid": "QF56"},
     {"label": "Caribbean (FK68)", "grid": "FK68"},
 ]
-PREDICTION_BANDS = ["10m", "15m", "20m", "40m", "80m", "160m"]
+PREDICTION_BANDS = ["10m", "12m", "15m", "17m", "20m", "30m", "40m", "60m", "80m", "160m"]
 
 # Sigma-to-dB conversion (WSPR 20m reference — within 1 dB of all bands)
 WSPR_MEAN_DB = -17.53

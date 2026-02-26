@@ -7,18 +7,18 @@ description: >-
 
 # Contest Calendar
 
-![SFI](https://img.shields.io/badge/SFI_120-Elevated-2ea043?style=flat-square)
-![Kp](https://img.shields.io/badge/Kp_3.67-Unsettled-ffea00?style=flat-square)
-![Conditions](https://img.shields.io/badge/Conditions-Unsettled-ffea00?style=flat-square)
+![SFI](https://img.shields.io/badge/SFI_125-Elevated-2ea043?style=flat-square)
+![Kp](https://img.shields.io/badge/Kp_2.67-Quiet-teal?style=flat-square)
+![Conditions](https://img.shields.io/badge/Conditions-Quiet_+_Radio_Blackout-teal?style=flat-square)
 
-*Updated 04:00 UTC 2026-02-25*
+*Updated 16:55 UTC 2026-02-26*
 
 ---
 
 ## Next 30 Days
 
 ### CQ 160m SSB
-**2 days** until start
+**1 day** until start
 
 | | |
 |---|---|
@@ -31,21 +31,21 @@ description: >-
 
 *Top Band SSB — 160m only, Friday evening start*
 
-**IONIS V20 predictions from KI7MT (DN13) — current conditions (SFI 120, Kp 3.67)**
+**IONIS predictions from KI7MT (DN13) — current conditions (SFI 125, Kp 2.67)**
 
 | Destination | 160m | 
 |-------------|-----|
-| Europe (JN48) | CW | 
-| Japan (PM95) | FT8 | 
-| S. America (GG87) | FT8 | 
-| Africa (KG33) | FT8 | 
-| Oceania (QF56) | FT8 | 
-| Caribbean (FK68) | CW | 
+| Europe (JN48) | — | 
+| Japan (PM95) | — | 
+| S. America (GG87) | — | 
+| Africa (KG33) | — | 
+| Oceania (QF56) | — | 
+| Caribbean (FK68) | — | 
 
 ---
 
 ### ARRL DX SSB
-**9 days** until start
+**8 days** until start
 
 | | |
 |---|---|
@@ -58,16 +58,43 @@ description: >-
 
 *ARRL International DX — SSB, W/VE work the world*
 
-**IONIS V20 predictions from KI7MT (DN13) — current conditions (SFI 120, Kp 3.67)**
+**IONIS predictions from KI7MT (DN13) — current conditions (SFI 125, Kp 2.67)**
 
 | Destination | 10m | 15m | 20m | 40m | 80m | 160m | 
 |-------------|-----|-----|-----|-----|-----|-----|
-| Europe (JN48) | WSPR | WSPR | CW | CW | CW | CW | 
-| Japan (PM95) | RTTY | RTTY | CW | CW | CW | FT8 | 
-| S. America (GG87) | WSPR | WSPR | FT8 | CW | CW | FT8 | 
-| Africa (KG33) | FT8 | FT8 | FT8 | FT8 | FT8 | FT8 | 
-| Oceania (QF56) | CW | CW | CW | CW | FT8 | FT8 | 
-| Caribbean (FK68) | WSPR | WSPR | FT8 | FT8 | CW | CW | 
+| Europe (JN48) | SSB | SSB | RTTY | — | — | — | 
+| Japan (PM95) | FT8 | FT8 | FT8 | FT8 | — | — | 
+| S. America (GG87) | RTTY | CW | CW | — | — | — | 
+| Africa (KG33) | CW | CW | CW | — | — | — | 
+| Oceania (QF56) | CW | FT8 | FT8 | FT8 | — | — | 
+| Caribbean (FK68) | RTTY | CW | CW | — | — | — | 
+
+---
+
+### CQ WPX SSB
+**4w 1d** until start
+
+| | |
+|---|---|
+| **Start** | 2026-03-28 00:00 UTC |
+| **End** | 2026-03-30 00:00 UTC |
+| **Duration** | 48 hours |
+| **Modes** | SSB |
+| **Bands** | 160m, 80m, 40m, 20m, 15m, 10m |
+| **Sponsor** | [CQ](https://www.cqwpx.com/) |
+
+*Prefix multiplier contest — SSB worldwide*
+
+**IONIS predictions from KI7MT (DN13) — current conditions (SFI 125, Kp 2.67)**
+
+| Destination | 10m | 15m | 20m | 40m | 80m | 160m | 
+|-------------|-----|-----|-----|-----|-----|-----|
+| Europe (JN48) | SSB | SSB | RTTY | — | — | — | 
+| Japan (PM95) | FT8 | FT8 | FT8 | FT8 | — | — | 
+| S. America (GG87) | RTTY | CW | CW | — | — | — | 
+| Africa (KG33) | CW | CW | CW | — | — | — | 
+| Oceania (QF56) | CW | FT8 | FT8 | FT8 | — | — | 
+| Caribbean (FK68) | RTTY | CW | CW | — | — | — | 
 
 ---
 
@@ -76,30 +103,30 @@ description: >-
 
 | Contest | Date (UTC) | Start | Hours | Modes | Countdown |
 |---------|-----------|-------|-------|-------|-----------|
-| [CQ 160m SSB](https://www.cq160.com/) | Feb 27–01 | Fri 22:00 | 48 | SSB | 2 days |
-| [ARRL DX SSB](https://www.arrl.org/arrl-dx) | Mar 07–09 | Sat 00:00 | 48 | SSB | 9 days |
-| [CQ WPX SSB](https://www.cqwpx.com/) | Mar 28–30 | Sat 00:00 | 48 | SSB | 4w 2d |
-| [JIDX CW](https://jidx.org/) | Apr 11–12 | Sat 07:00 | 30 | CW | 6w 3d |
-| [CQ WPX CW](https://www.cqwpx.com/) | May 30–01 | Sat 00:00 | 48 | CW | 13w 2d |
-| [All Asian DX CW](https://www.jarl.org/English/4_Library/A-4-3_Contests/) | Jun 20–22 | Sat 00:00 | 48 | CW | 16w 2d |
-| [IARU HF Championship](https://www.arrl.org/iaru-hf-championship) | Jul 11–12 | Sat 12:00 | 24 | SSB/CW | 19w 3d |
-| [WAE CW](https://www.darc.de/der-club/referate/conteste/wae-dx-contest/) | Aug 08–10 | Sat 00:00 | 48 | CW | 23w 2d |
-| [All Asian DX SSB](https://www.jarl.org/English/4_Library/A-4-3_Contests/) | Sep 05–07 | Sat 00:00 | 48 | SSB | 27w 2d |
-| [WAE SSB](https://www.darc.de/der-club/referate/conteste/wae-dx-contest/) | Sep 12–14 | Sat 00:00 | 48 | SSB | 28w 2d |
-| [SAC CW](https://www.sactest.net/) | Sep 19–20 | Sat 12:00 | 24 | CW | 29w 3d |
-| [CQ WW RTTY](https://www.cqwwrtty.com/) | Sep 26–28 | Sat 00:00 | 48 | RTTY | 30w 2d |
-| [Oceania DX SSB](https://www.oceaniadxcontest.com/) | Oct 03–04 | Sat 06:00 | 24 | SSB | 31w 3d |
-| [Oceania DX CW](https://www.oceaniadxcontest.com/) | Oct 10–11 | Sat 06:00 | 24 | CW | 32w 3d |
-| [SAC SSB](https://www.sactest.net/) | Oct 17–18 | Sat 12:00 | 24 | SSB | 33w 3d |
-| [CQ WW SSB](https://www.cqww.com/) | Oct 24–26 | Sat 00:00 | 48 | SSB | 34w 2d |
-| [WAE RTTY](https://www.darc.de/der-club/referate/conteste/wae-dx-contest/) | Nov 14–16 | Sat 00:00 | 48 | RTTY | 37w 2d |
-| [JIDX SSB](https://jidx.org/) | Nov 14–15 | Sat 07:00 | 30 | SSB | 37w 3d |
-| [CQ WW CW](https://www.cqww.com/) | Nov 28–30 | Sat 00:00 | 48 | CW | 39w 2d |
-| [ARRL 160m](https://www.arrl.org/160-meter) | Dec 04–06 | Fri 22:00 | 42 | CW | 40w 2d |
-| [ARRL 10m](https://www.arrl.org/10-meter) | Dec 12–14 | Sat 00:00 | 48 | SSB/CW | 41w 2d |
-| [CQ 160m CW](https://www.cq160.com/) | Jan 29–31 | Fri 22:00 | 48 | CW | 48w 2d |
-| [CQ WPX RTTY](https://www.cqwpxrtty.com/) | Feb 13–15 | Sat 00:00 | 48 | RTTY | 50w 2d |
-| [ARRL DX CW](https://www.arrl.org/arrl-dx) | Feb 20–22 | Sat 00:00 | 48 | CW | 51w 2d |
+| [CQ 160m SSB](https://www.cq160.com/) | Feb 27–01 | Fri 22:00 | 48 | SSB | 1 day |
+| [ARRL DX SSB](https://www.arrl.org/arrl-dx) | Mar 07–09 | Sat 00:00 | 48 | SSB | 8 days |
+| [CQ WPX SSB](https://www.cqwpx.com/) | Mar 28–30 | Sat 00:00 | 48 | SSB | 4w 1d |
+| [JIDX CW](https://jidx.org/) | Apr 11–12 | Sat 07:00 | 30 | CW | 6w 1d |
+| [CQ WPX CW](https://www.cqwpx.com/) | May 30–01 | Sat 00:00 | 48 | CW | 13w 1d |
+| [All Asian DX CW](https://www.jarl.org/English/4_Library/A-4-3_Contests/) | Jun 20–22 | Sat 00:00 | 48 | CW | 16w 1d |
+| [IARU HF Championship](https://www.arrl.org/iaru-hf-championship) | Jul 11–12 | Sat 12:00 | 24 | SSB/CW | 19w 1d |
+| [WAE CW](https://www.darc.de/der-club/referate/conteste/wae-dx-contest/) | Aug 08–10 | Sat 00:00 | 48 | CW | 23w 1d |
+| [All Asian DX SSB](https://www.jarl.org/English/4_Library/A-4-3_Contests/) | Sep 05–07 | Sat 00:00 | 48 | SSB | 27w 1d |
+| [WAE SSB](https://www.darc.de/der-club/referate/conteste/wae-dx-contest/) | Sep 12–14 | Sat 00:00 | 48 | SSB | 28w 1d |
+| [SAC CW](https://www.sactest.net/) | Sep 19–20 | Sat 12:00 | 24 | CW | 29w 1d |
+| [CQ WW RTTY](https://www.cqwwrtty.com/) | Sep 26–28 | Sat 00:00 | 48 | RTTY | 30w 1d |
+| [Oceania DX SSB](https://www.oceaniadxcontest.com/) | Oct 03–04 | Sat 06:00 | 24 | SSB | 31w 1d |
+| [Oceania DX CW](https://www.oceaniadxcontest.com/) | Oct 10–11 | Sat 06:00 | 24 | CW | 32w 1d |
+| [SAC SSB](https://www.sactest.net/) | Oct 17–18 | Sat 12:00 | 24 | SSB | 33w 1d |
+| [CQ WW SSB](https://www.cqww.com/) | Oct 24–26 | Sat 00:00 | 48 | SSB | 34w 1d |
+| [WAE RTTY](https://www.darc.de/der-club/referate/conteste/wae-dx-contest/) | Nov 14–16 | Sat 00:00 | 48 | RTTY | 37w 1d |
+| [JIDX SSB](https://jidx.org/) | Nov 14–15 | Sat 07:00 | 30 | SSB | 37w 1d |
+| [CQ WW CW](https://www.cqww.com/) | Nov 28–30 | Sat 00:00 | 48 | CW | 39w 1d |
+| [ARRL 160m](https://www.arrl.org/160-meter) | Dec 04–06 | Fri 22:00 | 42 | CW | 40w 1d |
+| [ARRL 10m](https://www.arrl.org/10-meter) | Dec 12–14 | Sat 00:00 | 48 | SSB/CW | 41w 1d |
+| [CQ 160m CW](https://www.cq160.com/) | Jan 29–31 | Fri 22:00 | 48 | CW | 48w 1d |
+| [CQ WPX RTTY](https://www.cqwpxrtty.com/) | Feb 13–15 | Sat 00:00 | 48 | RTTY | 50w 1d |
+| [ARRL DX CW](https://www.arrl.org/arrl-dx) | Feb 20–22 | Sat 00:00 | 48 | CW | 51w 1d |
 
 ---
 
@@ -120,8 +147,6 @@ plus Python date math produces a calendar that stays current without manual upda
 Some contests start Friday evening (CQ 160m, ARRL 160m). Durations range
 from 24 hours (IARU, SAC, Oceania) to 48 hours (CQ WW, WPX).
 
-Predictions use IONIS V20 — a neural network trained on 13 billion real
-propagation observations. They reflect current solar conditions and update
-every 3 hours.
-
-**Want predictions from your grid?** Custom prediction tool coming soon — enter your grid and get personalized band/mode forecasts for any contest weekend.
+Predictions use IONIS V22-gamma — a physics-constrained neural network trained
+on 14 billion real propagation observations. They reflect current solar
+conditions and update every 3 hours.

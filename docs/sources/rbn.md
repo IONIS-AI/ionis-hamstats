@@ -18,7 +18,7 @@ beacons, below the contest-grade SSB ceiling.
 | Metric | Value |
 |--------|-------|
 | **Total Rows (`rbn.bronze`)** | 2.26B |
-| **Date Range** | 2009-02-21 to 2026-02-23 |
+| **Date Range** | 2009-02-21 to 2026-02-25 |
 | **Daily Spot Rate (recent)** | ~2M spots/day |
 | **Unique Transmitter Callsigns** | 2.1M |
 | **Unique Receiver Callsigns (skimmers)** | 3,051 |
@@ -32,40 +32,14 @@ beacons, below the contest-grade SSB ceiling.
 | Band | Spots | Pct of Total |
 |------|-------|-------------|
 | 160m | 98.9M | 4.37% |
-| 80m | 288.6M | 12.76% |
-| 40m | 672.4M | 29.72% |
+| 80m | 288.7M | 12.76% |
+| 40m | 672.6M | 29.72% |
 | 30m | 111.3M | 4.92% |
-| 20m | 687.6M | 30.39% |
+| 20m | 687.9M | 30.39% |
 | 17m | 58.5M | 2.59% |
-| 15m | 209.6M | 9.27% |
+| 15m | 209.7M | 9.27% |
 | 12m | 16.0M | 0.71% |
-| 10m | 107.8M | 4.76% |
-
----
-
-## Mode Breakdown
-
-| Mode | Spots | Pct | Notes |
-|------|-------|-----|-------|
-| CW | — | — | — |
-| RTTY | — | — | — |
-| PSK31 | — | — | — |
-| (empty) | — | — | 2009–2010 era, RBN was CW-only; mode field unpopulated |
-
-*Coming soon — requires RBN mode breakdown query.*
-
----
-
-## Geographic Coverage
-
-| Metric | Value |
-|--------|-------|
-| **Unique Transmitter Grids** | — |
-| **Unique Skimmer (Receiver) Grids** | — |
-| **Unique Grid Pairs** | — |
-| **Skimmer Count (active)** | — |
-
-*Coming soon — requires RBN geographic coverage query.*
+| 10m | 107.9M | 4.77% |
 
 ---
 
@@ -75,7 +49,7 @@ beacons, below the contest-grade SSB ceiling.
   filters to -20 to 80 dB.
 - 30M spots (2009–2010) have empty `tx_mode` — RBN was CW-only then.
   These spots are included in signatures as CW.
-- 56.7M rows promoted to `rbn.signatures` after quality filtering and
+- 67.3M rows promoted to `rbn.signatures` after quality filtering and
   solar joining.
 - DXpedition paths (rare, high-value paths) identified separately in
   `rbn.dxpedition_paths` and `rbn.dxpedition_signatures`.
