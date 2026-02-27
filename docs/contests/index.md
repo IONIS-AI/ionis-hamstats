@@ -8,10 +8,10 @@ description: >-
 # Contest Calendar
 
 ![SFI](https://img.shields.io/badge/SFI_130-Elevated-2ea043?style=flat-square)
-![Kp](https://img.shields.io/badge/Kp_2.33-Quiet-teal?style=flat-square)
-![Conditions](https://img.shields.io/badge/Conditions-Quiet_+_Radio_Blackout-teal?style=flat-square)
+![Kp](https://img.shields.io/badge/Kp_2.0-Quiet-teal?style=flat-square)
+![Conditions](https://img.shields.io/badge/Conditions-Quiet-teal?style=flat-square)
 
-*Updated 12:00 UTC 2026-02-27*
+*Updated 15:00 UTC 2026-02-27*
 
 ---
 
@@ -31,15 +31,15 @@ description: >-
 
 *Top Band SSB — 160m only, Friday evening start*
 
-**IONIS predictions from KI7MT (DN13) — current conditions (SFI 130, Kp 2.33)**
+**IONIS predictions from KI7MT (DN13) — current conditions (SFI 130, Kp 2.0)**
 
 | Destination | 160m | 
 |-------------|-----|
 | Europe (JN48) | — | 
-| Japan (PM95) | CW | 
+| Japan (PM95) | — | 
 | S. America (GG87) | — | 
 | Africa (KG33) | — | 
-| Oceania (QF56) | FT8 | 
+| Oceania (QF56) | — | 
 | Caribbean (FK68) | — | 
 
 ---
@@ -58,16 +58,16 @@ description: >-
 
 *ARRL International DX — SSB, W/VE work the world*
 
-**IONIS predictions from KI7MT (DN13) — current conditions (SFI 130, Kp 2.33)**
+**IONIS predictions from KI7MT (DN13) — current conditions (SFI 130, Kp 2.0)**
 
 | Destination | 10m | 15m | 20m | 40m | 80m | 160m | 
 |-------------|-----|-----|-----|-----|-----|-----|
-| Europe (JN48) | — | — | RTTY | RTTY | — | — | 
-| Japan (PM95) | — | — | FT8 | CW | CW | CW | 
-| S. America (GG87) | — | — | FT8 | FT8 | — | — | 
-| Africa (KG33) | — | — | FT8 | FT8 | — | — | 
-| Oceania (QF56) | — | — | FT8 | FT8 | FT8 | FT8 | 
-| Caribbean (FK68) | — | — | FT8 | FT8 | — | — | 
+| Europe (JN48) | SSB | SSB | RTTY | — | — | — | 
+| Japan (PM95) | FT8 | FT8 | FT8 | FT8 | — | — | 
+| S. America (GG87) | CW | CW | CW | — | — | — | 
+| Africa (KG33) | CW | CW | CW | — | — | — | 
+| Oceania (QF56) | FT8 | FT8 | FT8 | FT8 | — | — | 
+| Caribbean (FK68) | CW | CW | CW | — | — | — | 
 
 ---
 
@@ -85,16 +85,16 @@ description: >-
 
 *Prefix multiplier contest — SSB worldwide*
 
-**IONIS predictions from KI7MT (DN13) — current conditions (SFI 130, Kp 2.33)**
+**IONIS predictions from KI7MT (DN13) — current conditions (SFI 130, Kp 2.0)**
 
 | Destination | 10m | 15m | 20m | 40m | 80m | 160m | 
 |-------------|-----|-----|-----|-----|-----|-----|
-| Europe (JN48) | — | — | RTTY | RTTY | — | — | 
-| Japan (PM95) | — | — | FT8 | CW | CW | CW | 
-| S. America (GG87) | — | — | FT8 | FT8 | — | — | 
-| Africa (KG33) | — | — | FT8 | FT8 | — | — | 
-| Oceania (QF56) | — | — | FT8 | FT8 | FT8 | FT8 | 
-| Caribbean (FK68) | — | — | FT8 | FT8 | — | — | 
+| Europe (JN48) | SSB | SSB | RTTY | — | — | — | 
+| Japan (PM95) | FT8 | FT8 | FT8 | FT8 | — | — | 
+| S. America (GG87) | CW | CW | CW | — | — | — | 
+| Africa (KG33) | CW | CW | CW | — | — | — | 
+| Oceania (QF56) | FT8 | FT8 | FT8 | FT8 | — | — | 
+| Caribbean (FK68) | CW | CW | CW | — | — | — | 
 
 ---
 
