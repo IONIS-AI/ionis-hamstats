@@ -11,7 +11,7 @@ description: >-
 ![Kp](https://img.shields.io/badge/Kp_2.0-Quiet-teal?style=flat-square)
 ![Conditions](https://img.shields.io/badge/Conditions-Quiet_+_Radio_Blackout-teal?style=flat-square)
 
-*Updated 07:03 UTC 2026-02-27*
+*Updated 09:00 UTC 2026-02-27*
 
 ---
 
@@ -36,11 +36,11 @@ description: >-
 | Destination | 160m | 
 |-------------|-----|
 | Europe (JN48) | — | 
-| Japan (PM95) | — | 
-| S. America (GG87) | CW | 
+| Japan (PM95) | CW | 
+| S. America (GG87) | — | 
 | Africa (KG33) | — | 
-| Oceania (QF56) | — | 
-| Caribbean (FK68) | CW | 
+| Oceania (QF56) | FT8 | 
+| Caribbean (FK68) | FT8 | 
 
 ---
 
@@ -62,12 +62,12 @@ description: >-
 
 | Destination | 10m | 15m | 20m | 40m | 80m | 160m | 
 |-------------|-----|-----|-----|-----|-----|-----|
-| Europe (JN48) | — | — | CW | CW | — | — | 
-| Japan (PM95) | — | — | CW | CW | — | — | 
-| S. America (GG87) | — | — | FT8 | FT8 | CW | CW | 
+| Europe (JN48) | — | — | RTTY | CW | — | — | 
+| Japan (PM95) | — | — | CW | CW | CW | CW | 
+| S. America (GG87) | — | — | FT8 | FT8 | — | — | 
 | Africa (KG33) | — | — | FT8 | FT8 | — | — | 
-| Oceania (QF56) | — | — | CW | CW | — | — | 
-| Caribbean (FK68) | — | — | FT8 | FT8 | FT8 | CW | 
+| Oceania (QF56) | — | — | FT8 | FT8 | CW | FT8 | 
+| Caribbean (FK68) | — | — | FT8 | FT8 | FT8 | FT8 | 
 
 ---
 
@@ -89,12 +89,12 @@ description: >-
 
 | Destination | 10m | 15m | 20m | 40m | 80m | 160m | 
 |-------------|-----|-----|-----|-----|-----|-----|
-| Europe (JN48) | — | — | CW | CW | — | — | 
-| Japan (PM95) | — | — | CW | CW | — | — | 
-| S. America (GG87) | — | — | FT8 | FT8 | CW | CW | 
+| Europe (JN48) | — | — | RTTY | CW | — | — | 
+| Japan (PM95) | — | — | CW | CW | CW | CW | 
+| S. America (GG87) | — | — | FT8 | FT8 | — | — | 
 | Africa (KG33) | — | — | FT8 | FT8 | — | — | 
-| Oceania (QF56) | — | — | CW | CW | — | — | 
-| Caribbean (FK68) | — | — | FT8 | FT8 | FT8 | CW | 
+| Oceania (QF56) | — | — | FT8 | FT8 | CW | FT8 | 
+| Caribbean (FK68) | — | — | FT8 | FT8 | FT8 | FT8 | 
 
 ---
 
