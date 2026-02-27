@@ -8,10 +8,10 @@ description: >-
 # DXpeditions
 
 ![SFI](https://img.shields.io/badge/SFI_130-Elevated-2ea043?style=flat-square)
-![Kp](https://img.shields.io/badge/Kp_2.67-Quiet-teal?style=flat-square)
-![Conditions](https://img.shields.io/badge/Conditions-Quiet_+_Radio_Blackout-teal?style=flat-square)
+![Kp](https://img.shields.io/badge/Kp_3.33-Unsettled-ffea00?style=flat-square)
+![Conditions](https://img.shields.io/badge/Conditions-Unsettled_+_Radio_Blackout-ffea00?style=flat-square)
 
-*Updated 18:00 UTC 2026-02-27*
+*Updated 21:00 UTC 2026-02-27*
 
 ---
 
@@ -40,11 +40,11 @@ description: >-
 | **Modes** | SSB, CW, FT8 |
 | **Notes** | Remote autonomous deployment, extended operation |
 
-**IONIS: KI7MT (DN13) to Desecheo Island (FK68) — SFI 130, Kp 2.67**
+**IONIS: KI7MT (DN13) to Desecheo Island (FK68) — SFI 130, Kp 3.33**
 
 | 10m | 12m | 15m | 17m | 20m | 30m | 40m | 60m | 80m | 160m |
 |-----|-----|-----|-----|-----|-----|-----|-----|-----|-----|
-| RTTY | RTTY | CW | CW | CW | CW | — | — | — | — |
+| CW | CW | CW | CW | CW | CW | — | — | — | — |
 
 ---
 
@@ -59,11 +59,11 @@ description: >-
 | **Modes** | SSB, CW, FT8, RTTY |
 | **Notes** | Most wanted DXCC entity — departs Cape Town Feb 1, dates tentative |
 
-**IONIS: KI7MT (DN13) to Bouvet Island (JD04) — SFI 130, Kp 2.67**
+**IONIS: KI7MT (DN13) to Bouvet Island (JD04) — SFI 130, Kp 3.33**
 
 | 10m | 12m | 15m | 17m | 20m | 30m | 40m | 60m | 80m | 160m |
 |-----|-----|-----|-----|-----|-----|-----|-----|-----|-----|
-| RTTY | RTTY | RTTY | RTTY | RTTY | CW | — | — | — | — |
+| RTTY | RTTY | RTTY | RTTY | RTTY | RTTY | RTTY | CW | — | — |
 
 ---
 
@@ -78,11 +78,11 @@ description: >-
 | **Modes** | SSB, CW, FT8 |
 | **Notes** | 3 stations, 24/7 operation |
 
-**IONIS: KI7MT (DN13) to Austral Islands (BH42) — SFI 130, Kp 2.67**
+**IONIS: KI7MT (DN13) to Austral Islands (BH42) — SFI 130, Kp 3.33**
 
 | 10m | 12m | 15m | 17m | 20m | 30m | 40m | 60m | 80m | 160m |
 |-----|-----|-----|-----|-----|-----|-----|-----|-----|-----|
-| RTTY | RTTY | CW | CW | CW | CW | — | — | — | — |
+| SSB | RTTY | RTTY | CW | CW | CW | — | — | — | — |
 
 ---
 
@@ -97,11 +97,11 @@ description: >-
 | **Modes** | SSB, CW, FT8 |
 | **Notes** | WA4DAN and W0GJ team leads |
 
-**IONIS: KI7MT (DN13) to Sable Island (FN83) — SFI 130, Kp 2.67**
+**IONIS: KI7MT (DN13) to Sable Island (FN83) — SFI 130, Kp 3.33**
 
 | 10m | 12m | 15m | 17m | 20m | 30m | 40m | 60m | 80m | 160m |
 |-----|-----|-----|-----|-----|-----|-----|-----|-----|-----|
-| SSB | RTTY | RTTY | RTTY | RTTY | CW | — | — | — | — |
+| RTTY | RTTY | RTTY | RTTY | CW | CW | — | — | — | — |
 
 ---
 
@@ -116,11 +116,11 @@ description: >-
 | **Modes** | SSB, CW, FT8 |
 | **Notes** | 6 stations |
 
-**IONIS: KI7MT (DN13) to Marquesas Islands (BH54) — SFI 130, Kp 2.67**
+**IONIS: KI7MT (DN13) to Marquesas Islands (BH54) — SFI 130, Kp 3.33**
 
 | 10m | 12m | 15m | 17m | 20m | 30m | 40m | 60m | 80m | 160m |
 |-----|-----|-----|-----|-----|-----|-----|-----|-----|-----|
-| RTTY | RTTY | RTTY | CW | CW | CW | — | — | — | — |
+| SSB | RTTY | RTTY | CW | CW | CW | — | — | — | — |
 
 ---
 
