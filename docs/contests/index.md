@@ -7,11 +7,11 @@ description: >-
 
 # Contest Calendar
 
-![SFI](https://img.shields.io/badge/SFI_139-Elevated-2ea043?style=flat-square)
-![Kp](https://img.shields.io/badge/Kp_2.67-Quiet-teal?style=flat-square)
-![Conditions](https://img.shields.io/badge/Conditions-Quiet-teal?style=flat-square)
+![SFI](https://img.shields.io/badge/SFI_141-Elevated-2ea043?style=flat-square)
+![Kp](https://img.shields.io/badge/Kp_1.67-Quiet-teal?style=flat-square)
+![Conditions](https://img.shields.io/badge/Conditions-Quiet_+_Radio_Blackout-teal?style=flat-square)
 
-*Updated 18:00 UTC 2026-02-28*
+*Updated 21:00 UTC 2026-02-28*
 
 ---
 
@@ -32,7 +32,7 @@ description: >-
 
 *Top Band SSB — 160m only, Friday evening start*
 
-**IONIS predictions from KI7MT (DN13) — current conditions (SFI 139, Kp 2.67)**
+**IONIS predictions from KI7MT (DN13) — current conditions (SFI 141, Kp 1.67)**
 
 | Destination | 160m | 
 |-------------|-----|
@@ -59,15 +59,15 @@ description: >-
 
 *ARRL International DX — SSB, W/VE work the world*
 
-**IONIS predictions from KI7MT (DN13) — current conditions (SFI 139, Kp 2.67)**
+**IONIS predictions from KI7MT (DN13) — current conditions (SFI 141, Kp 1.67)**
 
 | Destination | 10m | 15m | 20m | 40m | 80m | 160m | 
 |-------------|-----|-----|-----|-----|-----|-----|
-| Europe (JN48) | RTTY | RTTY | RTTY | RTTY | — | — | 
-| Japan (PM95) | CW | CW | CW | CW | — | — | 
-| S. America (GG87) | RTTY | CW | CW | — | — | — | 
-| Africa (KG33) | CW | CW | CW | FT8 | — | — | 
-| Oceania (QF56) | CW | CW | CW | CW | — | — | 
+| Europe (JN48) | CW | RTTY | RTTY | RTTY | — | — | 
+| Japan (PM95) | RTTY | RTTY | RTTY | CW | — | — | 
+| S. America (GG87) | RTTY | RTTY | CW | — | — | — | 
+| Africa (KG33) | CW | CW | CW | CW | — | — | 
+| Oceania (QF56) | RTTY | CW | CW | — | — | — | 
 | Caribbean (FK68) | RTTY | CW | CW | — | — | — | 
 
 ---
@@ -86,15 +86,15 @@ description: >-
 
 *Prefix multiplier contest — SSB worldwide*
 
-**IONIS predictions from KI7MT (DN13) — current conditions (SFI 139, Kp 2.67)**
+**IONIS predictions from KI7MT (DN13) — current conditions (SFI 141, Kp 1.67)**
 
 | Destination | 10m | 15m | 20m | 40m | 80m | 160m | 
 |-------------|-----|-----|-----|-----|-----|-----|
-| Europe (JN48) | RTTY | RTTY | RTTY | RTTY | — | — | 
-| Japan (PM95) | CW | CW | CW | CW | — | — | 
-| S. America (GG87) | RTTY | CW | CW | — | — | — | 
-| Africa (KG33) | CW | CW | CW | FT8 | — | — | 
-| Oceania (QF56) | CW | CW | CW | CW | — | — | 
+| Europe (JN48) | CW | RTTY | RTTY | RTTY | — | — | 
+| Japan (PM95) | RTTY | RTTY | RTTY | CW | — | — | 
+| S. America (GG87) | RTTY | RTTY | CW | — | — | — | 
+| Africa (KG33) | CW | CW | CW | CW | — | — | 
+| Oceania (QF56) | RTTY | CW | CW | — | — | — | 
 | Caribbean (FK68) | RTTY | CW | CW | — | — | — | 
 
 ---
