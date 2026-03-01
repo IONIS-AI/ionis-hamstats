@@ -8,10 +8,10 @@ description: >-
 # DXpeditions
 
 ![SFI](https://img.shields.io/badge/SFI_141-Elevated-2ea043?style=flat-square)
-![Kp](https://img.shields.io/badge/Kp_1.67-Quiet-teal?style=flat-square)
-![Conditions](https://img.shields.io/badge/Conditions-Quiet_+_Radio_Blackout-teal?style=flat-square)
+![Kp](https://img.shields.io/badge/Kp_2.0-Quiet-teal?style=flat-square)
+![Conditions](https://img.shields.io/badge/Conditions-Quiet-teal?style=flat-square)
 
-*Updated 21:00 UTC 2026-02-28*
+*Updated 00:00 UTC 2026-03-01*
 
 ---
 
@@ -20,10 +20,10 @@ description: >-
 | Callsign | Entity | Grid | Dates | Modes | Status |
 |----------|--------|------|-------|-------|--------|
 | [KP5/NP3VI](https://desecheo2026.com/kp5/) | Desecheo Island | FK68 | Jan 12–Mar 03 | SSB, CW, FT8 | **ON AIR** |
-| [3Y0K](https://3y0k.com/) | Bouvet Island | JD04 | Mar 01–Mar 14 | SSB, CW, FT8, RTTY | 1 day |
-| [TX5EU](https://www.ng3k.com/misc/adxo.html) | Austral Islands | BH42 | Mar 13–Mar 25 | SSB, CW, FT8 | 13 days |
-| [CY0S](https://www.dx-world.net/cy0s-sable-island-dxpedition-2026/) | Sable Island | FN83 | Mar 19–Mar 31 | SSB, CW, FT8 | 2w 5d |
-| [TX9W](https://www.ng3k.com/misc/adxo.html) | Marquesas Islands | BH54 | Apr 19–Apr 30 | SSB, CW, FT8 | 7w 1d |
+| [3Y0K](https://3y0k.com/) | Bouvet Island | JD04 | Mar 01–Mar 14 | SSB, CW, FT8, RTTY | **ON AIR** |
+| [TX5EU](https://www.ng3k.com/misc/adxo.html) | Austral Islands | BH42 | Mar 13–Mar 25 | SSB, CW, FT8 | 12 days |
+| [CY0S](https://www.dx-world.net/cy0s-sable-island-dxpedition-2026/) | Sable Island | FN83 | Mar 19–Mar 31 | SSB, CW, FT8 | 2w 4d |
+| [TX9W](https://www.ng3k.com/misc/adxo.html) | Marquesas Islands | BH54 | Apr 19–Apr 30 | SSB, CW, FT8 | 7w |
 
 ---
 
@@ -40,16 +40,18 @@ description: >-
 | **Modes** | SSB, CW, FT8 |
 | **Notes** | Remote autonomous deployment, extended operation |
 
-**IONIS: KI7MT (DN13) to Desecheo Island (FK68) — SFI 141, Kp 1.67**
+**IONIS: KI7MT (DN13) to Desecheo Island (FK68) — SFI 141, Kp 2.0**
 
 | 10m | 12m | 15m | 17m | 20m | 30m | 40m | 60m | 80m | 160m |
 |-----|-----|-----|-----|-----|-----|-----|-----|-----|-----|
-| RTTY | RTTY | CW | CW | CW | CW | — | — | — | — |
+| CW | CW | CW | CW | CW | CW | CW | CW | — | — |
 
 ---
 
 ## 3Y0K — Bouvet Island
 
+!!! success "Active Now"
+    3Y0K is on the air from Bouvet Island. Operation ends 2026-03-14.
 
 | | |
 |---|---|
@@ -59,7 +61,7 @@ description: >-
 | **Modes** | SSB, CW, FT8, RTTY |
 | **Notes** | Most wanted DXCC entity — departs Cape Town Feb 1, dates tentative |
 
-**IONIS: KI7MT (DN13) to Bouvet Island (JD04) — SFI 141, Kp 1.67**
+**IONIS: KI7MT (DN13) to Bouvet Island (JD04) — SFI 141, Kp 2.0**
 
 | 10m | 12m | 15m | 17m | 20m | 30m | 40m | 60m | 80m | 160m |
 |-----|-----|-----|-----|-----|-----|-----|-----|-----|-----|
@@ -78,11 +80,11 @@ description: >-
 | **Modes** | SSB, CW, FT8 |
 | **Notes** | 3 stations, 24/7 operation |
 
-**IONIS: KI7MT (DN13) to Austral Islands (BH42) — SFI 141, Kp 1.67**
+**IONIS: KI7MT (DN13) to Austral Islands (BH42) — SFI 141, Kp 2.0**
 
 | 10m | 12m | 15m | 17m | 20m | 30m | 40m | 60m | 80m | 160m |
 |-----|-----|-----|-----|-----|-----|-----|-----|-----|-----|
-| SSB | RTTY | RTTY | RTTY | CW | CW | — | — | — | — |
+| RTTY | RTTY | RTTY | CW | CW | CW | — | — | — | — |
 
 ---
 
@@ -97,11 +99,11 @@ description: >-
 | **Modes** | SSB, CW, FT8 |
 | **Notes** | WA4DAN and W0GJ team leads |
 
-**IONIS: KI7MT (DN13) to Sable Island (FN83) — SFI 141, Kp 1.67**
+**IONIS: KI7MT (DN13) to Sable Island (FN83) — SFI 141, Kp 2.0**
 
 | 10m | 12m | 15m | 17m | 20m | 30m | 40m | 60m | 80m | 160m |
 |-----|-----|-----|-----|-----|-----|-----|-----|-----|-----|
-| RTTY | RTTY | RTTY | RTTY | RTTY | RTTY | — | — | — | — |
+| CW | CW | CW | CW | CW | CW | CW | CW | — | — |
 
 ---
 
@@ -116,11 +118,11 @@ description: >-
 | **Modes** | SSB, CW, FT8 |
 | **Notes** | 6 stations |
 
-**IONIS: KI7MT (DN13) to Marquesas Islands (BH54) — SFI 141, Kp 1.67**
+**IONIS: KI7MT (DN13) to Marquesas Islands (BH54) — SFI 141, Kp 2.0**
 
 | 10m | 12m | 15m | 17m | 20m | 30m | 40m | 60m | 80m | 160m |
 |-----|-----|-----|-----|-----|-----|-----|-----|-----|-----|
-| SSB | RTTY | RTTY | RTTY | CW | CW | — | — | — | — |
+| RTTY | RTTY | RTTY | CW | CW | CW | — | — | — | — |
 
 ---
 
