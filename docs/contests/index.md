@@ -11,7 +11,7 @@ description: >-
 ![Kp](https://img.shields.io/badge/Kp_2.0-Quiet-teal?style=flat-square)
 ![Conditions](https://img.shields.io/badge/Conditions-Quiet-teal?style=flat-square)
 
-*Updated 00:00 UTC 2026-03-01*
+*Updated 03:00 UTC 2026-03-01*
 
 ---
 
@@ -36,12 +36,12 @@ description: >-
 
 | Destination | 160m | 
 |-------------|-----|
-| Europe (JN48) | — | 
+| Europe (JN48) | RTTY | 
 | Japan (PM95) | — | 
-| S. America (GG87) | — | 
-| Africa (KG33) | — | 
+| S. America (GG87) | CW | 
+| Africa (KG33) | FT8 | 
 | Oceania (QF56) | — | 
-| Caribbean (FK68) | — | 
+| Caribbean (FK68) | CW | 
 
 ---
 
@@ -63,12 +63,12 @@ description: >-
 
 | Destination | 10m | 15m | 20m | 40m | 80m | 160m | 
 |-------------|-----|-----|-----|-----|-----|-----|
-| Europe (JN48) | CW | CW | CW | RTTY | — | — | 
-| Japan (PM95) | SSB | SSB | RTTY | — | — | — | 
-| S. America (GG87) | CW | CW | CW | CW | — | — | 
-| Africa (KG33) | CW | CW | CW | CW | — | — | 
-| Oceania (QF56) | RTTY | CW | CW | — | — | — | 
-| Caribbean (FK68) | CW | CW | CW | CW | — | — | 
+| Europe (JN48) | — | — | CW | RTTY | RTTY | RTTY | 
+| Japan (PM95) | — | — | RTTY | CW | — | — | 
+| S. America (GG87) | — | — | CW | CW | CW | CW | 
+| Africa (KG33) | — | — | CW | CW | CW | FT8 | 
+| Oceania (QF56) | — | — | CW | CW | — | — | 
+| Caribbean (FK68) | — | — | FT8 | CW | CW | CW | 
 
 ---
 
@@ -90,12 +90,12 @@ description: >-
 
 | Destination | 10m | 15m | 20m | 40m | 80m | 160m | 
 |-------------|-----|-----|-----|-----|-----|-----|
-| Europe (JN48) | CW | CW | CW | RTTY | — | — | 
-| Japan (PM95) | SSB | SSB | RTTY | — | — | — | 
-| S. America (GG87) | CW | CW | CW | CW | — | — | 
-| Africa (KG33) | CW | CW | CW | CW | — | — | 
-| Oceania (QF56) | RTTY | CW | CW | — | — | — | 
-| Caribbean (FK68) | CW | CW | CW | CW | — | — | 
+| Europe (JN48) | — | — | CW | RTTY | RTTY | RTTY | 
+| Japan (PM95) | — | — | RTTY | CW | — | — | 
+| S. America (GG87) | — | — | CW | CW | CW | CW | 
+| Africa (KG33) | — | — | CW | CW | CW | FT8 | 
+| Oceania (QF56) | — | — | CW | CW | — | — | 
+| Caribbean (FK68) | — | — | FT8 | CW | CW | CW | 
 
 ---
 
