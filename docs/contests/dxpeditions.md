@@ -11,7 +11,7 @@ description: >-
 ![Kp](https://img.shields.io/badge/Kp_2.67-Quiet-teal?style=flat-square)
 ![Conditions](https://img.shields.io/badge/Conditions-Quiet-teal?style=flat-square)
 
-*Updated 06:00 UTC 2026-03-01*
+*Updated 09:00 UTC 2026-03-01*
 
 ---
 
@@ -44,7 +44,7 @@ description: >-
 
 | 10m | 12m | 15m | 17m | 20m | 30m | 40m | 60m | 80m | 160m |
 |-----|-----|-----|-----|-----|-----|-----|-----|-----|-----|
-| — | — | — | FT8 | FT8 | FT8 | FT8 | FT8 | FT8 | CW |
+| — | — | — | FT8 | FT8 | FT8 | FT8 | FT8 | FT8 | FT8 |
 
 ---
 
@@ -84,7 +84,7 @@ description: >-
 
 | 10m | 12m | 15m | 17m | 20m | 30m | 40m | 60m | 80m | 160m |
 |-----|-----|-----|-----|-----|-----|-----|-----|-----|-----|
-| — | — | — | FT8 | FT8 | FT8 | CW | CW | CW | CW |
+| — | — | — | FT8 | FT8 | FT8 | FT8 | FT8 | FT8 | CW |
 
 ---
 
@@ -122,7 +122,7 @@ description: >-
 
 | 10m | 12m | 15m | 17m | 20m | 30m | 40m | 60m | 80m | 160m |
 |-----|-----|-----|-----|-----|-----|-----|-----|-----|-----|
-| — | — | — | FT8 | FT8 | FT8 | CW | CW | CW | CW |
+| — | — | — | FT8 | FT8 | FT8 | FT8 | FT8 | FT8 | CW |
 
 ---
 

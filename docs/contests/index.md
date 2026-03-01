@@ -11,7 +11,7 @@ description: >-
 ![Kp](https://img.shields.io/badge/Kp_2.67-Quiet-teal?style=flat-square)
 ![Conditions](https://img.shields.io/badge/Conditions-Quiet-teal?style=flat-square)
 
-*Updated 06:00 UTC 2026-03-01*
+*Updated 09:00 UTC 2026-03-01*
 
 ---
 
@@ -36,12 +36,12 @@ description: >-
 
 | Destination | 160m | 
 |-------------|-----|
-| Europe (JN48) | CW | 
-| Japan (PM95) | — | 
-| S. America (GG87) | CW | 
+| Europe (JN48) | — | 
+| Japan (PM95) | CW | 
+| S. America (GG87) | — | 
 | Africa (KG33) | — | 
-| Oceania (QF56) | — | 
-| Caribbean (FK68) | CW | 
+| Oceania (QF56) | FT8 | 
+| Caribbean (FK68) | FT8 | 
 
 ---
 
@@ -63,12 +63,12 @@ description: >-
 
 | Destination | 10m | 15m | 20m | 40m | 80m | 160m | 
 |-------------|-----|-----|-----|-----|-----|-----|
-| Europe (JN48) | — | — | CW | CW | CW | CW | 
-| Japan (PM95) | — | — | CW | CW | — | — | 
-| S. America (GG87) | — | — | FT8 | FT8 | CW | CW | 
+| Europe (JN48) | — | — | RTTY | CW | — | — | 
+| Japan (PM95) | — | — | CW | CW | CW | CW | 
+| S. America (GG87) | — | — | FT8 | FT8 | — | — | 
 | Africa (KG33) | — | — | FT8 | FT8 | — | — | 
-| Oceania (QF56) | — | — | CW | CW | — | — | 
-| Caribbean (FK68) | — | — | FT8 | FT8 | FT8 | CW | 
+| Oceania (QF56) | — | — | FT8 | FT8 | FT8 | FT8 | 
+| Caribbean (FK68) | — | — | FT8 | FT8 | FT8 | FT8 | 
 
 ---
 
@@ -90,12 +90,12 @@ description: >-
 
 | Destination | 10m | 15m | 20m | 40m | 80m | 160m | 
 |-------------|-----|-----|-----|-----|-----|-----|
-| Europe (JN48) | — | — | CW | CW | CW | CW | 
-| Japan (PM95) | — | — | CW | CW | — | — | 
-| S. America (GG87) | — | — | FT8 | FT8 | CW | CW | 
+| Europe (JN48) | — | — | RTTY | CW | — | — | 
+| Japan (PM95) | — | — | CW | CW | CW | CW | 
+| S. America (GG87) | — | — | FT8 | FT8 | — | — | 
 | Africa (KG33) | — | — | FT8 | FT8 | — | — | 
-| Oceania (QF56) | — | — | CW | CW | — | — | 
-| Caribbean (FK68) | — | — | FT8 | FT8 | FT8 | CW | 
+| Oceania (QF56) | — | — | FT8 | FT8 | FT8 | FT8 | 
+| Caribbean (FK68) | — | — | FT8 | FT8 | FT8 | FT8 | 
 
 ---
 
@@ -107,7 +107,7 @@ description: >-
 | [CQ 160m SSB](https://www.cq160.com/) | Feb 27–01 | Fri 22:00 | 48 | SSB | NOW |
 | [ARRL DX SSB](https://www.arrl.org/arrl-dx) | Mar 07–09 | Sat 00:00 | 48 | SSB | 5 days |
 | [CQ WPX SSB](https://www.cqwpx.com/) | Mar 28–30 | Sat 00:00 | 48 | SSB | 3w 5d |
-| [JIDX CW](https://jidx.org/) | Apr 11–12 | Sat 07:00 | 30 | CW | 5w 6d |
+| [JIDX CW](https://jidx.org/) | Apr 11–12 | Sat 07:00 | 30 | CW | 5w 5d |
 | [CQ WPX CW](https://www.cqwpx.com/) | May 30–01 | Sat 00:00 | 48 | CW | 12w 5d |
 | [All Asian DX CW](https://www.jarl.org/English/4_Library/A-4-3_Contests/) | Jun 20–22 | Sat 00:00 | 48 | CW | 15w 5d |
 | [IARU HF Championship](https://www.arrl.org/iaru-hf-championship) | Jul 11–12 | Sat 12:00 | 24 | SSB/CW | 18w 6d |
@@ -121,7 +121,7 @@ description: >-
 | [SAC SSB](https://www.sactest.net/) | Oct 17–18 | Sat 12:00 | 24 | SSB | 32w 6d |
 | [CQ WW SSB](https://www.cqww.com/) | Oct 24–26 | Sat 00:00 | 48 | SSB | 33w 5d |
 | [WAE RTTY](https://www.darc.de/der-club/referate/conteste/wae-dx-contest/) | Nov 14–16 | Sat 00:00 | 48 | RTTY | 36w 5d |
-| [JIDX SSB](https://jidx.org/) | Nov 14–15 | Sat 07:00 | 30 | SSB | 36w 6d |
+| [JIDX SSB](https://jidx.org/) | Nov 14–15 | Sat 07:00 | 30 | SSB | 36w 5d |
 | [CQ WW CW](https://www.cqww.com/) | Nov 28–30 | Sat 00:00 | 48 | CW | 38w 5d |
 | [ARRL 160m](https://www.arrl.org/160-meter) | Dec 04–06 | Fri 22:00 | 42 | CW | 39w 5d |
 | [ARRL 10m](https://www.arrl.org/10-meter) | Dec 12–14 | Sat 00:00 | 48 | SSB/CW | 40w 5d |
