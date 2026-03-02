@@ -8,10 +8,10 @@ description: >-
 # DXpeditions
 
 ![SFI](https://img.shields.io/badge/SFI_147-Elevated-2ea043?style=flat-square)
-![Kp](https://img.shields.io/badge/Kp_1.67-Quiet-teal?style=flat-square)
+![Kp](https://img.shields.io/badge/Kp_1.0-Quiet-teal?style=flat-square)
 ![Conditions](https://img.shields.io/badge/Conditions-Quiet-teal?style=flat-square)
 
-*Updated 06:00 UTC 2026-03-02*
+*Updated 09:00 UTC 2026-03-02*
 
 ---
 
@@ -40,7 +40,7 @@ description: >-
 | **Modes** | SSB, CW, FT8 |
 | **Notes** | Remote autonomous deployment, extended operation |
 
-**IONIS: KI7MT (DN13) to Desecheo Island (FK68) — SFI 147, Kp 1.67**
+**IONIS: KI7MT (DN13) to Desecheo Island (FK68) — SFI 147, Kp 1.0**
 
 | 10m | 12m | 15m | 17m | 20m | 30m | 40m | 60m | 80m | 160m |
 |-----|-----|-----|-----|-----|-----|-----|-----|-----|-----|
@@ -61,7 +61,7 @@ description: >-
 | **Modes** | SSB, CW, FT8, RTTY |
 | **Notes** | Most wanted DXCC entity — departs Cape Town Feb 1, dates tentative |
 
-**IONIS: KI7MT (DN13) to Bouvet Island (JD04) — SFI 147, Kp 1.67**
+**IONIS: KI7MT (DN13) to Bouvet Island (JD04) — SFI 147, Kp 1.0**
 
 | 10m | 12m | 15m | 17m | 20m | 30m | 40m | 60m | 80m | 160m |
 |-----|-----|-----|-----|-----|-----|-----|-----|-----|-----|
@@ -80,11 +80,11 @@ description: >-
 | **Modes** | SSB, CW, FT8 |
 | **Notes** | 3 stations, 24/7 operation |
 
-**IONIS: KI7MT (DN13) to Austral Islands (BH42) — SFI 147, Kp 1.67**
+**IONIS: KI7MT (DN13) to Austral Islands (BH42) — SFI 147, Kp 1.0**
 
 | 10m | 12m | 15m | 17m | 20m | 30m | 40m | 60m | 80m | 160m |
 |-----|-----|-----|-----|-----|-----|-----|-----|-----|-----|
-| — | — | — | CW | CW | CW | CW | CW | CW | CW |
+| — | — | — | FT8 | FT8 | FT8 | FT8 | CW | CW | CW |
 
 ---
 
@@ -99,11 +99,11 @@ description: >-
 | **Modes** | SSB, CW, FT8 |
 | **Notes** | WA4DAN and W0GJ team leads |
 
-**IONIS: KI7MT (DN13) to Sable Island (FN83) — SFI 147, Kp 1.67**
+**IONIS: KI7MT (DN13) to Sable Island (FN83) — SFI 147, Kp 1.0**
 
 | 10m | 12m | 15m | 17m | 20m | 30m | 40m | 60m | 80m | 160m |
 |-----|-----|-----|-----|-----|-----|-----|-----|-----|-----|
-| — | — | — | FT8 | FT8 | FT8 | CW | CW | CW | CW |
+| — | — | — | FT8 | CW | CW | CW | CW | CW | CW |
 
 ---
 
@@ -118,11 +118,11 @@ description: >-
 | **Modes** | SSB, CW, FT8 |
 | **Notes** | 6 stations |
 
-**IONIS: KI7MT (DN13) to Marquesas Islands (BH54) — SFI 147, Kp 1.67**
+**IONIS: KI7MT (DN13) to Marquesas Islands (BH54) — SFI 147, Kp 1.0**
 
 | 10m | 12m | 15m | 17m | 20m | 30m | 40m | 60m | 80m | 160m |
 |-----|-----|-----|-----|-----|-----|-----|-----|-----|-----|
-| — | — | — | FT8 | CW | CW | CW | CW | CW | CW |
+| — | — | — | FT8 | FT8 | FT8 | FT8 | CW | CW | CW |
 
 ---
 
