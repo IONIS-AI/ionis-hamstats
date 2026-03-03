@@ -20,7 +20,7 @@ QSOs — combined with real-time solar conditions from NOAA.
 - **Historical Data** — Band-by-band trends, contest schedules, and DXpedition tracking
 
 The predictions are powered by [IONIS](https://ionis-ai.com/) — a physics-constrained
-neural network trained on the largest curated amateur radio propagation dataset on Earth.
+neural network trained on one of the largest curated amateur radio propagation datasets we are aware of.
 For technical details on the model and methodology, see
 [ionis-ai.com](https://ionis-ai.com/).
 
