@@ -20,7 +20,7 @@ range from minimum-power beacons to contest-grade voice transmissions.
 |--------|--------|-------|-----------------|
 | [WSPR](wspr.md) | 10.99B spots | 2008–present | SNR floor — path exists at ~200 mW |
 | [RBN](rbn.md) | 2.27B spots | 2009–present | Real operator signals — CW/RTTY measured by automated skimmers |
-| [PSK Reporter](pskr.md) | 736.2M spots (26M/day) | Feb 2026–present | FT8/digital operational contacts, live feed |
+| [PSK Reporter](pskr.md) | 742.7M spots (26M/day) | Feb 2026–present | FT8/digital operational contacts, live feed |
 | [Contest Logs](contest.md) | 234.3M QSOs | 2005–present | SSB/RTTY ceiling at contest power — the only SSB ground truth |
 
 ---
@@ -42,6 +42,6 @@ Kp, and SSN attached at the time of measurement.
 | Source | Latest Ingested | Total Rows | Status |
 |--------|----------------|------------|--------|
 | WSPR | 2026-03-01 | 10.99B | 2 days behind |
-| RBN | 2026-03-01 | 2.27B | 2 days behind |
-| PSK Reporter | 2026-03-03 | 736.2M | Live |
+| RBN | 2026-03-02 | 2.27B | Current |
+| PSK Reporter | 2026-03-03 | 742.7M | Live |
 | Contest | Archive | 234.3M | Static |
