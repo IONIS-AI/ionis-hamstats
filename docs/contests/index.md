@@ -7,11 +7,11 @@ description: >-
 
 # Contest Calendar
 
-![SFI](https://img.shields.io/badge/SFI_148-Elevated-2ea043?style=flat-square)
-![Kp](https://img.shields.io/badge/Kp_2.0-Quiet-teal?style=flat-square)
-![Conditions](https://img.shields.io/badge/Conditions-Quiet-teal?style=flat-square)
+![SFI](https://img.shields.io/badge/SFI_144-Elevated-2ea043?style=flat-square)
+![Kp](https://img.shields.io/badge/Kp_3.33-Unsettled-ffea00?style=flat-square)
+![Conditions](https://img.shields.io/badge/Conditions-Unsettled_+_Radio_Blackout-ffea00?style=flat-square)
 
-*Updated 18:00 UTC 2026-03-03*
+*Updated 21:00 UTC 2026-03-03*
 
 ---
 
@@ -31,16 +31,16 @@ description: >-
 
 *ARRL International DX — SSB, W/VE work the world*
 
-**IONIS predictions from KI7MT (DN13) — current conditions (SFI 148, Kp 2.0)**
+**IONIS predictions from KI7MT (DN13) — current conditions (SFI 144, Kp 3.33)**
 
 | Destination | 10m | 15m | 20m | 40m | 80m | 160m | 
 |-------------|-----|-----|-----|-----|-----|-----|
-| Europe (JN48) | SSB | SSB | SSB | SSB | — | — | 
-| Japan (PM95) | CW | CW | CW | CW | — | — | 
-| S. America (GG87) | RTTY | CW | CW | — | — | — | 
+| Europe (JN48) | CW | RTTY | RTTY | RTTY | — | — | 
+| Japan (PM95) | RTTY | RTTY | RTTY | CW | — | — | 
+| S. America (GG87) | CW | CW | CW | — | — | — | 
 | Africa (KG33) | CW | CW | CW | CW | — | — | 
-| Oceania (QF56) | CW | CW | CW | CW | — | — | 
-| Caribbean (FK68) | RTTY | CW | CW | — | — | — | 
+| Oceania (QF56) | CW | CW | CW | — | — | — | 
+| Caribbean (FK68) | CW | CW | CW | — | — | — | 
 
 ---
 
@@ -58,16 +58,16 @@ description: >-
 
 *Prefix multiplier contest — SSB worldwide*
 
-**IONIS predictions from KI7MT (DN13) — current conditions (SFI 148, Kp 2.0)**
+**IONIS predictions from KI7MT (DN13) — current conditions (SFI 144, Kp 3.33)**
 
 | Destination | 10m | 15m | 20m | 40m | 80m | 160m | 
 |-------------|-----|-----|-----|-----|-----|-----|
-| Europe (JN48) | SSB | SSB | SSB | SSB | — | — | 
-| Japan (PM95) | CW | CW | CW | CW | — | — | 
-| S. America (GG87) | RTTY | CW | CW | — | — | — | 
+| Europe (JN48) | CW | RTTY | RTTY | RTTY | — | — | 
+| Japan (PM95) | RTTY | RTTY | RTTY | CW | — | — | 
+| S. America (GG87) | CW | CW | CW | — | — | — | 
 | Africa (KG33) | CW | CW | CW | CW | — | — | 
-| Oceania (QF56) | CW | CW | CW | CW | — | — | 
-| Caribbean (FK68) | RTTY | CW | CW | — | — | — | 
+| Oceania (QF56) | CW | CW | CW | — | — | — | 
+| Caribbean (FK68) | CW | CW | CW | — | — | — | 
 
 ---
 
