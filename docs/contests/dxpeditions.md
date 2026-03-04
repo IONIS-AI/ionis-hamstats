@@ -9,9 +9,9 @@ description: >-
 
 ![SFI](https://img.shields.io/badge/SFI_144-Elevated-2ea043?style=flat-square)
 ![Kp](https://img.shields.io/badge/Kp_3.33-Unsettled-ffea00?style=flat-square)
-![Conditions](https://img.shields.io/badge/Conditions-Unsettled_+_Radio_Blackout-ffea00?style=flat-square)
+![Conditions](https://img.shields.io/badge/Conditions-Unsettled-ffea00?style=flat-square)
 
-*Updated 21:00 UTC 2026-03-03*
+*Updated 00:00 UTC 2026-03-04*
 
 ---
 
@@ -19,32 +19,10 @@ description: >-
 
 | Callsign | Entity | Grid | Dates | Modes | Status |
 |----------|--------|------|-------|-------|--------|
-| [KP5/NP3VI](https://desecheo2026.com/kp5/) | Desecheo Island | FK68 | Jan 12–Mar 03 | SSB, CW, FT8 | **ON AIR** |
 | [3Y0K](https://3y0k.com/) | Bouvet Island | JD04 | Mar 01–Mar 14 | SSB, CW, FT8, RTTY | **ON AIR** |
-| [TX5EU](https://www.ng3k.com/misc/adxo.html) | Austral Islands | BH42 | Mar 13–Mar 25 | SSB, CW, FT8 | 10 days |
-| [CY0S](https://www.dx-world.net/cy0s-sable-island-dxpedition-2026/) | Sable Island | FN83 | Mar 19–Mar 31 | SSB, CW, FT8 | 2w 2d |
-| [TX9W](https://www.ng3k.com/misc/adxo.html) | Marquesas Islands | BH54 | Apr 19–Apr 30 | SSB, CW, FT8 | 6w 5d |
-
----
-
-## KP5/NP3VI — Desecheo Island
-
-!!! success "Active Now"
-    KP5/NP3VI is on the air from Desecheo Island. Operation ends 2026-03-03.
-
-| | |
-|---|---|
-| **Grid** | FK68 |
-| **Dates** | 2026-01-12 to 2026-03-03 |
-| **Bands** | 160m, 80m, 40m, 20m, 15m, 10m |
-| **Modes** | SSB, CW, FT8 |
-| **Notes** | Remote autonomous deployment, extended operation |
-
-**IONIS: KI7MT (DN13) to Desecheo Island (FK68) — SFI 144, Kp 3.33**
-
-| 10m | 12m | 15m | 17m | 20m | 30m | 40m | 60m | 80m | 160m |
-|-----|-----|-----|-----|-----|-----|-----|-----|-----|-----|
-| CW | CW | CW | CW | CW | CW | — | — | — | — |
+| [TX5EU](https://www.ng3k.com/misc/adxo.html) | Austral Islands | BH42 | Mar 13–Mar 25 | SSB, CW, FT8 | 9 days |
+| [CY0S](https://www.dx-world.net/cy0s-sable-island-dxpedition-2026/) | Sable Island | FN83 | Mar 19–Mar 31 | SSB, CW, FT8 | 2w 1d |
+| [TX9W](https://www.ng3k.com/misc/adxo.html) | Marquesas Islands | BH54 | Apr 19–Apr 30 | SSB, CW, FT8 | 6w 4d |
 
 ---
 
@@ -65,7 +43,7 @@ description: >-
 
 | 10m | 12m | 15m | 17m | 20m | 30m | 40m | 60m | 80m | 160m |
 |-----|-----|-----|-----|-----|-----|-----|-----|-----|-----|
-| RTTY | RTTY | RTTY | RTTY | RTTY | RTTY | RTTY | RTTY | — | — |
+| CW | CW | CW | CW | CW | CW | CW | CW | — | — |
 
 ---
 
@@ -103,7 +81,7 @@ description: >-
 
 | 10m | 12m | 15m | 17m | 20m | 30m | 40m | 60m | 80m | 160m |
 |-----|-----|-----|-----|-----|-----|-----|-----|-----|-----|
-| RTTY | RTTY | RTTY | RTTY | CW | CW | — | — | — | — |
+| CW | CW | CW | CW | CW | CW | CW | CW | — | — |
 
 ---
 
