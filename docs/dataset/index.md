@@ -22,11 +22,11 @@ cleaned it, and joined it with solar indices at 3-hour resolution.
 
 | Source | Raw Rows | Signatures | SNR Type | Years |
 |--------|---------|------------|----------|-------|
-| WSPR (`wspr.bronze`) | 10.99B | 93.6M | Measured (-30 to +20 dB) | 2008–2026 |
+| WSPR (`wspr.bronze`) | 11.00B | 93.6M | Measured (-30 to +20 dB) | 2008–2026 |
 | RBN (`rbn.bronze`) | 2.27B | 67.3M | Measured (8–29 dB) | 2009–2026 |
 | Contest (`contest.bronze`) | 234.3M | 5.7M | Anchored (+10/0 dB) | 2005–2025 |
 | DXpedition | 3.9M paths | 260K (x50) | Measured | 2009–2025 |
-| PSK Reporter (`pskr.bronze`) | 780.7M (26M/day) | Pending | Measured (-34 to +38 dB) | Feb 2026+ |
+| PSK Reporter (`pskr.bronze`) | 786.5M (26M/day) | Pending | Measured (-34 to +38 dB) | Feb 2026+ |
 | **Total** | **14B+** | **166.9M+** | Full range | 2005–present |
 
 ---
@@ -64,8 +64,8 @@ own. No API rate limits, no subscription fees, no vendor lock-in.
 
 | Source | Total Rows | Last Updated |
 |--------|-----------|-------------|
-| WSPR | 10.99B | 2026-03-02 |
+| WSPR | 11.00B | 2026-03-03 |
 | RBN | 2.27B | 2026-03-03 |
-| PSK Reporter | 780.7M | 2026-03-04 |
+| PSK Reporter | 786.5M | 2026-03-04 |
 | Contest | 234.3M | 2088-11-30 |
-| Solar | 76,718 | 2026-03-04 |
+| Solar | 76,722 | 2026-03-04 |
