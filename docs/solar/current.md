@@ -8,10 +8,10 @@ description: >-
 # Current Solar Conditions
 
 ![SFI](https://img.shields.io/badge/SFI_144-Elevated-2ea043?style=flat-square)
-![Kp](https://img.shields.io/badge/Kp_3.33-Unsettled-ffea00?style=flat-square)
-![Conditions](https://img.shields.io/badge/Conditions-Unsettled-ffea00?style=flat-square)
+![Kp](https://img.shields.io/badge/Kp_5.0-G1_Storm-red?style=flat-square)
+![Conditions](https://img.shields.io/badge/Conditions-Storm-red?style=flat-square)
 
-*Updated 00:00 UTC 2026-03-04 · NOAA SWPC*
+*Updated 03:00 UTC 2026-03-04 · NOAA SWPC*
 
 Solar indices sourced from NOAA SWPC (`wspr.live_conditions`) updated every 15
 minutes. SFI is published once daily (~20:00 UTC from Penticton, BC). Kp is
@@ -50,4 +50,4 @@ conditions — see [Storm Impact](storms.md) for measured SNR effects.
 | 2026-02-28 | 2.67 | ![Quiet](https://img.shields.io/badge/Quiet-teal?style=flat-square) | Normal |
 | 2026-03-01 | 2.67 | ![Quiet](https://img.shields.io/badge/Quiet-teal?style=flat-square) | Normal |
 | 2026-03-02 | 1.67 | ![Quiet](https://img.shields.io/badge/Quiet-teal?style=flat-square) | Normal |
-| 2026-03-03 | 2.67 | ![Quiet](https://img.shields.io/badge/Quiet-teal?style=flat-square) | Normal |
+| 2026-03-03 | 3.33 | ![Unsettled](https://img.shields.io/badge/Unsettled-ffea00?style=flat-square) | Minor |
