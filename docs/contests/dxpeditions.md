@@ -11,7 +11,7 @@ description: >-
 ![Kp](https://img.shields.io/badge/Kp_2.33-Quiet-teal?style=flat-square)
 ![Conditions](https://img.shields.io/badge/Conditions-Quiet-teal?style=flat-square)
 
-*Updated 15:00 UTC 2026-03-07*
+*Updated 18:00 UTC 2026-03-07*
 
 ---
 
@@ -43,7 +43,7 @@ description: >-
 
 | 10m | 12m | 15m | 17m | 20m | 30m | 40m | 60m | 80m | 160m |
 |-----|-----|-----|-----|-----|-----|-----|-----|-----|-----|
-| RTTY | CW | CW | CW | CW | CW | — | — | — | — |
+| RTTY | RTTY | RTTY | RTTY | RTTY | RTTY | — | — | — | — |
 
 ---
 
@@ -62,7 +62,7 @@ description: >-
 
 | 10m | 12m | 15m | 17m | 20m | 30m | 40m | 60m | 80m | 160m |
 |-----|-----|-----|-----|-----|-----|-----|-----|-----|-----|
-| CW | CW | CW | CW | CW | CW | CW | CW | — | — |
+| RTTY | CW | CW | CW | CW | CW | — | — | — | — |
 
 ---
 
@@ -81,7 +81,7 @@ description: >-
 
 | 10m | 12m | 15m | 17m | 20m | 30m | 40m | 60m | 80m | 160m |
 |-----|-----|-----|-----|-----|-----|-----|-----|-----|-----|
-| SSB | RTTY | RTTY | RTTY | CW | CW | — | — | — | — |
+| SSB | SSB | RTTY | RTTY | RTTY | CW | — | — | — | — |
 
 ---
 
@@ -100,7 +100,7 @@ description: >-
 
 | 10m | 12m | 15m | 17m | 20m | 30m | 40m | 60m | 80m | 160m |
 |-----|-----|-----|-----|-----|-----|-----|-----|-----|-----|
-| CW | CW | CW | CW | CW | CW | CW | CW | — | — |
+| RTTY | CW | CW | CW | CW | CW | — | — | — | — |
 
 ---
 
