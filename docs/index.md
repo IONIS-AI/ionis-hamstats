@@ -25,10 +25,10 @@ For technical details on the model and methodology, see
 [ionis-ai.com](https://ionis-ai.com/).
 
 ![SFI](https://img.shields.io/badge/SFI_143-Elevated-2ea043?style=flat-square)
-![Kp](https://img.shields.io/badge/Kp_4.33-Active-orange?style=flat-square)
-![Conditions](https://img.shields.io/badge/Conditions-Unsettled-orange?style=flat-square)
+![Kp](https://img.shields.io/badge/Kp_3.33-Unsettled-ffea00?style=flat-square)
+![Conditions](https://img.shields.io/badge/Conditions-Unsettled-ffea00?style=flat-square)
 
-*Updated 06:00 UTC · NOAA SWPC*
+*Updated 09:00 UTC · NOAA SWPC*
 
 ---
 
@@ -60,16 +60,16 @@ For technical details on the model and methodology, see
     The predictions represent a typical path — your actual results will vary with
     your antenna and power, but the path is either open or it isn't.
 
-*IONIS predictions from KI7MT (DN13) for the current solar conditions (SFI 143, Kp 4.33).*
+*IONIS predictions from KI7MT (DN13) for the current solar conditions (SFI 143, Kp 3.33).*
 
 | Destination | 10m | 12m | 15m | 17m | 20m | 30m | 40m | 60m | 80m | 160m |
 |-------------|-----|-----|-----|-----|-----|-----|-----|-----|-----|-----|
-| Europe (JN48) | — | — | — | CW | CW | CW | CW | CW | — | — |
-| Japan (PM95) | — | — | — | CW | CW | CW | CW | CW | — | — |
-| S. America (GG87) | — | — | — | FT8 | FT8 | FT8 | FT8 | FT8 | FT8 | FT8 |
+| Europe (JN48) | — | — | — | RTTY | RTTY | RTTY | CW | CW | — | — |
+| Japan (PM95) | — | — | — | CW | CW | CW | CW | CW | CW | CW |
+| S. America (GG87) | — | — | — | FT8 | FT8 | FT8 | FT8 | FT8 | — | — |
 | Africa (KG33) | — | — | — | FT8 | FT8 | FT8 | FT8 | FT8 | — | — |
-| Oceania (QF56) | — | — | — | FT8 | FT8 | FT8 | FT8 | FT8 | — | — |
-| Caribbean (FK68) | — | — | — | WSPR | FT8 | FT8 | FT8 | FT8 | FT8 | FT8 |
+| Oceania (QF56) | — | — | — | FT8 | FT8 | FT8 | FT8 | FT8 | FT8 | FT8 |
+| Caribbean (FK68) | — | — | — | FT8 | FT8 | FT8 | FT8 | FT8 | FT8 | FT8 |
 
 *Mode thresholds: SSB &ge; +3 dB, RTTY &ge; -5 dB, CW &ge; -15 dB, FT8 &ge; -21 dB, WSPR &ge; -28 dB.
 Predictions update every 3 hours with current solar conditions.*
@@ -83,15 +83,15 @@ RBN archives lag ~24 hours; zeroes indicate no data in the window, not band clos
 
 | Band | WSPR Spots | RBN Spots | PSKR Spots | Peak SNR | Status |
 |------|-----------|-----------|------------|----------|--------|
-| 10m | 0 | 0 | 6.8M | +87 dB | Strong |
-| 12m | 0 | 0 | 2.5M | +64 dB | Strong |
-| 15m | 0 | 0 | 4.4M | +87 dB | Strong |
+| 10m | 0 | 0 | 6.3M | +87 dB | Strong |
+| 12m | 0 | 0 | 2.3M | +64 dB | Strong |
+| 15m | 0 | 0 | 4.3M | +87 dB | Strong |
 | 17m | 0 | 0 | 3.7M | +87 dB | Strong |
-| 20m | 0 | 0 | 8.4M | +74 dB | Strong |
-| 30m | 0 | 0 | 3.2M | +63 dB | Strong |
-| 40m | 0 | 0 | 5.2M | +71 dB | Strong |
-| 80m | 0 | 0 | 1.3M | +61 dB | Strong |
-| 160m | 0 | 0 | 208,657 | +51 dB | Strong |
+| 20m | 0 | 0 | 8.1M | +74 dB | Strong |
+| 30m | 0 | 0 | 3.3M | +63 dB | Strong |
+| 40m | 0 | 0 | 5.5M | +71 dB | Strong |
+| 80m | 0 | 0 | 1.4M | +61 dB | Strong |
+| 160m | 0 | 0 | 241,455 | +53 dB | Strong |
 
 ---
 
@@ -101,9 +101,9 @@ RBN archives lag ~24 hours; zeroes indicate no data in the window, not band clos
 |--------|------------|------------|--------|
 | WSPR | 2026-03-05 | 11.02B | 2 days behind |
 | RBN | 2026-03-05 | 2.27B | 2 days behind |
-| PSK Reporter | 2026-03-07 | 878.0M | Live |
+| PSK Reporter | 2026-03-07 | 881.5M | Live |
 | Contest | Archive | 234.3M | Static |
-| Solar | 2026-03-06 | 76,734 | Current |
+| Solar | 2026-03-07 | 76,738 | Live |
 
 ---
 
@@ -119,7 +119,7 @@ of HF propagation:
 
 - **WSPR** (11.02B spots, 2008–present) — the SNR floor at minimum power
 - **Reverse Beacon Network** (2.27B spots, 2009–present) — CW/RTTY measured signals
-- **PSK Reporter** (878.0M spots, live since Feb 2026) — FT8/digital operational contacts
+- **PSK Reporter** (881.5M spots, live since Feb 2026) — FT8/digital operational contacts
 - **Contest Logs** (234.3M QSOs, 2005–present) — the SSB/RTTY ceiling at contest power
 
 Solar indices (SFI, Kp, SSN) are joined at 3-hour resolution so every
