@@ -11,7 +11,7 @@ description: >-
 ![Kp](https://img.shields.io/badge/Kp_3.67-Unsettled-ffea00?style=flat-square)
 ![Conditions](https://img.shields.io/badge/Conditions-Unsettled-ffea00?style=flat-square)
 
-*Updated 09:00 UTC 2026-03-08*
+*Updated 12:00 UTC 2026-03-08*
 
 ---
 
@@ -43,7 +43,7 @@ description: >-
 
 | 10m | 12m | 15m | 17m | 20m | 30m | 40m | 60m | 80m | 160m |
 |-----|-----|-----|-----|-----|-----|-----|-----|-----|-----|
-| — | — | — | FT8 | FT8 | FT8 | FT8 | FT8 | — | — |
+| — | — | — | CW | CW | CW | CW | CW | — | — |
 
 ---
 
@@ -81,7 +81,7 @@ description: >-
 
 | 10m | 12m | 15m | 17m | 20m | 30m | 40m | 60m | 80m | 160m |
 |-----|-----|-----|-----|-----|-----|-----|-----|-----|-----|
-| — | — | — | FT8 | FT8 | FT8 | FT8 | CW | CW | CW |
+| — | — | — | CW | CW | CW | CW | CW | — | — |
 
 ---
 
