@@ -1,0 +1,82 @@
+# Contest weekend recaps — post-contest propagation analysis
+#
+# Each entry generates a recap page from the contest SQLite dataset.
+# The SQLite files live in /mnt/sourceforge/contests/ on 9975WX.
+# publish.py loads them at render time and aggregates band/hour stats.
+#
+# slug: used for URL and filename (contests/{slug}.md)
+# dataset: SQLite filename (looked up in CONTEST_DATA_DIR)
+# primary_source: pskr or rbn — which signature table to aggregate
+# findings: 3-5 bullet key takeaways (rendered as markdown)
+# storm: optional storm narrative (if Kp rose during contest)
+
+- name: "ARRL International DX Contest — CW"
+  slug: "arrl-dx-cw-2026"
+  sponsor: "ARRL"
+  mode: "CW"
+  start: "2026-02-21T00:00:00"
+  end: "2026-02-22T23:59:00"
+  analysis_start: "2026-02-20T00:00:00"
+  analysis_end: "2026-02-23T23:59:00"
+  dataset: "arrl-dx-cw-2026.sqlite"
+  primary_source: "rbn"
+  secondary_source: "pskr"
+  solar:
+    sfi_range: "110"
+    kp_range: "1.0–3.3"
+    ssn_note: "SSN dropped to 0 on Feb 22 (confirmed real — SILSO daily)"
+  notebook: "https://github.com/IONIS-AI/ionis-jupyter/blob/main/notebooks/contest-arrl-dx-cw-2026.ipynb"
+  sourceforge: "https://sourceforge.net/projects/ionis-ai/files/contests/arrl-dx-cw-2026.sqlite"
+  findings:
+    - "20m dominated with consistent activity across both days — the DX workhorse"
+    - "40m showed strong nighttime activity with clear day/night transitions"
+    - "15m opened well during daylight hours with SFI at 110"
+    - "SSN genuinely dropped to zero on Feb 22 during a G1 storm — SFI remained stable at 110.1 (radio flux lags)"
+    - "160m activity concentrated in darkness hours as expected — physics validated"
+  bands_of_interest:
+    - "20m"
+    - "40m"
+    - "15m"
+    - "80m"
+    - "160m"
+    - "10m"
+
+- name: "ARRL International DX Contest — SSB"
+  slug: "arrl-dx-ssb-2026"
+  sponsor: "ARRL"
+  mode: "SSB"
+  start: "2026-03-07T00:00:00"
+  end: "2026-03-08T23:59:00"
+  analysis_start: "2026-03-06T00:00:00"
+  analysis_end: "2026-03-09T23:59:00"
+  dataset: "arrl-dx-ssb-2026.sqlite"
+  primary_source: "pskr"
+  secondary_source: null
+  solar:
+    sfi_range: "135–143"
+    kp_range: "1.0–4.67"
+    ssn_note: null
+  storm:
+    headline: "Geomagnetic storm developed during the contest"
+    narrative: >
+      Kp rose from quiet (1.0) on Saturday morning to active (4.67) by Sunday
+      afternoon. This provided a natural experiment — same bands, same operators,
+      changing geomagnetic conditions. The storm's impact on high-band propagation
+      is the centerpiece of this analysis.
+    kp_start: 1.0
+    kp_peak: 4.67
+    onset: "Sunday morning"
+  notebook: "https://github.com/IONIS-AI/ionis-jupyter/blob/main/notebooks/contest-arrl-dx-ssb-2026.ipynb"
+  sourceforge: "https://sourceforge.net/projects/ionis-ai/files/contests/arrl-dx-ssb-2026.sqlite"
+  findings:
+    - "20m was the dominant band both days — strong worldwide propagation at SFI 135+"
+    - "Storm onset visible in high-band SNR degradation Sunday afternoon"
+    - "15m and 10m showed clear sensitivity to rising Kp — openings shortened on Day 2"
+    - "40m and 80m relatively unaffected by the storm — low bands more resilient to Kp disturbance"
+    - "Higher SFI (135 vs 110 for CW weekend) improved high-band openings before the storm hit"
+  bands_of_interest:
+    - "20m"
+    - "15m"
+    - "10m"
+    - "40m"
+    - "80m"

@@ -15,6 +15,7 @@ from __future__ import annotations
 import argparse
 import datetime as dt
 import os
+import sqlite3
 import subprocess
 import sys
 from pathlib import Path
@@ -70,6 +71,12 @@ BANDS = [
 ]
 
 ADIF_TO_BAND = {b["adif"]: b["name"] for b in BANDS}
+BAND_TO_ADIF = {b["name"]: b["adif"] for b in BANDS}
+
+# Contest SQLite datasets (on 9975WX)
+CONTEST_DATA_DIR = Path(os.environ.get(
+    "CONTEST_DATA_DIR", "/mnt/sourceforge/contests",
+))
 
 # IONIS prediction: KI7MT (DN13) → representative contest destinations
 TX_GRID = "DN13"
@@ -265,6 +272,133 @@ def generate_dxpedition_predictions(
             bands[band] = classify_mode(snr_db)
         results[dx["callsign"]] = bands
     return results
+
+
+# ---------------------------------------------------------------------------
+# Contest Recaps (SQLite)
+# ---------------------------------------------------------------------------
+
+def load_recaps() -> list[dict]:
+    """Load recap definitions from YAML, parse dates."""
+    p = ROOT / "data" / "recaps.yaml"
+    if not p.exists():
+        return []
+    with open(p) as f:
+        recaps = yaml.safe_load(f) or []
+    for r in recaps:
+        for field in ("start", "end", "analysis_start", "analysis_end"):
+            if isinstance(r.get(field), str):
+                r[field] = dt.datetime.fromisoformat(r[field])
+    return recaps
+
+
+def load_recap_data(recap: dict) -> dict | None:
+    """Load aggregated stats from a contest SQLite file.
+
+    Returns dict with band_summary, hourly_activity, solar_timeline,
+    distance_stats — or None if the SQLite file is not available.
+    """
+    dataset = recap.get("dataset")
+    if not dataset:
+        return None
+    db_path = CONTEST_DATA_DIR / dataset
+    if not db_path.exists():
+        print(f"  WARNING: contest dataset not found: {db_path}")
+        return None
+
+    source = recap.get("primary_source", "pskr")
+    table = f"{source}_signatures"
+
+    try:
+        conn = sqlite3.connect(str(db_path))
+        conn.row_factory = sqlite3.Row
+        data = {}
+
+        # Band summary: signature counts, median SNR, avg distance, peak hour
+        rows = conn.execute(f"""
+            SELECT band, COUNT(*) as sig_count,
+                   ROUND(AVG(median_snr), 1) as median_snr,
+                   ROUND(AVG(avg_distance), 0) as avg_distance,
+                   (SELECT hour FROM {table} t2
+                    WHERE t2.band = t1.band
+                    GROUP BY hour ORDER BY SUM(spot_count) DESC LIMIT 1
+                   ) as peak_hour
+            FROM {table} t1
+            GROUP BY band
+            ORDER BY band
+        """).fetchall()
+        band_summary = []
+        for r in rows:
+            bname = ADIF_TO_BAND.get(r["band"], str(r["band"]))
+            band_summary.append({
+                "band": bname,
+                "sig_count": r["sig_count"],
+                "median_snr": r["median_snr"],
+                "avg_distance": r["avg_distance"],
+                "peak_hour": r["peak_hour"],
+            })
+        data["band_summary"] = band_summary
+
+        # Hourly activity: pivot by band × hour
+        bands_of_interest = recap.get("bands_of_interest", [])
+        band_adifs = {BAND_TO_ADIF[b]: b for b in bands_of_interest if b in BAND_TO_ADIF}
+        if band_adifs:
+            rows = conn.execute(f"""
+                SELECT hour, band, SUM(spot_count) as spots
+                FROM {table}
+                WHERE band IN ({','.join(str(a) for a in band_adifs)})
+                GROUP BY hour, band
+                ORDER BY hour, band
+            """).fetchall()
+            hourly = {}
+            for r in rows:
+                h = r["hour"]
+                if h not in hourly:
+                    hourly[h] = {"hour": h, "bands": {}}
+                bname = ADIF_TO_BAND.get(r["band"], str(r["band"]))
+                hourly[h]["bands"][bname] = r["spots"]
+            data["hourly_activity"] = [hourly[h] for h in sorted(hourly)]
+
+        # Solar timeline
+        try:
+            rows = conn.execute("""
+                SELECT date, sfi, ssn, kp, ap
+                FROM solar_timeline
+                ORDER BY date
+            """).fetchall()
+            data["solar_timeline"] = [
+                {"date": r["date"], "sfi": r["sfi"], "ssn": r["ssn"],
+                 "kp": round(r["kp"], 2) if r["kp"] else None,
+                 "ap": r["ap"]}
+                for r in rows
+            ]
+        except sqlite3.OperationalError:
+            data["solar_timeline"] = []
+
+        # Distance stats per band
+        rows = conn.execute(f"""
+            SELECT band,
+                   ROUND(MIN(avg_distance), 0) as min_dist,
+                   ROUND(AVG(avg_distance), 0) as median_dist,
+                   ROUND(MAX(avg_distance), 0) as max_dist,
+                   COUNT(DISTINCT tx_grid_4 || rx_grid_4) as path_count
+            FROM {table}
+            GROUP BY band
+            ORDER BY band
+        """).fetchall()
+        data["distance_stats"] = [
+            {"band": ADIF_TO_BAND.get(r["band"], str(r["band"])),
+             "min_dist": r["min_dist"], "median_dist": r["median_dist"],
+             "max_dist": r["max_dist"], "path_count": r["path_count"]}
+            for r in rows
+        ]
+
+        conn.close()
+        return data
+
+    except Exception as e:
+        print(f"  WARNING: failed to load recap data from {db_path}: {e}")
+        return None
 
 
 # ---------------------------------------------------------------------------
@@ -537,7 +671,9 @@ def build_context(
 # Rendering
 # ---------------------------------------------------------------------------
 
-def render_all(env: Environment, context: dict) -> dict[str, str]:
+def render_all(
+    env: Environment, context: dict, recaps: list[dict] | None = None,
+) -> dict[str, str]:
     """Render all templates, return {relative_path: content}."""
     outputs = {}
 
@@ -570,6 +706,15 @@ def render_all(env: Environment, context: dict) -> dict[str, str]:
     for band in BANDS:
         out_name = f"bands/{band['name']}.md"
         outputs[out_name] = band_tmpl.render(**context, band=band)
+
+    # Contest recap pages
+    if recaps:
+        recap_tmpl = env.get_template("contests/recap.md.j2")
+        for recap, recap_data in recaps:
+            out_name = f"contests/{recap['slug']}.md"
+            outputs[out_name] = recap_tmpl.render(
+                **context, recap=recap, recap_data=recap_data,
+            )
 
     return outputs
 
@@ -690,6 +835,19 @@ def main():
     if dx_predictions:
         print(f"  Generated predictions for {len(dx_predictions)} DXpeditions")
 
+    # 5. Contest recaps (from SQLite datasets)
+    print("Loading contest recaps...")
+    recap_defs = load_recaps()
+    recaps = []
+    for recap in recap_defs:
+        recap_data = load_recap_data(recap)
+        if recap_data:
+            print(f"  {recap['slug']}: {len(recap_data.get('band_summary', []))} bands")
+        else:
+            print(f"  {recap['slug']}: no dataset (static findings only)")
+        recaps.append((recap, recap_data))
+    print(f"  {len(recaps)} recap(s) loaded")
+
     context = build_context(
         data, predictions, now,
         contest_schedule=full_year,
@@ -699,7 +857,7 @@ def main():
         dx_calendars=dx_calendars,
         dxpedition_predictions=dx_predictions or {},
     )
-    outputs = render_all(env, context)
+    outputs = render_all(env, context, recaps=recaps)
 
     if args.dry_run:
         print(f"\nDry run — {len(outputs)} files would be rendered:")

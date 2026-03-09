@@ -1,0 +1,126 @@
+# {{ recap.name }}
+
+{% set sfi_color = 'teal' if sfi and sfi >= 150 else '2ea043' if sfi and sfi >= 100 else 'ffea00' if sfi and sfi >= 80 else 'orange' if sfi and sfi >= 70 else 'red' %}
+{% set kp_color = 'red' if kp and kp >= 5 else 'orange' if kp and kp >= 4 else 'ffea00' if kp and kp >= 3 else 'teal' %}
+![SFI](https://img.shields.io/badge/SFI_{{ sfi | default('--') }}-{{ sfi | classify_sfi | replace(' ', '_') }}-{{ sfi_color }}?style=flat-square)
+![Kp](https://img.shields.io/badge/Kp_{{ kp | default('--') }}-{{ kp | classify_kp | replace(' ', '_') }}-{{ kp_color }}?style=flat-square)
+
+**{{ recap.mode }} · {{ recap.sponsor }} · {{ recap.start.strftime('%B %d–%d, %Y') }}**
+
+---
+
+{% if recap.storm %}
+!!! warning "Storm Impact: {{ recap.storm.headline }}"
+    {{ recap.storm.narrative }}
+
+    **Kp trajectory:** {{ recap.storm.kp_start }} → {{ recap.storm.kp_peak }} ({{ recap.storm.onset }})
+
+---
+
+{% endif %}
+## Contest Overview
+
+| | |
+|---|---|
+| **Contest Window** | {{ recap.start.strftime('%Y-%m-%d %H:%M') }} — {{ recap.end.strftime('%Y-%m-%d %H:%M') }} UTC |
+| **Analysis Window** | {{ recap.analysis_start.strftime('%Y-%m-%d') }} — {{ recap.analysis_end.strftime('%Y-%m-%d') }} (±24h) |
+| **Mode** | {{ recap.mode }} |
+| **SFI** | {{ recap.solar.sfi_range }} |
+| **Kp Range** | {{ recap.solar.kp_range }} |
+{% if recap.solar.ssn_note %}
+| **SSN Note** | {{ recap.solar.ssn_note }} |
+{% endif %}
+| **Primary Source** | {{ recap.primary_source | upper }} signatures |
+{% if recap.secondary_source %}
+| **Secondary Source** | {{ recap.secondary_source | upper }} signatures |
+{% endif %}
+
+---
+
+## Key Findings
+
+{% for finding in recap.findings %}
+- {{ finding }}
+{% endfor %}
+
+---
+
+{% if recap_data and recap_data.band_summary %}
+## Band Activity Summary
+
+*{{ recap.primary_source | upper }} signature counts during the contest window, aggregated by band.*
+
+| Band | Signatures | Median SNR | Avg Distance (km) | Peak Hour (UTC) |
+|------|-----------|------------|-------------------|----------------|
+{% for row in recap_data.band_summary %}
+| {{ row.band }} | {{ row.sig_count | fmt }} | {{ row.median_snr | fmt_snr }} | {{ row.avg_distance | fmt }} | {{ row.peak_hour }}:00 |
+{% endfor %}
+
+---
+
+{% endif %}
+{% if recap_data and recap_data.hourly_activity %}
+## Hourly Activity Profile
+
+*Spot density by hour (UTC) across all contest bands — {{ recap.primary_source | upper }} source.*
+
+| Hour | {% for band in recap.bands_of_interest %}{{ band }} | {% endfor %}
+
+|------|{% for band in recap.bands_of_interest %}------|{% endfor %}
+
+{% for hour_row in recap_data.hourly_activity %}
+| {{ "%02d" | format(hour_row.hour) }}:00 | {% for band in recap.bands_of_interest %}{{ hour_row.bands.get(band, '—') | fmt }} | {% endfor %}
+
+{% endfor %}
+
+---
+
+{% endif %}
+{% if recap_data and recap_data.solar_timeline %}
+## Solar Conditions Timeline
+
+*Solar indices over the analysis window ({{ recap.analysis_start.strftime('%b %d') }}–{{ recap.analysis_end.strftime('%b %d') }}).*
+
+| Date | SFI | SSN | Kp | Ap | Conditions |
+|------|-----|-----|----|----|------------|
+{% for row in recap_data.solar_timeline %}
+| {{ row.date }} | {{ row.sfi }} | {{ row.ssn }} | {{ row.kp }} | {{ row.ap }} | {{ row.kp | classify_kp }} |
+{% endfor %}
+
+---
+
+{% endif %}
+{% if recap_data and recap_data.distance_stats %}
+## Geographic Reach
+
+*Distance distribution of observed paths — {{ recap.primary_source | upper }} source.*
+
+| Band | Min (km) | Median (km) | Max (km) | Paths |
+|------|----------|-------------|----------|-------|
+{% for row in recap_data.distance_stats %}
+| {{ row.band }} | {{ row.min_dist | fmt }} | {{ row.median_dist | fmt }} | {{ row.max_dist | fmt }} | {{ row.path_count | fmt }} |
+{% endfor %}
+
+---
+
+{% endif %}
+## Resources
+
+| Resource | Link |
+|----------|------|
+| **Full Analysis Notebook** | [View on GitHub]({{ recap.notebook }}) |
+| **Contest Dataset** | [Download SQLite]({{ recap.sourceforge }}) |
+| **IONIS Jupyter** | [All Notebooks](https://github.com/IONIS-AI/ionis-jupyter) |
+
+The notebook contains the complete analysis with interactive charts: solar timeline,
+band activity heatmaps, geographic reach maps, day/night classification, SNR distributions,
+and historical context. The SQLite dataset contains all {{ recap.primary_source | upper }}
+{% if recap.secondary_source %}and {{ recap.secondary_source | upper }} {% endif %}signatures
+from the analysis window — download it to run the notebook locally or explore the data yourself.
+
+---
+
+*Analysis powered by [IONIS](https://github.com/IONIS-AI) — 14 billion propagation observations,
+71 MCP tools, and a neural network that learned HF physics from the data.*
+
+[← Back to Contest Calendar](index.md)

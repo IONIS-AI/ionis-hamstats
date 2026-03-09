@@ -66,8 +66,12 @@ copyright: "&copy; 2026 KI7MT — Powered by IONIS"
 
 nav:
   - Home: index.md
-  - Contests: contests/index.md
-  - DXpeditions: contests/dxpeditions.md
+  - Contests:
+    - Calendar: contests/index.md
+    - DXpeditions: contests/dxpeditions.md
+    - Recaps:
+      - ARRL DX CW 2026: contests/arrl-dx-cw-2026.md
+      - ARRL DX SSB 2026: contests/arrl-dx-ssb-2026.md
   - Bands:
     - bands/index.md
     - 160m: bands/160m.md
