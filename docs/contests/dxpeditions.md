@@ -7,11 +7,11 @@ description: >-
 
 # DXpeditions
 
-![SFI](https://img.shields.io/badge/SFI_135-Elevated-2ea043?style=flat-square)
+![SFI](https://img.shields.io/badge/SFI_128-Elevated-2ea043?style=flat-square)
 ![Kp](https://img.shields.io/badge/Kp_1.67-Quiet-teal?style=flat-square)
 ![Conditions](https://img.shields.io/badge/Conditions-Quiet-teal?style=flat-square)
 
-*Updated 21:00 UTC 2026-03-09*
+*Updated 21:07 UTC 2026-03-09*
 
 ---
 
@@ -39,7 +39,7 @@ description: >-
 | **Modes** | SSB, CW, FT8, RTTY |
 | **Notes** | Most wanted DXCC entity — departs Cape Town Feb 1, dates tentative |
 
-**IONIS: KI7MT (DN13) to Bouvet Island (JD04) — SFI 135, Kp 1.67**
+**IONIS: KI7MT (DN13) to Bouvet Island (JD04) — SFI 128, Kp 1.67**
 
 | 10m | 12m | 15m | 17m | 20m | 30m | 40m | 60m | 80m | 160m |
 |-----|-----|-----|-----|-----|-----|-----|-----|-----|-----|
@@ -58,7 +58,7 @@ description: >-
 | **Modes** | SSB, CW, FT8 |
 | **Notes** | 3 stations, 24/7 operation |
 
-**IONIS: KI7MT (DN13) to Austral Islands (BH42) — SFI 135, Kp 1.67**
+**IONIS: KI7MT (DN13) to Austral Islands (BH42) — SFI 128, Kp 1.67**
 
 | 10m | 12m | 15m | 17m | 20m | 30m | 40m | 60m | 80m | 160m |
 |-----|-----|-----|-----|-----|-----|-----|-----|-----|-----|
@@ -77,7 +77,7 @@ description: >-
 | **Modes** | SSB, CW, FT8 |
 | **Notes** | WA4DAN and W0GJ team leads |
 
-**IONIS: KI7MT (DN13) to Sable Island (FN83) — SFI 135, Kp 1.67**
+**IONIS: KI7MT (DN13) to Sable Island (FN83) — SFI 128, Kp 1.67**
 
 | 10m | 12m | 15m | 17m | 20m | 30m | 40m | 60m | 80m | 160m |
 |-----|-----|-----|-----|-----|-----|-----|-----|-----|-----|
@@ -96,7 +96,7 @@ description: >-
 | **Modes** | SSB, CW, FT8 |
 | **Notes** | 6 stations |
 
-**IONIS: KI7MT (DN13) to Marquesas Islands (BH54) — SFI 135, Kp 1.67**
+**IONIS: KI7MT (DN13) to Marquesas Islands (BH54) — SFI 128, Kp 1.67**
 
 | 10m | 12m | 15m | 17m | 20m | 30m | 40m | 60m | 80m | 160m |
 |-----|-----|-----|-----|-----|-----|-----|-----|-----|-----|

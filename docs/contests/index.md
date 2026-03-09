@@ -7,11 +7,11 @@ description: >-
 
 # Contest Calendar
 
-![SFI](https://img.shields.io/badge/SFI_135-Elevated-2ea043?style=flat-square)
+![SFI](https://img.shields.io/badge/SFI_128-Elevated-2ea043?style=flat-square)
 ![Kp](https://img.shields.io/badge/Kp_1.67-Quiet-teal?style=flat-square)
 ![Conditions](https://img.shields.io/badge/Conditions-Quiet-teal?style=flat-square)
 
-*Updated 21:00 UTC 2026-03-09*
+*Updated 21:07 UTC 2026-03-09*
 
 ---
 
@@ -31,7 +31,7 @@ description: >-
 
 *Prefix multiplier contest — SSB worldwide*
 
-**IONIS predictions from KI7MT (DN13) — current conditions (SFI 135, Kp 1.67)**
+**IONIS predictions from KI7MT (DN13) — current conditions (SFI 128, Kp 1.67)**
 
 | Destination | 10m | 15m | 20m | 40m | 80m | 160m | 
 |-------------|-----|-----|-----|-----|-----|-----|
@@ -73,6 +73,16 @@ description: >-
 | [ARRL DX CW](https://www.arrl.org/arrl-dx) | Feb 20–22 | Sat 00:00 | 48 | CW | 49w 4d |
 | [CQ 160m SSB](https://www.cq160.com/) | Feb 26–28 | Fri 22:00 | 48 | SSB | 50w 4d |
 | [ARRL DX SSB](https://www.arrl.org/arrl-dx) | Mar 06–08 | Sat 00:00 | 48 | SSB | 51w 4d |
+
+---
+
+## Contest Weekend Recaps
+
+Post-contest propagation analysis — band activity, solar impact, geographic reach.
+Each recap includes a full Jupyter notebook and downloadable SQLite dataset.
+
+- [ARRL DX SSB 2026](arrl-dx-ssb-2026.md) — Storm onset during contest (Kp 1.0 → 4.67)
+- [ARRL DX CW 2026](arrl-dx-cw-2026.md) — SSN dropped to zero during G1 storm
 
 ---
 
