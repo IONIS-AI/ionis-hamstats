@@ -11,7 +11,7 @@ description: >-
 ![Kp](https://img.shields.io/badge/Kp_1.67-Quiet-teal?style=flat-square)
 ![Conditions](https://img.shields.io/badge/Conditions-Quiet-teal?style=flat-square)
 
-*Updated 18:00 UTC 2026-03-09*
+*Updated 21:00 UTC 2026-03-09*
 
 ---
 
@@ -35,11 +35,11 @@ description: >-
 
 | Destination | 10m | 15m | 20m | 40m | 80m | 160m | 
 |-------------|-----|-----|-----|-----|-----|-----|
-| Europe (JN48) | SSB | SSB | SSB | SSB | — | — | 
-| Japan (PM95) | CW | CW | CW | CW | — | — | 
+| Europe (JN48) | RTTY | RTTY | RTTY | SSB | — | — | 
+| Japan (PM95) | RTTY | RTTY | RTTY | — | — | — | 
 | S. America (GG87) | RTTY | RTTY | CW | — | — | — | 
 | Africa (KG33) | CW | CW | CW | CW | — | — | 
-| Oceania (QF56) | CW | CW | CW | CW | — | — | 
+| Oceania (QF56) | CW | CW | CW | — | — | — | 
 | Caribbean (FK68) | RTTY | CW | CW | — | — | — | 
 
 ---
