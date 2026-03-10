@@ -7,11 +7,11 @@ description: >-
 
 # Contest Calendar
 
-![SFI](https://img.shields.io/badge/SFI_128-Elevated-2ea043?style=flat-square)
+![SFI](https://img.shields.io/badge/SFI_127-Elevated-2ea043?style=flat-square)
 ![Kp](https://img.shields.io/badge/Kp_3.67-Unsettled-ffea00?style=flat-square)
-![Conditions](https://img.shields.io/badge/Conditions-Unsettled_+_Radio_Blackout-ffea00?style=flat-square)
+![Conditions](https://img.shields.io/badge/Conditions-Unsettled-ffea00?style=flat-square)
 
-*Updated 20:18 UTC 2026-03-10*
+*Updated 21:00 UTC 2026-03-10*
 
 ---
 
@@ -31,16 +31,16 @@ description: >-
 
 *Prefix multiplier contest — SSB worldwide*
 
-**IONIS predictions from KI7MT (DN13) — current conditions (SFI 128, Kp 3.67)**
+**IONIS predictions from KI7MT (DN13) — current conditions (SFI 127, Kp 3.67)**
 
 | Destination | 10m | 15m | 20m | 40m | 80m | 160m | 
 |-------------|-----|-----|-----|-----|-----|-----|
 | Europe (JN48) | RTTY | RTTY | RTTY | RTTY | — | — | 
-| Japan (PM95) | CW | CW | CW | CW | — | — | 
-| S. America (GG87) | RTTY | CW | CW | — | — | — | 
+| Japan (PM95) | RTTY | RTTY | RTTY | — | — | — | 
+| S. America (GG87) | CW | CW | CW | — | — | — | 
 | Africa (KG33) | CW | CW | CW | CW | — | — | 
 | Oceania (QF56) | CW | CW | CW | — | — | — | 
-| Caribbean (FK68) | RTTY | CW | CW | — | — | — | 
+| Caribbean (FK68) | CW | CW | CW | — | — | — | 
 
 ---
 
