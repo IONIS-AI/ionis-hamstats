@@ -22,17 +22,28 @@
   primary_source: "rbn"
   secondary_source: "pskr"
   solar:
-    sfi_range: "110"
-    kp_range: "1.0–3.3"
+    sfi_range: "108–111"
+    kp_range: "1.0–5.3"
     ssn_note: "SSN dropped to 0 on Feb 22 (confirmed real — SILSO daily)"
+  storm:
+    headline: "G1 geomagnetic storm during the contest"
+    narrative: >
+      Kp rose from quiet (1.0) to storm level (5.3) during the contest
+      weekend while SFI remained stable at 110. SSN dropped to zero on
+      Feb 22 — confirmed real by SILSO daily data. Radio flux lags
+      sunspot counts, so propagation was sustained despite SSN=0.
+    kp_start: 1.0
+    kp_peak: 5.3
+    onset: "Saturday evening"
   notebook: "https://github.com/IONIS-AI/ionis-jupyter/blob/main/notebooks/contest-arrl-dx-cw-2026.ipynb"
   sourceforge: "https://sourceforge.net/projects/ionis-ai/files/contests/arrl-dx-cw-2026.sqlite"
   findings:
     - "20m dominated with consistent activity across both days — the DX workhorse"
     - "40m showed strong nighttime activity with clear day/night transitions"
     - "15m opened well during daylight hours with SFI at 110"
-    - "SSN genuinely dropped to zero on Feb 22 during a G1 storm — SFI remained stable at 110.1 (radio flux lags)"
+    - "SSN genuinely dropped to zero on Feb 22 during a G1 storm — SFI remained stable at 110 (radio flux lags)"
     - "160m activity concentrated in darkness hours as expected — physics validated"
+    - "SFI 110 is notably below the 2023–2025 February average (~179) — Solar Cycle 25 may be past its peak"
   bands_of_interest:
     - "20m"
     - "40m"
@@ -74,6 +85,7 @@
     - "15m and 10m showed clear sensitivity to rising Kp — openings shortened on Day 2"
     - "40m and 80m relatively unaffected by the storm — low bands more resilient to Kp disturbance"
     - "Higher SFI (135 vs 110 for CW weekend) improved high-band openings before the storm hit"
+    - "SFI 135–143 still below March 2023–2025 average (~159) — cycle declining but high bands well-supported"
   bands_of_interest:
     - "20m"
     - "15m"
