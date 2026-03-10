@@ -1,7 +1,7 @@
 # ARRL International DX Contest — SSB
 
 ![SFI](https://img.shields.io/badge/SFI_128-Elevated-2ea043?style=flat-square)
-![Kp](https://img.shields.io/badge/Kp_3.0-Unsettled-ffea00?style=flat-square)
+![Kp](https://img.shields.io/badge/Kp_3.67-Unsettled-ffea00?style=flat-square)
 
 **SSB · ARRL · March 07–07, 2026**
 
@@ -35,6 +35,7 @@
 - 15m and 10m showed clear sensitivity to rising Kp — openings shortened on Day 2
 - 40m and 80m relatively unaffected by the storm — low bands more resilient to Kp disturbance
 - Higher SFI (135 vs 110 for CW weekend) improved high-band openings before the storm hit
+- SFI 135–143 still below March 2023–2025 average (~159) — cycle declining but high bands well-supported
 
 ---
 
