@@ -1,0 +1,186 @@
+---
+description: >-
+  Contest logging software market share from 496,000+ Cabrillo log submissions
+  across 15 major contests, 2005–2025. N1MM Logger+, Win-Test, WriteLog, and
+  40+ other loggers analyzed from real contest submissions.
+---
+
+# Contest Logger Statistics
+
+Analysis of **{{ data.logger_market_share | length }}** logging software families extracted from
+**{{ data.logger_market_share | sum(attribute='total_logs') | fmt }}** Cabrillo log submissions
+across 15 major HF contests, 2005–2025.
+
+*Updated {{ now.strftime('%H:%M UTC %Y-%m-%d') }}*
+
+!!! info "Data Source"
+    Every Cabrillo log file contains a `CREATED-BY:` header identifying the logging software.
+    We parse these headers from 496K+ logs downloaded from CQ and ARRL contest results.
+    No operator identifiers are stored — this is aggregate statistics only.
+
+---
+
+## Market Share — All Contests
+
+{% if data.logger_market_share %}
+| Rank | Logger | Submissions | Share |
+|------|--------|------------|-------|
+{% for row in data.logger_market_share[:25] %}
+| {{ loop.index }} | **{{ row.logger }}** | {{ row.total_logs | fmt }} | {{ row.pct }}% |
+{% endfor %}
+
+{% set top10_pct = data.logger_market_share[:10] | sum(attribute='pct') %}
+{% set top1_pct = data.logger_market_share[0].pct if data.logger_market_share else 0 %}
+
+!!! note "Key Takeaways"
+    - **{{ data.logger_market_share[0].logger }}** dominates with **{{ top1_pct }}%** of all submissions
+    - Top 10 loggers account for **{{ "%.1f" | format(top10_pct) }}%** of all contest logs
+    - **Every top logger is Windows-only** — macOS and Linux have < 1% combined share
+    - The long tail includes {{ data.logger_market_share | length - 10 }} additional logger families
+
+{% endif %}
+
+---
+
+## Logger Trends by Year
+
+{% if data.logger_trends %}
+How the top 10 loggers' market share has changed over time.
+
+{% set years = [] %}
+{% set loggers_seen = [] %}
+{% for row in data.logger_trends %}
+{% if row.year not in years %}{% if years.append(row.year) %}{% endif %}{% endif %}
+{% if row.logger not in loggers_seen %}{% if loggers_seen.append(row.logger) %}{% endif %}{% endif %}
+{% endfor %}
+
+{% set trend_data = {} %}
+{% for row in data.logger_trends %}
+{% set key = row.logger %}
+{% if key not in trend_data %}{% if trend_data.update({key: {}}) %}{% endif %}{% endif %}
+{% if trend_data[key].update({row.year: row.pct}) %}{% endif %}
+{% endfor %}
+
+| Logger | {% for y in years %}{{ y }} | {% endfor %}
+
+|--------|{% for y in years %}------|{% endfor %}
+
+{% for logger in loggers_seen %}
+| {{ logger }} | {% for y in years %}{{ trend_data.get(logger, {}).get(y, '—') }}{% if trend_data.get(logger, {}).get(y) is number %}%{% endif %} | {% endfor %}
+
+{% endfor %}
+
+{% endif %}
+
+---
+
+## Logger by Contest
+
+{% if data.logger_by_contest %}
+Which loggers dominate which contests? Some loggers have strong contest-specific followings.
+
+{% set contests_seen = [] %}
+{% for row in data.logger_by_contest %}
+{% if row.contest not in contests_seen %}{% if contests_seen.append(row.contest) %}{% endif %}{% endif %}
+{% endfor %}
+
+{% for contest in contests_seen %}
+### {{ contest }}
+
+| Logger | Submissions | Share |
+|--------|------------|-------|
+{% for row in data.logger_by_contest if row.contest == contest %}
+{% if loop.index <= 10 %}
+| {{ row.logger }} | {{ row.logs | fmt }} | {{ row.pct }}% |
+{% endif %}
+{% endfor %}
+
+{% endfor %}
+{% endif %}
+
+---
+
+## Logger by Mode
+
+{% if data.logger_by_mode %}
+Do CW operators prefer different loggers than SSB or RTTY operators?
+
+{% set modes_seen = [] %}
+{% for row in data.logger_by_mode %}
+{% if row.mode not in modes_seen %}{% if modes_seen.append(row.mode) %}{% endif %}{% endif %}
+{% endfor %}
+
+{% for mode in modes_seen %}
+### {{ mode }}
+
+| Logger | Submissions | Share |
+|--------|------------|-------|
+{% for row in data.logger_by_mode if row.mode == mode %}
+{% if loop.index <= 10 %}
+| {{ row.logger }} | {{ row.logs | fmt }} | {{ row.pct }}% |
+{% endif %}
+{% endfor %}
+
+{% endfor %}
+{% endif %}
+
+---
+
+## Operator Categories
+
+{% if data.logger_categories %}
+{% set power_rows = [] %}
+{% set operator_rows = [] %}
+{% set assisted_rows = [] %}
+{% for row in data.logger_categories %}
+{% if row.category == 'power' %}{% if power_rows.append(row) %}{% endif %}{% endif %}
+{% if row.category == 'operator' %}{% if operator_rows.append(row) %}{% endif %}{% endif %}
+{% if row.category == 'assisted' %}{% if assisted_rows.append(row) %}{% endif %}{% endif %}
+{% endfor %}
+
+### Power Class
+
+| Category | Submissions | Share |
+|----------|------------|-------|
+{% for row in power_rows %}
+| {{ row.value }} | {{ row.logs | fmt }} | {{ row.pct }}% |
+{% endfor %}
+
+### Operator Class
+
+| Category | Submissions | Share |
+|----------|------------|-------|
+{% for row in operator_rows %}
+| {{ row.value }} | {{ row.logs | fmt }} | {{ row.pct }}% |
+{% endfor %}
+
+### Assisted vs Non-Assisted
+
+| Category | Submissions | Share |
+|----------|------------|-------|
+{% for row in assisted_rows %}
+| {{ row.value }} | {{ row.logs | fmt }} | {{ row.pct }}% |
+{% endfor %}
+
+{% endif %}
+
+---
+
+## Platform Gap
+
+The contest logging market is **100% Windows** at the top. macOS options
+(SkookumLogger, RUMlogNG, MacLoggerDX) and Linux options (TLF, CQRLOG, YFKtest)
+together represent less than 1% of submissions.
+
+This isn't a sample bias — it's the entire population of submitted Cabrillo logs
+from 15 major contests over 20 years.
+
+For more on how this data was collected, see the
+[methodology page](../methodology/index.md).
+
+---
+
+*Analysis powered by [IONIS](https://github.com/IONIS-AI) — 496K Cabrillo log headers
+from 15 major HF contests, 2005–2025.*
+
+[← Back to Contests](../contests/index.md)

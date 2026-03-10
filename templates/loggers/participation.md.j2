@@ -1,0 +1,51 @@
+---
+description: >-
+  Contest participation trends 2008–2025. Entry counts, power class distribution,
+  and multi-op activity across CQ WW, ARRL DX, CQ WPX, and other major contests.
+---
+
+# Contest Participation Trends
+
+Year-over-year participation data from **{{ data.logger_participation | sum(attribute='total_logs') | fmt }}**
+Cabrillo log submissions across major HF contests, 2008–2025.
+
+*Updated {{ now.strftime('%H:%M UTC %Y-%m-%d') }}*
+
+---
+
+{% if data.logger_participation %}
+{% set contests_seen = [] %}
+{% for row in data.logger_participation %}
+{% if row.contest not in contests_seen %}{% if contests_seen.append(row.contest) %}{% endif %}{% endif %}
+{% endfor %}
+
+## Entries by Contest and Year
+
+{% for contest in contests_seen %}
+### {{ contest }}
+
+| Year | Total | High Power | Low Power | QRP | Multi-Op |
+|------|-------|-----------|----------|-----|----------|
+{% for row in data.logger_participation if row.contest == contest %}
+| {{ row.year }} | {{ row.total_logs | fmt }} | {{ row.high_power | fmt }} | {{ row.low_power | fmt }} | {{ row.qrp | fmt }} | {{ row.multi_op | fmt }} |
+{% endfor %}
+
+{% endfor %}
+{% endif %}
+
+---
+
+## Notes
+
+- **Total** counts all submitted Cabrillo logs for that contest and year
+- **High/Low/QRP** from `CATEGORY-POWER:` header (not all logs include this)
+- **Multi-Op** includes MULTI-ONE, MULTI-TWO, MULTI-UNLIMITED, and MULTI-DISTRIBUTED
+- Some years may be missing if contest logs are not yet available for download
+- Checklog and SWL entries are included in totals
+
+---
+
+*Analysis powered by [IONIS](https://github.com/IONIS-AI) — 496K Cabrillo log headers
+from 15 major HF contests, 2005–2025.*
+
+[← Back to Logger Statistics](index.md)

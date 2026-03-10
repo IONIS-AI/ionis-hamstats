@@ -695,6 +695,8 @@ def render_all(
         "dataset/coverage.md.j2",
         "contests/index.md.j2",
         "contests/dxpeditions.md.j2",
+        "loggers/index.md.j2",
+        "loggers/participation.md.j2",
     ]
     for tmpl_name in simple:
         out_name = tmpl_name.removesuffix(".j2")
