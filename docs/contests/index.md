@@ -8,10 +8,10 @@ description: >-
 # Contest Calendar
 
 ![SFI](https://img.shields.io/badge/SFI_128-Elevated-2ea043?style=flat-square)
-![Kp](https://img.shields.io/badge/Kp_2.33-Quiet-teal?style=flat-square)
-![Conditions](https://img.shields.io/badge/Conditions-Quiet-teal?style=flat-square)
+![Kp](https://img.shields.io/badge/Kp_3.0-Unsettled-ffea00?style=flat-square)
+![Conditions](https://img.shields.io/badge/Conditions-Unsettled-ffea00?style=flat-square)
 
-*Updated 12:00 UTC 2026-03-10*
+*Updated 15:00 UTC 2026-03-10*
 
 ---
 
@@ -31,16 +31,16 @@ description: >-
 
 *Prefix multiplier contest — SSB worldwide*
 
-**IONIS predictions from KI7MT (DN13) — current conditions (SFI 128, Kp 2.33)**
+**IONIS predictions from KI7MT (DN13) — current conditions (SFI 128, Kp 3.0)**
 
 | Destination | 10m | 15m | 20m | 40m | 80m | 160m | 
 |-------------|-----|-----|-----|-----|-----|-----|
-| Europe (JN48) | — | — | SSB | RTTY | — | — | 
-| Japan (PM95) | — | — | CW | CW | CW | CW | 
-| S. America (GG87) | — | — | FT8 | FT8 | — | — | 
-| Africa (KG33) | — | — | CW | CW | — | — | 
-| Oceania (QF56) | — | — | FT8 | FT8 | FT8 | FT8 | 
-| Caribbean (FK68) | — | — | FT8 | FT8 | — | — | 
+| Europe (JN48) | SSB | SSB | SSB | — | — | — | 
+| Japan (PM95) | FT8 | FT8 | FT8 | CW | — | — | 
+| S. America (GG87) | CW | CW | CW | — | — | — | 
+| Africa (KG33) | CW | CW | CW | — | — | — | 
+| Oceania (QF56) | FT8 | FT8 | FT8 | FT8 | — | — | 
+| Caribbean (FK68) | CW | CW | CW | — | — | — | 
 
 ---
 
