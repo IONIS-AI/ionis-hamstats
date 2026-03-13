@@ -8,10 +8,10 @@ description: >-
 # DXpeditions
 
 ![SFI](https://img.shields.io/badge/SFI_121-Elevated-2ea043?style=flat-square)
-![Kp](https://img.shields.io/badge/Kp_3.33-Unsettled-ffea00?style=flat-square)
-![Conditions](https://img.shields.io/badge/Conditions-Unsettled-ffea00?style=flat-square)
+![Kp](https://img.shields.io/badge/Kp_4.0-Active-orange?style=flat-square)
+![Conditions](https://img.shields.io/badge/Conditions-Unsettled_+_Radio_Blackout-orange?style=flat-square)
 
-*Updated 06:00 UTC 2026-03-13*
+*Updated 09:00 UTC 2026-03-13*
 
 ---
 
@@ -39,11 +39,11 @@ description: >-
 | **Modes** | SSB, CW, FT8, RTTY |
 | **Notes** | Most wanted DXCC entity — departs Cape Town Feb 1, dates tentative |
 
-**IONIS: KI7MT (DN13) to Bouvet Island (JD04) — SFI 121, Kp 3.33**
+**IONIS: KI7MT (DN13) to Bouvet Island (JD04) — SFI 121, Kp 4.0**
 
 | 10m | 12m | 15m | 17m | 20m | 30m | 40m | 60m | 80m | 160m |
 |-----|-----|-----|-----|-----|-----|-----|-----|-----|-----|
-| — | — | — | CW | CW | CW | CW | CW | — | — |
+| — | — | — | FT8 | FT8 | FT8 | FT8 | FT8 | — | — |
 
 ---
 
@@ -60,11 +60,11 @@ description: >-
 | **Modes** | SSB, CW, FT8 |
 | **Notes** | 3 stations, 24/7 operation |
 
-**IONIS: KI7MT (DN13) to Austral Islands (BH42) — SFI 121, Kp 3.33**
+**IONIS: KI7MT (DN13) to Austral Islands (BH42) — SFI 121, Kp 4.0**
 
 | 10m | 12m | 15m | 17m | 20m | 30m | 40m | 60m | 80m | 160m |
 |-----|-----|-----|-----|-----|-----|-----|-----|-----|-----|
-| — | — | — | FT8 | FT8 | FT8 | CW | CW | CW | CW |
+| — | — | — | FT8 | FT8 | FT8 | FT8 | FT8 | FT8 | FT8 |
 
 ---
 
@@ -79,11 +79,11 @@ description: >-
 | **Modes** | SSB, CW, FT8 |
 | **Notes** | WA4DAN and W0GJ team leads |
 
-**IONIS: KI7MT (DN13) to Sable Island (FN83) — SFI 121, Kp 3.33**
+**IONIS: KI7MT (DN13) to Sable Island (FN83) — SFI 121, Kp 4.0**
 
 | 10m | 12m | 15m | 17m | 20m | 30m | 40m | 60m | 80m | 160m |
 |-----|-----|-----|-----|-----|-----|-----|-----|-----|-----|
-| — | — | — | FT8 | FT8 | FT8 | CW | CW | CW | CW |
+| — | — | — | FT8 | FT8 | FT8 | FT8 | CW | CW | CW |
 
 ---
 
@@ -98,11 +98,11 @@ description: >-
 | **Modes** | SSB, CW, FT8 |
 | **Notes** | 6 stations |
 
-**IONIS: KI7MT (DN13) to Marquesas Islands (BH54) — SFI 121, Kp 3.33**
+**IONIS: KI7MT (DN13) to Marquesas Islands (BH54) — SFI 121, Kp 4.0**
 
 | 10m | 12m | 15m | 17m | 20m | 30m | 40m | 60m | 80m | 160m |
 |-----|-----|-----|-----|-----|-----|-----|-----|-----|-----|
-| — | — | — | FT8 | FT8 | FT8 | CW | CW | CW | CW |
+| — | — | — | WSPR | FT8 | FT8 | FT8 | FT8 | FT8 | FT8 |
 
 ---
 
