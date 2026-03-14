@@ -1,10 +1,10 @@
 # Solar Cycle 25
 
 ![SFI](https://img.shields.io/badge/SFI_120-Elevated-2ea043?style=flat-square)
-![Kp](https://img.shields.io/badge/Kp_6.0-G2_Storm-red?style=flat-square)
-![Conditions](https://img.shields.io/badge/Conditions-Storm-red?style=flat-square)
+![Kp](https://img.shields.io/badge/Kp_4.67-Active-orange?style=flat-square)
+![Conditions](https://img.shields.io/badge/Conditions-Unsettled_+_Radio_Blackout-orange?style=flat-square)
 
-*Updated 09:00 UTC 2026-03-14 · NOAA SWPC*
+*Updated 12:00 UTC 2026-03-14 · NOAA SWPC*
 
 Solar Cycle 25 began in December 2019. It is tracking above initial predictions
 and is relevant to every propagation measurement in this dataset — the higher

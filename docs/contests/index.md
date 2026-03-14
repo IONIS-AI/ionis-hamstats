@@ -8,10 +8,10 @@ description: >-
 # Contest Calendar
 
 ![SFI](https://img.shields.io/badge/SFI_120-Elevated-2ea043?style=flat-square)
-![Kp](https://img.shields.io/badge/Kp_6.0-G2_Storm-red?style=flat-square)
-![Conditions](https://img.shields.io/badge/Conditions-Storm-red?style=flat-square)
+![Kp](https://img.shields.io/badge/Kp_4.67-Active-orange?style=flat-square)
+![Conditions](https://img.shields.io/badge/Conditions-Unsettled_+_Radio_Blackout-orange?style=flat-square)
 
-*Updated 09:00 UTC 2026-03-14*
+*Updated 12:00 UTC 2026-03-14*
 
 ---
 
@@ -31,16 +31,16 @@ description: >-
 
 *Prefix multiplier contest — SSB worldwide*
 
-**IONIS predictions from KI7MT (DN13) — current conditions (SFI 120, Kp 6.0)**
+**IONIS predictions from KI7MT (DN13) — current conditions (SFI 120, Kp 4.67)**
 
 | Destination | 10m | 15m | 20m | 40m | 80m | 160m | 
 |-------------|-----|-----|-----|-----|-----|-----|
-| Europe (JN48) | — | — | CW | CW | — | — | 
+| Europe (JN48) | — | — | RTTY | RTTY | — | — | 
 | Japan (PM95) | — | — | FT8 | CW | CW | CW | 
-| S. America (GG87) | — | — | WSPR | FT8 | — | — | 
+| S. America (GG87) | — | — | FT8 | FT8 | — | — | 
 | Africa (KG33) | — | — | FT8 | FT8 | — | — | 
-| Oceania (QF56) | — | — | WSPR | FT8 | FT8 | FT8 | 
-| Caribbean (FK68) | — | — | WSPR | WSPR | FT8 | FT8 | 
+| Oceania (QF56) | — | — | WSPR | WSPR | WSPR | WSPR | 
+| Caribbean (FK68) | — | — | FT8 | FT8 | — | — | 
 
 ---
 
@@ -58,16 +58,16 @@ description: >-
 
 *Japan International DX — CW, JA stations work the world*
 
-**IONIS predictions from KI7MT (DN13) — current conditions (SFI 120, Kp 6.0)**
+**IONIS predictions from KI7MT (DN13) — current conditions (SFI 120, Kp 4.67)**
 
 | Destination | 10m | 15m | 20m | 40m | 80m | 
 |-------------|-----|-----|-----|-----|-----|
-| Europe (JN48) | — | — | CW | CW | — | 
+| Europe (JN48) | — | — | RTTY | RTTY | — | 
 | Japan (PM95) | — | — | FT8 | CW | CW | 
-| S. America (GG87) | — | — | WSPR | FT8 | — | 
+| S. America (GG87) | — | — | FT8 | FT8 | — | 
 | Africa (KG33) | — | — | FT8 | FT8 | — | 
-| Oceania (QF56) | — | — | WSPR | FT8 | FT8 | 
-| Caribbean (FK68) | — | — | WSPR | WSPR | FT8 | 
+| Oceania (QF56) | — | — | WSPR | WSPR | WSPR | 
+| Caribbean (FK68) | — | — | FT8 | FT8 | — | 
 
 ---
 
@@ -80,15 +80,15 @@ description: >-
 | [JIDX CW](https://jidx.org/) | Apr 11–12 | Sat 07:00 | 30 | CW | 3w 6d |
 | [CQ WPX CW](https://www.cqwpx.com/) | May 30–01 | Sat 00:00 | 48 | CW | 10w 6d |
 | [All Asian DX CW](https://www.jarl.org/English/4_Library/A-4-3_Contests/) | Jun 20–22 | Sat 00:00 | 48 | CW | 13w 6d |
-| [IARU HF Championship](https://www.arrl.org/iaru-hf-championship) | Jul 11–12 | Sat 12:00 | 24 | SSB/CW | 17w |
+| [IARU HF Championship](https://www.arrl.org/iaru-hf-championship) | Jul 11–12 | Sat 12:00 | 24 | SSB/CW | 16w 6d |
 | [WAE CW](https://www.darc.de/der-club/referate/conteste/wae-dx-contest/) | Aug 08–10 | Sat 00:00 | 48 | CW | 20w 6d |
 | [All Asian DX SSB](https://www.jarl.org/English/4_Library/A-4-3_Contests/) | Sep 05–07 | Sat 00:00 | 48 | SSB | 24w 6d |
 | [WAE SSB](https://www.darc.de/der-club/referate/conteste/wae-dx-contest/) | Sep 12–14 | Sat 00:00 | 48 | SSB | 25w 6d |
-| [SAC CW](https://www.sactest.net/) | Sep 19–20 | Sat 12:00 | 24 | CW | 27w |
+| [SAC CW](https://www.sactest.net/) | Sep 19–20 | Sat 12:00 | 24 | CW | 26w 6d |
 | [CQ WW RTTY](https://www.cqwwrtty.com/) | Sep 26–28 | Sat 00:00 | 48 | RTTY | 27w 6d |
 | [Oceania DX SSB](https://www.oceaniadxcontest.com/) | Oct 03–04 | Sat 06:00 | 24 | SSB | 28w 6d |
 | [Oceania DX CW](https://www.oceaniadxcontest.com/) | Oct 10–11 | Sat 06:00 | 24 | CW | 29w 6d |
-| [SAC SSB](https://www.sactest.net/) | Oct 17–18 | Sat 12:00 | 24 | SSB | 31w |
+| [SAC SSB](https://www.sactest.net/) | Oct 17–18 | Sat 12:00 | 24 | SSB | 30w 6d |
 | [CQ WW SSB](https://www.cqww.com/) | Oct 24–26 | Sat 00:00 | 48 | SSB | 31w 6d |
 | [WAE RTTY](https://www.darc.de/der-club/referate/conteste/wae-dx-contest/) | Nov 14–16 | Sat 00:00 | 48 | RTTY | 34w 6d |
 | [JIDX SSB](https://jidx.org/) | Nov 14–15 | Sat 07:00 | 30 | SSB | 34w 6d |

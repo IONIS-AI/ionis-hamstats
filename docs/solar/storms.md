@@ -7,7 +7,7 @@ description: >-
 
 # Storm Impact Analysis
 
-*Updated 09:00 UTC 2026-03-14*
+*Updated 12:00 UTC 2026-03-14*
 
 This page shows measured SNR degradation during geomagnetic storms. All values
 come from actual WSPR signal measurements joined against Kp index at daily
@@ -24,6 +24,8 @@ filtered to ionospheric paths (> 500 km).
 
 | Storm Date (UTC) | Peak Kp | Classification |
 |------------------|---------|----------------|
+| 2026-03-14 | 6.0 | ![G2 Moderate](https://img.shields.io/badge/G2_Moderate-orange?style=flat-square) |
+| 2026-03-13 | 5.67 | ![G1 Minor](https://img.shields.io/badge/G1_Minor-orange?style=flat-square) |
 | 2026-02-05 | 5.33 | ![G1 Minor](https://img.shields.io/badge/G1_Minor-orange?style=flat-square) |
 | 2026-01-28 | 5.0 | ![G1 Minor](https://img.shields.io/badge/G1_Minor-orange?style=flat-square) |
 | 2026-01-22 | 5.33 | ![G1 Minor](https://img.shields.io/badge/G1_Minor-orange?style=flat-square) |
@@ -42,27 +44,12 @@ filtered to ionospheric paths (> 500 km).
 | 2025-12-03 | 6.67 | ![G2 Moderate](https://img.shields.io/badge/G2_Moderate-orange?style=flat-square) |
 | 2025-11-13 | 7.33 | ![G3 Strong](https://img.shields.io/badge/G3_Strong-red?style=flat-square) |
 | 2025-11-12 | 8.67 | ![G4 Severe](https://img.shields.io/badge/G4_Severe-red?style=flat-square) |
-| 2025-11-08 | 6.0 | ![G2 Moderate](https://img.shields.io/badge/G2_Moderate-orange?style=flat-square) |
-| 2025-11-07 | 5.33 | ![G1 Minor](https://img.shields.io/badge/G1_Minor-orange?style=flat-square) |
 
 ---
 
-## SNR Before / During / After — Storm of 2026-02-05 (Kp 5.33)
+## SNR Before / During / After — Most Recent Storm
 
-*Median WSPR SNR (dB) on ionospheric paths (> 500 km) for the day before,
-day of, and day after peak Kp.*
-
-| Band | Before (dB) | During (dB) | After (dB) | Change | Recovery vs Baseline |
-|------|------------|-------------|-----------|--------|---------------------|
-| 10m | -18 | -17 | -17 | +1 dB | +1 dB |
-| 15m | -17 | -17 | -17 | 0 dB | 0 dB |
-| 20m | -15 | -16 | -15 | -1 dB | 0 dB |
-| 40m | -16 | -16 | -16 | 0 dB | 0 dB |
-| 80m | -18 | -17 | -18 | +1 dB | 0 dB |
-| 160m | -20 | -19 | -20 | +1 dB | 0 dB |
-
-*Change = During − Before (negative = degradation). Recovery vs Baseline =
-After − Before (0 = full recovery, negative = still degraded).*
+*No storms (Kp >= 5) recorded in the last 365 days.*
 
 ---
 
@@ -77,7 +64,7 @@ the last 2 years. Consecutive storm days are merged into single events.
 | 10m | 24 | 24 | 62 |
 | 15m | 24 | 24 | 62 |
 | 20m | 24 | 24 | 62 |
-| 40m | 24 | 24 | 62 |
+| 40m | 24 | 46 | 62 |
 | 80m | 24 | 24 | 60 |
 | 160m | 24 | 24 | 62 |
 
@@ -91,7 +78,7 @@ recover within 7 days are excluded.*
 
 | Year | Kp>=5 Days | Kp>=7 Days | Peak Kp | Cycle Phase |
 |------|-----------|-----------|---------|-------------|
-| 2026 | 11 | 3 | 8.7 | Active |
+| 2026 | 13 | 3 | 8.7 | Active |
 | 2025 | 62 | 8 | 8.7 | Maximum |
 | 2024 | 36 | 13 | 9.0 | Maximum |
 | 2023 | 41 | 5 | 8.3 | Maximum |
