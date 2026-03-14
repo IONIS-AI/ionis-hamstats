@@ -8,10 +8,10 @@ description: >-
 # Contest Calendar
 
 ![SFI](https://img.shields.io/badge/SFI_120-Elevated-2ea043?style=flat-square)
-![Kp](https://img.shields.io/badge/Kp_4.0-Active-orange?style=flat-square)
-![Conditions](https://img.shields.io/badge/Conditions-Unsettled-orange?style=flat-square)
+![Kp](https://img.shields.io/badge/Kp_5.0-G1_Storm-red?style=flat-square)
+![Conditions](https://img.shields.io/badge/Conditions-Storm_+_Radio_Blackout-red?style=flat-square)
 
-*Updated 15:00 UTC 2026-03-14*
+*Updated 18:00 UTC 2026-03-14*
 
 ---
 
@@ -31,16 +31,16 @@ description: >-
 
 *Prefix multiplier contest — SSB worldwide*
 
-**IONIS predictions from KI7MT (DN13) — current conditions (SFI 120, Kp 4.0)**
+**IONIS predictions from KI7MT (DN13) — current conditions (SFI 120, Kp 5.0)**
 
 | Destination | 10m | 15m | 20m | 40m | 80m | 160m | 
 |-------------|-----|-----|-----|-----|-----|-----|
-| Europe (JN48) | SSB | SSB | SSB | — | — | — | 
-| Japan (PM95) | FT8 | FT8 | FT8 | CW | — | — | 
+| Europe (JN48) | SSB | SSB | SSB | RTTY | — | — | 
+| Japan (PM95) | CW | CW | CW | CW | — | — | 
 | S. America (GG87) | CW | CW | CW | — | — | — | 
-| Africa (KG33) | CW | CW | CW | — | — | — | 
-| Oceania (QF56) | FT8 | FT8 | FT8 | FT8 | — | — | 
-| Caribbean (FK68) | CW | CW | FT8 | — | — | — | 
+| Africa (KG33) | CW | CW | CW | CW | — | — | 
+| Oceania (QF56) | CW | FT8 | FT8 | FT8 | — | — | 
+| Caribbean (FK68) | RTTY | CW | CW | — | — | — | 
 
 ---
 
@@ -58,16 +58,16 @@ description: >-
 
 *Japan International DX — CW, JA stations work the world*
 
-**IONIS predictions from KI7MT (DN13) — current conditions (SFI 120, Kp 4.0)**
+**IONIS predictions from KI7MT (DN13) — current conditions (SFI 120, Kp 5.0)**
 
 | Destination | 10m | 15m | 20m | 40m | 80m | 
 |-------------|-----|-----|-----|-----|-----|
-| Europe (JN48) | SSB | SSB | SSB | — | — | 
-| Japan (PM95) | FT8 | FT8 | FT8 | CW | — | 
+| Europe (JN48) | SSB | SSB | SSB | RTTY | — | 
+| Japan (PM95) | CW | CW | CW | CW | — | 
 | S. America (GG87) | CW | CW | CW | — | — | 
-| Africa (KG33) | CW | CW | CW | — | — | 
-| Oceania (QF56) | FT8 | FT8 | FT8 | FT8 | — | 
-| Caribbean (FK68) | CW | CW | FT8 | — | — | 
+| Africa (KG33) | CW | CW | CW | CW | — | 
+| Oceania (QF56) | CW | FT8 | FT8 | FT8 | — | 
+| Caribbean (FK68) | RTTY | CW | CW | — | — | 
 
 ---
 
