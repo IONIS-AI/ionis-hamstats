@@ -8,10 +8,10 @@ description: >-
 # DXpeditions
 
 ![SFI](https://img.shields.io/badge/SFI_112-Moderate-2ea043?style=flat-square)
-![Kp](https://img.shields.io/badge/Kp_3.67-Unsettled-ffea00?style=flat-square)
-![Conditions](https://img.shields.io/badge/Conditions-Unsettled-ffea00?style=flat-square)
+![Kp](https://img.shields.io/badge/Kp_2.67-Quiet-teal?style=flat-square)
+![Conditions](https://img.shields.io/badge/Conditions-Quiet-teal?style=flat-square)
 
-*Updated 21:00 UTC 2026-03-14*
+*Updated 00:00 UTC 2026-03-15*
 
 ---
 
@@ -19,31 +19,9 @@ description: >-
 
 | Callsign | Entity | Grid | Dates | Modes | Status |
 |----------|--------|------|-------|-------|--------|
-| [3Y0K](https://3y0k.com/) | Bouvet Island | JD04 | Mar 01–Mar 14 | SSB, CW, FT8, RTTY | **ON AIR** |
 | [TX5EU](https://www.ng3k.com/misc/adxo.html) | Austral Islands | BH42 | Mar 13–Mar 25 | SSB, CW, FT8 | **ON AIR** |
-| [CY0S](https://www.dx-world.net/cy0s-sable-island-dxpedition-2026/) | Sable Island | FN83 | Mar 19–Mar 31 | SSB, CW, FT8 | 5 days |
-| [TX9W](https://www.ng3k.com/misc/adxo.html) | Marquesas Islands | BH54 | Apr 19–Apr 30 | SSB, CW, FT8 | 5w 1d |
-
----
-
-## 3Y0K — Bouvet Island
-
-!!! success "Active Now"
-    3Y0K is on the air from Bouvet Island. Operation ends 2026-03-14.
-
-| | |
-|---|---|
-| **Grid** | JD04 |
-| **Dates** | 2026-03-01 to 2026-03-14 |
-| **Bands** | 160m, 80m, 40m, 20m, 15m, 10m |
-| **Modes** | SSB, CW, FT8, RTTY |
-| **Notes** | Most wanted DXCC entity — departs Cape Town Feb 1, dates tentative |
-
-**IONIS: KI7MT (DN13) to Bouvet Island (JD04) — SFI 112, Kp 3.67**
-
-| 10m | 12m | 15m | 17m | 20m | 30m | 40m | 60m | 80m | 160m |
-|-----|-----|-----|-----|-----|-----|-----|-----|-----|-----|
-| RTTY | RTTY | RTTY | RTTY | RTTY | RTTY | CW | CW | — | — |
+| [CY0S](https://www.dx-world.net/cy0s-sable-island-dxpedition-2026/) | Sable Island | FN83 | Mar 19–Mar 31 | SSB, CW, FT8 | 4 days |
+| [TX9W](https://www.ng3k.com/misc/adxo.html) | Marquesas Islands | BH54 | Apr 19–Apr 30 | SSB, CW, FT8 | 5w |
 
 ---
 
@@ -60,7 +38,7 @@ description: >-
 | **Modes** | SSB, CW, FT8 |
 | **Notes** | 3 stations, 24/7 operation |
 
-**IONIS: KI7MT (DN13) to Austral Islands (BH42) — SFI 112, Kp 3.67**
+**IONIS: KI7MT (DN13) to Austral Islands (BH42) — SFI 112, Kp 2.67**
 
 | 10m | 12m | 15m | 17m | 20m | 30m | 40m | 60m | 80m | 160m |
 |-----|-----|-----|-----|-----|-----|-----|-----|-----|-----|
@@ -79,11 +57,11 @@ description: >-
 | **Modes** | SSB, CW, FT8 |
 | **Notes** | WA4DAN and W0GJ team leads |
 
-**IONIS: KI7MT (DN13) to Sable Island (FN83) — SFI 112, Kp 3.67**
+**IONIS: KI7MT (DN13) to Sable Island (FN83) — SFI 112, Kp 2.67**
 
 | 10m | 12m | 15m | 17m | 20m | 30m | 40m | 60m | 80m | 160m |
 |-----|-----|-----|-----|-----|-----|-----|-----|-----|-----|
-| RTTY | RTTY | RTTY | RTTY | CW | CW | — | — | — | — |
+| CW | CW | CW | CW | CW | CW | CW | CW | — | — |
 
 ---
 
@@ -98,7 +76,7 @@ description: >-
 | **Modes** | SSB, CW, FT8 |
 | **Notes** | 6 stations |
 
-**IONIS: KI7MT (DN13) to Marquesas Islands (BH54) — SFI 112, Kp 3.67**
+**IONIS: KI7MT (DN13) to Marquesas Islands (BH54) — SFI 112, Kp 2.67**
 
 | 10m | 12m | 15m | 17m | 20m | 30m | 40m | 60m | 80m | 160m |
 |-----|-----|-----|-----|-----|-----|-----|-----|-----|-----|
