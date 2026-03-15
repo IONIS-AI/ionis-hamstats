@@ -8,10 +8,10 @@ description: >-
 # DXpeditions
 
 ![SFI](https://img.shields.io/badge/SFI_112-Moderate-2ea043?style=flat-square)
-![Kp](https://img.shields.io/badge/Kp_3.67-Unsettled-ffea00?style=flat-square)
+![Kp](https://img.shields.io/badge/Kp_3.0-Unsettled-ffea00?style=flat-square)
 ![Conditions](https://img.shields.io/badge/Conditions-Unsettled-ffea00?style=flat-square)
 
-*Updated 15:00 UTC 2026-03-15*
+*Updated 18:00 UTC 2026-03-15*
 
 ---
 
@@ -38,11 +38,11 @@ description: >-
 | **Modes** | SSB, CW, FT8 |
 | **Notes** | 3 stations, 24/7 operation |
 
-**IONIS: KI7MT (DN13) to Austral Islands (BH42) — SFI 112, Kp 3.67**
+**IONIS: KI7MT (DN13) to Austral Islands (BH42) — SFI 112, Kp 3.0**
 
 | 10m | 12m | 15m | 17m | 20m | 30m | 40m | 60m | 80m | 160m |
 |-----|-----|-----|-----|-----|-----|-----|-----|-----|-----|
-| CW | CW | CW | FT8 | FT8 | FT8 | FT8 | FT8 | — | — |
+| CW | CW | CW | CW | CW | CW | — | — | — | — |
 
 ---
 
@@ -57,11 +57,11 @@ description: >-
 | **Modes** | SSB, CW, FT8 |
 | **Notes** | WA4DAN and W0GJ team leads |
 
-**IONIS: KI7MT (DN13) to Sable Island (FN83) — SFI 112, Kp 3.67**
+**IONIS: KI7MT (DN13) to Sable Island (FN83) — SFI 112, Kp 3.0**
 
 | 10m | 12m | 15m | 17m | 20m | 30m | 40m | 60m | 80m | 160m |
 |-----|-----|-----|-----|-----|-----|-----|-----|-----|-----|
-| RTTY | RTTY | RTTY | RTTY | CW | CW | — | — | — | — |
+| SSB | RTTY | RTTY | RTTY | RTTY | CW | — | — | — | — |
 
 ---
 
@@ -76,11 +76,11 @@ description: >-
 | **Modes** | SSB, CW, FT8 |
 | **Notes** | 6 stations |
 
-**IONIS: KI7MT (DN13) to Marquesas Islands (BH54) — SFI 112, Kp 3.67**
+**IONIS: KI7MT (DN13) to Marquesas Islands (BH54) — SFI 112, Kp 3.0**
 
 | 10m | 12m | 15m | 17m | 20m | 30m | 40m | 60m | 80m | 160m |
 |-----|-----|-----|-----|-----|-----|-----|-----|-----|-----|
-| CW | CW | CW | CW | FT8 | FT8 | FT8 | FT8 | — | — |
+| RTTY | CW | CW | CW | CW | CW | — | — | — | — |
 
 ---
 
