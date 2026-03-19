@@ -25,10 +25,10 @@ For technical details on the model and methodology, see
 [ionis-ai.com](https://ionis-ai.com/).
 
 ![SFI](https://img.shields.io/badge/SFI_113-Moderate-2ea043?style=flat-square)
-![Kp](https://img.shields.io/badge/Kp_1.67-Quiet-teal?style=flat-square)
+![Kp](https://img.shields.io/badge/Kp_0.67-Quiet-teal?style=flat-square)
 ![Conditions](https://img.shields.io/badge/Conditions-Quiet-teal?style=flat-square)
 
-*Updated 03:00 UTC · NOAA SWPC*
+*Updated 06:00 UTC · NOAA SWPC*
 
 ---
 
@@ -42,12 +42,12 @@ RBN archives lag ~24 hours; zeroes indicate no data in the window, not band clos
 | 10m | 0 | 0 | 2.9M | +86 dB | Strong |
 | 12m | 0 | 0 | 1.5M | +85 dB | Strong |
 | 15m | 0 | 0 | 5.5M | +87 dB | Strong |
-| 17m | 0 | 0 | 3.0M | +62 dB | Strong |
-| 20m | 0 | 0 | 9.2M | +87 dB | Strong |
-| 30m | 0 | 0 | 2.5M | +66 dB | Strong |
-| 40m | 0 | 0 | 6.4M | +87 dB | Strong |
+| 17m | 0 | 0 | 3.1M | +62 dB | Strong |
+| 20m | 0 | 0 | 9.5M | +87 dB | Strong |
+| 30m | 0 | 0 | 2.6M | +66 dB | Strong |
+| 40m | 0 | 0 | 6.5M | +87 dB | Strong |
 | 80m | 0 | 0 | 1.1M | +87 dB | Strong |
-| 160m | 0 | 0 | 125,783 | +45 dB | Strong |
+| 160m | 0 | 0 | 125,640 | +50 dB | Strong |
 
 ---
 
