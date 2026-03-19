@@ -24,11 +24,11 @@ neural network trained on one of the largest curated amateur radio propagation d
 For technical details on the model and methodology, see
 [ionis-ai.com](https://ionis-ai.com/).
 
-![SFI](https://img.shields.io/badge/SFI_113-Moderate-2ea043?style=flat-square)
-![Kp](https://img.shields.io/badge/Kp_1.0-Quiet-teal?style=flat-square)
+![SFI](https://img.shields.io/badge/SFI_106-Moderate-2ea043?style=flat-square)
+![Kp](https://img.shields.io/badge/Kp_0.67-Quiet-teal?style=flat-square)
 ![Conditions](https://img.shields.io/badge/Conditions-Quiet-teal?style=flat-square)
 
-*Updated 18:00 UTC · NOAA SWPC*
+*Updated 21:00 UTC · NOAA SWPC*
 
 ---
 
@@ -39,15 +39,15 @@ RBN archives lag ~24 hours; zeroes indicate no data in the window, not band clos
 
 | Band | WSPR Spots | RBN Spots | PSKR Spots | Peak SNR | Status |
 |------|-----------|-----------|------------|----------|--------|
-| 10m | 0 | 9,628 | 2.4M | +92 dB | Strong |
-| 12m | 0 | 815 | 905,878 | +85 dB | Strong |
-| 15m | 0 | 17,830 | 4.6M | +87 dB | Strong |
-| 17m | 0 | 5,018 | 2.6M | +174 dB | Strong |
-| 20m | 0 | 61,524 | 10.3M | +116 dB | Strong |
-| 30m | 0 | 9,776 | 2.9M | +60 dB | Strong |
-| 40m | 0 | 37,738 | 7.0M | +87 dB | Strong |
-| 80m | 0 | 21,666 | 1.2M | +87 dB | Strong |
-| 160m | 0 | 888 | 119,290 | +57 dB | Strong |
+| 10m | 54,454 | 4,316 | 2.4M | +86 dB | Strong |
+| 12m | 20,915 | 316 | 961,625 | +55 dB | Strong |
+| 15m | 67,335 | 3,007 | 4.8M | +87 dB | Strong |
+| 17m | 57,980 | 1,751 | 2.6M | +174 dB | Strong |
+| 20m | 274,821 | 9,968 | 10.4M | +87 dB | Strong |
+| 30m | 115,994 | 3,645 | 2.9M | +60 dB | Strong |
+| 40m | 190,245 | 10,988 | 7.0M | +87 dB | Strong |
+| 80m | 66,158 | 2,773 | 1.1M | +87 dB | Strong |
+| 160m | 15,726 | 305 | 91,010 | +50 dB | Strong |
 
 ---
 
@@ -55,11 +55,11 @@ RBN archives lag ~24 hours; zeroes indicate no data in the window, not band clos
 
 | Source | Latest Date | Total Rows | Status |
 |--------|------------|------------|--------|
-| WSPR | 2026-03-17 | 11.10B | 2 days behind |
+| WSPR | 2026-03-18 | 11.10B | Current |
 | RBN | 2026-03-18 | 2.27B | Current |
 | PSK Reporter | 2026-03-19 | 1.32B | Live |
 | Contest | Archive | 234.3M | Static |
-| Solar | 2026-03-19 | 76,838 | Live |
+| Solar | 2026-03-19 | 76,842 | Live |
 
 ---
 
