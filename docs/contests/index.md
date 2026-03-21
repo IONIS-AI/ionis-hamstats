@@ -8,10 +8,10 @@ description: >-
 # Contest Calendar
 
 ![SFI](https://img.shields.io/badge/SFI_102-Moderate-2ea043?style=flat-square)
-![Kp](https://img.shields.io/badge/Kp_7.0-G3_Storm-red?style=flat-square)
-![Conditions](https://img.shields.io/badge/Conditions-Severe_Storm-red?style=flat-square)
+![Kp](https://img.shields.io/badge/Kp_6.0-G2_Storm-red?style=flat-square)
+![Conditions](https://img.shields.io/badge/Conditions-Storm-red?style=flat-square)
 
-*Updated 06:00 UTC 2026-03-21*
+*Updated 09:00 UTC 2026-03-21*
 
 ---
 
@@ -35,7 +35,7 @@ description: >-
 ---
 
 ### JIDX CW
-**3w** until start
+**2w 6d** until start
 
 | | |
 |---|---|
@@ -57,7 +57,7 @@ description: >-
 | Contest | Date (UTC) | Start | Hours | Modes | Countdown |
 |---------|-----------|-------|-------|-------|-----------|
 | [CQ WPX SSB](https://www.cqwpx.com/) | Mar 28–30 | Sat 00:00 | 48 | SSB | 6 days |
-| [JIDX CW](https://jidx.org/) | Apr 11–12 | Sat 07:00 | 30 | CW | 3w |
+| [JIDX CW](https://jidx.org/) | Apr 11–12 | Sat 07:00 | 30 | CW | 2w 6d |
 | [CQ WPX CW](https://www.cqwpx.com/) | May 30–01 | Sat 00:00 | 48 | CW | 9w 6d |
 | [All Asian DX CW](https://www.jarl.org/English/4_Library/A-4-3_Contests/) | Jun 20–22 | Sat 00:00 | 48 | CW | 12w 6d |
 | [IARU HF Championship](https://www.arrl.org/iaru-hf-championship) | Jul 11–12 | Sat 12:00 | 24 | SSB/CW | 16w |
@@ -71,7 +71,7 @@ description: >-
 | [SAC SSB](https://www.sactest.net/) | Oct 17–18 | Sat 12:00 | 24 | SSB | 30w |
 | [CQ WW SSB](https://www.cqww.com/) | Oct 24–26 | Sat 00:00 | 48 | SSB | 30w 6d |
 | [WAE RTTY](https://www.darc.de/der-club/referate/conteste/wae-dx-contest/) | Nov 14–16 | Sat 00:00 | 48 | RTTY | 33w 6d |
-| [JIDX SSB](https://jidx.org/) | Nov 14–15 | Sat 07:00 | 30 | SSB | 34w |
+| [JIDX SSB](https://jidx.org/) | Nov 14–15 | Sat 07:00 | 30 | SSB | 33w 6d |
 | [CQ WW CW](https://www.cqww.com/) | Nov 28–30 | Sat 00:00 | 48 | CW | 35w 6d |
 | [ARRL 160m](https://www.arrl.org/160-meter) | Dec 04–06 | Fri 22:00 | 42 | CW | 36w 6d |
 | [ARRL 10m](https://www.arrl.org/10-meter) | Dec 12–14 | Sat 00:00 | 48 | SSB/CW | 37w 6d |
