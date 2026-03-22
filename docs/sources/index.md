@@ -43,5 +43,5 @@ Kp, and SSN attached at the time of measurement.
 |--------|----------------|------------|--------|
 | WSPR | 2026-03-20 | 11.12B | 2 days behind |
 | RBN | 2026-03-20 | 2.28B | 2 days behind |
-| PSK Reporter | 2026-03-21 | 1.39B | Current |
+| PSK Reporter | 2026-03-22 | 1.39B | Live |
 | Contest | Archive | 234.3M | Static |
