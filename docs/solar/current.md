@@ -7,11 +7,11 @@ description: >-
 
 # Current Solar Conditions
 
-![SFI](https://img.shields.io/badge/SFI_107-Moderate-2ea043?style=flat-square)
-![Kp](https://img.shields.io/badge/Kp_6.0-G2_Storm-red?style=flat-square)
+![SFI](https://img.shields.io/badge/SFI_120-Elevated-2ea043?style=flat-square)
+![Kp](https://img.shields.io/badge/Kp_6.67-G2_Storm-red?style=flat-square)
 ![Conditions](https://img.shields.io/badge/Conditions-Storm_+_Radio_Blackout-red?style=flat-square)
 
-*Updated 18:00 UTC 2026-03-22 · NOAA SWPC*
+*Updated 21:00 UTC 2026-03-22 · NOAA SWPC*
 
 Solar indices sourced from NOAA SWPC (`wspr.live_conditions`) updated every 15
 minutes. SFI is published once daily (~20:00 UTC from Penticton, BC). Kp is
@@ -30,9 +30,9 @@ updated every 3 hours.
 | 2026-03-15 | 109 | — |
 | 2026-03-16 | 111 | +2 |
 | 2026-03-17 | 111 | 0 |
-| 2026-03-18 | 113 | +1 |
+| 2026-03-18 | 113 | +2 |
 | 2026-03-19 | 106 | -7 |
-| 2026-03-20 | 102 | -3 |
+| 2026-03-20 | 102 | -4 |
 | 2026-03-21 | 107 | +5 |
 
 ---
