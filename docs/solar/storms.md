@@ -7,7 +7,7 @@ description: >-
 
 # Storm Impact Analysis
 
-*Updated 15:00 UTC 2026-03-22*
+*Updated 18:00 UTC 2026-03-22*
 
 This page shows measured SNR degradation during geomagnetic storms. All values
 come from actual WSPR signal measurements joined against Kp index at daily
@@ -24,7 +24,7 @@ filtered to ionospheric paths (> 500 km).
 
 | Storm Date (UTC) | Peak Kp | Classification |
 |------------------|---------|----------------|
-| 2026-03-22 | 5.0 | ![G1 Minor](https://img.shields.io/badge/G1_Minor-orange?style=flat-square) |
+| 2026-03-22 | 6.67 | ![G2 Moderate](https://img.shields.io/badge/G2_Moderate-orange?style=flat-square) |
 | 2026-03-21 | 7.0 | ![G3 Strong](https://img.shields.io/badge/G3_Strong-red?style=flat-square) |
 | 2026-03-20 | 6.67 | ![G2 Moderate](https://img.shields.io/badge/G2_Moderate-orange?style=flat-square) |
 | 2026-03-14 | 6.0 | ![G2 Moderate](https://img.shields.io/badge/G2_Moderate-orange?style=flat-square) |
