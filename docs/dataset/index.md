@@ -22,7 +22,7 @@ cleaned it, and joined it with solar indices at 3-hour resolution.
 
 | Source | Raw Rows | Signatures | SNR Type | Years |
 |--------|---------|------------|----------|-------|
-| WSPR (`wspr.bronze`) | 11.12B | 93.6M | Measured (-30 to +20 dB) | 2008–2026 |
+| WSPR (`wspr.bronze`) | 11.13B | 93.6M | Measured (-30 to +20 dB) | 2008–2026 |
 | RBN (`rbn.bronze`) | 2.28B | 67.3M | Measured (8–29 dB) | 2009–2026 |
 | Contest (`contest.bronze`) | 234.3M | 5.7M | Anchored (+10/0 dB) | 2005–2025 |
 | DXpedition | 3.9M paths | 260K (x50) | Measured | 2009–2025 |
@@ -64,8 +64,8 @@ own. No API rate limits, no subscription fees, no vendor lock-in.
 
 | Source | Total Rows | Last Updated |
 |--------|-----------|-------------|
-| WSPR | 11.12B | 2026-03-21 |
+| WSPR | 11.13B | 2026-03-22 |
 | RBN | 2.28B | 2026-03-22 |
 | PSK Reporter | 1.43B | 2026-03-23 |
 | Contest | 234.3M | 2088-11-30 |
-| Solar | 77,116 | 2026-03-23 |
+| Solar | 76,874 | 2026-03-23 |
