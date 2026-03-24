@@ -8,10 +8,10 @@ description: >-
 # Current Solar Conditions
 
 ![SFI](https://img.shields.io/badge/SFI_124-Elevated-2ea043?style=flat-square)
-![Kp](https://img.shields.io/badge/Kp_4.33-Active-orange?style=flat-square)
+![Kp](https://img.shields.io/badge/Kp_4.0-Active-orange?style=flat-square)
 ![Conditions](https://img.shields.io/badge/Conditions-Unsettled-orange?style=flat-square)
 
-*Updated 00:00 UTC 2026-03-24 · NOAA SWPC*
+*Updated 03:00 UTC 2026-03-24 · NOAA SWPC*
 
 Solar indices sourced from NOAA SWPC (`wspr.live_conditions`) updated every 15
 minutes. SFI is published once daily (~20:00 UTC from Penticton, BC). Kp is
@@ -33,6 +33,7 @@ updated every 3 hours.
 | 2026-03-20 | 102 | -4 |
 | 2026-03-21 | 107 | +5 |
 | 2026-03-22 | 120 | +13 |
+| 2026-03-23 | 124 | +4 |
 
 ---
 
@@ -49,4 +50,4 @@ conditions — see [Storm Impact](storms.md) for measured SNR effects.
 | 2026-03-20 | 6.67 | ![G2 Storm](https://img.shields.io/badge/G2_Storm-red?style=flat-square) | Significant |
 | 2026-03-21 | 7.0 | ![G3 Storm](https://img.shields.io/badge/G3_Storm-red?style=flat-square) | Severe |
 | 2026-03-22 | 6.67 | ![G2 Storm](https://img.shields.io/badge/G2_Storm-red?style=flat-square) | Significant |
-| 2026-03-23 | 4.67 | ![Active](https://img.shields.io/badge/Active-orange?style=flat-square) | Moderate |
+| 2026-03-23 | 5.0 | ![G1 Storm](https://img.shields.io/badge/G1_Storm-red?style=flat-square) | Degraded |
