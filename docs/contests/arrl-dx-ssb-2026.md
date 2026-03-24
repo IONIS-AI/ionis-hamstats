@@ -1,7 +1,7 @@
 # ARRL International DX Contest — SSB
 
 ![SFI](https://img.shields.io/badge/SFI_124-Elevated-2ea043?style=flat-square)
-![Kp](https://img.shields.io/badge/Kp_2.67-Quiet-teal?style=flat-square)
+![Kp](https://img.shields.io/badge/Kp_3.67-Unsettled-ffea00?style=flat-square)
 
 **SSB · ARRL · March 07–07, 2026**
 
