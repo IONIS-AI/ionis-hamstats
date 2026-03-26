@@ -8,10 +8,10 @@ description: >-
 # DXpeditions
 
 ![SFI](https://img.shields.io/badge/SFI_140-Elevated-2ea043?style=flat-square)
-![Kp](https://img.shields.io/badge/Kp_1.33-Quiet-teal?style=flat-square)
+![Kp](https://img.shields.io/badge/Kp_2.67-Quiet-teal?style=flat-square)
 ![Conditions](https://img.shields.io/badge/Conditions-Quiet-teal?style=flat-square)
 
-*Updated 21:00 UTC 2026-03-25*
+*Updated 00:00 UTC 2026-03-26*
 
 ---
 
@@ -19,24 +19,8 @@ description: >-
 
 | Callsign | Entity | Grid | Dates | Modes | Status |
 |----------|--------|------|-------|-------|--------|
-| [TX5EU](https://www.ng3k.com/misc/adxo.html) | Austral Islands | BH42 | Mar 13–Mar 25 | SSB, CW, FT8 | **ON AIR** |
 | [CY0S](https://www.dx-world.net/cy0s-sable-island-dxpedition-2026/) | Sable Island | FN83 | Mar 19–Mar 31 | SSB, CW, FT8 | **ON AIR** |
-| [TX9W](https://www.ng3k.com/misc/adxo.html) | Marquesas Islands | BH54 | Apr 19–Apr 30 | SSB, CW, FT8 | 3w 4d |
-
----
-
-## TX5EU — Austral Islands
-
-!!! success "Active Now"
-    TX5EU is on the air from Austral Islands. Operation ends 2026-03-25.
-
-| | |
-|---|---|
-| **Grid** | BH42 |
-| **Dates** | 2026-03-13 to 2026-03-25 |
-| **Bands** | 80m, 40m, 20m, 15m, 10m |
-| **Modes** | SSB, CW, FT8 |
-| **Notes** | 3 stations, 24/7 operation |
+| [TX9W](https://www.ng3k.com/misc/adxo.html) | Marquesas Islands | BH54 | Apr 19–Apr 30 | SSB, CW, FT8 | 3w 3d |
 
 ---
 
