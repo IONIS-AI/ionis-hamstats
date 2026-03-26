@@ -25,10 +25,10 @@ For technical details on the model and methodology, see
 [ionis-ai.com](https://ionis-ai.com/).
 
 ![SFI](https://img.shields.io/badge/SFI_140-Elevated-2ea043?style=flat-square)
-![Kp](https://img.shields.io/badge/Kp_1.67-Quiet-teal?style=flat-square)
+![Kp](https://img.shields.io/badge/Kp_2.67-Quiet-teal?style=flat-square)
 ![Conditions](https://img.shields.io/badge/Conditions-Quiet-teal?style=flat-square)
 
-*Updated 09:00 UTC · NOAA SWPC*
+*Updated 12:00 UTC · NOAA SWPC*
 
 ---
 
@@ -39,15 +39,15 @@ RBN archives lag ~24 hours; zeroes indicate no data in the window, not band clos
 
 | Band | WSPR Spots | RBN Spots | PSKR Spots | Peak SNR | Status |
 |------|-----------|-----------|------------|----------|--------|
-| 10m | 0 | 0 | 1.6M | +59 dB | Strong |
-| 12m | 0 | 0 | 350,367 | +54 dB | Strong |
+| 10m | 0 | 0 | 1.8M | +53 dB | Strong |
+| 12m | 0 | 0 | 350,770 | +54 dB | Strong |
 | 15m | 0 | 0 | 4.0M | +87 dB | Strong |
 | 17m | 0 | 0 | 2.9M | +89 dB | Strong |
-| 20m | 0 | 0 | 9.0M | +62 dB | Strong |
-| 30m | 0 | 0 | 1.9M | +54 dB | Strong |
-| 40m | 0 | 0 | 6.2M | +127 dB | Strong |
-| 80m | 0 | 0 | 1.1M | +55 dB | Strong |
-| 160m | 0 | 0 | 220,558 | +51 dB | Strong |
+| 20m | 0 | 0 | 8.9M | +63 dB | Strong |
+| 30m | 0 | 0 | 2.0M | +55 dB | Strong |
+| 40m | 0 | 0 | 6.0M | +127 dB | Strong |
+| 80m | 0 | 0 | 1.0M | +55 dB | Strong |
+| 160m | 0 | 0 | 196,894 | +51 dB | Strong |
 
 ---
 
@@ -59,7 +59,7 @@ RBN archives lag ~24 hours; zeroes indicate no data in the window, not band clos
 | RBN | 2026-03-24 | 2.28B | 2 days behind |
 | PSK Reporter | 2026-03-26 | 1.50B | Live |
 | Contest | Archive | 234.3M | Static |
-| Solar | 2026-03-26 | 76,890 | Live |
+| Solar | 2026-03-26 | 77,134 | Live |
 
 ---
 
