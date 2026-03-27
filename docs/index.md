@@ -25,10 +25,10 @@ For technical details on the model and methodology, see
 [ionis-ai.com](https://ionis-ai.com/).
 
 ![SFI](https://img.shields.io/badge/SFI_152-High-teal?style=flat-square)
-![Kp](https://img.shields.io/badge/Kp_1.67-Quiet-teal?style=flat-square)
-![Conditions](https://img.shields.io/badge/Conditions-Quiet-teal?style=flat-square)
+![Kp](https://img.shields.io/badge/Kp_1.33-Quiet-teal?style=flat-square)
+![Conditions](https://img.shields.io/badge/Conditions-Quiet_+_Radio_Blackout-teal?style=flat-square)
 
-*Updated 15:00 UTC · NOAA SWPC*
+*Updated 18:00 UTC · NOAA SWPC*
 
 ---
 
@@ -39,15 +39,15 @@ RBN archives lag ~24 hours; zeroes indicate no data in the window, not band clos
 
 | Band | WSPR Spots | RBN Spots | PSKR Spots | Peak SNR | Status |
 |------|-----------|-----------|------------|----------|--------|
-| 10m | 0 | 0 | 2.5M | +63 dB | Strong |
-| 12m | 0 | 0 | 863,821 | +87 dB | Strong |
-| 15m | 0 | 0 | 4.5M | +87 dB | Strong |
-| 17m | 0 | 0 | 2.6M | +60 dB | Strong |
-| 20m | 0 | 0 | 8.3M | +123 dB | Strong |
-| 30m | 0 | 0 | 2.6M | +62 dB | Strong |
-| 40m | 0 | 0 | 5.7M | +127 dB | Strong |
-| 80m | 0 | 0 | 1.0M | +87 dB | Strong |
-| 160m | 0 | 0 | 130,871 | +52 dB | Strong |
+| 10m | 0 | 4,691 | 2.7M | +69 dB | Strong |
+| 12m | 0 | 634 | 976,672 | +87 dB | Strong |
+| 15m | 0 | 4,222 | 4.6M | +87 dB | Strong |
+| 17m | 0 | 4,562 | 2.5M | +56 dB | Strong |
+| 20m | 0 | 27,524 | 8.3M | +185 dB | Strong |
+| 30m | 0 | 8,136 | 2.5M | +87 dB | Strong |
+| 40m | 0 | 27,088 | 5.5M | +127 dB | Strong |
+| 80m | 0 | 7,606 | 954,929 | +53 dB | Strong |
+| 160m | 0 | 382 | 134,361 | +52 dB | Strong |
 
 ---
 
@@ -56,7 +56,7 @@ RBN archives lag ~24 hours; zeroes indicate no data in the window, not band clos
 | Source | Latest Date | Total Rows | Status |
 |--------|------------|------------|--------|
 | WSPR | 2026-03-25 | 11.14B | 2 days behind |
-| RBN | 2026-03-25 | 2.28B | 2 days behind |
+| RBN | 2026-03-26 | 2.28B | Current |
 | PSK Reporter | 2026-03-27 | 1.54B | Live |
 | Contest | Archive | 234.3M | Static |
 | Solar | 2026-03-27 | 76,902 | Live |
