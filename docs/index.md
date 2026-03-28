@@ -24,11 +24,11 @@ neural network trained on one of the largest curated amateur radio propagation d
 For technical details on the model and methodology, see
 [ionis-ai.com](https://ionis-ai.com/).
 
-![SFI](https://img.shields.io/badge/SFI_156-High-teal?style=flat-square)
+![SFI](https://img.shields.io/badge/SFI_162-High-teal?style=flat-square)
 ![Kp](https://img.shields.io/badge/Kp_1.67-Quiet-teal?style=flat-square)
 ![Conditions](https://img.shields.io/badge/Conditions-Quiet-teal?style=flat-square)
 
-*Updated 18:00 UTC · NOAA SWPC*
+*Updated 21:00 UTC · NOAA SWPC*
 
 ---
 
@@ -39,15 +39,15 @@ RBN archives lag ~24 hours; zeroes indicate no data in the window, not band clos
 
 | Band | WSPR Spots | RBN Spots | PSKR Spots | Peak SNR | Status |
 |------|-----------|-----------|------------|----------|--------|
-| 10m | 0 | 4,448 | 2.7M | +58 dB | Strong |
-| 12m | 0 | 1,090 | 1.3M | +47 dB | Strong |
-| 15m | 0 | 6,918 | 4.8M | +62 dB | Strong |
-| 17m | 0 | 2,729 | 2.9M | +57 dB | Strong |
-| 20m | 0 | 34,608 | 8.8M | +135 dB | Strong |
-| 30m | 0 | 6,872 | 2.5M | +102 dB | Strong |
-| 40m | 0 | 26,421 | 5.3M | +87 dB | Strong |
-| 80m | 0 | 7,686 | 1.1M | +87 dB | Strong |
-| 160m | 0 | 486 | 137,839 | +44 dB | Strong |
+| 10m | 29,710 | 1,678 | 2.6M | +58 dB | Strong |
+| 12m | 18,703 | 263 | 1.3M | +47 dB | Strong |
+| 15m | 48,028 | 2,010 | 4.9M | +62 dB | Strong |
+| 17m | 50,537 | 750 | 3.1M | +57 dB | Strong |
+| 20m | 245,278 | 9,790 | 8.6M | +135 dB | Strong |
+| 30m | 100,541 | 1,665 | 2.6M | +68 dB | Strong |
+| 40m | 167,266 | 8,971 | 5.3M | +68 dB | Strong |
+| 80m | 60,132 | 3,103 | 995,779 | +69 dB | Strong |
+| 160m | 15,509 | 261 | 109,099 | +44 dB | Strong |
 
 ---
 
@@ -55,11 +55,11 @@ RBN archives lag ~24 hours; zeroes indicate no data in the window, not band clos
 
 | Source | Latest Date | Total Rows | Status |
 |--------|------------|------------|--------|
-| WSPR | 2026-03-26 | 11.15B | 2 days behind |
+| WSPR | 2026-03-27 | 11.15B | Current |
 | RBN | 2026-03-27 | 2.28B | Current |
 | PSK Reporter | 2026-03-28 | 1.58B | Live |
 | Contest | Archive | 234.3M | Static |
-| Solar | 2026-03-28 | 76,910 | Live |
+| Solar | 2026-03-28 | 76,914 | Live |
 
 ---
 
