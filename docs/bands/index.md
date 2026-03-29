@@ -7,10 +7,10 @@ description: >-
 # Band Reports
 
 ![SFI](https://img.shields.io/badge/SFI_162-High-teal?style=flat-square)
-![Kp](https://img.shields.io/badge/Kp_3.33-Unsettled-ffea00?style=flat-square)
-![Conditions](https://img.shields.io/badge/Conditions-Unsettled-ffea00?style=flat-square)
+![Kp](https://img.shields.io/badge/Kp_2.33-Quiet-teal?style=flat-square)
+![Conditions](https://img.shields.io/badge/Conditions-Quiet-teal?style=flat-square)
 
-*Updated 12:00 UTC 2026-03-29*
+*Updated 15:00 UTC 2026-03-29*
 
 Per-band propagation reports generated from measured spot data across all
 sources. Each page shows activity from the last 24 hours with spot volume,
@@ -22,13 +22,13 @@ Select a band from the navigation to see its current report.
 
 | Band | Freq (MHz) | WSPR | RBN | PSKR | Peak SNR | Status |
 |------|-----------|------|-----|------|----------|--------|
-| [160m](160m.md) | 1.8 | 0 | 0 | 106,360 | +47 dB | Strong |
+| [160m](160m.md) | 1.8 | 0 | 0 | 107,682 | +47 dB | Strong |
 | [80m](80m.md) | 3.5 | 0 | 0 | 1.0M | +60 dB | Strong |
 | [60m](60m.md) | 5.3 | — | — | — | — | — |
 | [40m](40m.md) | 7.0 | 0 | 0 | 5.4M | +60 dB | Strong |
-| [30m](30m.md) | 10.1 | 0 | 0 | 2.6M | +68 dB | Strong |
-| [20m](20m.md) | 14.0 | 0 | 0 | 9.8M | +87 dB | Strong |
-| [17m](17m.md) | 18.1 | 0 | 0 | 3.4M | +57 dB | Strong |
-| [15m](15m.md) | 21.0 | 0 | 0 | 5.1M | +62 dB | Strong |
-| [12m](12m.md) | 24.9 | 0 | 0 | 1.6M | +51 dB | Strong |
+| [30m](30m.md) | 10.1 | 0 | 0 | 2.8M | +68 dB | Strong |
+| [20m](20m.md) | 14.0 | 0 | 0 | 10.0M | +87 dB | Strong |
+| [17m](17m.md) | 18.1 | 0 | 0 | 3.3M | +57 dB | Strong |
+| [15m](15m.md) | 21.0 | 0 | 0 | 5.1M | +60 dB | Strong |
+| [12m](12m.md) | 24.9 | 0 | 0 | 1.4M | +51 dB | Strong |
 | [10m](10m.md) | 28.0 | 0 | 0 | 3.3M | +55 dB | Strong |
