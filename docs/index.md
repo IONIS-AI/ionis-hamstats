@@ -24,11 +24,11 @@ neural network trained on one of the largest curated amateur radio propagation d
 For technical details on the model and methodology, see
 [ionis-ai.com](https://ionis-ai.com/).
 
-![SFI](https://img.shields.io/badge/SFI_162-High-teal?style=flat-square)
-![Kp](https://img.shields.io/badge/Kp_2.67-Quiet-teal?style=flat-square)
-![Conditions](https://img.shields.io/badge/Conditions-Quiet-teal?style=flat-square)
+![SFI](https://img.shields.io/badge/SFI_158-High-teal?style=flat-square)
+![Kp](https://img.shields.io/badge/Kp_3.33-Unsettled-ffea00?style=flat-square)
+![Conditions](https://img.shields.io/badge/Conditions-Unsettled-ffea00?style=flat-square)
 
-*Updated 18:00 UTC · NOAA SWPC*
+*Updated 21:00 UTC · NOAA SWPC*
 
 ---
 
@@ -39,15 +39,15 @@ RBN archives lag ~24 hours; zeroes indicate no data in the window, not band clos
 
 | Band | WSPR Spots | RBN Spots | PSKR Spots | Peak SNR | Status |
 |------|-----------|-----------|------------|----------|--------|
-| 10m | 0 | 7,121 | 3.4M | +55 dB | Strong |
-| 12m | 0 | 742 | 1.3M | +60 dB | Strong |
-| 15m | 0 | 12,850 | 5.0M | +87 dB | Strong |
-| 17m | 0 | 4,817 | 3.2M | +57 dB | Strong |
-| 20m | 0 | 47,419 | 10.3M | +127 dB | Strong |
-| 30m | 0 | 7,846 | 2.7M | +68 dB | Strong |
-| 40m | 0 | 45,494 | 5.4M | +66 dB | Strong |
-| 80m | 0 | 14,564 | 1.0M | +60 dB | Strong |
-| 160m | 0 | 1,581 | 104,895 | +50 dB | Strong |
+| 10m | 54,768 | 4,100 | 3.5M | +109 dB | Strong |
+| 12m | 24,451 | 287 | 1.3M | +60 dB | Strong |
+| 15m | 74,605 | 2,811 | 4.8M | +87 dB | Strong |
+| 17m | 66,159 | 1,745 | 3.3M | +57 dB | Strong |
+| 20m | 296,148 | 18,320 | 10.6M | +127 dB | Strong |
+| 30m | 119,329 | 2,100 | 2.7M | +57 dB | Strong |
+| 40m | 219,023 | 23,498 | 5.5M | +66 dB | Strong |
+| 80m | 73,106 | 9,282 | 1.0M | +58 dB | Strong |
+| 160m | 15,764 | 1,144 | 81,460 | +47 dB | Strong |
 
 ---
 
@@ -55,11 +55,11 @@ RBN archives lag ~24 hours; zeroes indicate no data in the window, not band clos
 
 | Source | Latest Date | Total Rows | Status |
 |--------|------------|------------|--------|
-| WSPR | 2026-03-27 | 11.15B | 2 days behind |
+| WSPR | 2026-03-28 | 11.16B | Current |
 | RBN | 2026-03-28 | 2.28B | Current |
-| PSK Reporter | 2026-03-29 | 1.61B | Live |
+| PSK Reporter | 2026-03-29 | 1.62B | Live |
 | Contest | Archive | 234.3M | Static |
-| Solar | 2026-03-29 | 76,918 | Live |
+| Solar | 2026-03-29 | 76,922 | Live |
 
 ---
 
@@ -73,9 +73,9 @@ Every query runs against data we collected and maintain.
 The data comes from four independent networks, each measuring a different layer
 of HF propagation:
 
-- **WSPR** (11.15B spots, 2008–present) — the SNR floor at minimum power
+- **WSPR** (11.16B spots, 2008–present) — the SNR floor at minimum power
 - **Reverse Beacon Network** (2.28B spots, 2009–present) — CW/RTTY measured signals
-- **PSK Reporter** (1.61B spots, live since Feb 2026) — FT8/digital operational contacts
+- **PSK Reporter** (1.62B spots, live since Feb 2026) — FT8/digital operational contacts
 - **Contest Logs** (234.3M QSOs, 2005–present) — the SSB/RTTY ceiling at contest power
 
 Solar indices (SFI, Kp, SSN) are joined at 3-hour resolution so every
