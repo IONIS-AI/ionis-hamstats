@@ -28,7 +28,7 @@ For technical details on the model and methodology, see
 ![Kp](https://img.shields.io/badge/Kp_3.67-Unsettled-ffea00?style=flat-square)
 ![Conditions](https://img.shields.io/badge/Conditions-Unsettled-ffea00?style=flat-square)
 
-*Updated 06:00 UTC · NOAA SWPC*
+*Updated 09:00 UTC · NOAA SWPC*
 
 ---
 
@@ -41,13 +41,13 @@ RBN archives lag ~24 hours; zeroes indicate no data in the window, not band clos
 |------|-----------|-----------|------------|----------|--------|
 | 10m | 0 | 0 | 3.1M | +54 dB | Strong |
 | 12m | 0 | 0 | 1.6M | +51 dB | Strong |
-| 15m | 0 | 0 | 5.3M | +62 dB | Strong |
-| 17m | 0 | 0 | 3.8M | +57 dB | Strong |
+| 15m | 0 | 0 | 5.2M | +62 dB | Strong |
+| 17m | 0 | 0 | 3.5M | +57 dB | Strong |
 | 20m | 0 | 0 | 9.5M | +71 dB | Strong |
-| 30m | 0 | 0 | 2.6M | +68 dB | Strong |
-| 40m | 0 | 0 | 5.3M | +60 dB | Strong |
-| 80m | 0 | 0 | 968,566 | +60 dB | Strong |
-| 160m | 0 | 0 | 105,861 | +42 dB | Strong |
+| 30m | 0 | 0 | 2.5M | +68 dB | Strong |
+| 40m | 0 | 0 | 5.4M | +60 dB | Strong |
+| 80m | 0 | 0 | 1.0M | +60 dB | Strong |
+| 160m | 0 | 0 | 109,819 | +47 dB | Strong |
 
 ---
 
@@ -59,7 +59,7 @@ RBN archives lag ~24 hours; zeroes indicate no data in the window, not band clos
 | RBN | 2026-03-27 | 2.28B | 2 days behind |
 | PSK Reporter | 2026-03-29 | 1.60B | Live |
 | Contest | Archive | 234.3M | Static |
-| Solar | 2026-03-28 | 76,910 | Current |
+| Solar | 2026-03-29 | 76,914 | Live |
 
 ---
 
