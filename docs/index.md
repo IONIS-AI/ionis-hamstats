@@ -25,10 +25,10 @@ For technical details on the model and methodology, see
 [ionis-ai.com](https://ionis-ai.com/).
 
 ![SFI](https://img.shields.io/badge/SFI_158-High-teal?style=flat-square)
-![Kp](https://img.shields.io/badge/Kp_3.33-Unsettled-ffea00?style=flat-square)
-![Conditions](https://img.shields.io/badge/Conditions-Unsettled-ffea00?style=flat-square)
+![Kp](https://img.shields.io/badge/Kp_1.0-Quiet-teal?style=flat-square)
+![Conditions](https://img.shields.io/badge/Conditions-Quiet_+_Radio_Blackout-teal?style=flat-square)
 
-*Updated 21:00 UTC · NOAA SWPC*
+*Updated 00:00 UTC · NOAA SWPC*
 
 ---
 
@@ -39,15 +39,15 @@ RBN archives lag ~24 hours; zeroes indicate no data in the window, not band clos
 
 | Band | WSPR Spots | RBN Spots | PSKR Spots | Peak SNR | Status |
 |------|-----------|-----------|------------|----------|--------|
-| 10m | 54,768 | 4,100 | 3.5M | +109 dB | Strong |
-| 12m | 24,451 | 287 | 1.3M | +60 dB | Strong |
-| 15m | 74,605 | 2,811 | 4.8M | +87 dB | Strong |
-| 17m | 66,159 | 1,745 | 3.3M | +57 dB | Strong |
-| 20m | 296,148 | 18,320 | 10.6M | +127 dB | Strong |
-| 30m | 119,329 | 2,100 | 2.7M | +57 dB | Strong |
-| 40m | 219,023 | 23,498 | 5.5M | +66 dB | Strong |
-| 80m | 73,106 | 9,282 | 1.0M | +58 dB | Strong |
-| 160m | 15,764 | 1,144 | 81,460 | +47 dB | Strong |
+| 10m | 0 | 0 | 3.4M | +109 dB | Strong |
+| 12m | 0 | 0 | 1.2M | +60 dB | Strong |
+| 15m | 0 | 0 | 4.6M | +87 dB | Strong |
+| 17m | 0 | 0 | 3.2M | +57 dB | Strong |
+| 20m | 0 | 0 | 10.9M | +87 dB | Strong |
+| 30m | 0 | 0 | 2.7M | +57 dB | Strong |
+| 40m | 0 | 0 | 5.5M | +63 dB | Strong |
+| 80m | 0 | 0 | 1.0M | +47 dB | Strong |
+| 160m | 0 | 0 | 75,546 | +47 dB | Strong |
 
 ---
 
@@ -55,11 +55,11 @@ RBN archives lag ~24 hours; zeroes indicate no data in the window, not band clos
 
 | Source | Latest Date | Total Rows | Status |
 |--------|------------|------------|--------|
-| WSPR | 2026-03-28 | 11.16B | Current |
-| RBN | 2026-03-28 | 2.28B | Current |
-| PSK Reporter | 2026-03-29 | 1.62B | Live |
+| WSPR | 2026-03-28 | 11.16B | 2 days behind |
+| RBN | 2026-03-28 | 2.28B | 2 days behind |
+| PSK Reporter | 2026-03-29 | 1.62B | Current |
 | Contest | Archive | 234.3M | Static |
-| Solar | 2026-03-29 | 76,922 | Live |
+| Solar | 2026-03-29 | 76,922 | Current |
 
 ---
 

@@ -8,10 +8,10 @@ description: >-
 # DXpeditions
 
 ![SFI](https://img.shields.io/badge/SFI_158-High-teal?style=flat-square)
-![Kp](https://img.shields.io/badge/Kp_3.33-Unsettled-ffea00?style=flat-square)
-![Conditions](https://img.shields.io/badge/Conditions-Unsettled-ffea00?style=flat-square)
+![Kp](https://img.shields.io/badge/Kp_1.0-Quiet-teal?style=flat-square)
+![Conditions](https://img.shields.io/badge/Conditions-Quiet_+_Radio_Blackout-teal?style=flat-square)
 
-*Updated 21:00 UTC 2026-03-29*
+*Updated 00:00 UTC 2026-03-30*
 
 ---
 
@@ -20,7 +20,7 @@ description: >-
 | Callsign | Entity | Grid | Dates | Modes | Status |
 |----------|--------|------|-------|-------|--------|
 | [CY0S](https://www.dx-world.net/cy0s-sable-island-dxpedition-2026/) | Sable Island | FN83 | Mar 19–Mar 31 | SSB, CW, FT8 | **ON AIR** |
-| [TX9W](https://www.ng3k.com/misc/adxo.html) | Marquesas Islands | BH54 | Apr 19–Apr 30 | SSB, CW, FT8 | 3w |
+| [TX9W](https://www.ng3k.com/misc/adxo.html) | Marquesas Islands | BH54 | Apr 19–Apr 30 | SSB, CW, FT8 | 2w 6d |
 
 ---
 
