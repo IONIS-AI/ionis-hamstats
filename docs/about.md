@@ -16,7 +16,7 @@ generated from measured amateur radio observations, not modeled predictions.
 ## What This Is
 
 Every number on this site comes from a query against a ClickHouse database
-containing 13+ billion amateur radio propagation spots. The database runs on
+containing 14+ billion amateur radio propagation spots. The database runs on
 a self-hosted Threadripper 9975WX (32 cores, 128 GB DDR5, RTX PRO 6000 96 GB)
 with 3.7 TB of NVMe storage for ClickHouse data. No cloud services. No
 third-party APIs. No subscription fees.

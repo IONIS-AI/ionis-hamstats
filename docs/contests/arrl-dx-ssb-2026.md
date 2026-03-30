@@ -56,6 +56,6 @@ from the analysis window — download it to run the notebook locally or explore 
 ---
 
 *Analysis powered by [IONIS](https://github.com/IONIS-AI) — 14 billion propagation observations,
-71 MCP tools, and a neural network that learned HF physics from the data.*
+80 MCP tools, and a neural network that learned HF physics from the data.*
 
 [← Back to Contest Calendar](index.md)

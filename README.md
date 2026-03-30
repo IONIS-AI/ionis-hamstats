@@ -6,7 +6,7 @@
 
 A static site built with [MkDocs Material](https://squidfunk.github.io/mkdocs-material/) that publishes HF band conditions, solar impact analysis, and propagation reports. Every number comes from measured amateur radio observations — not models, not opinions.
 
-The site is auto-generated every 3 hours from a ClickHouse database containing **13+ billion** propagation observations across four independent networks:
+The site is auto-generated every 3 hours from a ClickHouse database containing **14+ billion** propagation observations across four independent networks:
 
 | Source | Volume | What It Measures |
 |--------|--------|-----------------|

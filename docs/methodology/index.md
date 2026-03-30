@@ -11,7 +11,7 @@ How raw spots become propagation intelligence. This section describes the
 pipeline from ingested observations to the signatures and statistics published
 on this site.
 
-The short version: 13+ billion raw spots go in, 156+ million quality-filtered,
+The short version: 14+ billion raw spots go in, 156+ million quality-filtered,
 solar-joined signatures come out. Every number on this site traces back to
 a specific query against that corpus.
 
