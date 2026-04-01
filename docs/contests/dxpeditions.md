@@ -11,7 +11,7 @@ description: >-
 ![Kp](https://img.shields.io/badge/Kp_0.0-Quiet-teal?style=flat-square)
 ![Conditions](https://img.shields.io/badge/Conditions-Quiet-teal?style=flat-square)
 
-*Updated 21:00 UTC 2026-03-31*
+*Updated 00:00 UTC 2026-04-01*
 
 ---
 
@@ -19,23 +19,7 @@ description: >-
 
 | Callsign | Entity | Grid | Dates | Modes | Status |
 |----------|--------|------|-------|-------|--------|
-| [CY0S](https://www.dx-world.net/cy0s-sable-island-dxpedition-2026/) | Sable Island | FN83 | Mar 19–Mar 31 | SSB, CW, FT8 | **ON AIR** |
-| [TX9W](https://www.ng3k.com/misc/adxo.html) | Marquesas Islands | BH54 | Apr 19–Apr 30 | SSB, CW, FT8 | 2w 5d |
-
----
-
-## CY0S — Sable Island
-
-!!! success "Active Now"
-    CY0S is on the air from Sable Island. Operation ends 2026-03-31.
-
-| | |
-|---|---|
-| **Grid** | FN83 |
-| **Dates** | 2026-03-19 to 2026-03-31 |
-| **Bands** | 160m, 80m, 40m, 20m, 15m, 10m |
-| **Modes** | SSB, CW, FT8 |
-| **Notes** | WA4DAN and W0GJ team leads |
+| [TX9W](https://www.ng3k.com/misc/adxo.html) | Marquesas Islands | BH54 | Apr 19–Apr 30 | SSB, CW, FT8 | 2w 4d |
 
 ---
 
