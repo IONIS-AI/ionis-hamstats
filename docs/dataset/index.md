@@ -64,7 +64,7 @@ own. No API rate limits, no subscription fees, no vendor lock-in.
 
 | Source | Total Rows | Last Updated |
 |--------|-----------|-------------|
-| WSPR | 11.19B | 2026-04-01 |
+| WSPR | 11.19B | 2026-04-02 |
 | RBN | 2.28B | 2026-04-02 |
 | PSK Reporter | 1.78B | 2026-04-03 |
 | Contest | 234.3M | 2088-11-30 |
