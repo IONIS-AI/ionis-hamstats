@@ -36,8 +36,8 @@ unit. Ingest to ClickHouse (`pskr.bronze`) runs hourly.
 | **Days Collected** | 166 |
 | **Daily Spot Rate (recent 7 days)** | ~26M spots/day |
 | **Peak Spots/Second (observed)** | ~300 |
-| **Unique Transmitter Callsigns** | 454,280 |
-| **Unique Receiver Callsigns** | 66,763 |
+| **Unique Transmitter Callsigns** | 454,886 |
+| **Unique Receiver Callsigns** | 66,819 |
 | **Unique Grid Pairs** | 694K |
 
 ---
@@ -47,15 +47,15 @@ unit. Ingest to ClickHouse (`pskr.bronze`) runs hourly.
 | Mode | Spots | Pct |
 |------|-------|-----|
 | FT8 | 1.63B | 92.07% |
-| WSPR | 73.3M | 4.15% |
-| FT4 | 42.9M | 2.42% |
+| WSPR | 73.5M | 4.14% |
+| FT4 | 43.0M | 2.42% |
 | CW | 9.7M | 0.55% |
 | JS8 | 6.3M | 0.36% |
 | VARAC | 4.0M | 0.22% |
 | FT2 | 3.6M | 0.2% |
-| RTTY | 321,219 | 0.02% |
-| FREEDV | 120,375 | 0.01% |
-| JT65 | 40,693 | 0.0% |
+| RTTY | 321,288 | 0.02% |
+| FREEDV | 120,426 | 0.01% |
+| JT65 | 40,747 | 0.0% |
 
 ---
 
@@ -63,15 +63,15 @@ unit. Ingest to ClickHouse (`pskr.bronze`) runs hourly.
 
 | Band | Spots | Pct of Total |
 |------|-------|-------------|
-| 20m | 481.3M | 27.21% |
-| 40m | 356.5M | 20.15% |
-| 15m | 238.2M | 13.46% |
-| 10m | 223.5M | 12.63% |
-| 30m | 134.9M | 7.63% |
-| 17m | 134.2M | 7.58% |
-| 80m | 83.8M | 4.74% |
-| 12m | 81.2M | 4.59% |
-| 160m | 13.4M | 0.76% |
+| 20m | 482.7M | 27.22% |
+| 40m | 357.2M | 20.15% |
+| 15m | 238.9M | 13.47% |
+| 10m | 223.8M | 12.62% |
+| 30m | 135.2M | 7.62% |
+| 17m | 134.6M | 7.59% |
+| 80m | 83.9M | 4.73% |
+| 12m | 81.3M | 4.58% |
+| 160m | 13.5M | 0.76% |
 
 ---
 
