@@ -28,7 +28,7 @@ For technical details on the model and methodology, see
 ![Kp](https://img.shields.io/badge/Kp_0.0-Quiet-teal?style=flat-square)
 ![Conditions](https://img.shields.io/badge/Conditions-Quiet-teal?style=flat-square)
 
-*Updated 03:00 UTC · NOAA SWPC*
+*Updated 06:00 UTC · NOAA SWPC*
 
 ---
 
@@ -40,14 +40,14 @@ RBN archives lag ~24 hours; zeroes indicate no data in the window, not band clos
 | Band | WSPR Spots | RBN Spots | PSKR Spots | Peak SNR | Status |
 |------|-----------|-----------|------------|----------|--------|
 | 10m | 0 | 0 | 2.6M | +59 dB | Strong |
-| 12m | 0 | 0 | 793,630 | +55 dB | Strong |
-| 15m | 0 | 0 | 3.2M | +69 dB | Strong |
+| 12m | 0 | 0 | 848,736 | +55 dB | Strong |
+| 15m | 0 | 0 | 3.4M | +69 dB | Strong |
 | 17m | 0 | 0 | 2.4M | +61 dB | Strong |
-| 20m | 0 | 0 | 10.4M | +87 dB | Strong |
+| 20m | 0 | 0 | 10.5M | +87 dB | Strong |
 | 30m | 0 | 0 | 2.5M | +87 dB | Strong |
 | 40m | 0 | 0 | 6.2M | +81 dB | Strong |
-| 80m | 0 | 0 | 1.4M | +61 dB | Strong |
-| 160m | 0 | 0 | 131,038 | +58 dB | Strong |
+| 80m | 0 | 0 | 1.5M | +61 dB | Strong |
+| 160m | 0 | 0 | 139,247 | +58 dB | Strong |
 
 ---
 
@@ -57,7 +57,7 @@ RBN archives lag ~24 hours; zeroes indicate no data in the window, not band clos
 |--------|------------|------------|--------|
 | WSPR | 2026-04-03 | 11.20B | 2 days behind |
 | RBN | 2026-04-03 | 2.28B | 2 days behind |
-| PSK Reporter | 2026-04-05 | 1.82B | Live |
+| PSK Reporter | 2026-04-05 | 1.83B | Live |
 | Contest | Archive | 234.3M | Static |
 | Solar | 2026-04-03 | 76,952 | 2 days behind |
 
@@ -75,7 +75,7 @@ of HF propagation:
 
 - **WSPR** (11.20B spots, 2008–present) — the SNR floor at minimum power
 - **Reverse Beacon Network** (2.28B spots, 2009–present) — CW/RTTY measured signals
-- **PSK Reporter** (1.82B spots, live since Feb 2026) — FT8/digital operational contacts
+- **PSK Reporter** (1.83B spots, live since Feb 2026) — FT8/digital operational contacts
 - **Contest Logs** (234.3M QSOs, 2005–present) — the SSB/RTTY ceiling at contest power
 
 Solar indices (SFI, Kp, SSN) are joined at 3-hour resolution so every
