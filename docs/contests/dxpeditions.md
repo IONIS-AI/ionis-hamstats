@@ -11,7 +11,7 @@ description: >-
 ![Kp](https://img.shields.io/badge/Kp_0.0-Quiet-teal?style=flat-square)
 ![Conditions](https://img.shields.io/badge/Conditions-Quiet-teal?style=flat-square)
 
-*Updated 21:00 UTC 2026-04-06*
+*Updated 00:00 UTC 2026-04-07*
 
 ---
 
@@ -19,7 +19,7 @@ description: >-
 
 | Callsign | Entity | Grid | Dates | Modes | Status |
 |----------|--------|------|-------|-------|--------|
-| [TX9W](https://www.ng3k.com/misc/adxo.html) | Marquesas Islands | BH54 | Apr 19–Apr 30 | SSB, CW, FT8 | 13 days |
+| [TX9W](https://www.ng3k.com/misc/adxo.html) | Marquesas Islands | BH54 | Apr 19–Apr 30 | SSB, CW, FT8 | 12 days |
 
 ---
 
