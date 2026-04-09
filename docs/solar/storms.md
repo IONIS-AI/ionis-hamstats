@@ -7,7 +7,7 @@ description: >-
 
 # Storm Impact Analysis
 
-*Updated 03:00 UTC 2026-04-09*
+*Updated 06:00 UTC 2026-04-09*
 
 This page shows measured SNR degradation during geomagnetic storms. All values
 come from actual WSPR signal measurements joined against Kp index at daily
@@ -28,7 +28,7 @@ filtered to ionospheric paths (> 500 km).
 | 2026-04-02 | 6.0 | ![G2 Moderate](https://img.shields.io/badge/G2_Moderate-orange?style=flat-square) |
 | 2026-03-25 | 5.0 | ![G1 Minor](https://img.shields.io/badge/G1_Minor-orange?style=flat-square) |
 | 2026-03-23 | 5.0 | ![G1 Minor](https://img.shields.io/badge/G1_Minor-orange?style=flat-square) |
-| 2026-03-22 | 6.67 | ![G2 Moderate](https://img.shields.io/badge/G2_Moderate-orange?style=flat-square) |
+| 2026-03-22 | 7.0 | ![G3 Strong](https://img.shields.io/badge/G3_Strong-red?style=flat-square) |
 | 2026-03-21 | 7.0 | ![G3 Strong](https://img.shields.io/badge/G3_Strong-red?style=flat-square) |
 | 2026-03-20 | 6.33 | ![G2 Moderate](https://img.shields.io/badge/G2_Moderate-orange?style=flat-square) |
 | 2026-03-14 | 6.0 | ![G2 Moderate](https://img.shields.io/badge/G2_Moderate-orange?style=flat-square) |
@@ -56,10 +56,10 @@ day of, and day after peak Kp.*
 |------|------------|-------------|-----------|--------|---------------------|
 | 10m | -20 | -17 | -18 | +3 dB | +2 dB |
 | 15m | -19 | -18 | -18 | +1 dB | +1 dB |
-| 20m | -16 | -17 | -17 | -1 dB | -1 dB |
+| 20m | -16 | -16 | -17 | 0 dB | -1 dB |
 | 40m | -16 | -17 | -18 | -1 dB | -2 dB |
 | 80m | -18 | -17 | -18 | +1 dB | 0 dB |
-| 160m | -20 | -20 | -20 | 0 dB | 0 dB |
+| 160m | -20 | -19.5 | -20 | +0.5 dB | 0 dB |
 
 *Change = During − Before (negative = degradation). Recovery vs Baseline =
 After − Before (0 = full recovery, negative = still degraded).*
@@ -91,7 +91,7 @@ recover within 7 days are excluded.*
 
 | Year | Kp>=5 Days | Kp>=7 Days | Peak Kp | Cycle Phase |
 |------|-----------|-----------|---------|-------------|
-| 2026 | 21 | 4 | 8.7 | Active |
+| 2026 | 21 | 5 | 8.7 | Active |
 | 2025 | 62 | 8 | 8.7 | Maximum |
 | 2024 | 36 | 13 | 9.0 | Maximum |
 | 2023 | 41 | 5 | 8.3 | Maximum |
