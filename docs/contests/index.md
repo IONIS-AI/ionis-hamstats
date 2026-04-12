@@ -9,29 +9,15 @@ description: >-
 
 ![SFI](https://img.shields.io/badge/SFI_145-Elevated-2ea043?style=flat-square)
 ![Kp](https://img.shields.io/badge/Kp_0.0-Quiet-teal?style=flat-square)
-![Conditions](https://img.shields.io/badge/Conditions-Quiet-teal?style=flat-square)
+![Conditions](https://img.shields.io/badge/Conditions-Quiet_+_Radio_Blackout-teal?style=flat-square)
 
-*Updated 12:00 UTC 2026-04-12*
+*Updated 15:00 UTC 2026-04-12*
 
 ---
 
 ## Next 30 Days
 
-### JIDX CW — ON THE AIR
-!!! success "Active Now"
-    This contest is currently running. Ends 2026-04-12 13:00 UTC.
-
-| | |
-|---|---|
-| **Start** | 2026-04-11 07:00 UTC |
-| **End** | 2026-04-12 13:00 UTC |
-| **Duration** | 30 hours |
-| **Modes** | CW |
-| **Bands** | 80m, 40m, 20m, 15m, 10m |
-| **Sponsor** | [JARL](https://jidx.org/) |
-
-*Japan International DX — CW, JA stations work the world*
-
+*No major contests in the next 30 days.*
 
 ---
 
@@ -40,7 +26,6 @@ description: >-
 
 | Contest | Date (UTC) | Start | Hours | Modes | Countdown |
 |---------|-----------|-------|-------|-------|-----------|
-| [JIDX CW](https://jidx.org/) | Apr 11–12 | Sat 07:00 | 30 | CW | NOW |
 | [CQ WPX CW](https://www.cqwpx.com/) | May 30–01 | Sat 00:00 | 48 | CW | 6w 5d |
 | [All Asian DX CW](https://www.jarl.org/English/4_Library/A-4-3_Contests/) | Jun 20–22 | Sat 00:00 | 48 | CW | 9w 5d |
 | [IARU HF Championship](https://www.arrl.org/iaru-hf-championship) | Jul 11–12 | Sat 12:00 | 24 | SSB/CW | 12w 5d |
