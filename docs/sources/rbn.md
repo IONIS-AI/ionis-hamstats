@@ -18,7 +18,7 @@ beacons, below the contest-grade SSB ceiling.
 | Metric | Value |
 |--------|-------|
 | **Total Rows (`rbn.bronze`)** | 2.29B |
-| **Date Range** | 2009-02-21 to 2026-04-12 |
+| **Date Range** | 2009-02-21 to 2026-04-13 |
 | **Daily Spot Rate (recent)** | ~2M spots/day |
 | **Unique Transmitter Callsigns** | 2.1M |
 | **Unique Receiver Callsigns (skimmers)** | 3,065 |
@@ -32,10 +32,10 @@ beacons, below the contest-grade SSB ceiling.
 | Band | Spots | Pct of Total |
 |------|-------|-------------|
 | 160m | 99.3M | 4.34% |
-| 80m | 291.2M | 12.73% |
-| 40m | 679.5M | 29.71% |
+| 80m | 291.3M | 12.73% |
+| 40m | 679.6M | 29.71% |
 | 30m | 113.1M | 4.95% |
-| 20m | 695.4M | 30.41% |
+| 20m | 695.5M | 30.41% |
 | 17m | 59.4M | 2.6% |
 | 15m | 211.9M | 9.27% |
 | 12m | 16.3M | 0.71% |
