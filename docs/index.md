@@ -28,7 +28,7 @@ For technical details on the model and methodology, see
 ![Kp](https://img.shields.io/badge/Kp_0.0-Quiet-teal?style=flat-square)
 ![Conditions](https://img.shields.io/badge/Conditions-Quiet-teal?style=flat-square)
 
-*Updated 12:00 UTC · NOAA SWPC*
+*Updated 15:00 UTC · NOAA SWPC*
 
 ---
 
@@ -39,15 +39,15 @@ RBN archives lag ~24 hours; zeroes indicate no data in the window, not band clos
 
 | Band | WSPR Spots | RBN Spots | PSKR Spots | Peak SNR | Status |
 |------|-----------|-----------|------------|----------|--------|
-| 10m | 0 | 0 | 393,127 | +53 dB | Strong |
-| 12m | 0 | 0 | 129,890 | +42 dB | Strong |
-| 15m | 0 | 0 | 4.0M | +83 dB | Strong |
-| 17m | 0 | 0 | 4.7M | +51 dB | Strong |
-| 20m | 0 | 0 | 11.7M | +66 dB | Strong |
-| 30m | 0 | 0 | 2.7M | +49 dB | Strong |
-| 40m | 0 | 0 | 5.4M | +78 dB | Strong |
+| 10m | 0 | 0 | 410,823 | +53 dB | Strong |
+| 12m | 0 | 0 | 147,544 | +49 dB | Strong |
+| 15m | 0 | 0 | 4.3M | +62 dB | Strong |
+| 17m | 0 | 0 | 4.8M | +75 dB | Strong |
+| 20m | 0 | 0 | 11.3M | +66 dB | Strong |
+| 30m | 0 | 0 | 2.6M | +49 dB | Strong |
+| 40m | 0 | 0 | 5.6M | +78 dB | Strong |
 | 80m | 0 | 0 | 1.3M | +55 dB | Strong |
-| 160m | 0 | 0 | 109,066 | +100 dB | Strong |
+| 160m | 0 | 0 | 111,269 | +47 dB | Strong |
 
 ---
 
