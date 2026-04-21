@@ -7,7 +7,7 @@ description: >-
 
 # Storm Impact Analysis
 
-*Updated 03:00 UTC 2026-04-21*
+*Updated 06:00 UTC 2026-04-21*
 
 This page shows measured SNR degradation during geomagnetic storms. All values
 come from actual WSPR signal measurements joined against Kp index at daily
@@ -24,6 +24,7 @@ filtered to ionospheric paths (> 500 km).
 
 | Storm Date (UTC) | Peak Kp | Classification |
 |------------------|---------|----------------|
+| 2026-04-20 | 5.0 | ![G1 Minor](https://img.shields.io/badge/G1_Minor-orange?style=flat-square) |
 | 2026-04-19 | 5.33 | ![G1 Minor](https://img.shields.io/badge/G1_Minor-orange?style=flat-square) |
 | 2026-04-18 | 5.33 | ![G1 Minor](https://img.shields.io/badge/G1_Minor-orange?style=flat-square) |
 | 2026-04-03 | 6.67 | ![G2 Moderate](https://img.shields.io/badge/G2_Moderate-orange?style=flat-square) |
@@ -43,23 +44,22 @@ filtered to ionospheric paths (> 500 km).
 | 2026-01-20 | 7.67 | ![G3 Strong](https://img.shields.io/badge/G3_Strong-red?style=flat-square) |
 | 2026-01-19 | 8.67 | ![G4 Severe](https://img.shields.io/badge/G4_Severe-red?style=flat-square) |
 | 2026-01-17 | 5.0 | ![G1 Minor](https://img.shields.io/badge/G1_Minor-orange?style=flat-square) |
-| 2026-01-16 | 5.0 | ![G1 Minor](https://img.shields.io/badge/G1_Minor-orange?style=flat-square) |
 
 ---
 
-## SNR Before / During / After — Storm of 2026-04-19 (Kp 5.33)
+## SNR Before / During / After — Storm of 2026-04-20 (Kp 5.0)
 
 *Median WSPR SNR (dB) on ionospheric paths (> 500 km) for the day before,
 day of, and day after peak Kp.*
 
 | Band | Before (dB) | During (dB) | After (dB) | Change | Recovery vs Baseline |
 |------|------------|-------------|-----------|--------|---------------------|
-| 10m | -21 | -22 | 0 | -1 dB | 0 dB |
-| 15m | -20 | -20 | 0 | 0 dB | 0 dB |
-| 20m | -19 | -18 | 0 | +1 dB | 0 dB |
-| 40m | -18 | -17 | 0 | +1 dB | 0 dB |
-| 80m | -19 | -18 | 0 | +1 dB | 0 dB |
-| 160m | -21 | -20 | 0 | +1 dB | 0 dB |
+| 10m | -22 | 0 | 0 | 0 dB | 0 dB |
+| 15m | -20 | 0 | 0 | 0 dB | 0 dB |
+| 20m | -18 | 0 | 0 | 0 dB | 0 dB |
+| 40m | -17 | 0 | 0 | 0 dB | 0 dB |
+| 80m | -18 | 0 | 0 | 0 dB | 0 dB |
+| 160m | -20 | 0 | 0 | 0 dB | 0 dB |
 
 *Change = During − Before (negative = degradation). Recovery vs Baseline =
 After − Before (0 = full recovery, negative = still degraded).*
@@ -91,7 +91,7 @@ recover within 7 days are excluded.*
 
 | Year | Kp>=5 Days | Kp>=7 Days | Peak Kp | Cycle Phase |
 |------|-----------|-----------|---------|-------------|
-| 2026 | 23 | 5 | 8.7 | Active |
+| 2026 | 24 | 5 | 8.7 | Active |
 | 2025 | 62 | 8 | 8.7 | Maximum |
 | 2024 | 36 | 13 | 9.0 | Maximum |
 | 2023 | 41 | 5 | 8.3 | Maximum |
