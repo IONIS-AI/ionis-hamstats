@@ -7,7 +7,7 @@ description: >-
 
 # Storm Impact Analysis
 
-*Updated 00:00 UTC 2026-04-24*
+*Updated 03:00 UTC 2026-04-24*
 
 This page shows measured SNR degradation during geomagnetic storms. All values
 come from actual WSPR signal measurements joined against Kp index at daily
@@ -54,12 +54,12 @@ day of, and day after peak Kp.*
 
 | Band | Before (dB) | During (dB) | After (dB) | Change | Recovery vs Baseline |
 |------|------------|-------------|-----------|--------|---------------------|
-| 10m | -22 | -21 | -22 | +1 dB | 0 dB |
+| 10m | -22 | -21 | -21 | +1 dB | +1 dB |
 | 15m | -20 | -21 | -20 | -1 dB | 0 dB |
 | 20m | -18 | -18 | -19 | 0 dB | -1 dB |
 | 40m | -17 | -17 | -17 | 0 dB | 0 dB |
 | 80m | -18 | -18 | -19 | 0 dB | -1 dB |
-| 160m | -20 | -19 | -20 | +1 dB | 0 dB |
+| 160m | -20 | -20 | -20 | 0 dB | 0 dB |
 
 *Change = During − Before (negative = degradation). Recovery vs Baseline =
 After − Before (0 = full recovery, negative = still degraded).*
@@ -77,7 +77,7 @@ the last 2 years. Consecutive storm days are merged into single events.
 | 10m | 24 | 24 | 65 |
 | 15m | 24 | 24 | 65 |
 | 20m | 24 | 24 | 65 |
-| 40m | 24 | 24 | 65 |
+| 40m | 24 | 38 | 65 |
 | 80m | 24 | 24 | 63 |
 | 160m | 24 | 24 | 65 |
 
