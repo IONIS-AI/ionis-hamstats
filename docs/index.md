@@ -26,9 +26,9 @@ For technical details on the model and methodology, see
 
 ![SFI](https://img.shields.io/badge/SFI_145-Elevated-2ea043?style=flat-square)
 ![Kp](https://img.shields.io/badge/Kp_0.0-Quiet-teal?style=flat-square)
-![Conditions](https://img.shields.io/badge/Conditions-Quiet-teal?style=flat-square)
+![Conditions](https://img.shields.io/badge/Conditions-Quiet_+_Radio_Blackout-teal?style=flat-square)
 
-*Updated 18:00 UTC · NOAA SWPC*
+*Updated 21:00 UTC · NOAA SWPC*
 
 ---
 
@@ -39,15 +39,15 @@ RBN archives lag ~24 hours; zeroes indicate no data in the window, not band clos
 
 | Band | WSPR Spots | RBN Spots | PSKR Spots | Peak SNR | Status |
 |------|-----------|-----------|------------|----------|--------|
-| 10m | 0 | 2,063 | 788,331 | +49 dB | Strong |
-| 12m | 0 | 513 | 520,545 | +51 dB | Strong |
-| 15m | 0 | 4,801 | 5.6M | +61 dB | Strong |
-| 17m | 0 | 7,371 | 4.0M | +87 dB | Strong |
-| 20m | 0 | 49,991 | 12.3M | +144 dB | Strong |
-| 30m | 0 | 10,653 | 2.8M | +75 dB | Strong |
-| 40m | 0 | 32,544 | 4.5M | +87 dB | Strong |
-| 80m | 0 | 8,441 | 601,081 | +56 dB | Strong |
-| 160m | 0 | 817 | 64,093 | +47 dB | Strong |
+| 10m | 12,965 | 1,177 | 784,218 | +49 dB | Strong |
+| 12m | 11,296 | 140 | 597,591 | +51 dB | Strong |
+| 15m | 53,270 | 1,541 | 6.0M | +60 dB | Strong |
+| 17m | 58,005 | 3,985 | 4.2M | +87 dB | Strong |
+| 20m | 296,360 | 17,670 | 12.4M | +144 dB | Strong |
+| 30m | 141,330 | 3,262 | 2.7M | +75 dB | Strong |
+| 40m | 265,605 | 8,530 | 4.3M | +82 dB | Strong |
+| 80m | 67,115 | 1,394 | 544,191 | +56 dB | Strong |
+| 160m | 18,401 | 166 | 47,708 | +44 dB | Strong |
 
 ---
 
@@ -55,7 +55,7 @@ RBN archives lag ~24 hours; zeroes indicate no data in the window, not band clos
 
 | Source | Latest Date | Total Rows | Status |
 |--------|------------|------------|--------|
-| WSPR | 2026-04-26 | 11.33B | 2 days behind |
+| WSPR | 2026-04-27 | 11.33B | Current |
 | RBN | 2026-04-27 | 2.30B | Current |
 | PSK Reporter | 2026-04-28 | 2.57B | Live |
 | Contest | Archive | 234.3M | Static |
