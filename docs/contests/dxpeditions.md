@@ -9,32 +9,13 @@ description: >-
 
 ![SFI](https://img.shields.io/badge/SFI_145-Elevated-2ea043?style=flat-square)
 ![Kp](https://img.shields.io/badge/Kp_0.0-Quiet-teal?style=flat-square)
-![Conditions](https://img.shields.io/badge/Conditions-Quiet_+_Radio_Blackout-teal?style=flat-square)
+![Conditions](https://img.shields.io/badge/Conditions-Quiet-teal?style=flat-square)
 
-*Updated 21:00 UTC 2026-04-30*
-
----
-
-## Upcoming DXpeditions
-
-| Callsign | Entity | Grid | Dates | Modes | Status |
-|----------|--------|------|-------|-------|--------|
-| [TX9W](https://www.ng3k.com/misc/adxo.html) | Marquesas Islands | BH54 | Apr 19–Apr 30 | SSB, CW, FT8 | **ON AIR** |
+*Updated 00:00 UTC 2026-05-01*
 
 ---
 
-## TX9W — Marquesas Islands
-
-!!! success "Active Now"
-    TX9W is on the air from Marquesas Islands. Operation ends 2026-04-30.
-
-| | |
-|---|---|
-| **Grid** | BH54 |
-| **Dates** | 2026-04-19 to 2026-04-30 |
-| **Bands** | 80m, 40m, 20m, 15m, 10m |
-| **Modes** | SSB, CW, FT8 |
-| **Notes** | 6 stations |
+*No upcoming DXpeditions tracked. Check the DX calendars below for announcements.*
 
 ---
 
