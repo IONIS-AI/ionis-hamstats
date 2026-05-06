@@ -41,7 +41,7 @@ Kp, and SSN attached at the time of measurement.
 
 | Source | Latest Ingested | Total Rows | Status |
 |--------|----------------|------------|--------|
-| WSPR | 2026-05-04 | 11.38B | Current |
-| RBN | 2026-05-04 | 2.30B | Current |
-| PSK Reporter | 2026-05-05 | 2.81B | Live |
+| WSPR | 2026-05-04 | 11.38B | 2 days behind |
+| RBN | 2026-05-04 | 2.30B | 2 days behind |
+| PSK Reporter | 2026-05-05 | 2.81B | Current |
 | Contest | Archive | 234.3M | Static |
