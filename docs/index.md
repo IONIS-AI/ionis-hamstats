@@ -26,9 +26,9 @@ For technical details on the model and methodology, see
 
 ![SFI](https://img.shields.io/badge/SFI_145-Elevated-2ea043?style=flat-square)
 ![Kp](https://img.shields.io/badge/Kp_0.0-Quiet-teal?style=flat-square)
-![Conditions](https://img.shields.io/badge/Conditions-Quiet-teal?style=flat-square)
+![Conditions](https://img.shields.io/badge/Conditions-Quiet_+_Radio_Blackout-teal?style=flat-square)
 
-*Updated 21:00 UTC · NOAA SWPC*
+*Updated 00:00 UTC · NOAA SWPC*
 
 ---
 
@@ -39,15 +39,15 @@ RBN archives lag ~24 hours; zeroes indicate no data in the window, not band clos
 
 | Band | WSPR Spots | RBN Spots | PSKR Spots | Peak SNR | Status |
 |------|-----------|-----------|------------|----------|--------|
-| 10m | 7,428 | 627 | 511,743 | +58 dB | Strong |
-| 12m | 3,888 | 40 | 244,115 | +48 dB | Strong |
-| 15m | 15,462 | 588 | 3.7M | +64 dB | Strong |
-| 17m | 34,787 | 869 | 4.4M | +87 dB | Strong |
-| 20m | 266,998 | 16,747 | 13.6M | +172 dB | Strong |
-| 30m | 135,466 | 3,273 | 2.7M | +72 dB | Strong |
-| 40m | 258,002 | 9,858 | 5.0M | +87 dB | Strong |
-| 80m | 70,657 | 835 | 609,249 | +55 dB | Strong |
-| 160m | 14,163 | 236 | 47,800 | +54 dB | Strong |
+| 10m | 0 | 0 | 524,685 | +58 dB | Strong |
+| 12m | 0 | 0 | 246,756 | +46 dB | Strong |
+| 15m | 0 | 0 | 3.9M | +64 dB | Strong |
+| 17m | 0 | 0 | 4.4M | +52 dB | Strong |
+| 20m | 0 | 0 | 12.7M | +88 dB | Strong |
+| 30m | 0 | 0 | 2.5M | +72 dB | Strong |
+| 40m | 0 | 0 | 4.7M | +87 dB | Strong |
+| 80m | 0 | 0 | 610,775 | +55 dB | Strong |
+| 160m | 0 | 0 | 54,516 | +54 dB | Strong |
 
 ---
 
@@ -55,11 +55,11 @@ RBN archives lag ~24 hours; zeroes indicate no data in the window, not band clos
 
 | Source | Latest Date | Total Rows | Status |
 |--------|------------|------------|--------|
-| WSPR | 2026-05-12 | 11.43B | Current |
-| RBN | 2026-05-12 | 2.30B | Current |
-| PSK Reporter | 2026-05-13 | 3.17B | Live |
+| WSPR | 2026-05-12 | 11.43B | 2 days behind |
+| RBN | 2026-05-12 | 2.30B | 2 days behind |
+| PSK Reporter | 2026-05-13 | 3.17B | Current |
 | Contest | Archive | 234.3M | Static |
-| Solar | 2026-05-11 | 77,256 | 2 days behind |
+| Solar | 2026-05-11 | 77,256 | 3 days behind |
 
 ---
 
