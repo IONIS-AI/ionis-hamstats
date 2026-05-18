@@ -11,7 +11,7 @@ Analysis of **3508** logging software families extracted from
 **495,984** Cabrillo log submissions
 across 15 major HF contests, 2005–2025.
 
-*Updated 06:00 UTC 2026-05-18*
+*Updated 09:00 UTC 2026-05-18*
 
 !!! info "Data Source"
     Every Cabrillo log file contains a `CREATED-BY:` header identifying the logging software.
@@ -333,10 +333,10 @@ Which loggers dominate which contests? Some loggers have strong contest-specific
 | Logger | Submissions | Share |
 |--------|------------|-------|
 | SD (EI5DI) | 6 | 60.0% |
-| UCXLog | 1 | 10.0% |
+| MixW | 1 | 10.0% |
 | Unknown | 1 | 10.0% |
 | N1MM Logger+ | 1 | 10.0% |
-| MixW | 1 | 10.0% |
+| UCXLog | 1 | 10.0% |
 
 ### CQ-WW-RTTY
 
