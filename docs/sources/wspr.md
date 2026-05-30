@@ -20,7 +20,7 @@ datasets of its kind.**
 | Metric | Value |
 |--------|-------|
 | **Total Rows (`wspr.bronze`)** | 11.48B |
-| **Date Range** | 2008-03-11 to 2026-05-22 |
+| **Date Range** | 2008-03-11 to 1970-01-01 |
 | **Daily Spot Rate (recent)** | ~7M spots/day |
 | **Unique Transmitter Callsigns** | 4.0M |
 | **Unique Receiver Callsigns** | 100,792 |
