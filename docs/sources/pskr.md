@@ -33,11 +33,11 @@ unit. Ingest to ClickHouse (`pskr.bronze`) runs hourly.
 |--------|-------|
 | **Total Rows (`pskr.bronze`)** | 4.10B |
 | **Collection Start** | 1970-01-01 |
-| **Days Collected** | 20618 |
+| **Days Collected** | 20619 |
 | **Daily Spot Rate (recent 7 days)** | ~26M spots/day |
 | **Peak Spots/Second (observed)** | ~300 |
-| **Unique Transmitter Callsigns** | 847,836 |
-| **Unique Receiver Callsigns** | 85,049 |
+| **Unique Transmitter Callsigns** | 848,448 |
+| **Unique Receiver Callsigns** | 85,076 |
 | **Unique Grid Pairs** | 694K |
 
 ---
@@ -46,16 +46,16 @@ unit. Ingest to ClickHouse (`pskr.bronze`) runs hourly.
 
 | Mode | Spots | Pct |
 |------|-------|-----|
-| FT8 | 3.78B | 92.17% |
-| WSPR | 170.9M | 4.17% |
-| FT4 | 102.5M | 2.5% |
+| FT8 | 3.78B | 92.16% |
+| WSPR | 171.1M | 4.17% |
+| FT4 | 102.6M | 2.5% |
 | CW | 20.7M | 0.5% |
 | JS8 | 13.6M | 0.33% |
 | VARAC | 7.7M | 0.19% |
 | FT2 | 5.0M | 0.12% |
-| RTTY | 453,623 | 0.01% |
-| FREEDV | 230,641 | 0.01% |
-| JT65 | 65,615 | 0.0% |
+| RTTY | 453,664 | 0.01% |
+| FREEDV | 230,862 | 0.01% |
+| JT65 | 65,626 | 0.0% |
 
 ---
 
@@ -63,14 +63,14 @@ unit. Ingest to ClickHouse (`pskr.bronze`) runs hourly.
 
 | Band | Spots | Pct of Total |
 |------|-------|-------------|
-| 20m | 1.44B | 35.23% |
-| 40m | 734.8M | 17.92% |
-| 15m | 577.0M | 14.07% |
-| 17m | 421.2M | 10.27% |
-| 30m | 318.9M | 7.78% |
-| 10m | 296.9M | 7.24% |
+| 20m | 1.45B | 35.24% |
+| 40m | 735.3M | 17.92% |
+| 15m | 577.4M | 14.07% |
+| 17m | 421.6M | 10.27% |
+| 30m | 319.2M | 7.78% |
+| 10m | 297.0M | 7.24% |
 | 80m | 139.8M | 3.41% |
-| 12m | 109.0M | 2.66% |
+| 12m | 109.1M | 2.66% |
 | 160m | 19.2M | 0.47% |
 
 ---
