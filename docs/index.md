@@ -26,9 +26,9 @@ For technical details on the model and methodology, see
 
 ![SFI](https://img.shields.io/badge/SFI_145-Elevated-2ea043?style=flat-square)
 ![Kp](https://img.shields.io/badge/Kp_0.0-Quiet-teal?style=flat-square)
-![Conditions](https://img.shields.io/badge/Conditions-Quiet-teal?style=flat-square)
+![Conditions](https://img.shields.io/badge/Conditions-Quiet_+_Radio_Blackout-teal?style=flat-square)
 
-*Updated 15:00 UTC · NOAA SWPC*
+*Updated 18:00 UTC · NOAA SWPC*
 
 ---
 
@@ -39,15 +39,15 @@ RBN archives lag ~24 hours; zeroes indicate no data in the window, not band clos
 
 | Band | WSPR Spots | RBN Spots | PSKR Spots | Peak SNR | Status |
 |------|-----------|-----------|------------|----------|--------|
-| 10m | 0 | 0 | 663,770 | +59 dB | Strong |
-| 12m | 0 | 0 | 279,856 | +45 dB | Strong |
-| 15m | 0 | 0 | 5.6M | +87 dB | Strong |
-| 17m | 0 | 0 | 4.5M | +66 dB | Strong |
-| 20m | 0 | 0 | 12.7M | +68 dB | Strong |
-| 30m | 0 | 0 | 1.8M | +57 dB | Strong |
-| 40m | 0 | 0 | 3.6M | +70 dB | Strong |
-| 80m | 0 | 0 | 369,564 | +53 dB | Strong |
-| 160m | 0 | 0 | 18,351 | +55 dB | Open |
+| 10m | 0 | 2,381 | 480,230 | +53 dB | Strong |
+| 12m | 0 | 588 | 281,661 | +45 dB | Strong |
+| 15m | 0 | 9,468 | 5.5M | +87 dB | Strong |
+| 17m | 0 | 6,897 | 4.4M | +87 dB | Strong |
+| 20m | 0 | 53,779 | 12.8M | +84 dB | Strong |
+| 30m | 0 | 10,062 | 1.8M | +57 dB | Strong |
+| 40m | 0 | 25,492 | 3.6M | +70 dB | Strong |
+| 80m | 0 | 3,486 | 366,964 | +53 dB | Strong |
+| 160m | 0 | 1,551 | 18,301 | +56 dB | Open |
 
 ---
 
@@ -56,10 +56,10 @@ RBN archives lag ~24 hours; zeroes indicate no data in the window, not band clos
 | Source | Latest Date | Total Rows | Status |
 |--------|------------|------------|--------|
 | WSPR | 1970-01-01 | 11.48B | 20620 days behind |
-| RBN | 2026-06-14 | 2.33B | 2 days behind |
+| RBN | 2026-06-15 | 2.33B | Current |
 | PSK Reporter | 2026-06-16 | 4.18B | Live |
 | Contest | Archive | 234.3M | Static |
-| Solar | 2026-06-16 | 77,788 | Live |
+| Solar | 2026-06-16 | 77,550 | Live |
 
 ---
 
