@@ -28,7 +28,7 @@ For technical details on the model and methodology, see
 ![Kp](https://img.shields.io/badge/Kp_0.0-Quiet-teal?style=flat-square)
 ![Conditions](https://img.shields.io/badge/Conditions-Quiet-teal?style=flat-square)
 
-*Updated 18:00 UTC · NOAA SWPC*
+*Updated 21:00 UTC · NOAA SWPC*
 
 ---
 
@@ -39,15 +39,15 @@ RBN archives lag ~24 hours; zeroes indicate no data in the window, not band clos
 
 | Band | WSPR Spots | RBN Spots | PSKR Spots | Peak SNR | Status |
 |------|-----------|-----------|------------|----------|--------|
-| 10m | 0 | 2,221 | 481,707 | +51 dB | Strong |
-| 12m | 0 | 562 | 227,630 | +56 dB | Strong |
-| 15m | 0 | 15,375 | 5.0M | +87 dB | Strong |
-| 17m | 0 | 6,547 | 4.5M | +87 dB | Strong |
-| 20m | 0 | 72,006 | 12.4M | +87 dB | Strong |
-| 30m | 0 | 7,156 | 2.1M | +56 dB | Strong |
-| 40m | 0 | 30,387 | 3.4M | +85 dB | Strong |
-| 80m | 0 | 7,302 | 313,906 | +54 dB | Strong |
-| 160m | 0 | 910 | 19,534 | +56 dB | Open |
+| 10m | 0 | 845 | 522,718 | +51 dB | Strong |
+| 12m | 0 | 184 | 232,554 | +61 dB | Strong |
+| 15m | 0 | 1,896 | 5.0M | +87 dB | Strong |
+| 17m | 0 | 2,011 | 4.5M | +87 dB | Strong |
+| 20m | 0 | 19,546 | 12.2M | +87 dB | Strong |
+| 30m | 0 | 1,498 | 1.9M | +56 dB | Strong |
+| 40m | 0 | 7,787 | 3.2M | +87 dB | Strong |
+| 80m | 0 | 1,239 | 258,462 | +54 dB | Strong |
+| 160m | 0 | 128 | 16,622 | +56 dB | Open |
 
 ---
 
@@ -59,7 +59,7 @@ RBN archives lag ~24 hours; zeroes indicate no data in the window, not band clos
 | RBN | 2026-06-17 | 2.33B | Current |
 | PSK Reporter | 2026-06-18 | 4.25B | Live |
 | Contest | Archive | 234.3M | Static |
-| Solar | 2026-06-18 | 77,566 | Live |
+| Solar | 2026-06-18 | 77,812 | Live |
 
 ---
 
