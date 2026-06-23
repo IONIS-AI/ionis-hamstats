@@ -42,6 +42,6 @@ Kp, and SSN attached at the time of measurement.
 | Source | Latest Ingested | Total Rows | Status |
 |--------|----------------|------------|--------|
 | WSPR | 1970-01-01 | 11.48B | 20627 days behind |
-| RBN | 2026-06-21 | 2.33B | 2 days behind |
+| RBN | 2026-06-22 | 2.33B | Current |
 | PSK Reporter | 2026-06-23 | 4.40B | Live |
 | Contest | Archive | 234.3M | Static |
