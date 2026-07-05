@@ -26,9 +26,9 @@ For technical details on the model and methodology, see
 
 ![SFI](https://img.shields.io/badge/SFI_145-Elevated-2ea043?style=flat-square)
 ![Kp](https://img.shields.io/badge/Kp_0.0-Quiet-teal?style=flat-square)
-![Conditions](https://img.shields.io/badge/Conditions-Quiet-teal?style=flat-square)
+![Conditions](https://img.shields.io/badge/Conditions-Quiet_+_Radio_Blackout-teal?style=flat-square)
 
-*Updated 15:00 UTC · NOAA SWPC*
+*Updated 18:00 UTC · NOAA SWPC*
 
 ---
 
@@ -39,15 +39,15 @@ RBN archives lag ~24 hours; zeroes indicate no data in the window, not band clos
 
 | Band | WSPR Spots | RBN Spots | PSKR Spots | Peak SNR | Status |
 |------|-----------|-----------|------------|----------|--------|
-| 10m | 0 | 0 | 1.2M | +56 dB | Strong |
-| 12m | 0 | 0 | 180,062 | +51 dB | Strong |
-| 15m | 0 | 0 | 2.3M | +68 dB | Strong |
-| 17m | 0 | 0 | 1.2M | +67 dB | Strong |
-| 20m | 0 | 0 | 12.3M | +66 dB | Strong |
-| 30m | 0 | 0 | 1.8M | +50 dB | Strong |
-| 40m | 0 | 0 | 4.5M | +65 dB | Strong |
-| 80m | 0 | 0 | 495,956 | +56 dB | Strong |
-| 160m | 0 | 0 | 18,937 | +47 dB | Open |
+| 10m | 0 | 2,524 | 1.3M | +56 dB | Strong |
+| 12m | 0 | 227 | 235,272 | +51 dB | Strong |
+| 15m | 0 | 5,128 | 2.6M | +68 dB | Strong |
+| 17m | 0 | 2,548 | 1.5M | +69 dB | Strong |
+| 20m | 0 | 55,292 | 12.3M | +74 dB | Strong |
+| 30m | 0 | 9,177 | 1.7M | +64 dB | Strong |
+| 40m | 0 | 70,062 | 4.4M | +69 dB | Strong |
+| 80m | 0 | 48,921 | 491,977 | +69 dB | Strong |
+| 160m | 0 | 5,516 | 18,829 | +63 dB | Open |
 
 ---
 
@@ -56,10 +56,10 @@ RBN archives lag ~24 hours; zeroes indicate no data in the window, not band clos
 | Source | Latest Date | Total Rows | Status |
 |--------|------------|------------|--------|
 | WSPR | 1970-01-01 | 11.48B | 20639 days behind |
-| RBN | 2026-07-03 | 2.34B | 2 days behind |
+| RBN | 2026-07-04 | 2.34B | Current |
 | PSK Reporter | 2026-07-05 | 4.76B | Live |
 | Contest | Archive | 234.3M | Static |
-| Solar | 2026-07-05 | 77,940 | Live |
+| Solar | 2026-07-05 | 77,702 | Live |
 
 ---
 
