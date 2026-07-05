@@ -68,4 +68,4 @@ own. No API rate limits, no subscription fees, no vendor lock-in.
 | RBN | 2.34B | 2026-07-03 |
 | PSK Reporter | 4.74B | 2026-07-04 |
 | Contest | 234.3M | 2088-11-30 |
-| Solar | 77,940 | 2026-07-04 |
+| Solar | 77,698 | 2026-07-04 |
