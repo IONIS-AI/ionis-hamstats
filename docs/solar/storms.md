@@ -7,7 +7,7 @@ description: >-
 
 # Storm Impact Analysis
 
-*Updated 21:00 UTC 2026-07-06*
+*Updated 00:00 UTC 2026-07-07*
 
 This page shows measured SNR degradation during geomagnetic storms. All values
 come from actual WSPR signal measurements joined against Kp index at daily
@@ -25,8 +25,6 @@ filtered to ionospheric paths (> 500 km).
 | Storm Date (UTC) | Peak Kp | Classification |
 |------------------|---------|----------------|
 | 2026-07-04 | 7.33 | ![G3 Strong](https://img.shields.io/badge/G3_Strong-red?style=flat-square) |
-| 2026-06-25 | 5.0 | ![G1 Minor](https://img.shields.io/badge/G1_Minor-orange?style=flat-square) |
-| 2026-06-11 | 5.0 | ![G1 Minor](https://img.shields.io/badge/G1_Minor-orange?style=flat-square) |
 | 2026-04-03 | 6.67 | ![G2 Moderate](https://img.shields.io/badge/G2_Moderate-orange?style=flat-square) |
 | 2026-04-02 | 6.0 | ![G2 Moderate](https://img.shields.io/badge/G2_Moderate-orange?style=flat-square) |
 | 2026-03-25 | 5.0 | ![G1 Minor](https://img.shields.io/badge/G1_Minor-orange?style=flat-square) |
@@ -44,6 +42,8 @@ filtered to ionospheric paths (> 500 km).
 | 2026-01-20 | 7.67 | ![G3 Strong](https://img.shields.io/badge/G3_Strong-red?style=flat-square) |
 | 2026-01-19 | 8.67 | ![G4 Severe](https://img.shields.io/badge/G4_Severe-red?style=flat-square) |
 | 2026-01-17 | 5.0 | ![G1 Minor](https://img.shields.io/badge/G1_Minor-orange?style=flat-square) |
+| 2026-01-16 | 5.0 | ![G1 Minor](https://img.shields.io/badge/G1_Minor-orange?style=flat-square) |
+| 2026-01-11 | 5.33 | ![G1 Minor](https://img.shields.io/badge/G1_Minor-orange?style=flat-square) |
 
 ---
 
@@ -64,7 +64,7 @@ the last 2 years. Consecutive storm days are merged into single events.
 | 10m | 24 | 24 | 57 |
 | 15m | 24 | 24 | 57 |
 | 20m | 24 | 24 | 57 |
-| 40m | 24 | 34 | 57 |
+| 40m | 24 | 24 | 57 |
 | 80m | 24 | 24 | 55 |
 | 160m | 24 | 34 | 57 |
 
@@ -78,7 +78,7 @@ recover within 7 days are excluded.*
 
 | Year | Kp>=5 Days | Kp>=7 Days | Peak Kp | Cycle Phase |
 |------|-----------|-----------|---------|-------------|
-| 2026 | 24 | 6 | 8.7 | Active |
+| 2026 | 22 | 6 | 8.7 | Active |
 | 2025 | 62 | 8 | 8.7 | Maximum |
 | 2024 | 36 | 13 | 9.0 | Maximum |
 | 2023 | 41 | 5 | 8.3 | Maximum |
