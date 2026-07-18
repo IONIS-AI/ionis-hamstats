@@ -9,9 +9,9 @@ description: >-
 
 ![SFI](https://img.shields.io/badge/SFI_145-Elevated-2ea043?style=flat-square)
 ![Kp](https://img.shields.io/badge/Kp_0.0-Quiet-teal?style=flat-square)
-![Conditions](https://img.shields.io/badge/Conditions-Quiet_+_Radio_Blackout-teal?style=flat-square)
+![Conditions](https://img.shields.io/badge/Conditions-Quiet-teal?style=flat-square)
 
-*Updated 03:00 UTC 2026-07-18 · NOAA SWPC*
+*Updated 06:00 UTC 2026-07-18 · NOAA SWPC*
 
 Solar indices sourced from NOAA SWPC (`wspr.live_conditions`) updated every 15
 minutes. SFI is published once daily (~20:00 UTC from Penticton, BC). Kp is
@@ -28,12 +28,12 @@ updated every 3 hours.
 | Date | SFI | Change |
 |------|-----|--------|
 | 2026-07-11 | 112 | — |
-| 2026-07-12 | 107 | -5 |
+| 2026-07-12 | 107 | -4 |
 | 2026-07-13 | 103 | -4 |
 | 2026-07-14 | 100 | -3 |
 | 2026-07-15 | 100 | 0 |
 | 2026-07-16 | 101 | +1 |
-| 2026-07-17 | 105 | +4 |
+| 2026-07-17 | 105 | +3 |
 
 ---
 
