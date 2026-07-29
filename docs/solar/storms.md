@@ -7,7 +7,7 @@ description: >-
 
 # Storm Impact Analysis
 
-*Updated 15:00 UTC 2026-07-29*
+*Updated 18:00 UTC 2026-07-29*
 
 This page shows measured SNR degradation during geomagnetic storms. All values
 come from actual WSPR signal measurements joined against Kp index at daily
@@ -64,7 +64,7 @@ the last 2 years. Consecutive storm days are merged into single events.
 | 10m | 24 | 24 | 56 |
 | 15m | 24 | 24 | 56 |
 | 20m | 24 | 24 | 56 |
-| 40m | 24 | 48 | 56 |
+| 40m | 24 | 38 | 55 |
 | 80m | 24 | 24 | 55 |
 | 160m | 24 | 48 | 56 |
 
