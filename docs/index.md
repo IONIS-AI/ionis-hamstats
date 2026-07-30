@@ -26,9 +26,9 @@ For technical details on the model and methodology, see
 
 ![SFI](https://img.shields.io/badge/SFI_145-Elevated-2ea043?style=flat-square)
 ![Kp](https://img.shields.io/badge/Kp_0.0-Quiet-teal?style=flat-square)
-![Conditions](https://img.shields.io/badge/Conditions-Quiet-teal?style=flat-square)
+![Conditions](https://img.shields.io/badge/Conditions-Quiet_+_Radio_Blackout-teal?style=flat-square)
 
-*Updated 21:00 UTC · NOAA SWPC*
+*Updated 00:00 UTC · NOAA SWPC*
 
 ---
 
@@ -39,15 +39,15 @@ RBN archives lag ~24 hours; zeroes indicate no data in the window, not band clos
 
 | Band | WSPR Spots | RBN Spots | PSKR Spots | Peak SNR | Status |
 |------|-----------|-----------|------------|----------|--------|
-| 10m | 0 | 529 | 690,620 | +50 dB | Strong |
-| 12m | 0 | 227 | 284,865 | +50 dB | Strong |
-| 15m | 0 | 1,290 | 5.3M | +67 dB | Strong |
-| 17m | 0 | 2,590 | 4.4M | +62 dB | Strong |
-| 20m | 0 | 16,506 | 11.5M | +87 dB | Strong |
-| 30m | 0 | 2,478 | 1.8M | +52 dB | Strong |
-| 40m | 0 | 6,984 | 3.0M | +69 dB | Strong |
-| 80m | 0 | 1,259 | 264,247 | +87 dB | Strong |
-| 160m | 0 | 195 | 20,354 | +67 dB | Open |
+| 10m | 0 | 0 | 802,412 | +50 dB | Strong |
+| 12m | 0 | 0 | 278,112 | +43 dB | Strong |
+| 15m | 0 | 0 | 5.5M | +67 dB | Strong |
+| 17m | 0 | 0 | 4.8M | +62 dB | Strong |
+| 20m | 0 | 0 | 11.7M | +87 dB | Strong |
+| 30m | 0 | 0 | 1.8M | +59 dB | Strong |
+| 40m | 0 | 0 | 3.0M | +58 dB | Strong |
+| 80m | 0 | 0 | 262,453 | +87 dB | Strong |
+| 160m | 0 | 0 | 20,439 | +67 dB | Open |
 
 ---
 
@@ -55,11 +55,11 @@ RBN archives lag ~24 hours; zeroes indicate no data in the window, not band clos
 
 | Source | Latest Date | Total Rows | Status |
 |--------|------------|------------|--------|
-| WSPR | 1970-01-01 | 11.48B | 20663 days behind |
-| RBN | 2026-07-28 | 2.35B | Current |
-| PSK Reporter | 2026-07-29 | 5.41B | Live |
+| WSPR | 1970-01-01 | 11.48B | 20664 days behind |
+| RBN | 2026-07-28 | 2.35B | 2 days behind |
+| PSK Reporter | 2026-07-29 | 5.41B | Current |
 | Contest | Archive | 234.3M | Static |
-| Solar | 2026-07-29 | 78,140 | Live |
+| Solar | 2026-07-29 | 77,898 | Current |
 
 ---
 
