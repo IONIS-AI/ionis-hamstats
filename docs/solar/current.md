@@ -11,7 +11,7 @@ description: >-
 ![Kp](https://img.shields.io/badge/Kp_0.0-Quiet-teal?style=flat-square)
 ![Conditions](https://img.shields.io/badge/Conditions-Quiet-teal?style=flat-square)
 
-*Updated 06:00 UTC 2026-08-12 · NOAA SWPC*
+*Updated 09:00 UTC 2026-08-12 · NOAA SWPC*
 
 Solar indices sourced from NOAA SWPC (`wspr.live_conditions`) updated every 15
 minutes. SFI is published once daily (~20:00 UTC from Penticton, BC). Kp is
@@ -27,11 +27,11 @@ updated every 3 hours.
 
 | Date | SFI | Change |
 |------|-----|--------|
-| 2026-08-05 | 108 | — |
+| 2026-08-05 | 107 | — |
 | 2026-08-06 | 101 | -6 |
-| 2026-08-07 | 97 | -4 |
-| 2026-08-08 | 94 | -3 |
-| 2026-08-09 | 94 | 0 |
+| 2026-08-07 | 96 | -4 |
+| 2026-08-08 | 93 | -2 |
+| 2026-08-09 | 93 | 0 |
 | 2026-08-10 | 95 | +1 |
 | 2026-08-11 | 96 | +1 |
 
@@ -46,8 +46,8 @@ conditions — see [Storm Impact](storms.md) for measured SNR effects.
 |------|--------|-------------|-----------|
 | 2026-08-05 | 1.67 | ![Quiet](https://img.shields.io/badge/Quiet-teal?style=flat-square) | Normal |
 | 2026-08-06 | 1.33 | ![Quiet](https://img.shields.io/badge/Quiet-teal?style=flat-square) | Normal |
-| 2026-08-07 | 1.67 | ![Quiet](https://img.shields.io/badge/Quiet-teal?style=flat-square) | Normal |
+| 2026-08-07 | 1.33 | ![Quiet](https://img.shields.io/badge/Quiet-teal?style=flat-square) | Normal |
 | 2026-08-08 | 5.67 | ![G1 Storm](https://img.shields.io/badge/G1_Storm-red?style=flat-square) | Degraded |
 | 2026-08-09 | 2.67 | ![Quiet](https://img.shields.io/badge/Quiet-teal?style=flat-square) | Normal |
 | 2026-08-10 | 2.0 | ![Quiet](https://img.shields.io/badge/Quiet-teal?style=flat-square) | Normal |
-| 2026-08-11 | 3.33 | ![Unsettled](https://img.shields.io/badge/Unsettled-ffea00?style=flat-square) | Minor |
+| 2026-08-11 | 3.0 | ![Unsettled](https://img.shields.io/badge/Unsettled-ffea00?style=flat-square) | Minor |
