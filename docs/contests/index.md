@@ -11,7 +11,7 @@ description: >-
 ![Kp](https://img.shields.io/badge/Kp_0.0-Quiet-teal?style=flat-square)
 ![Conditions](https://img.shields.io/badge/Conditions-Quiet-teal?style=flat-square)
 
-*Updated 03:00 UTC 2026-09-03*
+*Updated 06:00 UTC 2026-09-03*
 
 ---
 
@@ -85,6 +85,23 @@ description: >-
 
 ---
 
+### Oceania DX SSB
+**4w 1d** until start
+
+| | |
+|---|---|
+| **Start** | 2026-10-03 06:00 UTC |
+| **End** | 2026-10-04 06:00 UTC |
+| **Duration** | 24 hours |
+| **Modes** | SSB |
+| **Bands** | 160m, 80m, 40m, 20m, 15m, 10m |
+| **Sponsor** | [OCDXC](https://www.oceaniadxcontest.com/) |
+
+*Oceania DX — SSB, VK/ZL stations work the world*
+
+
+---
+
 
 ## Full Year Calendar
 
@@ -94,8 +111,8 @@ description: >-
 | [WAE SSB](https://www.darc.de/der-club/referate/conteste/wae-dx-contest/) | Sep 12–14 | Sat 00:00 | 48 | SSB | 8 days |
 | [SAC CW](https://www.sactest.net/) | Sep 19–20 | Sat 12:00 | 24 | CW | 2w 2d |
 | [CQ WW RTTY](https://www.cqwwrtty.com/) | Sep 26–28 | Sat 00:00 | 48 | RTTY | 3w 1d |
-| [Oceania DX SSB](https://www.oceaniadxcontest.com/) | Oct 03–04 | Sat 06:00 | 24 | SSB | 4w 2d |
-| [Oceania DX CW](https://www.oceaniadxcontest.com/) | Oct 10–11 | Sat 06:00 | 24 | CW | 5w 2d |
+| [Oceania DX SSB](https://www.oceaniadxcontest.com/) | Oct 03–04 | Sat 06:00 | 24 | SSB | 4w 1d |
+| [Oceania DX CW](https://www.oceaniadxcontest.com/) | Oct 10–11 | Sat 06:00 | 24 | CW | 5w 1d |
 | [SAC SSB](https://www.sactest.net/) | Oct 17–18 | Sat 12:00 | 24 | SSB | 6w 2d |
 | [CQ WW SSB](https://www.cqww.com/) | Oct 24–26 | Sat 00:00 | 48 | SSB | 7w 1d |
 | [WAE RTTY](https://www.darc.de/der-club/referate/conteste/wae-dx-contest/) | Nov 14–16 | Sat 00:00 | 48 | RTTY | 10w 1d |
