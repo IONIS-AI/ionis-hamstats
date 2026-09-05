@@ -7,7 +7,7 @@ description: >-
 
 # Storm Impact Analysis
 
-*Updated 18:00 UTC 2026-09-05*
+*Updated 21:00 UTC 2026-09-05*
 
 This page shows measured SNR degradation during geomagnetic storms. All values
 come from actual WSPR signal measurements joined against Kp index at daily
@@ -47,9 +47,22 @@ filtered to ionospheric paths (> 500 km).
 
 ---
 
-## SNR Before / During / After — Most Recent Storm
+## SNR Before / During / After — Storm of 2026-08-18 (Kp 5.33)
 
-*No storms (Kp >= 5) recorded in the last 365 days.*
+*Median WSPR SNR (dB) on ionospheric paths (> 500 km) for the day before,
+day of, and day after peak Kp.*
+
+| Band | Before (dB) | During (dB) | After (dB) | Change | Recovery vs Baseline |
+|------|------------|-------------|-----------|--------|---------------------|
+| 10m | -20 | -19 | -18 | +1 dB | +2 dB |
+| 15m | -20 | -20 | -19 | 0 dB | +1 dB |
+| 20m | -17 | -17 | -18 | 0 dB | -1 dB |
+| 40m | -17 | -17 | -17 | 0 dB | 0 dB |
+| 80m | -20 | -19 | -19 | +1 dB | +1 dB |
+| 160m | -20 | -19 | -20 | +1 dB | 0 dB |
+
+*Change = During − Before (negative = degradation). Recovery vs Baseline =
+After − Before (0 = full recovery, negative = still degraded).*
 
 ---
 
@@ -61,12 +74,12 @@ the last 2 years. Consecutive storm days are merged into single events.
 
 | Band | Median Recovery (hrs) | 90th Percentile (hrs) | Storm Count |
 |------|----------------------|----------------------|-------------|
-| 10m | 24 | 24 | 50 |
-| 15m | 24 | 24 | 50 |
-| 20m | 24 | 24 | 50 |
-| 40m | 24 | 26 | 50 |
-| 80m | 24 | 24 | 50 |
-| 160m | 24 | 24 | 50 |
+| 10m | 24 | 24 | 52 |
+| 15m | 24 | 24 | 52 |
+| 20m | 24 | 24 | 52 |
+| 40m | 24 | 24 | 52 |
+| 80m | 24 | 24 | 52 |
+| 160m | 24 | 24 | 52 |
 
 *Recovery = first day post-storm where band median SNR is within 1 dB of the
 day before the storm. Reported in hours (days × 24). Storms where SNR did not
