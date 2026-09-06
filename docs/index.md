@@ -28,7 +28,7 @@ For technical details on the model and methodology, see
 ![Kp](https://img.shields.io/badge/Kp_0.0-Quiet-teal?style=flat-square)
 ![Conditions](https://img.shields.io/badge/Conditions-Quiet-teal?style=flat-square)
 
-*Updated 18:00 UTC · NOAA SWPC*
+*Updated 21:00 UTC · NOAA SWPC*
 
 ---
 
@@ -39,15 +39,15 @@ RBN archives lag ~24 hours; zeroes indicate no data in the window, not band clos
 
 | Band | WSPR Spots | RBN Spots | PSKR Spots | Peak SNR | Status |
 |------|-----------|-----------|------------|----------|--------|
-| 10m | 36,736 | 1,401 | 382,467 | +56 dB | Strong |
-| 12m | 22,771 | 241 | 437,682 | +56 dB | Strong |
-| 15m | 135,874 | 19,971 | 6.0M | +69 dB | Strong |
-| 17m | 149,831 | 4,052 | 3.4M | +69 dB | Strong |
-| 20m | 951,236 | 140,758 | 12.4M | +94 dB | Strong |
-| 30m | 568,503 | 8,022 | 2.8M | +64 dB | Strong |
-| 40m | 1.2M | 63,026 | 6.5M | +92 dB | Strong |
-| 80m | 355,633 | 14,117 | 997,943 | +70 dB | Strong |
-| 160m | 66,055 | 1,092 | 128,764 | +64 dB | Strong |
+| 10m | 50,080 | 526 | 298,991 | +54 dB | Strong |
+| 12m | 36,251 | 93 | 467,069 | +56 dB | Strong |
+| 15m | 231,257 | 7,697 | 6.3M | +69 dB | Strong |
+| 17m | 229,385 | 1,840 | 3.7M | +69 dB | Strong |
+| 20m | 1.7M | 84,425 | 12.2M | +94 dB | Strong |
+| 30m | 932,115 | 3,342 | 2.7M | +64 dB | Strong |
+| 40m | 2.0M | 43,886 | 6.4M | +92 dB | Strong |
+| 80m | 442,245 | 7,225 | 934,065 | +70 dB | Strong |
+| 160m | 71,075 | 194 | 121,960 | +53 dB | Strong |
 
 ---
 
@@ -57,9 +57,9 @@ RBN archives lag ~24 hours; zeroes indicate no data in the window, not band clos
 |--------|------------|------------|--------|
 | WSPR | 2026-09-06 | 12.59B | Live |
 | RBN | 2026-09-05 | 2.37B | Current |
-| PSK Reporter | 2026-09-06 | 6.60B | Live |
+| PSK Reporter | 2026-09-06 | 6.61B | Live |
 | Contest | Archive | 234.3M | Static |
-| Solar | 2026-09-06 | 78,206 | Live |
+| Solar | 2026-09-06 | 78,452 | Live |
 
 ---
 
@@ -75,7 +75,7 @@ of HF propagation:
 
 - **WSPR** (12.59B spots, 2008–present) — the SNR floor at minimum power
 - **Reverse Beacon Network** (2.37B spots, 2009–present) — CW/RTTY measured signals
-- **PSK Reporter** (6.60B spots, live since Feb 2026) — FT8/digital operational contacts
+- **PSK Reporter** (6.61B spots, live since Feb 2026) — FT8/digital operational contacts
 - **Contest Logs** (234.3M QSOs, 2005–present) — the SSB/RTTY ceiling at contest power
 
 Solar indices (SFI, Kp, SSN) are joined at 3-hour resolution so every
