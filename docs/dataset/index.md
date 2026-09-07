@@ -26,7 +26,7 @@ cleaned it, and joined it with solar indices at 3-hour resolution.
 | RBN (`rbn.bronze`) | 2.37B | 67.3M | Measured (8–29 dB) | 2009–2026 |
 | Contest (`contest.bronze`) | 234.3M | 5.7M | Anchored (+10/0 dB) | 2005–2025 |
 | DXpedition | 3.9M paths | 260K (x50) | Measured | 2009–2025 |
-| PSK Reporter (`pskr.bronze`) | 6.62B (26M/day) | Pending | Measured (-34 to +38 dB) | Feb 2026+ |
+| PSK Reporter (`pskr.bronze`) | 6.63B (26M/day) | Pending | Measured (-34 to +38 dB) | Feb 2026+ |
 | **Total** | **14B+** | **166.9M+** | Full range | 2005–present |
 
 ---
@@ -66,6 +66,6 @@ own. No API rate limits, no subscription fees, no vendor lock-in.
 |--------|-----------|-------------|
 | WSPR | 12.59B | 2026-09-06 |
 | RBN | 2.37B | 2026-09-05 |
-| PSK Reporter | 6.62B | 2026-09-07 |
+| PSK Reporter | 6.63B | 2026-09-07 |
 | Contest | 234.3M | 2088-11-30 |
-| Solar | 78,210 | 2026-09-07 |
+| Solar | 78,454 | 2026-09-07 |
