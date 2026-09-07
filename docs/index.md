@@ -28,7 +28,7 @@ For technical details on the model and methodology, see
 ![Kp](https://img.shields.io/badge/Kp_0.0-Quiet-teal?style=flat-square)
 ![Conditions](https://img.shields.io/badge/Conditions-Quiet-teal?style=flat-square)
 
-*Updated 21:00 UTC · NOAA SWPC*
+*Updated 00:00 UTC · NOAA SWPC*
 
 ---
 
@@ -39,15 +39,15 @@ RBN archives lag ~24 hours; zeroes indicate no data in the window, not band clos
 
 | Band | WSPR Spots | RBN Spots | PSKR Spots | Peak SNR | Status |
 |------|-----------|-----------|------------|----------|--------|
-| 10m | 50,080 | 526 | 298,991 | +54 dB | Strong |
-| 12m | 36,251 | 93 | 467,069 | +56 dB | Strong |
-| 15m | 231,257 | 7,697 | 6.3M | +69 dB | Strong |
-| 17m | 229,385 | 1,840 | 3.7M | +69 dB | Strong |
-| 20m | 1.7M | 84,425 | 12.2M | +94 dB | Strong |
-| 30m | 932,115 | 3,342 | 2.7M | +64 dB | Strong |
-| 40m | 2.0M | 43,886 | 6.4M | +92 dB | Strong |
-| 80m | 442,245 | 7,225 | 934,065 | +70 dB | Strong |
-| 160m | 71,075 | 194 | 121,960 | +53 dB | Strong |
+| 10m | 39,807 | 0 | 257,465 | +54 dB | Strong |
+| 12m | 27,600 | 0 | 469,107 | +56 dB | Strong |
+| 15m | 176,433 | 0 | 6.3M | +69 dB | Strong |
+| 17m | 169,333 | 0 | 3.7M | +69 dB | Strong |
+| 20m | 1.4M | 0 | 11.7M | +94 dB | Strong |
+| 30m | 789,984 | 0 | 2.7M | +64 dB | Strong |
+| 40m | 1.7M | 0 | 6.2M | +92 dB | Strong |
+| 80m | 365,506 | 0 | 953,471 | +52 dB | Strong |
+| 160m | 54,356 | 0 | 123,123 | +53 dB | Strong |
 
 ---
 
@@ -55,11 +55,11 @@ RBN archives lag ~24 hours; zeroes indicate no data in the window, not band clos
 
 | Source | Latest Date | Total Rows | Status |
 |--------|------------|------------|--------|
-| WSPR | 2026-09-06 | 12.59B | Live |
-| RBN | 2026-09-05 | 2.37B | Current |
-| PSK Reporter | 2026-09-06 | 6.61B | Live |
+| WSPR | 2026-09-06 | 12.59B | Current |
+| RBN | 2026-09-05 | 2.37B | 2 days behind |
+| PSK Reporter | 2026-09-06 | 6.61B | Current |
 | Contest | Archive | 234.3M | Static |
-| Solar | 2026-09-06 | 78,452 | Live |
+| Solar | 2026-09-06 | 78,210 | Current |
 
 ---
 

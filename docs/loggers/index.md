@@ -11,7 +11,7 @@ Analysis of **3508** logging software families extracted from
 **495,984** Cabrillo log submissions
 across 15 major HF contests, 2005–2025.
 
-*Updated 21:00 UTC 2026-09-06*
+*Updated 00:00 UTC 2026-09-07*
 
 !!! info "Data Source"
     Every Cabrillo log file contains a `CREATED-BY:` header identifying the logging software.
@@ -333,10 +333,10 @@ Which loggers dominate which contests? Some loggers have strong contest-specific
 | Logger | Submissions | Share |
 |--------|------------|-------|
 | SD (EI5DI) | 6 | 60.0% |
-| MixW | 1 | 10.0% |
+| UCXLog | 1 | 10.0% |
 | Unknown | 1 | 10.0% |
 | N1MM Logger+ | 1 | 10.0% |
-| UCXLog | 1 | 10.0% |
+| MixW | 1 | 10.0% |
 
 ### CQ-WW-RTTY
 
@@ -582,57 +582,57 @@ Do CW operators prefer different loggers than SSB or RTTY operators?
 | UNASSISTED | 27 | 0.01% |
 | NO ASSISTED | 7 | 0.0% |
 | 0 | 4 | 0.0% |
-| NOT ASSISTED | 3 | 0.0% |
-| NA | 3 | 0.0% |
-| NON ASISTED | 3 | 0.0% |
-| NOT-ASSISTED | 3 | 0.0% |
 | NO-ASSISTED | 3 | 0.0% |
-| N | 2 | 0.0% |
+| NA | 3 | 0.0% |
+| NOT-ASSISTED | 3 | 0.0% |
+| NOT ASSISTED | 3 | 0.0% |
+| NON ASISTED | 3 | 0.0% |
+| Y | 2 | 0.0% |
 | ASSISTEN | 2 | 0.0% |
+| SSISTED | 2 | 0.0% |
+| - | 2 | 0.0% |
+| N | 2 | 0.0% |
+| N/A | 2 | 0.0% |
 | ASSITED | 2 | 0.0% |
 | LIMITED TIME OVERLAY | 2 | 0.0% |
-| N/A | 2 | 0.0% |
-| SSISTED | 2 | 0.0% |
-| ASSISTANCE | 2 | 0.0% |
 | ASISTED | 2 | 0.0% |
-| Y | 2 | 0.0% |
-| - | 2 | 0.0% |
-| NON-ASSISTEDS | 1 | 0.0% |
-| NONASSISTED | 1 | 0.0% |
-| NOASS | 1 | 0.0% |
+| ASSISTANCE | 2 | 0.0% |
 | NONE-ASSISTED | 1 | 0.0% |
-| NONE ASISTED | 1 | 0.0% |
-| 24 HOURS | 1 | 0.0% |
+| NOASS | 1 | 0.0% |
+| NON-ASSISTEDS | 1 | 0.0% |
+| ` | 1 | 0.0% |
+| NON ASSIST | 1 | 0.0% |
 | NON ASSISTE | 1 | 0.0% |
 | LIMITED TIME | 1 | 0.0% |
-| 24-HOURS | 1 | 0.0% |
+| NON-ASISTIDA | 1 | 0.0% |
 | 24H NON-ASSISTED | 1 | 0.0% |
-| ONLY ONE | 1 | 0.0% |
-| ASISSTED | 1 | 0.0% |
+| NOT | 1 | 0.0% |
+| CHECKLOG | 1 | 0.0% |
 | ASS | 1 | 0.0% |
 | NON ASISSTED | 1 | 0.0% |
 | NON-ASSITED | 1 | 0.0% |
 | NONE ASSISITED | 1 | 0.0% |
-| UN-ASSISTED | 1 | 0.0% |
-| DX | 1 | 0.0% |
+| HCAT.1.1. | 1 | 0.0% |
+| LOW | 1 | 0.0% |
 | NO ASSISTENCE | 1 | 0.0% |
-| NO ASSISTANCE | 1 | 0.0% |
+| NON -ASSISTED | 1 | 0.0% |
 | NON_ASSISTED | 1 | 0.0% |
-| CHECKLOG | 1 | 0.0% |
-| NON-ASISTIDA | 1 | 0.0% |
+| NO ASSISTANCE | 1 | 0.0% |
+| UN-ASSISTED | 1 | 0.0% |
 | HOME | 1 | 0.0% |
 | NON-ASSSTED | 1 | 0.0% |
-| ` | 1 | 0.0% |
-| HCAT.1.1. | 1 | 0.0% |
-| NOT | 1 | 0.0% |
-| NON ASSIST | 1 | 0.0% |
+| ASISSTED | 1 | 0.0% |
+| ONLY ONE | 1 | 0.0% |
+| 24-HOURS | 1 | 0.0% |
+| 24 HOURS | 1 | 0.0% |
 | NON ASSISSTED | 1 | 0.0% |
 | ASSUSTED | 1 | 0.0% |
-| NON -ASSISTED | 1 | 0.0% |
-| LOW | 1 | 0.0% |
+| NONE ASISTED | 1 | 0.0% |
+| N0 | 1 | 0.0% |
 | 1 | 1 | 0.0% |
 | ASISTIDO | 1 | 0.0% |
-| N0 | 1 | 0.0% |
+| NONASSISTED | 1 | 0.0% |
+| DX | 1 | 0.0% |
 
 
 ---
