@@ -28,7 +28,7 @@ For technical details on the model and methodology, see
 ![Kp](https://img.shields.io/badge/Kp_0.0-Quiet-teal?style=flat-square)
 ![Conditions](https://img.shields.io/badge/Conditions-Quiet-teal?style=flat-square)
 
-*Updated 21:00 UTC · NOAA SWPC*
+*Updated 00:00 UTC · NOAA SWPC*
 
 ---
 
@@ -39,15 +39,15 @@ RBN archives lag ~24 hours; zeroes indicate no data in the window, not band clos
 
 | Band | WSPR Spots | RBN Spots | PSKR Spots | Peak SNR | Status |
 |------|-----------|-----------|------------|----------|--------|
-| 10m | 55,885 | 566 | 434,564 | +63 dB | Strong |
-| 12m | 34,167 | 50 | 199,000 | +47 dB | Strong |
-| 15m | 168,769 | 1,895 | 4.3M | +61 dB | Strong |
-| 17m | 210,937 | 1,089 | 3.0M | +59 dB | Strong |
-| 20m | 1.7M | 16,857 | 11.3M | +80 dB | Strong |
-| 30m | 972,276 | 2,356 | 3.1M | +74 dB | Strong |
-| 40m | 1.9M | 9,351 | 5.2M | +99 dB | Strong |
-| 80m | 423,008 | 1,485 | 801,289 | +56 dB | Strong |
-| 160m | 61,780 | 61 | 81,140 | +55 dB | Strong |
+| 10m | 47,555 | 0 | 525,674 | +63 dB | Strong |
+| 12m | 25,116 | 0 | 190,936 | +47 dB | Strong |
+| 15m | 121,885 | 0 | 4.3M | +56 dB | Strong |
+| 17m | 161,666 | 0 | 3.2M | +59 dB | Strong |
+| 20m | 1.4M | 0 | 11.6M | +80 dB | Strong |
+| 30m | 839,029 | 0 | 3.2M | +74 dB | Strong |
+| 40m | 1.6M | 0 | 5.3M | +80 dB | Strong |
+| 80m | 356,679 | 0 | 913,303 | +56 dB | Strong |
+| 160m | 49,246 | 0 | 104,015 | +58 dB | Strong |
 
 ---
 
@@ -55,11 +55,11 @@ RBN archives lag ~24 hours; zeroes indicate no data in the window, not band clos
 
 | Source | Latest Date | Total Rows | Status |
 |--------|------------|------------|--------|
-| WSPR | 2026-09-07 | 12.60B | Live |
-| RBN | 2026-09-06 | 2.37B | Current |
-| PSK Reporter | 2026-09-07 | 6.64B | Live |
+| WSPR | 2026-09-07 | 12.60B | Current |
+| RBN | 2026-09-06 | 2.37B | 2 days behind |
+| PSK Reporter | 2026-09-07 | 6.64B | Current |
 | Contest | Archive | 234.3M | Static |
-| Solar | 2026-09-07 | 78,218 | Live |
+| Solar | 2026-09-07 | 78,218 | Current |
 
 ---
 
