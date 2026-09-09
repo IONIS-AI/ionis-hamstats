@@ -78,6 +78,22 @@ payload = [{"band": "20m", "count": 1234567, "snr": -12.34, "ratio": 0.5,
 check("a representative row survives exactly", roundtrip(payload), payload)
 check("large integers keep precision", roundtrip({"n": 37848290025})["n"], 37848290025)
 
+print("== NaN is not valid JSON and must not reach PostgreSQL ==")
+# ClickHouse reports a missing aggregate as null; clickhouse_connect hands it to Python as
+# float('nan'); json.dumps emits a bare NaN, which PostgreSQL rejects with
+# "invalid input syntax for type json". The weekly group failed on exactly this after reading
+# 9.4 billion rows.
+import math  # noqa: E402
+src = Path("refresh.py").read_text()
+check("refresh normalises non-finite floats", "v != v or v in (float(\"inf\")" in src, True)
+check("so does publish, which shares the shape",
+      "v != v or v in (float(\"inf\")" in Path("publish.py").read_text(), True)
+try:
+    json.dumps({"x": float("nan")}, cls=JSONEncoder, allow_nan=False)
+    check("a bare NaN would still be rejected by json itself", "no error", "ValueError")
+except ValueError:
+    check("a bare NaN would still be rejected by json itself", True, True)
+
 print("== an unexpected type is an error, not a coercion ==")
 # Silently str()-ing an unknown object is how a ClickHouse type change becomes a wrong page
 # instead of a failed run.
