@@ -20,6 +20,7 @@ import subprocess
 import sys
 from pathlib import Path
 from typing import Optional
+from urllib.parse import quote
 
 import clickhouse_connect
 import yaml
@@ -292,6 +293,32 @@ def load_recaps() -> list[dict]:
     return recaps
 
 
+def sqlite_ro_uri(db_path: Path) -> str:
+    """A URI that opens a contest dataset for reading WITHOUT writing anything.
+
+    The contest datasets live in a directory this process does not own, and the two
+    ARRL-DX files are in WAL mode. A WAL database cannot be read at all without creating
+    its `-shm` shared-memory sidecar, so a plain sqlite3.connect() raised
+
+        attempt to write a readonly database
+
+    and both recaps were dropped on every publish run — reported as a WARNING and then
+    rendered as if the contest simply had no data. `immutable=1` is SQLite's answer for
+    exactly this: a database on read-only media, opened with no locking and no sidecar.
+
+    THE TRAP with immutable=1 is that it ignores any `-wal` file, so a database with
+    un-checkpointed commits would read back silently STALE — correct-looking numbers that
+    are quietly missing the most recent rows. That is worse than the error it replaces, so
+    it is only claimed when there is demonstrably no WAL to ignore. If one is present we
+    fall back to an ordinary read-only open, which needs a writable directory and will
+    fail LOUDLY if it does not have one.
+    """
+    path = quote(str(db_path))
+    if db_path.with_name(db_path.name + "-wal").exists():
+        return f"file:{path}?mode=ro"
+    return f"file:{path}?mode=ro&immutable=1"
+
+
 def load_recap_data(recap: dict) -> dict | None:
     """Load aggregated stats from a contest SQLite file.
 
@@ -310,7 +337,7 @@ def load_recap_data(recap: dict) -> dict | None:
     table = f"{source}_signatures"
 
     try:
-        conn = sqlite3.connect(str(db_path))
+        conn = sqlite3.connect(sqlite_ro_uri(db_path), uri=True)
         conn.row_factory = sqlite3.Row
         data = {}
 
