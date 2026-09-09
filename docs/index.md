@@ -26,9 +26,9 @@ For technical details on the model and methodology, see
 
 ![SFI](https://img.shields.io/badge/SFI_145-Elevated-2ea043?style=flat-square)
 ![Kp](https://img.shields.io/badge/Kp_0.0-Quiet-teal?style=flat-square)
-![Conditions](https://img.shields.io/badge/Conditions-Quiet_+_Radio_Blackout-teal?style=flat-square)
+![Conditions](https://img.shields.io/badge/Conditions-Quiet-teal?style=flat-square)
 
-*Updated 21:00 UTC · NOAA SWPC*
+*Updated 00:00 UTC · NOAA SWPC*
 
 ---
 
@@ -39,15 +39,15 @@ RBN archives lag ~24 hours; zeroes indicate no data in the window, not band clos
 
 | Band | WSPR Spots | RBN Spots | PSKR Spots | Peak SNR | Status |
 |------|-----------|-----------|------------|----------|--------|
-| 10m | 49,763 | 337 | 147,047 | +54 dB | Strong |
-| 12m | 26,545 | 56 | 37,757 | +44 dB | Strong |
-| 15m | 94,332 | 344 | 1.8M | +56 dB | Strong |
-| 17m | 132,032 | 926 | 1.4M | +56 dB | Strong |
-| 20m | 1.2M | 9,492 | 10.9M | +87 dB | Strong |
-| 30m | 744,950 | 2,345 | 2.3M | +57 dB | Strong |
-| 40m | 1.6M | 7,978 | 5.9M | +73 dB | Strong |
-| 80m | 445,471 | 1,479 | 1.2M | +87 dB | Strong |
-| 160m | 67,477 | 1,124 | 64,077 | +58 dB | Strong |
+| 10m | 42,742 | 0 | 160,359 | +54 dB | Strong |
+| 12m | 23,208 | 0 | 41,388 | +44 dB | Strong |
+| 15m | 76,461 | 0 | 1.7M | +56 dB | Strong |
+| 17m | 101,004 | 0 | 1.3M | +56 dB | Strong |
+| 20m | 981,726 | 0 | 10.6M | +87 dB | Strong |
+| 30m | 626,399 | 0 | 2.2M | +62 dB | Strong |
+| 40m | 1.3M | 0 | 6.1M | +73 dB | Strong |
+| 80m | 374,677 | 0 | 1.3M | +87 dB | Strong |
+| 160m | 53,594 | 0 | 75,688 | +55 dB | Strong |
 
 ---
 
@@ -55,11 +55,11 @@ RBN archives lag ~24 hours; zeroes indicate no data in the window, not band clos
 
 | Source | Latest Date | Total Rows | Status |
 |--------|------------|------------|--------|
-| WSPR | 2026-09-08 | 12.60B | Live |
-| RBN | 2026-09-07 | 2.37B | Current |
-| PSK Reporter | 2026-09-08 | 6.67B | Live |
+| WSPR | 2026-09-08 | 12.60B | Current |
+| RBN | 2026-09-07 | 2.37B | 2 days behind |
+| PSK Reporter | 2026-09-08 | 6.67B | Current |
 | Contest | Archive | 234.3M | Static |
-| Solar | 2026-09-08 | 78,226 | Live |
+| Solar | 2026-09-08 | 78,226 | Current |
 
 ---
 
