@@ -1,0 +1,13 @@
+[Unit]
+Description=Ham Stats serving-layer refresh — daily group
+# Lifetime aggregates: 114.0B rows per pass, 92% of the old per-run total, for numbers that move
+# imperceptibly between runs. Runs before the daily publish rather than alongside it.
+
+[Timer]
+OnCalendar=*-*-* 05:30:00 UTC
+RandomizedDelaySec=300
+Persistent=true
+Unit=hamstats-refresh@daily.service
+
+[Install]
+WantedBy=timers.target

@@ -1,0 +1,13 @@
+[Unit]
+Description=Ham Stats serving-layer refresh — live group, hourly
+# solar_current, kp/sfi trends, band_activity_24h, bronze_status. 515M rows per pass, and the
+# only results where a stale read is actually wrong.
+
+[Timer]
+OnCalendar=hourly
+RandomizedDelaySec=120
+Persistent=true
+Unit=hamstats-refresh@live.service
+
+[Install]
+WantedBy=timers.target

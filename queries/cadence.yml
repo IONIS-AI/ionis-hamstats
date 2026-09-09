@@ -1,0 +1,59 @@
+# How often each query is recomputed against ClickHouse, and how stale its result may get
+# before publish complains.
+#
+# THE POINT OF THIS FILE. publish.py ran all 23 queries on every 3-hourly run: 124 billion rows
+# read to return 4,398, about a trillion rows a day. Almost none of that work was needed --
+# `wspr_stats` scans 37.8 billion rows for a lifetime callsign count that changes by a handful
+# per day. Cadence is per query because the queries are not alike, and treating them alike is
+# what made the cost absurd.
+#
+# max_age is the promise this cadence makes to publish. It is deliberately a loose multiple of
+# the refresh interval: a single missed run is normal operations, a result several intervals old
+# means the refresh job is not running and the site should say so rather than serve it silently.
+#
+# groups map to systemd timers: hamstats-refresh@<group>.timer
+
+groups:
+  live:
+    # The only results where a stale read is actually wrong. All cheap.
+    interval: hourly
+    max_age: 6 hours
+    queries:
+      - solar_current           #          1 row read
+      - kp_trend_7d             #      3,654
+      - sfi_trend_7d            #      3,654
+      - band_activity_24h       # 24,518,829
+      - bronze_status           # 490,849,909 -- the freshness table itself
+
+  daily:
+    # Lifetime aggregates over the whole dataset. 114.0B rows read per pass, 92% of the old
+    # total, for numbers that move imperceptibly between runs.
+    interval: daily
+    max_age: 36 hours
+    queries:
+      - wspr_stats              # 37,848,290,025 rows read -> 1 row out
+      - pskr_stats              # 26,961,379,911 -> 1
+      - wspr_band_breakdown     # 25,208,300,245 -> 10
+      - rbn_stats               #  7,109,142,576 -> 1
+      - pskr_mode_breakdown     #  6,685,624,381 -> 10
+      - pskr_band_breakdown     #  6,636,824,637 -> 9
+      - rbn_band_breakdown      #  2,369,035,440 -> 9
+      - contest_stats           #    702,840,489 -> 1
+      - dataset_totals          #    490,849,909 -> 5
+
+  weekly:
+    # Historical. The past does not change; only the last few days of storm_recovery can move,
+    # and a week-old recovery curve is not misleading.
+    interval: weekly
+    max_age: 10 days
+    queries:
+      - storm_recovery          # 9,419,084,500 rows read -> 6 rows out
+      - storm_snr_comparison    #     9,596,889 -> 6
+      - logger_categories       #     1,487,952 -> 76
+      - logger_by_contest       #       991,968 -> 280
+      - logger_by_mode          #       991,968 -> 60
+      - logger_trends           #       976,487 -> 180
+      - logger_market_share     #       495,984 -> 3,508
+      - logger_participation    #       480,503 -> 159
+      - storm_frequency_by_year #        78,230 -> 27
+      - storm_events            #         3,654 -> 20
