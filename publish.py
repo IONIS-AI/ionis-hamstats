@@ -854,15 +854,38 @@ def main():
     # 2. IONIS predictions
     solar = data.get("solar_current", [{}])
     solar_row = solar[0] if solar else {}
-    sfi = float(solar_row.get("solar_flux", 100))
-    kp = float(solar_row.get("kp_index", 3))
-    print("Loading IONIS V22-gamma model...")
-    model, device = load_ionis_model()
-    predictions = generate_predictions(model, device, sfi, kp)
+    # NO DEFAULTS. This was:
+    #
+    #     sfi = float(solar_row.get("solar_flux", 100))
+    #     kp  = float(solar_row.get("kp_index", 3))
+    #
+    # wspr.live_conditions was an ENGINE = Memory table, so it was EMPTY for up to
+    # fifteen minutes after every ClickHouse restart. solar_current then returned no
+    # rows, those defaults fired, and the IONIS model produced a full set of band
+    # predictions from an SFI and Kp nobody measured — published as current conditions
+    # while the indices beside them rendered as em-dashes.
+    #
+    # SFI and Kp are the model's two space-weather inputs. Substituting them does not
+    # degrade the prediction, it fabricates it. Without real values there is nothing
+    # honest to predict, so we do not.
+    raw_sfi, raw_kp = solar_row.get("solar_flux"), solar_row.get("kp_index")
+    sfi = float(raw_sfi) if raw_sfi is not None else None
+    kp = float(raw_kp) if raw_kp is not None else None
+
+    predictions = None
+    model = device = None      # both consumed again by the DXpedition pass below
+    if sfi is None or kp is None:
+        print("  ERROR: no live solar conditions (wspr.live_conditions returned "
+              f"{len(solar)} row(s)); predictions REQUIRE real SFI and Kp and are "
+              "skipped rather than run on substituted values.", file=sys.stderr)
+    else:
+        print("Loading IONIS V22-gamma model...")
+        model, device = load_ionis_model()
+        predictions = generate_predictions(model, device, sfi, kp)
     if predictions:
         print(f"  Generated {len(predictions)} destination predictions")
     else:
-        print("  Predictions skipped (model not available)")
+        print("  Predictions skipped")
 
     # 3. Render templates
     print("Rendering templates...")

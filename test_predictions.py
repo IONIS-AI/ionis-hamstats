@@ -86,6 +86,22 @@ low = publish.generate_predictions(model, device, sfi=70.0, kp=1.0)
 high = publish.generate_predictions(model, device, sfi=200.0, kp=1.0)
 check("a large SFI swing changes the outcome", low == high, False)
 
+print("== solar conditions are never substituted ==")
+# wspr.live_conditions was ENGINE = Memory, so it was EMPTY for up to 15 minutes after
+# every ClickHouse restart. `solar_row.get("solar_flux", 100)` then invented an SFI and
+# Kp and the model published a full band table derived from them. SFI and Kp are the
+# model's two space-weather inputs — substituting them fabricates the prediction rather
+# than degrading it.
+for dead in ('get("solar_flux", 100)', 'get("kp_index", 3)'):
+    check(f"no live default for {dead}", dead in code, False)
+check("the reader asks for the newest row, not an arbitrary one",
+      "ORDER BY updated_at DESC" in Path("queries/solar_current.sql").read_text(), True)
+check("predictions are skipped without a model",
+      publish.generate_predictions(None, None, 110.0, 2.67), None)
+check("DXpedition predictions are skipped without a model",
+      publish.generate_dxpedition_predictions(None, None, [{"callsign": "3Y0X"}], 110.0, 2.67),
+      None)
+
 print()
 if failures:
     print(f"  {len(failures)} FAILED")
