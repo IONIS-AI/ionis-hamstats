@@ -1,0 +1,13 @@
+[Unit]
+Description=Ham Stats publish every 3 hours
+
+[Timer]
+OnCalendar=0/3:00:00
+# Offset from the top of the hour so the live refresh (hourly, +2min jitter) has landed before
+# publish reads it. Without this they race and publish can render the previous hour's data.
+RandomizedDelaySec=180
+Persistent=true
+Unit=hamstats-publish.service
+
+[Install]
+WantedBy=timers.target

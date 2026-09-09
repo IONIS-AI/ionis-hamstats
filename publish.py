@@ -32,10 +32,22 @@ import contest_calendar
 # Constants
 # ---------------------------------------------------------------------------
 
-ROOT = Path(__file__).parent
+# TWO ROOTS, BECAUSE AN RPM SPLITS THEM.
+#
+# ROOT is where the versioned artifacts live -- queries, templates, SQL, static data. Installed
+# to /usr/share/ionis-hamstats and owned by the package, so what runs in production is the
+# reviewed and built copy rather than whatever happens to be in a working tree.
+#
+# CONTENT_DIR is the git checkout the rendered pages are written into and pushed from. That has
+# to stay a working tree because publishing IS a commit to it.
+#
+# Both default to this file's own directory, so running publish.py straight out of a clone
+# behaves exactly as before.
+ROOT = Path(os.environ.get("HAMSTATS_ROOT") or Path(__file__).parent)
+CONTENT_DIR = Path(os.environ.get("HAMSTATS_CONTENT_DIR") or ROOT)
 QUERIES_DIR = ROOT / "queries"
 TEMPLATES_DIR = ROOT / "templates"
-DOCS_DIR = ROOT / "docs"
+DOCS_DIR = CONTENT_DIR / "docs"
 
 # Files never overwritten by templates
 STATIC_PATHS = frozenset({
@@ -855,7 +867,8 @@ def git_push(changed: list[str]):
     if not changed:
         print("No changes to commit.")
         return
-    os.chdir(ROOT)
+    # The content repo, not the install dir — /usr/share is not a git checkout.
+    os.chdir(CONTENT_DIR)
     subprocess.run(["git", "add", "docs/"], check=True)
     result = subprocess.run(["git", "diff", "--cached", "--quiet"])
     if result.returncode == 0:
@@ -1023,7 +1036,7 @@ def main():
         print("Building site with mkdocs...")
         subprocess.run(
             [sys.executable, "-m", "mkdocs", "build"],
-            cwd=ROOT, check=True,
+            cwd=CONTENT_DIR, check=True,
         )
 
     if args.push:

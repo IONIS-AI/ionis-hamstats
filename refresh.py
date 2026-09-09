@@ -27,7 +27,8 @@ import clickhouse_connect
 import psycopg
 import yaml
 
-ROOT = Path(__file__).parent
+# Packaged artifacts (see publish.py). Defaults to this file's directory so a clone works.
+ROOT = Path(os.environ.get("HAMSTATS_ROOT") or Path(__file__).parent)
 QUERIES_DIR = ROOT / "queries"
 CADENCE = QUERIES_DIR / "cadence.yml"
 SCHEMA = ROOT / "sql" / "serving_schema.sql"

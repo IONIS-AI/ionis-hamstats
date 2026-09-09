@@ -1,0 +1,124 @@
+%global debug_package %{nil}
+
+Name:           ionis-hamstats
+Version:        1.0.0
+Release:        1%{?dist}
+Summary:        Ham Stats publishing pipeline — ClickHouse aggregates to a static site
+
+License:        GPL-3.0-or-later
+URL:            https://github.com/IONIS-AI/ionis-hamstats
+Source0:        %{url}/archive/refs/tags/v%{version}.tar.gz#/%{name}-%{version}.tar.gz
+
+BuildArch:      noarch
+BuildRequires:  systemd-rpm-macros
+
+Requires:       git
+Requires:       systemd
+
+%description
+Publishes the Ham Stats site from IONIS data. refresh.py materialises ClickHouse aggregate
+results into a PostgreSQL serving layer on a per-query cadence; publish.py reads that layer,
+renders the site with Jinja2 and pushes it.
+
+The scripts, queries, SQL, templates and systemd units are all owned by this package. They
+were previously hand-copied into /etc/systemd/system and a working tree, owned by nothing --
+so upgrades never touched them and nothing recorded what was deployed. That is the same
+problem ionis-apps 4.0.5 fixed for its own 15 hand-copied units.
+
+Python dependencies (jinja2, psycopg, clickhouse-connect, pyyaml, ionis-validate) are NOT
+expressed as RPM requires: they live in the service virtualenv the units run from, which is
+managed separately. This package owns the code and the units, not the interpreter.
+
+%prep
+%autosetup -n %{name}-%{version}
+
+%build
+# Nothing to compile — Python and SQL.
+
+%install
+install -d -m 0755 %{buildroot}%{_datadir}/%{name}
+install -d -m 0755 %{buildroot}%{_bindir}
+install -d -m 0755 %{buildroot}%{_unitdir}
+install -d -m 0755 %{buildroot}%{_sysconfdir}/hamstats
+
+# Versioned artifacts. Not in a working tree: what runs is what was built and reviewed.
+install -p -m 0644 publish.py           %{buildroot}%{_datadir}/%{name}/
+install -p -m 0644 refresh.py           %{buildroot}%{_datadir}/%{name}/
+install -p -m 0644 contest_calendar.py  %{buildroot}%{_datadir}/%{name}/
+cp -a queries sql templates data        %{buildroot}%{_datadir}/%{name}/
+
+# Thin wrappers so the units do not hardcode an interpreter path or an install layout.
+cat > %{buildroot}%{_bindir}/hamstats-publish <<'EOF'
+#!/bin/bash
+# HAMSTATS_ROOT is the packaged artifacts; HAMSTATS_CONTENT_DIR is the git checkout the
+# rendered pages are committed to. They are different directories on purpose.
+export HAMSTATS_ROOT="${HAMSTATS_ROOT:-/usr/share/ionis-hamstats}"
+export HAMSTATS_CONTENT_DIR="${HAMSTATS_CONTENT_DIR:-/srv/ionis/repos/ionis-hamstats}"
+exec "${HAMSTATS_PYTHON:-/srv/ionis/.venv/bin/python}" \
+     "$HAMSTATS_ROOT/publish.py" "$@"
+EOF
+cat > %{buildroot}%{_bindir}/hamstats-refresh <<'EOF'
+#!/bin/bash
+export HAMSTATS_ROOT="${HAMSTATS_ROOT:-/usr/share/ionis-hamstats}"
+exec "${HAMSTATS_PYTHON:-/srv/ionis/.venv/bin/python}" \
+     "$HAMSTATS_ROOT/refresh.py" "$@"
+EOF
+chmod 0755 %{buildroot}%{_bindir}/hamstats-publish %{buildroot}%{_bindir}/hamstats-refresh
+
+install -p -m 0644 systemd/hamstats-refresh@.service       %{buildroot}%{_unitdir}/
+install -p -m 0644 systemd/hamstats-refresh@live.timer     %{buildroot}%{_unitdir}/
+install -p -m 0644 systemd/hamstats-refresh@daily.timer    %{buildroot}%{_unitdir}/
+install -p -m 0644 systemd/hamstats-refresh@weekly.timer   %{buildroot}%{_unitdir}/
+install -p -m 0644 systemd/hamstats-publish.service        %{buildroot}%{_unitdir}/
+install -p -m 0644 systemd/hamstats-publish.timer          %{buildroot}%{_unitdir}/
+
+%post
+%systemd_post hamstats-refresh@live.timer hamstats-refresh@daily.timer hamstats-refresh@weekly.timer hamstats-publish.timer
+if [ $1 -eq 1 ]; then
+cat <<'EOM'
+------------------------------------------------------------
+ ionis-hamstats installed.
+
+ Before enabling the timers:
+   - /etc/hamstats/db-rw.dsn and db-ro.dsn must exist (Vault Agent renders them)
+   - /srv/ionis/repos/ionis-hamstats must be a checkout the service user can push
+   - the service virtualenv needs: jinja2 psycopg[binary] clickhouse-connect pyyaml
+     ionis-validate
+
+ If /etc/systemd/system/hamstats-publish.service still exists it is the old hand-placed
+ unit and SHADOWS the packaged one. Remove it, then: systemctl daemon-reload
+------------------------------------------------------------
+EOM
+fi
+
+%preun
+%systemd_preun hamstats-refresh@live.timer hamstats-refresh@daily.timer hamstats-refresh@weekly.timer hamstats-publish.timer
+
+%postun
+%systemd_postun_with_restart hamstats-refresh@live.timer hamstats-refresh@daily.timer hamstats-refresh@weekly.timer hamstats-publish.timer
+
+%files
+%license LICENSE
+%doc README.md
+%{_bindir}/hamstats-publish
+%{_bindir}/hamstats-refresh
+%dir %{_datadir}/%{name}
+%{_datadir}/%{name}/*
+%{_unitdir}/hamstats-refresh@.service
+%{_unitdir}/hamstats-refresh@*.timer
+%{_unitdir}/hamstats-publish.service
+%{_unitdir}/hamstats-publish.timer
+%dir %{_sysconfdir}/hamstats
+
+%changelog
+* Wed Sep 09 2026 Greg Beam <ki7mt@yahoo.com> - 1.0.0-1
+- First packaged release. The publish service was a hand-placed unit in
+  /etc/systemd/system running scripts out of a git working tree, owned by no package and no
+  playbook -- so upgrades never touched it and nothing recorded what was deployed. Same
+  problem ionis-apps 4.0.5 fixed for its 15 hand-copied units.
+- Adds the PostgreSQL serving layer: refresh.py materialises ClickHouse aggregates on a
+  per-query cadence (live/daily/weekly) and publish.py reads Postgres instead of scanning
+  123,962,343,315 ClickHouse rows on every 3-hourly run to publish 4,398 of them.
+- Splits HAMSTATS_ROOT (packaged artifacts, /usr/share) from HAMSTATS_CONTENT_DIR (the git
+  checkout pages are committed to). Both default to the script's own directory, so running
+  from a clone is unchanged.

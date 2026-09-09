@@ -12,9 +12,7 @@ Wants=network-online.target
 [Service]
 Type=oneshot
 User=ionis
-WorkingDirectory=/srv/ionis/repos/ionis-hamstats
 Environment=HOME=/srv/ionis
 # The DSN is a file rendered by Vault Agent, never a value in this unit or the environment.
 Environment=HAMSTATS_DB_FILE=/etc/hamstats/db-rw.dsn
-ExecStartPre=/usr/bin/git -C /srv/ionis/repos/ionis-hamstats pull --quiet
-ExecStart=/srv/ionis/.venv/bin/python /srv/ionis/repos/ionis-hamstats/refresh.py --group %i
+ExecStart=/usr/bin/hamstats-refresh --group %i
