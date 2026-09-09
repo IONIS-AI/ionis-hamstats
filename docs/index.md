@@ -28,7 +28,51 @@ For technical details on the model and methodology, see
 ![Kp](https://img.shields.io/badge/Kp_2.67-Quiet-teal?style=flat-square)
 ![Conditions](https://img.shields.io/badge/Conditions-Quiet-teal?style=flat-square)
 
-*Updated 15:06 UTC · NOAA SWPC*
+*Updated 15:23 UTC · NOAA SWPC*
+
+---
+
+## What Can You Work Right Now?
+
+??? info "How do these predictions work?"
+
+    IONIS predicts the **ionospheric SNR floor** for a given path — it has no concept
+    of your station, antenna, power, or receiver. It answers one question:
+    *"Can the ionosphere support this path right now, and how much signal can it carry?"*
+
+    The model considers five things:
+
+    - **Where** are the two grid squares? (distance, azimuth, latitude, midpoint)
+    - **When** is it? (hour of day, season, day/night geometry)
+    - **What frequency?**
+    - **What's the sun doing?** (Solar Flux Index &rarr; MUF lift)
+    - **What's the magnetosphere doing?** (Kp index &rarr; storm penalty)
+
+    From these inputs, the model outputs a predicted SNR in dB. That value is then
+    matched against the minimum decode thresholds for each mode — SSB needs a
+    strong signal (+3 dB), while WSPR can pull signals out of the noise floor (-28 dB).
+
+    The model was trained on 14+ billion observations across thousands of stations
+    with varying power levels and antennas. Because TX power is not a model input,
+    these station differences become noise that the model averages over — what it
+    learned is the ionosphere itself, not any particular operator's setup.
+
+    The predictions represent a typical path — your actual results will vary with
+    your antenna and power, but the path is either open or it isn't.
+
+*IONIS predictions from KI7MT (DN13) for the current solar conditions (SFI 110, Kp 2.67).*
+
+| Destination | 10m | 12m | 15m | 17m | 20m | 30m | 40m | 60m | 80m | 160m |
+|-------------|-----|-----|-----|-----|-----|-----|-----|-----|-----|-----|
+| Europe (JN48) | SSB | SSB | SSB | RTTY | RTTY | RTTY | — | — | — | — |
+| Japan (PM95) | FT8 | FT8 | FT8 | FT8 | CW | CW | CW | CW | — | — |
+| S. America (GG87) | CW | CW | CW | FT8 | FT8 | FT8 | — | — | — | — |
+| Africa (KG33) | CW | CW | CW | CW | CW | FT8 | — | — | — | — |
+| Oceania (QF56) | FT8 | FT8 | FT8 | FT8 | FT8 | FT8 | FT8 | FT8 | — | — |
+| Caribbean (FK68) | CW | CW | FT8 | FT8 | FT8 | FT8 | — | — | — | — |
+
+*Mode thresholds: SSB &ge; +3 dB, RTTY &ge; -5 dB, CW &ge; -15 dB, FT8 &ge; -21 dB, WSPR &ge; -28 dB.
+Predictions update every 3 hours with current solar conditions.*
 
 ---
 
@@ -39,15 +83,15 @@ RBN archives lag ~24 hours; zeroes indicate no data in the window, not band clos
 
 | Band | WSPR Spots | RBN Spots | PSKR Spots | Peak SNR | Status |
 |------|-----------|-----------|------------|----------|--------|
-| 10m | 17,120 | 0 | 171,024 | +54 dB | Strong |
-| 12m | 10,752 | 0 | 68,606 | +43 dB | Strong |
-| 15m | 37,318 | 0 | 2.6M | +52 dB | Strong |
-| 17m | 46,058 | 0 | 1.6M | +56 dB | Strong |
-| 20m | 367,190 | 0 | 9.9M | +87 dB | Strong |
-| 30m | 180,702 | 0 | 2.1M | +62 dB | Strong |
-| 40m | 346,934 | 0 | 6.2M | +98 dB | Strong |
-| 80m | 71,597 | 0 | 1.3M | +87 dB | Strong |
-| 160m | 11,705 | 0 | 86,457 | +55 dB | Strong |
+| 10m | 16,577 | 0 | 170,331 | +54 dB | Strong |
+| 12m | 10,357 | 0 | 67,850 | +43 dB | Strong |
+| 15m | 35,661 | 0 | 2.6M | +52 dB | Strong |
+| 17m | 43,667 | 0 | 1.6M | +56 dB | Strong |
+| 20m | 346,385 | 0 | 9.7M | +87 dB | Strong |
+| 30m | 171,013 | 0 | 2.1M | +62 dB | Strong |
+| 40m | 330,427 | 0 | 6.1M | +98 dB | Strong |
+| 80m | 69,764 | 0 | 1.3M | +87 dB | Strong |
+| 160m | 11,520 | 0 | 86,411 | +55 dB | Strong |
 
 ---
 
