@@ -14,6 +14,9 @@ Type=oneshot
 User=ionis
 WorkingDirectory=/srv/ionis/repos/ionis-hamstats
 Environment=HOME=/srv/ionis
+# Per-host overrides (CH_HOST for a machine on the DAC, HAMSTATS_ROOT for a non-standard
+# checkout). Optional: the leading - means a missing file is not an error.
+EnvironmentFile=-/etc/hamstats/env
 # The DSN is a file rendered by Vault Agent, never a value in this unit or the environment.
 Environment=HAMSTATS_DB_FILE=/etc/hamstats/db-rw.dsn
 # The code runs from this checkout, so pulling before each run is what keeps the host in

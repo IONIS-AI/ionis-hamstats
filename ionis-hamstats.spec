@@ -1,7 +1,7 @@
 %global debug_package %{nil}
 
 Name:           ionis-hamstats
-Version:        1.1.0
+Version:        1.1.1
 Release:        1%{?dist}
 Summary:        Ham Stats publishing pipeline — ClickHouse aggregates to a static site
 
@@ -108,6 +108,14 @@ fi
 %dir %{_sysconfdir}/hamstats
 
 %changelog
+* Wed Sep 09 2026 Greg Beam <ki7mt@yahoo.com> - 1.1.1-1
+- refresh.py defaulted CH_HOST to 10.60.1.1, the Thunderbolt DAC between the 9975 and the M3.
+  That is correct only from those two machines; from publish-1 it is unroutable and every
+  query dies on a 10-second connect timeout that names nothing. Defaults to the LAN address
+  192.168.1.90 now, as publish.py always has.
+- Units read an optional EnvironmentFile=-/etc/hamstats/env, so a host that IS on the DAC can
+  set CH_HOST without editing code or the packaged unit.
+
 * Wed Sep 09 2026 Greg Beam <ki7mt@yahoo.com> - 1.1.0-1
 - Ship the units, not the code. 1.0.0 packaged publish.py, refresh.py, queries, SQL,
   templates and data into /usr/share/ionis-hamstats, which meant every edit on hamstats-1 --

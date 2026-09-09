@@ -14,6 +14,9 @@ Type=oneshot
 User=ionis
 WorkingDirectory=/srv/ionis/repos/ionis-hamstats
 Environment=HOME=/srv/ionis
+# Per-host overrides (CH_HOST for a machine on the DAC, HAMSTATS_ROOT for a non-standard
+# checkout). Optional: the leading - means a missing file is not an error.
+EnvironmentFile=-/etc/hamstats/env
 # Which GitHub App identity git-credential-ghapp mints as. Without it the helper defaults to
 # bob and the push fails with "could not read Username".
 Environment=FLEET_AGENT=hamstats
