@@ -32,10 +32,22 @@ import contest_calendar
 # Constants
 # ---------------------------------------------------------------------------
 
-ROOT = Path(__file__).parent
+# TWO ROOTS, BECAUSE AN RPM SPLITS THEM.
+#
+# ROOT is where the versioned artifacts live -- queries, templates, SQL, static data. Installed
+# to /usr/share/ionis-hamstats and owned by the package, so what runs in production is the
+# reviewed and built copy rather than whatever happens to be in a working tree.
+#
+# CONTENT_DIR is the git checkout the rendered pages are written into and pushed from. That has
+# to stay a working tree because publishing IS a commit to it.
+#
+# Both default to this file's own directory, so running publish.py straight out of a clone
+# behaves exactly as before.
+ROOT = Path(os.environ.get("HAMSTATS_ROOT") or Path(__file__).parent)
+CONTENT_DIR = Path(os.environ.get("HAMSTATS_CONTENT_DIR") or ROOT)
 QUERIES_DIR = ROOT / "queries"
 TEMPLATES_DIR = ROOT / "templates"
-DOCS_DIR = ROOT / "docs"
+DOCS_DIR = CONTENT_DIR / "docs"
 
 # Files never overwritten by templates
 STATIC_PATHS = frozenset({
@@ -144,6 +156,52 @@ def run_query(client, name: str, params: dict | None = None) -> list[dict]:
             d[col] = v
         rows.append(d)
     return rows
+
+
+DB_FILE = os.environ.get("HAMSTATS_DB_FILE", "/etc/hamstats/db.dsn")
+
+
+def load_from_serving() -> tuple[dict, list[str]]:
+    """Read the materialised query results out of PostgreSQL.
+
+    Returns ({query_name: rows}, [problems]).
+
+    This replaces running 24 aggregate queries against ClickHouse on every publish --
+    123,962,343,315 rows read to produce the 4,398 that get published, eight times a day.
+    ClickHouse remains the source of truth; refresh.py materialises these results at a cadence
+    matched to how fast each one actually changes.
+
+    A MISSING result is not an empty one. The old code caught a query failure, set the result to
+    [] and rendered a page with empty tables on a successful exit; here a query that has never
+    been refreshed and one whose result is past its promised max_age are both reported, and the
+    caller turns that into a non-zero exit.
+    """
+    import psycopg
+
+    problems = []
+    data = {}
+    with psycopg.connect(Path(DB_FILE).read_text().strip()) as conn:
+        rows = conn.execute(
+            """
+            SELECT name, payload, refreshed_at, max_age,
+                   now() - refreshed_at        AS age,
+                   now() - refreshed_at > max_age AS stale
+              FROM serving.query_results
+            """
+        ).fetchall()
+    for name, payload, refreshed_at, max_age, age, stale in rows:
+        data[name] = payload
+        if stale:
+            problems.append(
+                f"{name} last refreshed {refreshed_at:%Y-%m-%d %H:%M} UTC "
+                f"({age} old, max {max_age}) — the refresh job for its group is not running")
+
+    expected = {q for g in yaml.safe_load((QUERIES_DIR / "cadence.yml").read_text())["groups"].values()
+                for q in g["queries"]}
+    for missing in sorted(expected - set(data)):
+        problems.append(f"{missing} has never been refreshed — no row in serving.query_results")
+        data[missing] = []
+    return data, problems
 
 
 def run_all_queries(client) -> dict:
@@ -809,7 +867,8 @@ def git_push(changed: list[str]):
     if not changed:
         print("No changes to commit.")
         return
-    os.chdir(ROOT)
+    # The content repo, not the install dir — /usr/share is not a git checkout.
+    os.chdir(CONTENT_DIR)
     subprocess.run(["git", "add", "docs/"], check=True)
     result = subprocess.run(["git", "diff", "--cached", "--quiet"])
     if result.returncode == 0:
@@ -838,18 +897,28 @@ def main():
                     help="ClickHouse host (default: 192.168.1.90)")
     ap.add_argument("--port", type=int, default=8123,
                     help="ClickHouse HTTP port (default: 8123)")
+    ap.add_argument("--from-clickhouse", action="store_true",
+                    help="query ClickHouse directly instead of the PostgreSQL serving layer "
+                         "(the pre-serving-layer path; kept so the two can be compared)")
     args = ap.parse_args()
 
     now = dt.datetime.utcnow()
     print(f"Ham Stats publish — {now.strftime('%Y-%m-%d %H:%M UTC')}")
 
-    # 1. ClickHouse queries
-    print("Connecting to ClickHouse...")
-    client = connect(args.host, args.port)
-    print("Running queries...")
-    data = run_all_queries(client)
+    # 1. Query results
+    stale = []
+    if args.from_clickhouse:
+        print("Connecting to ClickHouse...")
+        client = connect(args.host, args.port)
+        print("Running queries...")
+        data = run_all_queries(client)
+    else:
+        print("Reading the PostgreSQL serving layer...")
+        data, stale = load_from_serving()
     for name, rows in data.items():
         print(f"  {name}: {len(rows)} row(s)")
+    for p in stale:
+        print(f"  STALE: {p}", file=sys.stderr)
 
     # 2. IONIS predictions
     solar = data.get("solar_current", [{}])
@@ -967,7 +1036,7 @@ def main():
         print("Building site with mkdocs...")
         subprocess.run(
             [sys.executable, "-m", "mkdocs", "build"],
-            cwd=ROOT, check=True,
+            cwd=CONTENT_DIR, check=True,
         )
 
     if args.push:
@@ -984,6 +1053,15 @@ def main():
     #
     # Exiting non-zero puts the unit in `failed`, which is a signal that survives not being
     # watched. Set HAMSTATS_PREDICTIONS=off to publish without them deliberately.
+    if stale:
+        # Published first, as with the model: last-good numbers beat no page at all. But the
+        # unit lands in `failed`, because a serving layer nobody notices has gone stale is
+        # strictly worse than no serving layer — it looks current.
+        print(f"ERROR: published with {len(stale)} stale or missing result(s); "
+              "the site is showing data older than its refresh cadence promises.",
+              file=sys.stderr)
+        return 1
+
     if model is None and os.environ.get("HAMSTATS_PREDICTIONS", "on").lower() != "off":
         print("ERROR: published without IONIS predictions — the prediction sections are "
               "missing from the site. Install ionis-validate into this interpreter, or set "

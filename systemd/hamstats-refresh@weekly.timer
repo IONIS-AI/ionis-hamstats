@@ -1,0 +1,12 @@
+[Unit]
+Description=Ham Stats serving-layer refresh — weekly group
+# Historical results; the past does not change. storm_recovery is 9.4B rows of that 9.4B group.
+
+[Timer]
+OnCalendar=Mon *-*-* 04:00:00 UTC
+RandomizedDelaySec=600
+Persistent=true
+Unit=hamstats-refresh@weekly.service
+
+[Install]
+WantedBy=timers.target

@@ -1,0 +1,18 @@
+[Unit]
+# Materialise ClickHouse aggregates into the PostgreSQL serving layer.
+# %i is the cadence group defined in queries/cadence.yml: live | daily | weekly.
+#
+# publish.py used to run all 24 queries against ClickHouse on every 3-hourly run --
+# 123,962,343,315 rows read to publish 4,398. This does that work once per group at a cadence
+# matched to how fast each result changes, and publish reads Postgres.
+Description=Ham Stats serving-layer refresh (%i)
+After=network-online.target
+Wants=network-online.target
+
+[Service]
+Type=oneshot
+User=ionis
+Environment=HOME=/srv/ionis
+# The DSN is a file rendered by Vault Agent, never a value in this unit or the environment.
+Environment=HAMSTATS_DB_FILE=/etc/hamstats/db-rw.dsn
+ExecStart=/usr/bin/hamstats-refresh --group %i

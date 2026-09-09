@@ -1,0 +1,23 @@
+[Unit]
+# Render the Ham Stats site from the PostgreSQL serving layer and push it.
+#
+# This unit was previously hand-written into /etc/systemd/system, owned by no package and no
+# playbook, running publish.py out of a git working tree. It is now packaged.
+Description=Ham Stats publish to GitHub Pages
+After=network-online.target
+Wants=network-online.target
+
+[Service]
+Type=oneshot
+User=ionis
+WorkingDirectory=/srv/ionis/repos/ionis-hamstats
+Environment=HOME=/srv/ionis
+# Which GitHub App identity git-credential-ghapp mints as. Without it the helper defaults to
+# bob and the push fails with "could not read Username".
+Environment=FLEET_AGENT=hamstats
+# Read-only DSN. publish only reads the serving layer; the refresh job holds the writer.
+Environment=HAMSTATS_DB_FILE=/etc/hamstats/db-ro.dsn
+# Pull the CONTENT repo, not the code — the code comes from the package now. This is here so
+# the commit below is a fast-forward when the site repo has moved underneath us.
+ExecStartPre=/usr/bin/git -C /srv/ionis/repos/ionis-hamstats pull --quiet
+ExecStart=/usr/bin/hamstats-publish --push
