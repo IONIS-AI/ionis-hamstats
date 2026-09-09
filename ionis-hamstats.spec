@@ -1,7 +1,7 @@
 %global debug_package %{nil}
 
 Name:           ionis-hamstats
-Version:        1.0.0
+Version:        1.1.0
 Release:        1%{?dist}
 Summary:        Ham Stats publishing pipeline — ClickHouse aggregates to a static site
 
@@ -16,18 +16,23 @@ Requires:       git
 Requires:       systemd
 
 %description
-Publishes the Ham Stats site from IONIS data. refresh.py materialises ClickHouse aggregate
-results into a PostgreSQL serving layer on a per-query cadence; publish.py reads that layer,
-renders the site with Jinja2 and pushes it.
+Systemd units and launchers for the Ham Stats publishing pipeline. refresh.py materialises
+ClickHouse aggregate results into a PostgreSQL serving layer on a per-query cadence;
+publish.py reads that layer, renders the site with Jinja2 and pushes it.
 
-The scripts, queries, SQL, templates and systemd units are all owned by this package. They
-were previously hand-copied into /etc/systemd/system and a working tree, owned by nothing --
-so upgrades never touched them and nothing recorded what was deployed. That is the same
-problem ionis-apps 4.0.5 fixed for its own 15 hand-copied units.
+THIS PACKAGE SHIPS UNITS, NOT CODE. The units were hand-written into /etc/systemd/system,
+owned by no package and no playbook -- upgrades never touched them and nothing recorded what
+was deployed. That is what needed fixing, and it is what this fixes.
 
-Python dependencies (jinja2, psycopg, clickhouse-connect, pyyaml, ionis-validate) are NOT
-expressed as RPM requires: they live in the service virtualenv the units run from, which is
-managed separately. This package owns the code and the units, not the interpreter.
+The code runs from the git checkout on the host that owns it (default
+/srv/ionis/repos/ionis-hamstats, override with HAMSTATS_ROOT). hamstats-1 is where ham-stats
+is developed as well as published, so shipping publish.py inside an RPM would mean a tag, a
+build and an install for every edit made on the machine the file already lives on -- and the
+installed copy would shadow the edited one, silently. Each unit pulls before it runs, so what
+executes is what is committed to main.
+
+Python dependencies (jinja2, psycopg, clickhouse-connect, pyyaml, ionis-validate) live in the
+service virtualenv, managed separately. This package owns the units and the launchers.
 
 %prep
 %autosetup -n %{name}-%{version}
@@ -36,30 +41,24 @@ managed separately. This package owns the code and the units, not the interprete
 # Nothing to compile — Python and SQL.
 
 %install
-install -d -m 0755 %{buildroot}%{_datadir}/%{name}
 install -d -m 0755 %{buildroot}%{_bindir}
 install -d -m 0755 %{buildroot}%{_unitdir}
 install -d -m 0755 %{buildroot}%{_sysconfdir}/hamstats
 
-# Versioned artifacts. Not in a working tree: what runs is what was built and reviewed.
-install -p -m 0644 publish.py           %{buildroot}%{_datadir}/%{name}/
-install -p -m 0644 refresh.py           %{buildroot}%{_datadir}/%{name}/
-install -p -m 0644 contest_calendar.py  %{buildroot}%{_datadir}/%{name}/
-cp -a queries sql templates data        %{buildroot}%{_datadir}/%{name}/
-
-# Thin wrappers so the units do not hardcode an interpreter path or an install layout.
+# Launchers. The code lives in the checkout; these resolve it and the interpreter so the unit
+# files carry no paths of their own, and so an operator can run exactly what the timer runs.
 cat > %{buildroot}%{_bindir}/hamstats-publish <<'EOF'
 #!/bin/bash
-# HAMSTATS_ROOT is the packaged artifacts; HAMSTATS_CONTENT_DIR is the git checkout the
-# rendered pages are committed to. They are different directories on purpose.
-export HAMSTATS_ROOT="${HAMSTATS_ROOT:-/usr/share/ionis-hamstats}"
-export HAMSTATS_CONTENT_DIR="${HAMSTATS_CONTENT_DIR:-/srv/ionis/repos/ionis-hamstats}"
+# The checkout is both the code and the content: publish.py renders into its docs/ and commits
+# there. They were separate when this package shipped the code; they are the same tree now.
+export HAMSTATS_ROOT="${HAMSTATS_ROOT:-/srv/ionis/repos/ionis-hamstats}"
+export HAMSTATS_CONTENT_DIR="${HAMSTATS_CONTENT_DIR:-$HAMSTATS_ROOT}"
 exec "${HAMSTATS_PYTHON:-/srv/ionis/.venv/bin/python}" \
      "$HAMSTATS_ROOT/publish.py" "$@"
 EOF
 cat > %{buildroot}%{_bindir}/hamstats-refresh <<'EOF'
 #!/bin/bash
-export HAMSTATS_ROOT="${HAMSTATS_ROOT:-/usr/share/ionis-hamstats}"
+export HAMSTATS_ROOT="${HAMSTATS_ROOT:-/srv/ionis/repos/ionis-hamstats}"
 exec "${HAMSTATS_PYTHON:-/srv/ionis/.venv/bin/python}" \
      "$HAMSTATS_ROOT/refresh.py" "$@"
 EOF
@@ -102,8 +101,6 @@ fi
 %doc README.md
 %{_bindir}/hamstats-publish
 %{_bindir}/hamstats-refresh
-%dir %{_datadir}/%{name}
-%{_datadir}/%{name}/*
 %{_unitdir}/hamstats-refresh@.service
 %{_unitdir}/hamstats-refresh@*.timer
 %{_unitdir}/hamstats-publish.service
@@ -111,6 +108,17 @@ fi
 %dir %{_sysconfdir}/hamstats
 
 %changelog
+* Wed Sep 09 2026 Greg Beam <ki7mt@yahoo.com> - 1.1.0-1
+- Ship the units, not the code. 1.0.0 packaged publish.py, refresh.py, queries, SQL,
+  templates and data into /usr/share/ionis-hamstats, which meant every edit on hamstats-1 --
+  the host where ham-stats is developed as well as published -- cost a tag, a build and an
+  install, and the installed copy silently shadowed the edited one.
+- HAMSTATS_ROOT now defaults to the checkout (/srv/ionis/repos/ionis-hamstats). Each unit
+  pulls before it runs, so what executes is what is committed to main and the host cannot
+  drift from the branch.
+- The units and launchers stay packaged. Hand-placed units owned by nothing was the actual
+  problem being solved, and it still is.
+
 * Wed Sep 09 2026 Greg Beam <ki7mt@yahoo.com> - 1.0.0-1
 - First packaged release. The publish service was a hand-placed unit in
   /etc/systemd/system running scripts out of a git working tree, owned by no package and no
