@@ -580,6 +580,37 @@ def fmt_utc(d) -> str:
 # Context Building
 # ---------------------------------------------------------------------------
 
+# How stale each source can legitimately be, in days, and why.
+#
+# A single global threshold ("1 day = Current, anything more = behind") marked healthy
+# sources as late. RBN publishes each day's archive the FOLLOWING day and rbn-download.timer
+# fetches at 16:00 UTC with rbn-ingest at 16:30 — so for most of the day the freshest value
+# RBN can possibly have is T-2, and the table reported "2 days behind" every morning with
+# nothing wrong. It flipped to "Current" at 16:30 and back at midnight, daily, forever.
+#
+# Expectations are per source because the sources are not alike: two are live streams, one
+# is a next-day archive, and one is a next-day archive we only fetch once a day.
+LIVE_SOURCES = ("PSK Reporter", "Solar")     # continuous ingest — same-day or it is late
+NEXT_DAY_SOURCES = ("WSPR",)                 # upstream publishes T-1
+
+# RBN's expectation is time-of-day dependent, which a flat number cannot express. Before the
+# fetch+ingest window closes, T-2 is correct; after it, we should have T-1. Using a flat 2
+# would keep the label honest but would also hide a genuinely missed fetch — which is the
+# failure this column exists to surface.
+RBN_INGEST_COMPLETE_HOUR = 17                # rbn-download 16:00, rbn-ingest 16:30, +margin
+
+
+def expected_lag_days(name: str, now: dt.datetime) -> int:
+    """Largest age, in days, that is NORMAL for this source at this moment."""
+    if name in LIVE_SOURCES:
+        return 0
+    if name in NEXT_DAY_SOURCES:
+        return 1
+    if name == "RBN":
+        return 1 if now.hour >= RBN_INGEST_COMPLETE_HOUR else 2
+    return 1                                  # unknown source: the old default
+
+
 def enrich_bronze_status(data: dict, now: dt.datetime):
     """Add latest_display and status fields to bronze_status rows."""
     today = now.date()
@@ -607,12 +638,17 @@ def enrich_bronze_status(data: dict, now: dt.datetime):
                 continue
         row["latest_display"] = d.strftime("%Y-%m-%d")
         delta = (today - d).days
+        expected = expected_lag_days(name, now)
         if delta <= 0:
             row["status"] = "Live"
-        elif delta == 1:
+        elif delta <= expected:
             row["status"] = "Current"
         else:
-            row["status"] = f"{delta} days behind"
+            # Report lateness RELATIVE TO THE EXPECTATION, so "1 day behind" means one day
+            # later than this source should be — not one day past an arbitrary line that
+            # several healthy sources were never going to meet.
+            late = delta - expected
+            row["status"] = f"{late} day behind" if late == 1 else f"{late} days behind"
 
 
 def build_context(
