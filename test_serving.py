@@ -124,6 +124,34 @@ check("and exits non-zero so the timer shows it", "return 1" in rcode, True)
 check("the schema forbids a row_count that disagrees with the payload",
       "row_count = jsonb_array_length(payload)" in Path("sql/serving_schema.sql").read_text(), True)
 
+print("== contest recaps come from the serving layer, not the filesystem ==")
+# publish.py aggregated 1.3 GB of SQLite at render time, off a filesystem that existed only on
+# the 9975. Moving the publisher to publish-1 emptied both contest pages -- and the run still
+# printed "2 recap(s) loaded" and exited 0, because that count counted DEFINITIONS. The pages
+# were live and wrong for 40 minutes.
+pcode = Path("publish.py").read_text()
+check("the render path no longer opens SQLite",
+      "load_recap_data_sqlite(recap)" in code, False)
+check("the SQLite loader survives for the one-time import",
+      "def load_recap_data_sqlite" in pcode, True)
+check("rendering reads the serving layer",
+      "load_recap_from_serving(recap, data)" in code, True)
+# `code` is comment-stripped: the comment explaining the removal names the old wording on
+# purpose, and a check that forbids describing the bug punishes the fix.
+# The exact former print, not the phrase: the docstring and the comment both name the old
+# wording deliberately, and `code` strips comments but not docstrings.
+check("a missing recap is reported as missing, not as a mode",
+      "no dataset (static findings only)" in code, False)
+check("and it fails the run", "stale.append(f\"recap {recap['slug']}" in pcode, True)
+check("the count reports recaps WITH DATA, not definitions",
+      "sum(1 for _, d in recaps if d)" in pcode, True)
+
+rcode = Path("import_recaps.py").read_text()
+check("the import reuses publish's own loader rather than reimplementing it",
+      "from publish import load_recap_data_sqlite" in rcode, True)
+check("a partial import writes nothing",
+      "Nothing written." in rcode, True)
+
 print()
 if failures:
     print(f"  {len(failures)} FAILED")

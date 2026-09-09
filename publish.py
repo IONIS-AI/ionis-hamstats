@@ -225,6 +225,30 @@ def run_all_queries(client) -> dict:
     return data
 
 
+DATASETS = ("band_summary", "hourly_activity", "solar_timeline", "distance_stats")
+
+
+def load_recap_from_serving(recap: dict, data: dict) -> dict | None:
+    """Read a recap's pre-computed datasets out of the serving layer.
+
+    Recaps used to be aggregated from 1.3 GB of SQLite at render time, off a filesystem that
+    existed only on the 9975. That coupling broke every contest page the moment publishing
+    moved hosts: the loader warned, returned None, and the run still reported "2 recap(s)
+    loaded" and exited 0, so empty pages reached the site unnoticed.
+
+    They are static -- the contests are over -- so they are imported once and served forever.
+    Returning None here now means genuinely absent, and the caller treats it as a failure
+    rather than as "static findings only".
+    """
+    got = {}
+    for key in DATASETS:
+        rows = data.get(f"recap:{recap['slug']}:{key}")
+        if rows is None:
+            return None
+        got[key] = rows
+    return got
+
+
 # ---------------------------------------------------------------------------
 # IONIS V22-gamma + PhysicsOverrideLayer Predictions
 # ---------------------------------------------------------------------------
@@ -387,7 +411,13 @@ def sqlite_ro_uri(db_path: Path) -> str:
     return f"file:{path}?mode=ro&immutable=1"
 
 
-def load_recap_data(recap: dict) -> dict | None:
+def load_recap_data_sqlite(recap: dict) -> dict | None:
+    """Aggregate a recap from its SQLite dataset. USED ONLY BY import_recaps.py.
+
+    This is no longer on the render path. publish.py reads recaps from the serving layer;
+    this function exists so the one-time import produces exactly what rendering from SQLite
+    produced, using the same code rather than a reimplementation of it.
+    """
     """Load aggregated stats from a contest SQLite file.
 
     Returns dict with band_summary, hourly_activity, solar_timeline,
@@ -1002,18 +1032,24 @@ def main():
     if dx_predictions:
         print(f"  Generated predictions for {len(dx_predictions)} DXpeditions")
 
-    # 5. Contest recaps (from SQLite datasets)
+    # 5. Contest recaps — pre-imported into the serving layer, not read from SQLite
     print("Loading contest recaps...")
     recap_defs = load_recaps()
     recaps = []
     for recap in recap_defs:
-        recap_data = load_recap_data(recap)
+        recap_data = load_recap_from_serving(recap, data)
         if recap_data:
             print(f"  {recap['slug']}: {len(recap_data.get('band_summary', []))} bands")
         else:
-            print(f"  {recap['slug']}: no dataset (static findings only)")
+            # NOT "static findings only". That wording made an absent dataset look like a
+            # deliberate mode, and the count below counted DEFINITIONS regardless — so two
+            # empty contest pages published cleanly and nothing said otherwise.
+            print(f"  {recap['slug']}: NOT IMPORTED — page will render without band data",
+                  file=sys.stderr)
+            stale.append(f"recap {recap['slug']} has no data in the serving layer "
+                         f"(run import_recaps.py for it)")
         recaps.append((recap, recap_data))
-    print(f"  {len(recaps)} recap(s) loaded")
+    print(f"  {sum(1 for _, d in recaps if d)} of {len(recaps)} recap(s) have data")
 
     context = build_context(
         data, predictions, now,
