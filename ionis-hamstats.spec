@@ -1,7 +1,7 @@
 %global debug_package %{nil}
 
 Name:           ionis-hamstats
-Version:        1.1.1
+Version:        1.1.2
 Release:        1%{?dist}
 Summary:        Ham Stats publishing pipeline — ClickHouse aggregates to a static site
 
@@ -108,6 +108,15 @@ fi
 %dir %{_sysconfdir}/hamstats
 
 %changelog
+* Wed Sep 09 2026 Greg Beam <ki7mt@yahoo.com> - 1.1.2-1
+- Non-finite floats become null. The weekly refresh read 9.4 billion rows and then failed to
+  write them: storm_snr_comparison.after_snr is null in ClickHouse for a storm too recent to
+  have an "after", but clickhouse_connect hands that to Python as float('nan'), json.dumps
+  emits a bare NaN, and PostgreSQL rejects it -- "invalid input syntax for type json,
+  Token NaN is invalid". null is what the source actually says.
+- Applied to publish.py as well, which shares the row-normalisation shape and was passing the
+  same NaN into templates.
+
 * Wed Sep 09 2026 Greg Beam <ki7mt@yahoo.com> - 1.1.1-1
 - refresh.py defaulted CH_HOST to 10.60.1.1, the Thunderbolt DAC between the 9975 and the M3.
   That is correct only from those two machines; from publish-1 it is unroutable and every

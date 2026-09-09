@@ -151,8 +151,16 @@ def run_query(client, name: str, params: dict | None = None) -> list[dict]:
             elif isinstance(v, str):
                 v = v.rstrip("\x00").strip()
             elif isinstance(v, float):
-                # Round Float32 precision artifacts (e.g. 2.329999 → 2.33)
-                v = round(v, 2)
+                # NON-FINITE FLOATS BECOME null. ClickHouse reports a missing aggregate as JSON
+                # null -- storm_snr_comparison.after_snr is null for a storm too recent to have
+                # an "after" -- but clickhouse_connect hands it to Python as float('nan').
+                # json.dumps then emits a bare NaN, a non-standard extension PostgreSQL rejects:
+                #
+                #     invalid input syntax for type json, Token "NaN" is invalid
+                #
+                # null is what the source says and what the templates already handle. Infinity
+                # gets the same treatment for the same reason.
+                v = None if (v != v or v in (float("inf"), float("-inf"))) else round(v, 2)
             d[col] = v
         rows.append(d)
     return rows
