@@ -33,7 +33,13 @@ QUERIES_DIR = ROOT / "queries"
 CADENCE = QUERIES_DIR / "cadence.yml"
 SCHEMA = ROOT / "sql" / "serving_schema.sql"
 
-CH_HOST = os.environ.get("CH_HOST", "10.60.1.1")
+# LAN address, not the DAC. This defaulted to 10.60.1.1, the Thunderbolt point-to-point link
+# between the 9975 and the M3 — correct only from those two machines. From publish-1 it is
+# unroutable, and the failure is a 10-second connect timeout per query rather than anything
+# that names the cause. publish.py has always defaulted to the LAN address; this did not.
+#
+# Override with CH_HOST for a host that is actually on the DAC, where it is much faster.
+CH_HOST = os.environ.get("CH_HOST", "192.168.1.90")
 CH_PORT = int(os.environ.get("CH_PORT", "8123"))
 DB_FILE = os.environ.get("HAMSTATS_DB_FILE", "/etc/hamstats/db.dsn")
 
