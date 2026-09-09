@@ -1,7 +1,7 @@
 %global debug_package %{nil}
 
 Name:           ionis-hamstats
-Version:        1.1.2
+Version:        1.2.0
 Release:        1%{?dist}
 Summary:        Ham Stats publishing pipeline — ClickHouse aggregates to a static site
 
@@ -108,6 +108,18 @@ fi
 %dir %{_sysconfdir}/hamstats
 
 %changelog
+* Wed Sep 09 2026 Greg Beam <ki7mt@yahoo.com> - 1.2.0-1
+- Contest recaps come from the PostgreSQL serving layer. publish.py aggregated 1.3 GB of
+  SQLite at render time off a filesystem that existed only on the 9975; moving the publisher
+  to publish-1 emptied both contest pages, and the run still reported "2 recap(s) loaded" and
+  exited 0 because that count counted recap DEFINITIONS, not loaded data.
+- import_recaps.py imports them once. Recaps are static -- the contests are over -- so this is
+  not a refresh cadence, it is a one-time import per contest, reusing publish.py's own SQLite
+  loader so the imported data cannot drift from what it replaces.
+- A recap with no data in the serving layer now fails the run instead of rendering a page
+  without its band tables.
+- Retires the last filesystem dependency: nothing reads SQLite at render time on any host.
+
 * Wed Sep 09 2026 Greg Beam <ki7mt@yahoo.com> - 1.1.2-1
 - Non-finite floats become null. The weekly refresh read 9.4 billion rows and then failed to
   write them: storm_snr_comparison.after_snr is null in ClickHouse for a storm too recent to
