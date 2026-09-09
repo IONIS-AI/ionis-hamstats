@@ -96,10 +96,13 @@ WSPR_MEAN_DB = -17.53
 WSPR_STD_DB = 6.7
 
 # Paths to IONIS model components (V22-gamma + PhysicsOverrideLayer)
-_TRAINING_DIR = Path("/mnt/ai-stack/ionis-ai/ionis-training")
-_COMMON_DIR = _TRAINING_DIR / "versions" / "common"
-_V22_CONFIG = _TRAINING_DIR / "versions" / "v22" / "config_v22.json"
-_V22_CHECKPOINT = _TRAINING_DIR / "versions" / "v22" / "ionis_v22_gamma.safetensors"
+# The model, its config and its weights are package data inside ionis-validate, and
+# load_model() finds them itself. There used to be four constants here pointing at
+# /mnt/ai-stack/ionis-ai/ionis-training/versions/{common,v22}/ — a directory that does not
+# exist on this host and has not since roughly 2026-03-16, which is the last time the
+# prediction sections rendered. Hardcoded sibling-repo paths are what rotted; asking the
+# package where its own data lives cannot rot the same way, so they are gone rather than
+# repointed.
 
 # Best decodable mode by SNR threshold (descending)
 MODE_THRESHOLDS = [
@@ -164,17 +167,14 @@ def load_ionis_model():
     """Load IONIS V22-gamma model for CPU inference."""
     try:
         import torch  # noqa: F811
-        sys.path.insert(0, str(_COMMON_DIR))
-        from model import load_model
+        from ionis_validate.model import load_model
         device = torch.device("cpu")
-        model, _config, _meta = load_model(
-            config_path=str(_V22_CONFIG),
-            checkpoint_path=str(_V22_CHECKPOINT),
-            device=device,
-        )
+        # No paths: load_model() auto-discovers config_v22.json and the safetensors
+        # checkpoint from its own package data.
+        model, _config, _meta = load_model(device=device)
         return model, device
     except Exception as e:
-        print(f"  WARNING: IONIS model not available: {e}")
+        print(f"  ERROR: IONIS model unavailable, predictions will be OMITTED: {e}")
         return None, None
 
 
@@ -190,8 +190,9 @@ def generate_predictions(model, device, sfi: float, kp: float) -> list[dict] | N
     if model is None:
         return None
     import torch  # noqa: F811
-    from model import grid4_to_latlon, build_features, haversine_km, BAND_FREQ_HZ, solar_elevation_deg
-    from physics_override import apply_override_to_prediction
+    from ionis_validate.model import (
+        grid4_to_latlon, build_features, haversine_km, BAND_FREQ_HZ, solar_elevation_deg)
+    from ionis_validate.physics_override import apply_override_to_prediction
 
     now = dt.datetime.utcnow()
     hour, month = now.hour, now.month
@@ -236,8 +237,9 @@ def generate_dxpedition_predictions(
     if model is None or not dxpeditions:
         return None
     import torch  # noqa: F811
-    from model import grid4_to_latlon, build_features, haversine_km, BAND_FREQ_HZ, solar_elevation_deg
-    from physics_override import apply_override_to_prediction
+    from ionis_validate.model import (
+        grid4_to_latlon, build_features, haversine_km, BAND_FREQ_HZ, solar_elevation_deg)
+    from ionis_validate.physics_override import apply_override_to_prediction
 
     now = dt.datetime.utcnow()
     hour, month = now.hour, now.month
@@ -950,6 +952,22 @@ def main():
 
     print("Done.")
 
+    # PUBLISH FIRST, THEN COMPLAIN. The data pages are worth shipping even when the model
+    # is down, so this does not abort the run — but a missing model silently removes the
+    # site's headline feature ("What Can You Work Right Now?", the contest prediction table
+    # and the DXpedition bands all sit behind `{% if predictions %}`), and the only trace
+    # was one WARNING line in a log nobody reads. That is how this went unnoticed from
+    # 2026-03-16 until someone happened to read the journal.
+    #
+    # Exiting non-zero puts the unit in `failed`, which is a signal that survives not being
+    # watched. Set HAMSTATS_PREDICTIONS=off to publish without them deliberately.
+    if model is None and os.environ.get("HAMSTATS_PREDICTIONS", "on").lower() != "off":
+        print("ERROR: published without IONIS predictions — the prediction sections are "
+              "missing from the site. Install ionis-validate into this interpreter, or set "
+              "HAMSTATS_PREDICTIONS=off if that is intended.", file=sys.stderr)
+        return 1
+    return 0
+
 
 if __name__ == "__main__":
-    main()
+    sys.exit(main() or 0)
