@@ -7,11 +7,11 @@ description: >-
 
 # Solar Reports
 
-![SFI](https://img.shields.io/badge/SFI_109-Moderate-2ea043?style=flat-square)
-![Kp](https://img.shields.io/badge/Kp_1.33-Quiet-teal?style=flat-square)
+![SFI](https://img.shields.io/badge/SFI_115-Moderate-2ea043?style=flat-square)
+![Kp](https://img.shields.io/badge/Kp_1.0-Quiet-teal?style=flat-square)
 ![Conditions](https://img.shields.io/badge/Conditions-Quiet-teal?style=flat-square)
 
-*Updated 21:01 UTC 2026-09-10 · NOAA SWPC*
+*Updated 00:02 UTC 2026-09-11 · NOAA SWPC*
 
 Solar conditions directly affect HF propagation. These reports correlate real
 solar indices with measured spot data — not theoretical models. Every solar
@@ -35,7 +35,7 @@ resolution.
 
 | Metric | Value | Updated |
 |--------|-------|---------|
-| **SFI** | 109 | 2026-09-10 |
-| **Kp** | 1.33 | 2026-09-10 |
+| **SFI** | 115 | 2026-09-11 |
+| **Kp** | 1.0 | 2026-09-11 |
 
 *Updated every 3 hours from NOAA SWPC.*
