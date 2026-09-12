@@ -25,10 +25,10 @@ For technical details on the model and methodology, see
 [ionis-ai.com](https://ionis-ai.com/).
 
 ![SFI](https://img.shields.io/badge/SFI_110-Moderate-2ea043?style=flat-square)
-![Kp](https://img.shields.io/badge/Kp_1.33-Quiet-teal?style=flat-square)
+![Kp](https://img.shields.io/badge/Kp_2.33-Quiet-teal?style=flat-square)
 ![Conditions](https://img.shields.io/badge/Conditions-Quiet-teal?style=flat-square)
 
-*Updated 06:03 UTC · NOAA SWPC*
+*Updated 09:00 UTC · NOAA SWPC*
 
 ---
 
@@ -60,16 +60,16 @@ For technical details on the model and methodology, see
     The predictions represent a typical path — your actual results will vary with
     your antenna and power, but the path is either open or it isn't.
 
-*IONIS predictions from KI7MT (DN13) for the current solar conditions (SFI 110, Kp 1.33).*
+*IONIS predictions from KI7MT (DN13) for the current solar conditions (SFI 110, Kp 2.33).*
 
 | Destination | 10m | 12m | 15m | 17m | 20m | 30m | 40m | 60m | 80m | 160m |
 |-------------|-----|-----|-----|-----|-----|-----|-----|-----|-----|-----|
-| Europe (JN48) | — | — | — | CW | CW | CW | CW | CW | — | — |
-| Japan (PM95) | — | — | — | RTTY | CW | CW | CW | CW | — | — |
-| S. America (GG87) | — | — | — | FT8 | FT8 | FT8 | FT8 | FT8 | FT8 | FT8 |
+| Europe (JN48) | — | — | — | RTTY | CW | CW | CW | CW | — | — |
+| Japan (PM95) | — | — | — | CW | CW | CW | CW | CW | CW | CW |
+| S. America (GG87) | — | — | — | FT8 | FT8 | FT8 | FT8 | FT8 | — | — |
 | Africa (KG33) | — | — | — | FT8 | FT8 | FT8 | FT8 | FT8 | — | — |
-| Oceania (QF56) | — | — | — | CW | CW | CW | CW | CW | — | — |
-| Caribbean (FK68) | — | — | — | FT8 | FT8 | FT8 | FT8 | FT8 | CW | CW |
+| Oceania (QF56) | — | — | — | FT8 | FT8 | FT8 | FT8 | FT8 | FT8 | FT8 |
+| Caribbean (FK68) | — | — | — | FT8 | FT8 | FT8 | FT8 | FT8 | FT8 | FT8 |
 
 *Mode thresholds: SSB &ge; +3 dB, RTTY &ge; -5 dB, CW &ge; -15 dB, FT8 &ge; -21 dB, WSPR &ge; -28 dB.
 Predictions update every 3 hours with current solar conditions.*
@@ -83,15 +83,15 @@ RBN archives lag ~24 hours; zeroes indicate no data in the window, not band clos
 
 | Band | WSPR Spots | RBN Spots | PSKR Spots | Peak SNR | Status |
 |------|-----------|-----------|------------|----------|--------|
-| 10m | 36,052 | 0 | 109,347 | +50 dB | Strong |
-| 12m | 23,556 | 0 | 141,772 | +49 dB | Strong |
-| 15m | 142,752 | 0 | 5.1M | +68 dB | Strong |
-| 17m | 138,754 | 0 | 3.6M | +66 dB | Strong |
-| 20m | 1.1M | 0 | 10.8M | +65 dB | Strong |
-| 30m | 544,757 | 0 | 2.9M | +50 dB | Strong |
-| 40m | 1.1M | 0 | 6.5M | +57 dB | Strong |
-| 80m | 223,427 | 0 | 1.1M | +73 dB | Strong |
-| 160m | 21,934 | 0 | 125,555 | +55 dB | Strong |
+| 10m | 29,502 | 0 | 103,787 | +50 dB | Strong |
+| 12m | 20,113 | 0 | 147,906 | +49 dB | Strong |
+| 15m | 130,200 | 0 | 5.1M | +68 dB | Strong |
+| 17m | 126,136 | 0 | 3.5M | +66 dB | Strong |
+| 20m | 914,404 | 0 | 11.0M | +65 dB | Strong |
+| 30m | 428,842 | 0 | 2.7M | +51 dB | Strong |
+| 40m | 876,524 | 0 | 6.7M | +57 dB | Strong |
+| 80m | 151,993 | 0 | 1.2M | +73 dB | Strong |
+| 160m | 15,426 | 0 | 123,684 | +55 dB | Strong |
 
 ---
 
@@ -101,9 +101,9 @@ RBN archives lag ~24 hours; zeroes indicate no data in the window, not band clos
 |--------|------------|------------|--------|
 | WSPR | 2026-09-11 | 12.62B | Current |
 | RBN | 2026-09-10 | 2.37B | Current |
-| PSK Reporter | 2026-09-12 | 6.76B | Live |
+| PSK Reporter | 2026-09-12 | 6.77B | Live |
 | Contest | Archive | 234.3M | Static |
-| Solar | 2026-09-12 | 78,728 | Live |
+| Solar | 2026-09-12 | 78,250 | Live |
 
 ---
 
@@ -119,7 +119,7 @@ of HF propagation:
 
 - **WSPR** (12.62B spots, 2008–present) — the SNR floor at minimum power
 - **Reverse Beacon Network** (2.37B spots, 2009–present) — CW/RTTY measured signals
-- **PSK Reporter** (6.76B spots, live since Feb 2026) — FT8/digital operational contacts
+- **PSK Reporter** (6.77B spots, live since Feb 2026) — FT8/digital operational contacts
 - **Contest Logs** (234.3M QSOs, 2005–present) — the SSB/RTTY ceiling at contest power
 
 Solar indices (SFI, Kp, SSN) are joined at 3-hour resolution so every
