@@ -28,7 +28,7 @@ For technical details on the model and methodology, see
 ![Kp](https://img.shields.io/badge/Kp_2.67-Quiet-teal?style=flat-square)
 ![Conditions](https://img.shields.io/badge/Conditions-Quiet-teal?style=flat-square)
 
-*Updated 00:00 UTC · NOAA SWPC*
+*Updated 03:01 UTC · NOAA SWPC*
 
 ---
 
@@ -64,12 +64,12 @@ For technical details on the model and methodology, see
 
 | Destination | 10m | 12m | 15m | 17m | 20m | 30m | 40m | 60m | 80m | 160m |
 |-------------|-----|-----|-----|-----|-----|-----|-----|-----|-----|-----|
-| Europe (JN48) | CW | CW | CW | CW | CW | CW | RTTY | RTTY | — | — |
-| Japan (PM95) | SSB | RTTY | RTTY | RTTY | CW | CW | — | — | — | — |
-| S. America (GG87) | CW | CW | CW | CW | CW | CW | CW | CW | — | — |
-| Africa (KG33) | FT8 | FT8 | FT8 | FT8 | FT8 | FT8 | FT8 | FT8 | — | — |
-| Oceania (QF56) | CW | CW | CW | CW | CW | FT8 | — | — | — | — |
-| Caribbean (FK68) | CW | CW | CW | CW | CW | CW | CW | CW | — | — |
+| Europe (JN48) | — | — | — | CW | CW | CW | CW | CW | CW | RTTY |
+| Japan (PM95) | SSB | SSB | SSB | RTTY | RTTY | CW | CW | FT8 | — | — |
+| S. America (GG87) | — | — | — | FT8 | FT8 | FT8 | FT8 | FT8 | CW | CW |
+| Africa (KG33) | — | — | — | FT8 | FT8 | FT8 | FT8 | FT8 | FT8 | FT8 |
+| Oceania (QF56) | CW | CW | CW | CW | CW | FT8 | FT8 | FT8 | — | — |
+| Caribbean (FK68) | — | — | — | FT8 | FT8 | FT8 | FT8 | CW | CW | CW |
 
 *Mode thresholds: SSB &ge; +3 dB, RTTY &ge; -5 dB, CW &ge; -15 dB, FT8 &ge; -21 dB, WSPR &ge; -28 dB.
 Predictions update every 3 hours with current solar conditions.*
@@ -83,15 +83,15 @@ RBN archives lag ~24 hours; zeroes indicate no data in the window, not band clos
 
 | Band | WSPR Spots | RBN Spots | PSKR Spots | Peak SNR | Status |
 |------|-----------|-----------|------------|----------|--------|
-| 10m | 79,363 | 100 | 421,882 | +54 dB | Strong |
-| 12m | 49,191 | 15 | 335,775 | +44 dB | Strong |
-| 15m | 241,303 | 301 | 5.0M | +83 dB | Strong |
-| 17m | 238,014 | 256 | 3.4M | +70 dB | Strong |
-| 20m | 1.6M | 4,617 | 10.0M | +63 dB | Strong |
-| 30m | 824,669 | 826 | 2.1M | +56 dB | Strong |
-| 40m | 1.7M | 4,467 | 6.5M | +95 dB | Strong |
-| 80m | 370,189 | 686 | 1.2M | +60 dB | Strong |
-| 160m | 69,585 | 31 | 89,523 | +59 dB | Strong |
+| 10m | 70,599 | 0 | 479,680 | +54 dB | Strong |
+| 12m | 43,873 | 0 | 353,481 | +44 dB | Strong |
+| 15m | 207,418 | 0 | 5.3M | +83 dB | Strong |
+| 17m | 201,131 | 0 | 3.7M | +70 dB | Strong |
+| 20m | 1.3M | 0 | 10.7M | +113 dB | Strong |
+| 30m | 676,738 | 0 | 2.2M | +56 dB | Strong |
+| 40m | 1.4M | 0 | 6.0M | +57 dB | Strong |
+| 80m | 257,985 | 0 | 1.2M | +51 dB | Strong |
+| 160m | 41,947 | 0 | 75,229 | +59 dB | Strong |
 
 ---
 
@@ -101,9 +101,9 @@ RBN archives lag ~24 hours; zeroes indicate no data in the window, not band clos
 |--------|------------|------------|--------|
 | WSPR | 2026-09-14 | 12.64B | Current |
 | RBN | 2026-09-13 | 2.37B | Current |
-| PSK Reporter | 2026-09-14 | 6.85B | 1 day behind |
+| PSK Reporter | 2026-09-15 | 6.86B | Live |
 | Contest | Archive | 234.3M | Static |
-| Solar | 2026-09-14 | 78,274 | 1 day behind |
+| Solar | 2026-09-14 | 78,270 | 1 day behind |
 
 ---
 
@@ -119,7 +119,7 @@ of HF propagation:
 
 - **WSPR** (12.64B spots, 2008–present) — the SNR floor at minimum power
 - **Reverse Beacon Network** (2.37B spots, 2009–present) — CW/RTTY measured signals
-- **PSK Reporter** (6.85B spots, live since Feb 2026) — FT8/digital operational contacts
+- **PSK Reporter** (6.86B spots, live since Feb 2026) — FT8/digital operational contacts
 - **Contest Logs** (234.3M QSOs, 2005–present) — the SSB/RTTY ceiling at contest power
 
 Solar indices (SFI, Kp, SSN) are joined at 3-hour resolution so every

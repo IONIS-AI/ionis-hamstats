@@ -11,7 +11,7 @@ description: >-
 ![Kp](https://img.shields.io/badge/Kp_2.67-Quiet-teal?style=flat-square)
 ![Conditions](https://img.shields.io/badge/Conditions-Quiet-teal?style=flat-square)
 
-*Updated 00:00 UTC 2026-09-15*
+*Updated 03:01 UTC 2026-09-15*
 
 ---
 
@@ -35,12 +35,12 @@ description: >-
 
 | Destination | 10m | 15m | 20m | 40m | 80m | 160m | 
 |-------------|-----|-----|-----|-----|-----|-----|
-| Europe (JN48) | CW | CW | CW | RTTY | — | — | 
-| Japan (PM95) | SSB | RTTY | CW | — | — | — | 
-| S. America (GG87) | CW | CW | CW | CW | — | — | 
-| Africa (KG33) | FT8 | FT8 | FT8 | FT8 | — | — | 
-| Oceania (QF56) | CW | CW | CW | — | — | — | 
-| Caribbean (FK68) | CW | CW | CW | CW | — | — | 
+| Europe (JN48) | — | — | CW | CW | CW | RTTY | 
+| Japan (PM95) | SSB | SSB | RTTY | CW | — | — | 
+| S. America (GG87) | — | — | FT8 | FT8 | CW | CW | 
+| Africa (KG33) | — | — | FT8 | FT8 | FT8 | FT8 | 
+| Oceania (QF56) | CW | CW | CW | FT8 | — | — | 
+| Caribbean (FK68) | — | — | FT8 | FT8 | CW | CW | 
 
 ---
 
@@ -62,12 +62,12 @@ description: >-
 
 | Destination | 10m | 15m | 20m | 40m | 80m | 
 |-------------|-----|-----|-----|-----|-----|
-| Europe (JN48) | CW | CW | CW | RTTY | — | 
-| Japan (PM95) | SSB | RTTY | CW | — | — | 
-| S. America (GG87) | CW | CW | CW | CW | — | 
-| Africa (KG33) | FT8 | FT8 | FT8 | FT8 | — | 
-| Oceania (QF56) | CW | CW | CW | — | — | 
-| Caribbean (FK68) | CW | CW | CW | CW | — | 
+| Europe (JN48) | — | — | CW | CW | CW | 
+| Japan (PM95) | SSB | SSB | RTTY | CW | — | 
+| S. America (GG87) | — | — | FT8 | FT8 | CW | 
+| Africa (KG33) | — | — | FT8 | FT8 | FT8 | 
+| Oceania (QF56) | CW | CW | CW | FT8 | — | 
+| Caribbean (FK68) | — | — | FT8 | FT8 | CW | 
 
 ---
 
@@ -89,12 +89,12 @@ description: >-
 
 | Destination | 10m | 15m | 20m | 40m | 80m | 160m | 
 |-------------|-----|-----|-----|-----|-----|-----|
-| Europe (JN48) | CW | CW | CW | RTTY | — | — | 
-| Japan (PM95) | SSB | RTTY | CW | — | — | — | 
-| S. America (GG87) | CW | CW | CW | CW | — | — | 
-| Africa (KG33) | FT8 | FT8 | FT8 | FT8 | — | — | 
-| Oceania (QF56) | CW | CW | CW | — | — | — | 
-| Caribbean (FK68) | CW | CW | CW | CW | — | — | 
+| Europe (JN48) | — | — | CW | CW | CW | RTTY | 
+| Japan (PM95) | SSB | SSB | RTTY | CW | — | — | 
+| S. America (GG87) | — | — | FT8 | FT8 | CW | CW | 
+| Africa (KG33) | — | — | FT8 | FT8 | FT8 | FT8 | 
+| Oceania (QF56) | CW | CW | CW | FT8 | — | — | 
+| Caribbean (FK68) | — | — | FT8 | FT8 | CW | CW | 
 
 ---
 
@@ -116,12 +116,12 @@ description: >-
 
 | Destination | 10m | 15m | 20m | 40m | 80m | 160m | 
 |-------------|-----|-----|-----|-----|-----|-----|
-| Europe (JN48) | CW | CW | CW | RTTY | — | — | 
-| Japan (PM95) | SSB | RTTY | CW | — | — | — | 
-| S. America (GG87) | CW | CW | CW | CW | — | — | 
-| Africa (KG33) | FT8 | FT8 | FT8 | FT8 | — | — | 
-| Oceania (QF56) | CW | CW | CW | — | — | — | 
-| Caribbean (FK68) | CW | CW | CW | CW | — | — | 
+| Europe (JN48) | — | — | CW | CW | CW | RTTY | 
+| Japan (PM95) | SSB | SSB | RTTY | CW | — | — | 
+| S. America (GG87) | — | — | FT8 | FT8 | CW | CW | 
+| Africa (KG33) | — | — | FT8 | FT8 | FT8 | FT8 | 
+| Oceania (QF56) | CW | CW | CW | FT8 | — | — | 
+| Caribbean (FK68) | — | — | FT8 | FT8 | CW | CW | 
 
 ---
 
