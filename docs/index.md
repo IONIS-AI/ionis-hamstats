@@ -25,10 +25,10 @@ For technical details on the model and methodology, see
 [ionis-ai.com](https://ionis-ai.com/).
 
 ![SFI](https://img.shields.io/badge/SFI_104-Moderate-2ea043?style=flat-square)
-![Kp](https://img.shields.io/badge/Kp_0.67-Quiet-teal?style=flat-square)
+![Kp](https://img.shields.io/badge/Kp_2.33-Quiet-teal?style=flat-square)
 ![Conditions](https://img.shields.io/badge/Conditions-Quiet-teal?style=flat-square)
 
-*Updated 15:02 UTC · NOAA SWPC*
+*Updated 18:02 UTC · NOAA SWPC*
 
 ---
 
@@ -60,16 +60,16 @@ For technical details on the model and methodology, see
     The predictions represent a typical path — your actual results will vary with
     your antenna and power, but the path is either open or it isn't.
 
-*IONIS predictions from KI7MT (DN13) for the current solar conditions (SFI 104, Kp 0.67).*
+*IONIS predictions from KI7MT (DN13) for the current solar conditions (SFI 104, Kp 2.33).*
 
 | Destination | 10m | 12m | 15m | 17m | 20m | 30m | 40m | 60m | 80m | 160m |
 |-------------|-----|-----|-----|-----|-----|-----|-----|-----|-----|-----|
-| Europe (JN48) | SSB | SSB | SSB | SSB | RTTY | RTTY | — | — | — | — |
-| Japan (PM95) | FT8 | FT8 | CW | CW | CW | CW | CW | CW | — | — |
+| Europe (JN48) | RTTY | RTTY | RTTY | RTTY | RTTY | RTTY | RTTY | RTTY | — | — |
+| Japan (PM95) | CW | CW | CW | CW | CW | CW | CW | CW | — | — |
 | S. America (GG87) | CW | CW | CW | CW | CW | FT8 | — | — | — | — |
-| Africa (KG33) | CW | CW | CW | CW | CW | CW | — | — | — | — |
+| Africa (KG33) | CW | CW | CW | CW | CW | CW | CW | CW | — | — |
 | Oceania (QF56) | FT8 | FT8 | FT8 | FT8 | FT8 | FT8 | FT8 | FT8 | — | — |
-| Caribbean (FK68) | CW | CW | CW | CW | FT8 | FT8 | — | — | — | — |
+| Caribbean (FK68) | CW | CW | CW | FT8 | FT8 | FT8 | — | — | — | — |
 
 *Mode thresholds: SSB &ge; +3 dB, RTTY &ge; -5 dB, CW &ge; -15 dB, FT8 &ge; -21 dB, WSPR &ge; -28 dB.
 Predictions update every 3 hours with current solar conditions.*
@@ -83,15 +83,15 @@ RBN archives lag ~24 hours; zeroes indicate no data in the window, not band clos
 
 | Band | WSPR Spots | RBN Spots | PSKR Spots | Peak SNR | Status |
 |------|-----------|-----------|------------|----------|--------|
-| 10m | 34,360 | 0 | 421,881 | +54 dB | Strong |
-| 12m | 26,392 | 0 | 233,500 | +45 dB | Strong |
-| 15m | 113,317 | 0 | 3.7M | +83 dB | Strong |
-| 17m | 99,189 | 0 | 4.0M | +70 dB | Strong |
-| 20m | 539,538 | 0 | 12.3M | +113 dB | Strong |
-| 30m | 235,286 | 0 | 2.5M | +56 dB | Strong |
-| 40m | 447,965 | 0 | 6.0M | +68 dB | Strong |
-| 80m | 56,318 | 0 | 1.4M | +51 dB | Strong |
-| 160m | 10,274 | 0 | 106,096 | +59 dB | Strong |
+| 10m | 12,177 | 1,612 | 317,836 | +54 dB | Strong |
+| 12m | 9,991 | 322 | 179,566 | +45 dB | Strong |
+| 15m | 43,189 | 3,219 | 3.5M | +56 dB | Strong |
+| 17m | 37,600 | 5,846 | 3.9M | +56 dB | Strong |
+| 20m | 216,381 | 40,258 | 12.6M | +113 dB | Strong |
+| 30m | 93,781 | 6,717 | 2.7M | +56 dB | Strong |
+| 40m | 189,922 | 25,750 | 6.0M | +87 dB | Strong |
+| 80m | 32,674 | 7,315 | 1.2M | +87 dB | Strong |
+| 160m | 7,140 | 3,080 | 103,398 | +59 dB | Strong |
 
 ---
 
@@ -100,10 +100,10 @@ RBN archives lag ~24 hours; zeroes indicate no data in the window, not band clos
 | Source | Latest Date | Total Rows | Status |
 |--------|------------|------------|--------|
 | WSPR | 2026-09-14 | 12.64B | Current |
-| RBN | 2026-09-13 | 2.37B | Current |
-| PSK Reporter | 2026-09-15 | 6.87B | Live |
+| RBN | 2026-09-14 | 2.37B | Current |
+| PSK Reporter | 2026-09-15 | 6.88B | Live |
 | Contest | Archive | 234.3M | Static |
-| Solar | 2026-09-15 | 78,278 | Live |
+| Solar | 2026-09-15 | 78,524 | Live |
 
 ---
 
@@ -119,7 +119,7 @@ of HF propagation:
 
 - **WSPR** (12.64B spots, 2008–present) — the SNR floor at minimum power
 - **Reverse Beacon Network** (2.37B spots, 2009–present) — CW/RTTY measured signals
-- **PSK Reporter** (6.87B spots, live since Feb 2026) — FT8/digital operational contacts
+- **PSK Reporter** (6.88B spots, live since Feb 2026) — FT8/digital operational contacts
 - **Contest Logs** (234.3M QSOs, 2005–present) — the SSB/RTTY ceiling at contest power
 
 Solar indices (SFI, Kp, SSN) are joined at 3-hour resolution so every
