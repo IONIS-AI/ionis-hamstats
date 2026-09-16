@@ -25,10 +25,10 @@ For technical details on the model and methodology, see
 [ionis-ai.com](https://ionis-ai.com/).
 
 ![SFI](https://img.shields.io/badge/SFI_107-Moderate-2ea043?style=flat-square)
-![Kp](https://img.shields.io/badge/Kp_3.33-Unsettled-ffea00?style=flat-square)
+![Kp](https://img.shields.io/badge/Kp_3.67-Unsettled-ffea00?style=flat-square)
 ![Conditions](https://img.shields.io/badge/Conditions-Unsettled-ffea00?style=flat-square)
 
-*Updated 03:02 UTC · NOAA SWPC*
+*Updated 06:00 UTC · NOAA SWPC*
 
 ---
 
@@ -60,16 +60,16 @@ For technical details on the model and methodology, see
     The predictions represent a typical path — your actual results will vary with
     your antenna and power, but the path is either open or it isn't.
 
-*IONIS predictions from KI7MT (DN13) for the current solar conditions (SFI 107, Kp 3.33).*
+*IONIS predictions from KI7MT (DN13) for the current solar conditions (SFI 107, Kp 3.67).*
 
 | Destination | 10m | 12m | 15m | 17m | 20m | 30m | 40m | 60m | 80m | 160m |
 |-------------|-----|-----|-----|-----|-----|-----|-----|-----|-----|-----|
-| Europe (JN48) | — | — | — | CW | CW | CW | CW | CW | CW | CW |
-| Japan (PM95) | SSB | SSB | RTTY | RTTY | RTTY | CW | CW | FT8 | — | — |
+| Europe (JN48) | — | — | — | CW | CW | CW | CW | CW | — | — |
+| Japan (PM95) | — | — | — | CW | CW | CW | CW | CW | — | — |
 | S. America (GG87) | — | — | — | FT8 | FT8 | FT8 | FT8 | FT8 | FT8 | FT8 |
-| Africa (KG33) | — | — | — | FT8 | FT8 | FT8 | FT8 | FT8 | FT8 | FT8 |
-| Oceania (QF56) | CW | CW | CW | CW | FT8 | FT8 | FT8 | FT8 | — | — |
-| Caribbean (FK68) | — | — | — | FT8 | FT8 | FT8 | FT8 | FT8 | CW | CW |
+| Africa (KG33) | — | — | — | FT8 | FT8 | FT8 | FT8 | FT8 | — | — |
+| Oceania (QF56) | — | — | — | FT8 | FT8 | FT8 | FT8 | FT8 | — | — |
+| Caribbean (FK68) | — | — | — | WSPR | WSPR | FT8 | FT8 | FT8 | FT8 | FT8 |
 
 *Mode thresholds: SSB &ge; +3 dB, RTTY &ge; -5 dB, CW &ge; -15 dB, FT8 &ge; -21 dB, WSPR &ge; -28 dB.
 Predictions update every 3 hours with current solar conditions.*
@@ -83,15 +83,15 @@ RBN archives lag ~24 hours; zeroes indicate no data in the window, not band clos
 
 | Band | WSPR Spots | RBN Spots | PSKR Spots | Peak SNR | Status |
 |------|-----------|-----------|------------|----------|--------|
-| 10m | 46,190 | 0 | 266,337 | +50 dB | Strong |
-| 12m | 21,841 | 0 | 99,823 | +45 dB | Strong |
-| 15m | 122,346 | 0 | 3.7M | +76 dB | Strong |
-| 17m | 154,636 | 0 | 4.5M | +56 dB | Strong |
-| 20m | 1.1M | 0 | 13.1M | +87 dB | Strong |
-| 30m | 596,032 | 0 | 3.0M | +58 dB | Strong |
-| 40m | 1.3M | 0 | 6.3M | +87 dB | Strong |
-| 80m | 270,124 | 0 | 1.3M | +87 dB | Strong |
-| 160m | 36,373 | 0 | 91,643 | +56 dB | Strong |
+| 10m | 42,527 | 0 | 285,043 | +50 dB | Strong |
+| 12m | 20,407 | 0 | 95,256 | +45 dB | Strong |
+| 15m | 117,683 | 0 | 3.9M | +76 dB | Strong |
+| 17m | 148,991 | 0 | 4.6M | +56 dB | Strong |
+| 20m | 1.1M | 0 | 13.5M | +87 dB | Strong |
+| 30m | 543,609 | 0 | 3.1M | +58 dB | Strong |
+| 40m | 1.2M | 0 | 6.3M | +87 dB | Strong |
+| 80m | 211,169 | 0 | 1.3M | +87 dB | Strong |
+| 160m | 24,849 | 0 | 85,390 | +52 dB | Strong |
 
 ---
 
@@ -101,7 +101,7 @@ RBN archives lag ~24 hours; zeroes indicate no data in the window, not band clos
 |--------|------------|------------|--------|
 | WSPR | 2026-09-15 | 12.64B | Current |
 | RBN | 2026-09-14 | 2.37B | Current |
-| PSK Reporter | 2026-09-16 | 6.89B | Live |
+| PSK Reporter | 2026-09-16 | 6.90B | Live |
 | Contest | Archive | 234.3M | Static |
 | Solar | 2026-09-15 | 78,278 | 1 day behind |
 
@@ -119,7 +119,7 @@ of HF propagation:
 
 - **WSPR** (12.64B spots, 2008–present) — the SNR floor at minimum power
 - **Reverse Beacon Network** (2.37B spots, 2009–present) — CW/RTTY measured signals
-- **PSK Reporter** (6.89B spots, live since Feb 2026) — FT8/digital operational contacts
+- **PSK Reporter** (6.90B spots, live since Feb 2026) — FT8/digital operational contacts
 - **Contest Logs** (234.3M QSOs, 2005–present) — the SSB/RTTY ceiling at contest power
 
 Solar indices (SFI, Kp, SSN) are joined at 3-hour resolution so every

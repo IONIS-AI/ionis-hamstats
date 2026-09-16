@@ -20,10 +20,10 @@ datasets of its kind.**
 | Metric | Value |
 |--------|-------|
 | **Total Rows (`wspr.bronze`)** | 12.64B |
-| **Date Range** | 2008-03-11 to 2026-09-14 |
+| **Date Range** | 2008-03-11 to 2026-09-15 |
 | **Daily Spot Rate (recent)** | ~7M spots/day |
-| **Unique Transmitter Callsigns** | 4.5M |
-| **Unique Receiver Callsigns** | 102,866 |
+| **Unique Transmitter Callsigns** | 4.6M |
+| **Unique Receiver Callsigns** | 102,883 |
 | **Unique Grid Pairs** | 8.3M |
 | **Bands Covered** | 160m–10m (10 HF bands) |
 
@@ -33,16 +33,16 @@ datasets of its kind.**
 
 | Band | ADIF ID | Spots | Pct of Total |
 |------|---------|-------|-------------|
-| 160m | 102 | 211.3M | 1.67% |
-| 80m | 103 | 940.6M | 7.44% |
-| 60m | 104 | 141.6M | 1.12% |
-| 40m | 105 | 4.01B | 31.77% |
+| 160m | 102 | 211.4M | 1.67% |
+| 80m | 103 | 941.0M | 7.44% |
+| 60m | 104 | 141.7M | 1.12% |
+| 40m | 105 | 4.02B | 31.77% |
 | 30m | 106 | 2.11B | 16.69% |
 | 20m | 107 | 3.47B | 27.43% |
-| 17m | 108 | 489.6M | 3.87% |
-| 15m | 109 | 473.4M | 3.75% |
+| 17m | 108 | 489.9M | 3.87% |
+| 15m | 109 | 473.6M | 3.75% |
 | 12m | 110 | 141.3M | 1.12% |
-| 10m | 111 | 371.4M | 2.94% |
+| 10m | 111 | 371.5M | 2.94% |
 
 *Band IDs are ADIF standard. Band assignment uses frequency-to-band lookup
 (single source of truth in `bands.GetBand()`). Fixed as of v2.1.0 re-ingest
