@@ -1,3 +1,21 @@
+# SUPERSEDED — DO NOT BUILD OR PUBLISH (KI7MT/fleet-ops#183, decided 2026-09-10)
+#
+# This package was the first attempt at giving the ham-stats renderer's systemd units an owner,
+# after years of them sitting hand-placed in /etc/systemd/system. It is being replaced by
+# ionis-publish: one package for the publishing TIER, carrying every publisher unit, the
+# ionis-publish service account and /etc/ionis-publish/env — because a package per site does not
+# scale, and this one already ended up owning tier-level config that is not ham-stats' business
+# (/etc/hamstats/env holds CH_HOST, a HOST fact, which the ionis-docs publisher then had to read
+# under hamstats' identity).
+#
+# ionis-publish is lab-only, so it ships from the private repository (KI7MT/fleet-ops#184)
+# rather than Copr.
+#
+# STATE: never built in Copr — the package config there is being removed. publish-1 runs
+# ionis-hamstats 1.2.0 from a LOCAL install, so this spec remains the only recipe for something
+# currently publishing a public website; it is deleted when ionis-publish replaces it on that
+# host, not before. Building it in the meantime would make a superseded design installable.
+
 %global debug_package %{nil}
 
 Name:           ionis-hamstats
