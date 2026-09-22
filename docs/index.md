@@ -25,10 +25,10 @@ For technical details on the model and methodology, see
 [ionis-ai.com](https://ionis-ai.com/).
 
 ![SFI](https://img.shields.io/badge/SFI_104-Moderate-2ea043?style=flat-square)
-![Kp](https://img.shields.io/badge/Kp_2.0-Quiet-teal?style=flat-square)
+![Kp](https://img.shields.io/badge/Kp_0.67-Quiet-teal?style=flat-square)
 ![Conditions](https://img.shields.io/badge/Conditions-Quiet-teal?style=flat-square)
 
-*Updated 06:00 UTC · NOAA SWPC*
+*Updated 09:01 UTC · NOAA SWPC*
 
 ---
 
@@ -60,16 +60,16 @@ For technical details on the model and methodology, see
     The predictions represent a typical path — your actual results will vary with
     your antenna and power, but the path is either open or it isn't.
 
-*IONIS predictions from KI7MT (DN13) for the current solar conditions (SFI 104, Kp 2.0).*
+*IONIS predictions from KI7MT (DN13) for the current solar conditions (SFI 104, Kp 0.67).*
 
 | Destination | 10m | 12m | 15m | 17m | 20m | 30m | 40m | 60m | 80m | 160m |
 |-------------|-----|-----|-----|-----|-----|-----|-----|-----|-----|-----|
-| Europe (JN48) | — | — | — | CW | CW | CW | CW | CW | CW | CW |
+| Europe (JN48) | — | — | — | RTTY | RTTY | CW | CW | CW | CW | CW |
 | Japan (PM95) | — | — | — | CW | CW | CW | CW | CW | CW | CW |
 | S. America (GG87) | — | — | — | FT8 | FT8 | FT8 | FT8 | FT8 | FT8 | FT8 |
 | Africa (KG33) | — | — | — | FT8 | FT8 | FT8 | FT8 | FT8 | FT8 | FT8 |
-| Oceania (QF56) | — | — | — | FT8 | FT8 | FT8 | FT8 | FT8 | FT8 | FT8 |
-| Caribbean (FK68) | — | — | — | FT8 | FT8 | FT8 | FT8 | FT8 | FT8 | CW |
+| Oceania (QF56) | — | — | — | FT8 | FT8 | FT8 | FT8 | CW | CW | CW |
+| Caribbean (FK68) | — | — | — | FT8 | FT8 | FT8 | FT8 | FT8 | FT8 | FT8 |
 
 *Mode thresholds: SSB &ge; +3 dB, RTTY &ge; -5 dB, CW &ge; -15 dB, FT8 &ge; -21 dB, WSPR &ge; -28 dB.
 Predictions update every 3 hours with current solar conditions.*
@@ -83,15 +83,15 @@ RBN archives lag ~24 hours; zeroes indicate no data in the window, not band clos
 
 | Band | WSPR Spots | RBN Spots | PSKR Spots | Peak SNR | Status |
 |------|-----------|-----------|------------|----------|--------|
-| 10m | 33,571 | 0 | 134,827 | +51 dB | Strong |
-| 12m | 30,807 | 0 | 634,857 | +47 dB | Strong |
-| 15m | 175,213 | 0 | 5.3M | +67 dB | Strong |
-| 17m | 176,432 | 0 | 4.0M | +60 dB | Strong |
-| 20m | 1.2M | 0 | 10.4M | +127 dB | Strong |
-| 30m | 613,770 | 0 | 3.2M | +54 dB | Strong |
-| 40m | 1.4M | 0 | 6.5M | +59 dB | Strong |
-| 80m | 245,942 | 0 | 1.6M | +59 dB | Strong |
-| 160m | 39,155 | 0 | 411,080 | +61 dB | Strong |
+| 10m | 26,942 | 0 | 124,982 | +51 dB | Strong |
+| 12m | 26,958 | 0 | 504,626 | +47 dB | Strong |
+| 15m | 157,584 | 0 | 5.0M | +67 dB | Strong |
+| 17m | 159,685 | 0 | 4.0M | +60 dB | Strong |
+| 20m | 1.0M | 0 | 10.3M | +127 dB | Strong |
+| 30m | 470,593 | 0 | 3.3M | +63 dB | Strong |
+| 40m | 995,931 | 0 | 6.9M | +64 dB | Strong |
+| 80m | 148,359 | 0 | 1.9M | +59 dB | Strong |
+| 160m | 26,334 | 0 | 447,097 | +61 dB | Strong |
 
 ---
 
@@ -101,9 +101,9 @@ RBN archives lag ~24 hours; zeroes indicate no data in the window, not band clos
 |--------|------------|------------|--------|
 | WSPR | 2026-09-21 | 12.68B | Current |
 | RBN | 2026-09-20 | 2.37B | Current |
-| PSK Reporter | 2026-09-22 | 7.10B | Live |
-| Contest | Archive | 234.3M | Static |
-| Solar | 2026-09-21 | 78,326 | 1 day behind |
+| PSK Reporter | 2026-09-22 | 7.11B | Live |
+| Contest | Archive | 49.7M | Static |
+| Solar | 2026-09-22 | 78,330 | Live |
 
 ---
 
@@ -119,8 +119,8 @@ of HF propagation:
 
 - **WSPR** (12.68B spots, 2008–present) — the SNR floor at minimum power
 - **Reverse Beacon Network** (2.37B spots, 2009–present) — CW/RTTY measured signals
-- **PSK Reporter** (7.10B spots, live since Feb 2026) — FT8/digital operational contacts
-- **Contest Logs** (234.3M QSOs, 2005–present) — the SSB/RTTY ceiling at contest power
+- **PSK Reporter** (7.11B spots, live since Feb 2026) — FT8/digital operational contacts
+- **Contest Logs** (49.7M QSOs, 2005–present) — the SSB/RTTY ceiling at contest power
 
 Solar indices (SFI, Kp, SSN) are joined at 3-hour resolution so every
 propagation measurement has its solar context.
