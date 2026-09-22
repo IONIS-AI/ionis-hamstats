@@ -32,17 +32,16 @@ Each signature encodes:
 | Kp | `solar.bronze` | 3-hr bucket join (`intDiv(toHour(ts),3)`) |
 | SSN | `solar.bronze` | 3-hr bucket join |
 
-The CUDA signature engine (ionis-cuda) encodes these as float4 vectors stored
-in `wspr.silver`. Signatures in the gold tables (`wspr.signatures_v2_terrestrial`,
-`rbn.signatures`, `contest.signatures`) are the filtered subset used for
-training and reporting.
+The gold tables (`wspr.signatures_v2_terrestrial`, `rbn.signatures`,
+`contest.signatures`, `pskr.signatures`) hold the filtered subset used for training and
+reporting. They are built from the bronze tables directly.
 
 ---
 
-## How 10.8B Spots Become 93.3M Signatures
+## How 12.7B Spots Become 93.6M Signatures
 
 **Step 1 — Bronze ingest.** Raw CSV rows from wsprnet.org archives are loaded
-into `wspr.bronze`. All 10.8B rows, including noise, duplicates, and edge
+into `wspr.bronze`. All 12.7B rows, including noise, duplicates, and edge
 cases.
 
 **Step 2 — Quality filtering.** Balloon callsigns removed. Spots < 500 km
@@ -71,7 +70,7 @@ thresholds are written to the signatures tables.
 
 | Table | Rows | SNR Range | Source |
 |-------|------|----------|--------|
-| `wspr.signatures_v2_terrestrial` | 93.3M | -28 to +20 dB | WSPR |
+| `wspr.signatures_v2_terrestrial` | 93.6M | -28 to +20 dB | WSPR |
 | `rbn.signatures` | 56.7M | -20 to 80 dB (filtered) | RBN |
 | `contest.signatures` | 6.3M | +10/0 dB (anchored) | Contest |
 
@@ -80,13 +79,17 @@ same grid encoding.
 
 ---
 
-## The Float4 Embedding (wspr.silver)
+## The Float4 Embedding — retired
 
-The CUDA signature engine (ionis-cuda) encodes each signature as a float4
-vector for fast similarity search. The engine reads from `wspr.bronze`,
-applies the same quality filter and solar join, and writes to `wspr.silver`.
+The CUDA signature engine (`ionis-cuda`) encodes each signature as a float4 vector for fast
+similarity search: geography, time, solar and frequency features, normalized to the same scale
+as the IONIS training features.
 
-- 4.4B embeddings in `wspr.silver` (41 GiB)
-- Generated on RTX PRO 6000 (96 GB) via CUDA bulk processor
-- Encoding: geography features + time features + solar features + frequency
-  — all normalized to the same scale as the IONIS training features
+**It is not part of the pipeline and nothing on this site derives from it.** Its destination
+table, `wspr.silver`, was found holding zero rows and dropped on 2026-09-22 — the engine is
+unpackaged and hand-run, and no report, signature table or training set ever read its output.
+Every number published here comes from the signatures tables above, which are built from
+`wspr.bronze` directly.
+
+Lineage for every table in the lab:
+[`ionis-core/docs/DATA-DICTIONARY.md`](https://github.com/IONIS-AI/ionis-core/blob/main/docs/DATA-DICTIONARY.md)

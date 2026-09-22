@@ -23,7 +23,7 @@ third-party APIs. No subscription fees.
 
 The data comes from four independent networks:
 
-- **WSPR** (10.8B spots, 2008–present) — weak-signal beacons at ~200 mW,
+- **WSPR** (12.7B spots, 2008–present) — weak-signal beacons at ~200 mW,
   measuring the propagation floor
 - **Reverse Beacon Network** (2.18B spots, 2009–present) — automated CW/RTTY
   skimmers measuring real operator signals

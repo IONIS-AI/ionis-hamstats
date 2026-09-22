@@ -17,13 +17,17 @@ a specific query against that corpus.
 
 ---
 
-## Bronze → Silver → Gold
+## Bronze → Gold
 
 | Layer | Table(s) | Rows | Content |
 |-------|---------|------|---------|
-| Bronze | `wspr.bronze`, `rbn.bronze`, `contest.bronze`, `pskr.bronze` | 13.18B+ | Raw ingested spots, minimal transformation |
-| Silver | `wspr.silver` | 4.4B | Float4 embeddings from CUDA signature engine |
-| Gold | `wspr.signatures_v2_terrestrial`, `rbn.signatures`, `contest.signatures` | 156.4M | Quality-filtered, solar-joined, ground-wave excluded |
+| Bronze | `wspr.bronze`, `pskr.bronze`, `rbn.bronze`, `contest.bronze` | 22.4B | Raw ingested spots, minimal transformation |
+| Gold | `wspr.signatures_v2_terrestrial`, `rbn.signatures`, `contest.signatures`, `pskr.signatures` | 175.1M | Quality-filtered, solar-joined, ground-wave excluded |
+
+There are **two** layers, not three. A silver layer was documented for a long time and never
+carried the pipeline: `wspr.silver` was found holding zero rows and
+[retired on 2026-09-22](https://github.com/IONIS-AI/ionis-core/blob/main/docs/DATA-DICTIONARY.md).
+Every signatures table above is built from bronze directly.
 
 *Solar data: `solar.bronze` (GFZ Potsdam, 2000–present, ~1-day lag) for
 historical training; `wspr.live_conditions` (NOAA SWPC, 15-min updates) for
@@ -42,7 +46,7 @@ Raw Spots (bronze)
     ↓
   Grid Resolution (callsign → Maidenhead grid via callsign_grid)
     ↓
-Signatures (silver / gold)
+Signatures (gold)
     ↓
   Aggregation (by band, path, time window)
     ↓
@@ -58,7 +62,7 @@ conversion for distance calculations.
 ## Pages
 
 - [**Signatures**](signatures.md) — What a signature is: aggregated float4
-  vectors combining geography, time, frequency, and solar context. How 10.8B
-  raw spots become 93.3M signatures.
+  vectors combining geography, time, frequency, and solar context. How 12.7B
+  raw spots become 93.6M signatures.
 - [**Data Quality**](data-quality.md) — What gets filtered and why: balloon
   callsigns, ground-wave spots, RBN AGC outliers, grid normalization.
