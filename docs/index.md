@@ -28,7 +28,7 @@ For technical details on the model and methodology, see
 ![Kp](https://img.shields.io/badge/Kp_0.33-Quiet-teal?style=flat-square)
 ![Conditions](https://img.shields.io/badge/Conditions-Quiet-teal?style=flat-square)
 
-*Updated 06:03 UTC · NOAA SWPC*
+*Updated 09:01 UTC · NOAA SWPC*
 
 ---
 
@@ -64,12 +64,12 @@ For technical details on the model and methodology, see
 
 | Destination | 10m | 12m | 15m | 17m | 20m | 30m | 40m | 60m | 80m | 160m |
 |-------------|-----|-----|-----|-----|-----|-----|-----|-----|-----|-----|
-| Europe (JN48) | — | — | — | CW | CW | CW | CW | CW | CW | CW |
-| Japan (PM95) | — | — | — | RTTY | CW | CW | CW | CW | CW | CW |
-| S. America (GG87) | — | — | — | FT8 | FT8 | FT8 | CW | CW | CW | CW |
-| Africa (KG33) | — | — | — | CW | CW | FT8 | FT8 | FT8 | FT8 | FT8 |
-| Oceania (QF56) | — | — | — | CW | CW | CW | CW | CW | CW | CW |
-| Caribbean (FK68) | — | — | — | FT8 | FT8 | FT8 | FT8 | CW | CW | CW |
+| Europe (JN48) | — | — | — | RTTY | RTTY | CW | CW | CW | CW | CW |
+| Japan (PM95) | — | — | — | CW | CW | CW | CW | CW | CW | CW |
+| S. America (GG87) | — | — | — | FT8 | FT8 | FT8 | FT8 | FT8 | CW | FT8 |
+| Africa (KG33) | — | — | — | CW | FT8 | FT8 | FT8 | FT8 | FT8 | FT8 |
+| Oceania (QF56) | — | — | — | FT8 | FT8 | FT8 | CW | CW | CW | CW |
+| Caribbean (FK68) | — | — | — | FT8 | FT8 | FT8 | FT8 | FT8 | FT8 | FT8 |
 
 *Mode thresholds: SSB &ge; +3 dB, RTTY &ge; -5 dB, CW &ge; -15 dB, FT8 &ge; -21 dB, WSPR &ge; -28 dB.
 Predictions update every 3 hours with current solar conditions.*
@@ -83,15 +83,15 @@ RBN archives lag ~24 hours; zeroes indicate no data in the window, not band clos
 
 | Band | WSPR Spots | RBN Spots | PSKR Spots | Peak SNR | Status |
 |------|-----------|-----------|------------|----------|--------|
-| 10m | 40,793 | 0 | 284,624 | +52 dB | Strong |
-| 12m | 33,816 | 0 | 730,570 | +57 dB | Strong |
-| 15m | 181,175 | 0 | 5.6M | +127 dB | Strong |
-| 17m | 197,111 | 0 | 3.7M | +65 dB | Strong |
-| 20m | 1.2M | 0 | 10.3M | +68 dB | Strong |
-| 30m | 626,709 | 0 | 3.2M | +63 dB | Strong |
-| 40m | 1.3M | 0 | 7.3M | +78 dB | Strong |
-| 80m | 224,688 | 0 | 2.0M | +60 dB | Strong |
-| 160m | 27,114 | 0 | 495,338 | +59 dB | Strong |
+| 10m | 35,510 | 0 | 283,634 | +53 dB | Strong |
+| 12m | 30,682 | 0 | 697,226 | +57 dB | Strong |
+| 15m | 168,057 | 0 | 5.4M | +127 dB | Strong |
+| 17m | 179,383 | 0 | 3.7M | +65 dB | Strong |
+| 20m | 1.1M | 0 | 10.3M | +68 dB | Strong |
+| 30m | 497,831 | 0 | 3.3M | +57 dB | Strong |
+| 40m | 1.0M | 0 | 7.3M | +78 dB | Strong |
+| 80m | 154,858 | 0 | 2.1M | +60 dB | Strong |
+| 160m | 19,944 | 0 | 514,734 | +59 dB | Strong |
 
 ---
 
