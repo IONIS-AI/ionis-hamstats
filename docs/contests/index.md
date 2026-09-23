@@ -11,7 +11,7 @@ description: >-
 ![Kp](https://img.shields.io/badge/Kp_0.33-Quiet-teal?style=flat-square)
 ![Conditions](https://img.shields.io/badge/Conditions-Quiet-teal?style=flat-square)
 
-*Updated 09:01 UTC 2026-09-23*
+*Updated 12:01 UTC 2026-09-23*
 
 ---
 
@@ -37,9 +37,9 @@ description: >-
 |-------------|-----|-----|-----|-----|-----|
 | Europe (JN48) | — | — | RTTY | CW | CW | 
 | Japan (PM95) | — | — | CW | CW | CW | 
-| S. America (GG87) | — | — | FT8 | FT8 | CW | 
-| Africa (KG33) | — | — | FT8 | FT8 | FT8 | 
-| Oceania (QF56) | — | — | FT8 | CW | CW | 
+| S. America (GG87) | — | — | CW | FT8 | FT8 | 
+| Africa (KG33) | — | — | CW | FT8 | FT8 | 
+| Oceania (QF56) | — | — | FT8 | FT8 | FT8 | 
 | Caribbean (FK68) | — | — | FT8 | FT8 | FT8 | 
 
 ---
@@ -64,9 +64,9 @@ description: >-
 |-------------|-----|-----|-----|-----|-----|-----|
 | Europe (JN48) | — | — | RTTY | CW | CW | CW | 
 | Japan (PM95) | — | — | CW | CW | CW | CW | 
-| S. America (GG87) | — | — | FT8 | FT8 | CW | FT8 | 
-| Africa (KG33) | — | — | FT8 | FT8 | FT8 | FT8 | 
-| Oceania (QF56) | — | — | FT8 | CW | CW | CW | 
+| S. America (GG87) | — | — | CW | FT8 | FT8 | FT8 | 
+| Africa (KG33) | — | — | CW | FT8 | FT8 | FT8 | 
+| Oceania (QF56) | — | — | FT8 | FT8 | FT8 | FT8 | 
 | Caribbean (FK68) | — | — | FT8 | FT8 | FT8 | FT8 | 
 
 ---
@@ -91,15 +91,15 @@ description: >-
 |-------------|-----|-----|-----|-----|-----|-----|
 | Europe (JN48) | — | — | RTTY | CW | CW | CW | 
 | Japan (PM95) | — | — | CW | CW | CW | CW | 
-| S. America (GG87) | — | — | FT8 | FT8 | CW | FT8 | 
-| Africa (KG33) | — | — | FT8 | FT8 | FT8 | FT8 | 
-| Oceania (QF56) | — | — | FT8 | CW | CW | CW | 
+| S. America (GG87) | — | — | CW | FT8 | FT8 | FT8 | 
+| Africa (KG33) | — | — | CW | FT8 | FT8 | FT8 | 
+| Oceania (QF56) | — | — | FT8 | FT8 | FT8 | FT8 | 
 | Caribbean (FK68) | — | — | FT8 | FT8 | FT8 | FT8 | 
 
 ---
 
 ### SAC SSB
-**3w 3d** until start
+**3w 2d** until start
 
 | | |
 |---|---|
@@ -118,9 +118,9 @@ description: >-
 |-------------|-----|-----|-----|-----|-----|-----|
 | Europe (JN48) | — | — | RTTY | CW | CW | CW | 
 | Japan (PM95) | — | — | CW | CW | CW | CW | 
-| S. America (GG87) | — | — | FT8 | FT8 | CW | FT8 | 
-| Africa (KG33) | — | — | FT8 | FT8 | FT8 | FT8 | 
-| Oceania (QF56) | — | — | FT8 | CW | CW | CW | 
+| S. America (GG87) | — | — | CW | FT8 | FT8 | FT8 | 
+| Africa (KG33) | — | — | CW | FT8 | FT8 | FT8 | 
+| Oceania (QF56) | — | — | FT8 | FT8 | FT8 | FT8 | 
 | Caribbean (FK68) | — | — | FT8 | FT8 | FT8 | FT8 | 
 
 ---
@@ -133,7 +133,7 @@ description: >-
 | [CQ WW RTTY](https://www.cqwwrtty.com/) | Sep 26–28 | Sat 00:00 | 48 | RTTY | 2 days |
 | [Oceania DX SSB](https://www.oceaniadxcontest.com/) | Oct 03–04 | Sat 06:00 | 24 | SSB | 9 days |
 | [Oceania DX CW](https://www.oceaniadxcontest.com/) | Oct 10–11 | Sat 06:00 | 24 | CW | 2w 2d |
-| [SAC SSB](https://www.sactest.net/) | Oct 17–18 | Sat 12:00 | 24 | SSB | 3w 3d |
+| [SAC SSB](https://www.sactest.net/) | Oct 17–18 | Sat 12:00 | 24 | SSB | 3w 2d |
 | [CQ WW SSB](https://www.cqww.com/) | Oct 24–26 | Sat 00:00 | 48 | SSB | 4w 2d |
 | [WAE RTTY](https://www.darc.de/der-club/referate/conteste/wae-dx-contest/) | Nov 14–16 | Sat 00:00 | 48 | RTTY | 7w 2d |
 | [JIDX SSB](https://jidx.org/) | Nov 14–15 | Sat 07:00 | 30 | SSB | 7w 2d |
@@ -149,11 +149,11 @@ description: >-
 | [JIDX CW](https://jidx.org/) | Apr 10–11 | Sat 07:00 | 30 | CW | 28w 2d |
 | [CQ WPX CW](https://www.cqwpx.com/) | May 29–31 | Sat 00:00 | 48 | CW | 35w 2d |
 | [All Asian DX CW](https://www.jarl.org/English/4_Library/A-4-3_Contests/) | Jun 19–21 | Sat 00:00 | 48 | CW | 38w 2d |
-| [IARU HF Championship](https://www.arrl.org/iaru-hf-championship) | Jul 10–11 | Sat 12:00 | 24 | SSB/CW | 41w 3d |
+| [IARU HF Championship](https://www.arrl.org/iaru-hf-championship) | Jul 10–11 | Sat 12:00 | 24 | SSB/CW | 41w 2d |
 | [WAE CW](https://www.darc.de/der-club/referate/conteste/wae-dx-contest/) | Aug 14–16 | Sat 00:00 | 48 | CW | 46w 2d |
 | [All Asian DX SSB](https://www.jarl.org/English/4_Library/A-4-3_Contests/) | Sep 04–06 | Sat 00:00 | 48 | SSB | 49w 2d |
 | [WAE SSB](https://www.darc.de/der-club/referate/conteste/wae-dx-contest/) | Sep 11–13 | Sat 00:00 | 48 | SSB | 50w 2d |
-| [SAC CW](https://www.sactest.net/) | Sep 18–19 | Sat 12:00 | 24 | CW | 51w 3d |
+| [SAC CW](https://www.sactest.net/) | Sep 18–19 | Sat 12:00 | 24 | CW | 51w 2d |
 
 ---
 
