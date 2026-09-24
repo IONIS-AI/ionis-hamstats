@@ -20,10 +20,10 @@ scale for IONIS model training.
 
 | Metric | Value |
 |--------|-------|
-| **Total QSOs (`contest.bronze`)** | 387.3M |
+| **Total QSOs (`contest.bronze`)** | 387.9M |
 | **Unique Log Files** | 407K |
 | **Contests Covered** | 15 |
-| **Date Range** | 2005-10-09 to 2026-06-08 |
+| **Date Range** | 1970-01-01 to 2088-11-30 |
 | **Unique Callsigns** | 2.1M |
 | **Unique Grid Pairs** | 613K |
 | **Modes** | SSB, RTTY, CW |
