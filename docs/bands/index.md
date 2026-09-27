@@ -7,10 +7,10 @@ description: >-
 # Band Reports
 
 ![SFI](https://img.shields.io/badge/SFI_101-Moderate-2ea043?style=flat-square)
-![Kp](https://img.shields.io/badge/Kp_3.33-Unsettled-ffea00?style=flat-square)
-![Conditions](https://img.shields.io/badge/Conditions-Unsettled-ffea00?style=flat-square)
+![Kp](https://img.shields.io/badge/Kp_2.0-Quiet-teal?style=flat-square)
+![Conditions](https://img.shields.io/badge/Conditions-Quiet-teal?style=flat-square)
 
-*Updated 09:00 UTC 2026-09-27*
+*Updated 12:00 UTC 2026-09-27*
 
 Per-band propagation reports generated from measured spot data across all
 sources. Each page shows activity from the last 24 hours with spot volume,
@@ -22,13 +22,13 @@ Select a band from the navigation to see its current report.
 
 | Band | Freq (MHz) | WSPR | RBN | PSKR | Peak SNR | Status |
 |------|-----------|------|-----|------|----------|--------|
-| [160m](160m.md) | 1.8 | 23,816 | 0 | 25,711 | +43 dB | Open |
-| [80m](80m.md) | 3.5 | 179,276 | 0 | 240,292 | +61 dB | Strong |
+| [160m](160m.md) | 1.8 | 19,327 | 0 | 6,417 | +43 dB | Open |
+| [80m](80m.md) | 3.5 | 118,531 | 0 | 109,512 | +52 dB | Strong |
 | [60m](60m.md) | 5.3 | — | — | — | — | — |
-| [40m](40m.md) | 7.0 | 1.0M | 0 | 2.0M | +72 dB | Strong |
-| [30m](30m.md) | 10.1 | 510,576 | 0 | 598,771 | +57 dB | Strong |
-| [20m](20m.md) | 14.0 | 932,632 | 0 | 3.2M | +96 dB | Strong |
-| [17m](17m.md) | 18.1 | 164,606 | 0 | 1.1M | +54 dB | Strong |
-| [15m](15m.md) | 21.0 | 101,921 | 0 | 1.4M | +98 dB | Strong |
-| [12m](12m.md) | 24.9 | 36,087 | 0 | 170,832 | +45 dB | Strong |
-| [10m](10m.md) | 28.0 | 46,052 | 0 | 350,626 | +65 dB | Strong |
+| [40m](40m.md) | 7.0 | 792,327 | 0 | 1.3M | +72 dB | Strong |
+| [30m](30m.md) | 10.1 | 417,694 | 0 | 389,396 | +57 dB | Strong |
+| [20m](20m.md) | 14.0 | 798,256 | 0 | 2.3M | +81 dB | Strong |
+| [17m](17m.md) | 18.1 | 144,048 | 0 | 705,770 | +46 dB | Strong |
+| [15m](15m.md) | 21.0 | 85,791 | 0 | 779,743 | +98 dB | Strong |
+| [12m](12m.md) | 24.9 | 30,581 | 0 | 94,350 | +45 dB | Strong |
+| [10m](10m.md) | 28.0 | 39,270 | 0 | 219,338 | +53 dB | Strong |
