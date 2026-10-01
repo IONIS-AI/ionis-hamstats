@@ -11,7 +11,7 @@ Analysis of **4747** logging software families extracted from
 **824,859** Cabrillo log submissions
 across 15 major HF contests, 2005–2025.
 
-*Updated 21:02 UTC 2026-09-30*
+*Updated 00:01 UTC 2026-10-01*
 
 !!! info "Data Source"
     Every Cabrillo log file contains a `CREATED-BY:` header identifying the logging software.
