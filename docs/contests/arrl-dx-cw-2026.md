@@ -1,6 +1,6 @@
 # ARRL International DX Contest — CW
 
-![SFI](https://img.shields.io/badge/SFI_93-Moderate-ffea00?style=flat-square)
+![SFI](https://img.shields.io/badge/SFI_92-Moderate-ffea00?style=flat-square)
 ![Kp](https://img.shields.io/badge/Kp_1.33-Quiet-teal?style=flat-square)
 
 **CW · ARRL · February 21–21, 2026**
