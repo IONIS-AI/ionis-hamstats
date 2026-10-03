@@ -28,7 +28,7 @@ For technical details on the model and methodology, see
 ![Kp](https://img.shields.io/badge/Kp_2.67-Quiet-teal?style=flat-square)
 ![Conditions](https://img.shields.io/badge/Conditions-Quiet-teal?style=flat-square)
 
-*Updated 09:01 UTC · NOAA SWPC*
+*Updated 12:02 UTC · NOAA SWPC*
 
 ---
 
@@ -64,10 +64,10 @@ For technical details on the model and methodology, see
 
 | Destination | 10m | 12m | 15m | 17m | 20m | 30m | 40m | 60m | 80m | 160m |
 |-------------|-----|-----|-----|-----|-----|-----|-----|-----|-----|-----|
-| Europe (JN48) | — | — | — | RTTY | RTTY | RTTY | RTTY | CW | CW | CW |
-| Japan (PM95) | — | — | — | CW | CW | CW | CW | CW | CW | CW |
+| Europe (JN48) | — | — | — | SSB | SSB | RTTY | RTTY | RTTY | RTTY | CW |
+| Japan (PM95) | — | — | — | FT8 | CW | CW | CW | CW | CW | CW |
 | S. America (GG87) | — | — | — | FT8 | FT8 | FT8 | FT8 | FT8 | FT8 | FT8 |
-| Africa (KG33) | — | — | — | FT8 | FT8 | FT8 | FT8 | FT8 | FT8 | FT8 |
+| Africa (KG33) | — | — | — | CW | CW | FT8 | FT8 | FT8 | FT8 | FT8 |
 | Oceania (QF56) | — | — | — | FT8 | FT8 | FT8 | FT8 | FT8 | FT8 | FT8 |
 | Caribbean (FK68) | — | — | — | FT8 | FT8 | FT8 | FT8 | FT8 | FT8 | FT8 |
 
@@ -83,15 +83,15 @@ RBN archives lag ~24 hours; zeroes indicate no data in the window, not band clos
 
 | Band | WSPR Spots | RBN Spots | PSKR Spots | Peak SNR | Status |
 |------|-----------|-----------|------------|----------|--------|
-| 10m | 40,095 | 0 | 0 | +43 dB | Open |
-| 12m | 37,219 | 0 | 0 | +43 dB | Open |
-| 15m | 136,754 | 0 | 0 | +44 dB | Strong |
-| 17m | 207,659 | 0 | 0 | +44 dB | Strong |
-| 20m | 1.2M | 0 | 0 | +44 dB | Strong |
-| 30m | 540,183 | 0 | 0 | +44 dB | Strong |
-| 40m | 1.1M | 0 | 0 | +43 dB | Strong |
-| 80m | 188,408 | 0 | 0 | +44 dB | Strong |
-| 160m | 32,455 | 0 | 0 | +41 dB | Open |
+| 10m | 27,957 | 0 | 0 | +43 dB | Open |
+| 12m | 28,847 | 0 | 0 | +43 dB | Open |
+| 15m | 113,470 | 0 | 0 | +44 dB | Strong |
+| 17m | 172,263 | 0 | 0 | +44 dB | Strong |
+| 20m | 915,558 | 0 | 0 | +44 dB | Strong |
+| 30m | 401,400 | 0 | 0 | +43 dB | Strong |
+| 40m | 761,475 | 0 | 0 | +43 dB | Strong |
+| 80m | 126,064 | 0 | 0 | +44 dB | Strong |
+| 160m | 23,083 | 0 | 0 | +40 dB | Open |
 
 ---
 
