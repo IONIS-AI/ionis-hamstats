@@ -11,7 +11,7 @@ description: >-
 ![Kp](https://img.shields.io/badge/Kp_3.67-Unsettled-ffea00?style=flat-square)
 ![Conditions](https://img.shields.io/badge/Conditions-Unsettled-ffea00?style=flat-square)
 
-*Updated 21:01 UTC 2026-10-05 · NOAA SWPC*
+*Updated 00:00 UTC 2026-10-06 · NOAA SWPC*
 
 Solar conditions directly affect HF propagation. These reports correlate real
 solar indices with measured spot data — not theoretical models. Every solar
@@ -35,7 +35,7 @@ resolution.
 
 | Metric | Value | Updated |
 |--------|-------|---------|
-| **SFI** | 100 | 2026-10-05 |
-| **Kp** | 3.67 | 2026-10-05 |
+| **SFI** | 100 | 2026-10-06 |
+| **Kp** | 3.67 | 2026-10-06 |
 
 *Updated every 3 hours from NOAA SWPC.*
