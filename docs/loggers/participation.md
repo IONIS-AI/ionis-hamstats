@@ -9,7 +9,7 @@ description: >-
 Year-over-year participation data from **798,844**
 Cabrillo log submissions across major HF contests, 2008–2025.
 
-*Updated 09:02 UTC 2026-10-06*
+*Updated 15:03 UTC 2026-10-06*
 
 ---
 
