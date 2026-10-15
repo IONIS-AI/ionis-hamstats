@@ -25,10 +25,10 @@ For technical details on the model and methodology, see
 [ionis-ai.com](https://ionis-ai.com/).
 
 ![SFI](https://img.shields.io/badge/SFI_123-Elevated-2ea043?style=flat-square)
-![Kp](https://img.shields.io/badge/Kp_2.67-Quiet-teal?style=flat-square)
+![Kp](https://img.shields.io/badge/Kp_2.0-Quiet-teal?style=flat-square)
 ![Conditions](https://img.shields.io/badge/Conditions-Quiet-teal?style=flat-square)
 
-*Updated 03:00 UTC · NOAA SWPC*
+*Updated 06:02 UTC · NOAA SWPC*
 
 ---
 
@@ -60,16 +60,16 @@ For technical details on the model and methodology, see
     The predictions represent a typical path — your actual results will vary with
     your antenna and power, but the path is either open or it isn't.
 
-*IONIS predictions from KI7MT (DN13) for the current solar conditions (SFI 123, Kp 2.67).*
+*IONIS predictions from KI7MT (DN13) for the current solar conditions (SFI 123, Kp 2.0).*
 
 | Destination | 10m | 12m | 15m | 17m | 20m | 30m | 40m | 60m | 80m | 160m |
 |-------------|-----|-----|-----|-----|-----|-----|-----|-----|-----|-----|
-| Europe (JN48) | — | — | — | CW | CW | CW | CW | RTTY | RTTY | RTTY |
-| Japan (PM95) | — | — | — | RTTY | RTTY | RTTY | CW | CW | CW | FT8 |
-| S. America (GG87) | — | — | — | FT8 | FT8 | FT8 | FT8 | FT8 | CW | FT8 |
+| Europe (JN48) | — | — | — | CW | CW | CW | CW | CW | CW | CW |
+| Japan (PM95) | — | — | — | CW | CW | CW | CW | CW | CW | CW |
+| S. America (GG87) | — | — | — | FT8 | FT8 | FT8 | FT8 | FT8 | FT8 | FT8 |
 | Africa (KG33) | — | — | — | FT8 | FT8 | FT8 | FT8 | FT8 | FT8 | FT8 |
-| Oceania (QF56) | — | — | — | CW | CW | CW | FT8 | FT8 | FT8 | FT8 |
-| Caribbean (FK68) | — | — | — | FT8 | FT8 | FT8 | FT8 | CW | CW | CW |
+| Oceania (QF56) | — | — | — | CW | CW | CW | CW | CW | CW | CW |
+| Caribbean (FK68) | — | — | — | FT8 | FT8 | FT8 | FT8 | FT8 | CW | CW |
 
 *Mode thresholds: SSB &ge; +3 dB, RTTY &ge; -5 dB, CW &ge; -15 dB, FT8 &ge; -21 dB, WSPR &ge; -28 dB.
 Predictions update every 3 hours with current solar conditions.*
@@ -83,15 +83,15 @@ RBN archives lag ~24 hours; zeroes indicate no data in the window, not band clos
 
 | Band | WSPR Spots | RBN Spots | PSKR Spots | Peak SNR | Status |
 |------|-----------|-----------|------------|----------|--------|
-| 10m | 121,479 | 0 | 0 | +44 dB | Strong |
-| 12m | 70,587 | 0 | 0 | +42 dB | Strong |
-| 15m | 267,568 | 0 | 0 | +44 dB | Strong |
-| 17m | 257,087 | 0 | 0 | +43 dB | Strong |
-| 20m | 1.5M | 0 | 0 | +44 dB | Strong |
-| 30m | 828,981 | 0 | 0 | +43 dB | Strong |
-| 40m | 1.9M | 0 | 0 | +44 dB | Strong |
-| 80m | 410,242 | 0 | 0 | +43 dB | Strong |
-| 160m | 52,214 | 0 | 0 | +42 dB | Strong |
+| 10m | 115,019 | 0 | 0 | +44 dB | Strong |
+| 12m | 67,607 | 0 | 0 | +42 dB | Strong |
+| 15m | 260,026 | 0 | 0 | +43 dB | Strong |
+| 17m | 250,276 | 0 | 0 | +42 dB | Strong |
+| 20m | 1.4M | 0 | 0 | +44 dB | Strong |
+| 30m | 742,380 | 0 | 0 | +43 dB | Strong |
+| 40m | 1.6M | 0 | 0 | +44 dB | Strong |
+| 80m | 271,476 | 0 | 0 | +43 dB | Strong |
+| 160m | 29,191 | 0 | 0 | +42 dB | Open |
 
 ---
 
