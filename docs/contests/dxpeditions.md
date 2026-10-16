@@ -9,9 +9,9 @@ description: >-
 
 ![SFI](https://img.shields.io/badge/SFI_126-Elevated-2ea043?style=flat-square)
 ![Kp](https://img.shields.io/badge/Kp_2.33-Quiet-teal?style=flat-square)
-![Conditions](https://img.shields.io/badge/Conditions-Quiet_+_Radio_Blackout-teal?style=flat-square)
+![Conditions](https://img.shields.io/badge/Conditions-Quiet-teal?style=flat-square)
 
-*Updated 00:01 UTC 2026-10-16*
+*Updated 03:01 UTC 2026-10-16*
 
 ---
 
