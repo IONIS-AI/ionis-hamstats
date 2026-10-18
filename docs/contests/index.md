@@ -8,10 +8,10 @@ description: >-
 # Contest Calendar
 
 ![SFI](https://img.shields.io/badge/SFI_132-Elevated-2ea043?style=flat-square)
-![Kp](https://img.shields.io/badge/Kp_1.0-Quiet-teal?style=flat-square)
-![Conditions](https://img.shields.io/badge/Conditions-Quiet-teal?style=flat-square)
+![Kp](https://img.shields.io/badge/Kp_2.0-Quiet-teal?style=flat-square)
+![Conditions](https://img.shields.io/badge/Conditions-Quiet_+_Radio_Blackout-teal?style=flat-square)
 
-*Updated 03:01 UTC 2026-10-18*
+*Updated 06:02 UTC 2026-10-18*
 
 ---
 
@@ -32,16 +32,16 @@ description: >-
 
 *Scandinavian Activity Contest — SSB, Nordic stations work the world*
 
-**IONIS predictions from KI7MT (DN13) — current conditions (SFI 132, Kp 1.0)**
+**IONIS predictions from KI7MT (DN13) — current conditions (SFI 132, Kp 2.0)**
 
 | Destination | 10m | 15m | 20m | 40m | 80m | 160m | 
 |-------------|-----|-----|-----|-----|-----|-----|
-| Europe (JN48) | — | — | CW | RTTY | RTTY | RTTY | 
-| Japan (PM95) | — | — | RTTY | CW | CW | CW | 
-| S. America (GG87) | — | — | CW | CW | CW | CW | 
+| Europe (JN48) | — | — | CW | CW | CW | CW | 
+| Japan (PM95) | — | — | CW | CW | CW | CW | 
+| S. America (GG87) | — | — | FT8 | FT8 | FT8 | FT8 | 
 | Africa (KG33) | — | — | FT8 | FT8 | FT8 | FT8 | 
-| Oceania (QF56) | — | — | CW | CW | CW | FT8 | 
-| Caribbean (FK68) | — | — | FT8 | CW | CW | CW | 
+| Oceania (QF56) | — | — | CW | CW | CW | CW | 
+| Caribbean (FK68) | — | — | FT8 | FT8 | CW | CW | 
 
 ---
 
@@ -59,16 +59,16 @@ description: >-
 
 *Largest SSB contest — worldwide activity on all HF bands*
 
-**IONIS predictions from KI7MT (DN13) — current conditions (SFI 132, Kp 1.0)**
+**IONIS predictions from KI7MT (DN13) — current conditions (SFI 132, Kp 2.0)**
 
 | Destination | 10m | 15m | 20m | 40m | 80m | 160m | 
 |-------------|-----|-----|-----|-----|-----|-----|
-| Europe (JN48) | — | — | CW | RTTY | RTTY | RTTY | 
-| Japan (PM95) | — | — | RTTY | CW | CW | CW | 
-| S. America (GG87) | — | — | CW | CW | CW | CW | 
+| Europe (JN48) | — | — | CW | CW | CW | CW | 
+| Japan (PM95) | — | — | CW | CW | CW | CW | 
+| S. America (GG87) | — | — | FT8 | FT8 | FT8 | FT8 | 
 | Africa (KG33) | — | — | FT8 | FT8 | FT8 | FT8 | 
-| Oceania (QF56) | — | — | CW | CW | CW | FT8 | 
-| Caribbean (FK68) | — | — | FT8 | CW | CW | CW | 
+| Oceania (QF56) | — | — | CW | CW | CW | CW | 
+| Caribbean (FK68) | — | — | FT8 | FT8 | CW | CW | 
 
 ---
 
@@ -86,16 +86,16 @@ description: >-
 
 *Worked All Europe — RTTY, unique QTC exchange system*
 
-**IONIS predictions from KI7MT (DN13) — current conditions (SFI 132, Kp 1.0)**
+**IONIS predictions from KI7MT (DN13) — current conditions (SFI 132, Kp 2.0)**
 
 | Destination | 10m | 15m | 20m | 40m | 80m | 
 |-------------|-----|-----|-----|-----|-----|
-| Europe (JN48) | — | — | CW | RTTY | RTTY | 
-| Japan (PM95) | — | — | RTTY | CW | CW | 
-| S. America (GG87) | — | — | CW | CW | CW | 
+| Europe (JN48) | — | — | CW | CW | CW | 
+| Japan (PM95) | — | — | CW | CW | CW | 
+| S. America (GG87) | — | — | FT8 | FT8 | FT8 | 
 | Africa (KG33) | — | — | FT8 | FT8 | FT8 | 
 | Oceania (QF56) | — | — | CW | CW | CW | 
-| Caribbean (FK68) | — | — | FT8 | CW | CW | 
+| Caribbean (FK68) | — | — | FT8 | FT8 | CW | 
 
 ---
 
@@ -113,16 +113,16 @@ description: >-
 
 *Japan International DX — SSB, JA stations work the world*
 
-**IONIS predictions from KI7MT (DN13) — current conditions (SFI 132, Kp 1.0)**
+**IONIS predictions from KI7MT (DN13) — current conditions (SFI 132, Kp 2.0)**
 
 | Destination | 10m | 15m | 20m | 40m | 80m | 
 |-------------|-----|-----|-----|-----|-----|
-| Europe (JN48) | — | — | CW | RTTY | RTTY | 
-| Japan (PM95) | — | — | RTTY | CW | CW | 
-| S. America (GG87) | — | — | CW | CW | CW | 
+| Europe (JN48) | — | — | CW | CW | CW | 
+| Japan (PM95) | — | — | CW | CW | CW | 
+| S. America (GG87) | — | — | FT8 | FT8 | FT8 | 
 | Africa (KG33) | — | — | FT8 | FT8 | FT8 | 
 | Oceania (QF56) | — | — | CW | CW | CW | 
-| Caribbean (FK68) | — | — | FT8 | CW | CW | 
+| Caribbean (FK68) | — | — | FT8 | FT8 | CW | 
 
 ---
 
@@ -153,8 +153,8 @@ description: >-
 | [WAE SSB](https://www.darc.de/der-club/referate/conteste/wae-dx-contest/) | Sep 11–13 | Sat 00:00 | 48 | SSB | 46w 5d |
 | [SAC CW](https://www.sactest.net/) | Sep 18–19 | Sat 12:00 | 24 | CW | 47w 6d |
 | [CQ WW RTTY](https://www.cqwwrtty.com/) | Sep 25–27 | Sat 00:00 | 48 | RTTY | 48w 5d |
-| [Oceania DX SSB](https://www.oceaniadxcontest.com/) | Oct 02–03 | Sat 06:00 | 24 | SSB | 49w 6d |
-| [Oceania DX CW](https://www.oceaniadxcontest.com/) | Oct 09–10 | Sat 06:00 | 24 | CW | 50w 6d |
+| [Oceania DX SSB](https://www.oceaniadxcontest.com/) | Oct 02–03 | Sat 06:00 | 24 | SSB | 49w 5d |
+| [Oceania DX CW](https://www.oceaniadxcontest.com/) | Oct 09–10 | Sat 06:00 | 24 | CW | 50w 5d |
 | [SAC SSB](https://www.sactest.net/) | Oct 16–17 | Sat 12:00 | 24 | SSB | 51w 6d |
 
 ---
