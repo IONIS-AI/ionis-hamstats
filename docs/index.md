@@ -28,7 +28,7 @@ For technical details on the model and methodology, see
 ![Kp](https://img.shields.io/badge/Kp_0.33-Quiet-teal?style=flat-square)
 ![Conditions](https://img.shields.io/badge/Conditions-Quiet-teal?style=flat-square)
 
-*Updated 09:00 UTC · NOAA SWPC*
+*Updated 12:01 UTC · NOAA SWPC*
 
 ---
 
@@ -64,12 +64,12 @@ For technical details on the model and methodology, see
 
 | Destination | 10m | 12m | 15m | 17m | 20m | 30m | 40m | 60m | 80m | 160m |
 |-------------|-----|-----|-----|-----|-----|-----|-----|-----|-----|-----|
-| Europe (JN48) | — | — | — | RTTY | RTTY | RTTY | RTTY | RTTY | RTTY | RTTY |
+| Europe (JN48) | — | — | — | SSB | SSB | SSB | RTTY | RTTY | RTTY | RTTY |
 | Japan (PM95) | — | — | — | CW | CW | CW | CW | CW | CW | CW |
-| S. America (GG87) | — | — | — | FT8 | CW | CW | CW | CW | CW | CW |
+| S. America (GG87) | — | — | — | CW | CW | CW | CW | CW | CW | CW |
 | Africa (KG33) | — | — | — | CW | CW | CW | CW | CW | CW | CW |
-| Oceania (QF56) | — | — | — | CW | CW | CW | CW | CW | CW | CW |
-| Caribbean (FK68) | — | — | — | FT8 | FT8 | FT8 | CW | CW | CW | CW |
+| Oceania (QF56) | — | — | — | CW | CW | CW | CW | CW | CW | FT8 |
+| Caribbean (FK68) | — | — | — | CW | CW | CW | CW | CW | CW | FT8 |
 
 *Mode thresholds: SSB &ge; +3 dB, RTTY &ge; -5 dB, CW &ge; -15 dB, FT8 &ge; -21 dB, WSPR &ge; -28 dB.
 Predictions update every 3 hours with current solar conditions.*
@@ -83,15 +83,15 @@ RBN archives lag ~24 hours; zeroes indicate no data in the window, not band clos
 
 | Band | WSPR Spots | RBN Spots | PSKR Spots | Peak SNR | Status |
 |------|-----------|-----------|------------|----------|--------|
-| 10m | 136,665 | 0 | 0 | +45 dB | Strong |
-| 12m | 76,957 | 0 | 0 | +42 dB | Strong |
-| 15m | 239,104 | 0 | 0 | +44 dB | Strong |
-| 17m | 257,962 | 0 | 0 | +43 dB | Strong |
-| 20m | 1.3M | 0 | 0 | +44 dB | Strong |
-| 30m | 703,223 | 0 | 0 | +43 dB | Strong |
-| 40m | 1.3M | 0 | 0 | +43 dB | Strong |
-| 80m | 208,611 | 0 | 0 | +44 dB | Strong |
-| 160m | 27,413 | 0 | 0 | +41 dB | Open |
+| 10m | 124,627 | 0 | 0 | +45 dB | Strong |
+| 12m | 71,448 | 0 | 0 | +42 dB | Strong |
+| 15m | 222,482 | 0 | 0 | +44 dB | Strong |
+| 17m | 229,234 | 0 | 0 | +42 dB | Strong |
+| 20m | 1.1M | 0 | 0 | +44 dB | Strong |
+| 30m | 537,615 | 0 | 0 | +42 dB | Strong |
+| 40m | 963,620 | 0 | 0 | +43 dB | Strong |
+| 80m | 139,136 | 0 | 0 | +44 dB | Strong |
+| 160m | 20,935 | 0 | 0 | +41 dB | Open |
 
 ---
 
