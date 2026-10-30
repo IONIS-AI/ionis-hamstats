@@ -7,11 +7,11 @@ description: >-
 
 # DXpeditions
 
-![SFI](https://img.shields.io/badge/SFI_93-Moderate-ffea00?style=flat-square)
-![Kp](https://img.shields.io/badge/Kp_0.33-Quiet-teal?style=flat-square)
+![SFI](https://img.shields.io/badge/SFI_89-Moderate-ffea00?style=flat-square)
+![Kp](https://img.shields.io/badge/Kp_0.67-Quiet-teal?style=flat-square)
 ![Conditions](https://img.shields.io/badge/Conditions-Quiet-teal?style=flat-square)
 
-*Updated 21:01 UTC 2026-10-29*
+*Updated 03:02 UTC 2026-10-30*
 
 ---
 
