@@ -8,10 +8,10 @@ description: >-
 # Contest Calendar
 
 ![SFI](https://img.shields.io/badge/SFI_92-Moderate-ffea00?style=flat-square)
-![Kp](https://img.shields.io/badge/Kp_3.0-Unsettled-ffea00?style=flat-square)
-![Conditions](https://img.shields.io/badge/Conditions-Unsettled-ffea00?style=flat-square)
+![Kp](https://img.shields.io/badge/Kp_2.33-Quiet-teal?style=flat-square)
+![Conditions](https://img.shields.io/badge/Conditions-Quiet-teal?style=flat-square)
 
-*Updated 18:02 UTC 2026-11-01*
+*Updated 21:00 UTC 2026-11-01*
 
 ---
 
@@ -31,16 +31,16 @@ description: >-
 
 *Worked All Europe — RTTY, unique QTC exchange system*
 
-**IONIS predictions from KI7MT (DN13) — current conditions (SFI 92, Kp 3.0)**
+**IONIS predictions from KI7MT (DN13) — current conditions (SFI 92, Kp 2.33)**
 
 | Destination | 10m | 15m | 20m | 40m | 80m | 
 |-------------|-----|-----|-----|-----|-----|
-| Europe (JN48) | CW | CW | CW | CW | CW | 
-| Japan (PM95) | FT8 | FT8 | FT8 | FT8 | FT8 | 
+| Europe (JN48) | FT8 | CW | CW | CW | RTTY | 
+| Japan (PM95) | CW | CW | CW | CW | CW | 
 | S. America (GG87) | CW | CW | CW | — | — | 
-| Africa (KG33) | FT8 | FT8 | FT8 | FT8 | WSPR | 
-| Oceania (QF56) | FT8 | FT8 | FT8 | FT8 | FT8 | 
-| Caribbean (FK68) | CW | CW | FT8 | — | — | 
+| Africa (KG33) | FT8 | FT8 | FT8 | WSPR | WSPR | 
+| Oceania (QF56) | CW | CW | CW | — | — | 
+| Caribbean (FK68) | CW | CW | CW | — | — | 
 
 ---
 
@@ -58,16 +58,16 @@ description: >-
 
 *Japan International DX — SSB, JA stations work the world*
 
-**IONIS predictions from KI7MT (DN13) — current conditions (SFI 92, Kp 3.0)**
+**IONIS predictions from KI7MT (DN13) — current conditions (SFI 92, Kp 2.33)**
 
 | Destination | 10m | 15m | 20m | 40m | 80m | 
 |-------------|-----|-----|-----|-----|-----|
-| Europe (JN48) | CW | CW | CW | CW | CW | 
-| Japan (PM95) | FT8 | FT8 | FT8 | FT8 | FT8 | 
+| Europe (JN48) | FT8 | CW | CW | CW | RTTY | 
+| Japan (PM95) | CW | CW | CW | CW | CW | 
 | S. America (GG87) | CW | CW | CW | — | — | 
-| Africa (KG33) | FT8 | FT8 | FT8 | FT8 | WSPR | 
-| Oceania (QF56) | FT8 | FT8 | FT8 | FT8 | FT8 | 
-| Caribbean (FK68) | CW | CW | FT8 | — | — | 
+| Africa (KG33) | FT8 | FT8 | FT8 | WSPR | WSPR | 
+| Oceania (QF56) | CW | CW | CW | — | — | 
+| Caribbean (FK68) | CW | CW | CW | — | — | 
 
 ---
 
@@ -85,16 +85,16 @@ description: >-
 
 *Largest CW contest — worldwide activity on all HF bands*
 
-**IONIS predictions from KI7MT (DN13) — current conditions (SFI 92, Kp 3.0)**
+**IONIS predictions from KI7MT (DN13) — current conditions (SFI 92, Kp 2.33)**
 
 | Destination | 10m | 15m | 20m | 40m | 80m | 160m | 
 |-------------|-----|-----|-----|-----|-----|-----|
-| Europe (JN48) | CW | CW | CW | CW | CW | CW | 
-| Japan (PM95) | FT8 | FT8 | FT8 | FT8 | FT8 | FT8 | 
+| Europe (JN48) | FT8 | CW | CW | CW | RTTY | RTTY | 
+| Japan (PM95) | CW | CW | CW | CW | CW | CW | 
 | S. America (GG87) | CW | CW | CW | — | — | — | 
-| Africa (KG33) | FT8 | FT8 | FT8 | FT8 | WSPR | WSPR | 
-| Oceania (QF56) | FT8 | FT8 | FT8 | FT8 | FT8 | FT8 | 
-| Caribbean (FK68) | CW | CW | FT8 | — | — | — | 
+| Africa (KG33) | FT8 | FT8 | FT8 | WSPR | WSPR | WSPR | 
+| Oceania (QF56) | CW | CW | CW | — | — | — | 
+| Caribbean (FK68) | CW | CW | CW | — | — | — | 
 
 ---
 
