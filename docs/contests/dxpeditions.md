@@ -8,10 +8,10 @@ description: >-
 # DXpeditions
 
 ![SFI](https://img.shields.io/badge/SFI_100-Moderate-2ea043?style=flat-square)
-![Kp](https://img.shields.io/badge/Kp_2.33-Quiet-teal?style=flat-square)
+![Kp](https://img.shields.io/badge/Kp_2.67-Quiet-teal?style=flat-square)
 ![Conditions](https://img.shields.io/badge/Conditions-Quiet-teal?style=flat-square)
 
-*Updated 06:02 UTC 2026-11-04*
+*Updated 09:01 UTC 2026-11-04*
 
 ---
 
