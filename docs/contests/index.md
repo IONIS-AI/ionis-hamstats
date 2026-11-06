@@ -9,9 +9,9 @@ description: >-
 
 ![SFI](https://img.shields.io/badge/SFI_124-Elevated-2ea043?style=flat-square)
 ![Kp](https://img.shields.io/badge/Kp_2.33-Quiet-teal?style=flat-square)
-![Conditions](https://img.shields.io/badge/Conditions-Quiet_+_Radio_Blackout-teal?style=flat-square)
+![Conditions](https://img.shields.io/badge/Conditions-Quiet-teal?style=flat-square)
 
-*Updated 03:00 UTC 2026-11-06*
+*Updated 06:00 UTC 2026-11-06*
 
 ---
 
@@ -36,9 +36,9 @@ description: >-
 | Destination | 10m | 15m | 20m | 40m | 80m | 
 |-------------|-----|-----|-----|-----|-----|
 | Europe (JN48) | — | — | CW | CW | CW | 
-| Japan (PM95) | — | — | CW | CW | FT8 | 
+| Japan (PM95) | — | — | CW | FT8 | FT8 | 
 | S. America (GG87) | — | — | FT8 | FT8 | FT8 | 
-| Africa (KG33) | — | — | FT8 | WSPR | WSPR | 
+| Africa (KG33) | — | — | WSPR | WSPR | WSPR | 
 | Oceania (QF56) | — | — | FT8 | FT8 | FT8 | 
 | Caribbean (FK68) | — | — | FT8 | FT8 | FT8 | 
 
@@ -63,9 +63,9 @@ description: >-
 | Destination | 10m | 15m | 20m | 40m | 80m | 
 |-------------|-----|-----|-----|-----|-----|
 | Europe (JN48) | — | — | CW | CW | CW | 
-| Japan (PM95) | — | — | CW | CW | FT8 | 
+| Japan (PM95) | — | — | CW | FT8 | FT8 | 
 | S. America (GG87) | — | — | FT8 | FT8 | FT8 | 
-| Africa (KG33) | — | — | FT8 | WSPR | WSPR | 
+| Africa (KG33) | — | — | WSPR | WSPR | WSPR | 
 | Oceania (QF56) | — | — | FT8 | FT8 | FT8 | 
 | Caribbean (FK68) | — | — | FT8 | FT8 | FT8 | 
 
@@ -90,9 +90,9 @@ description: >-
 | Destination | 10m | 15m | 20m | 40m | 80m | 160m | 
 |-------------|-----|-----|-----|-----|-----|-----|
 | Europe (JN48) | — | — | CW | CW | CW | CW | 
-| Japan (PM95) | — | — | CW | CW | FT8 | FT8 | 
+| Japan (PM95) | — | — | CW | FT8 | FT8 | FT8 | 
 | S. America (GG87) | — | — | FT8 | FT8 | FT8 | FT8 | 
-| Africa (KG33) | — | — | FT8 | WSPR | WSPR | WSPR | 
+| Africa (KG33) | — | — | WSPR | WSPR | WSPR | WSPR | 
 | Oceania (QF56) | — | — | FT8 | FT8 | FT8 | FT8 | 
 | Caribbean (FK68) | — | — | FT8 | FT8 | FT8 | FT8 | 
 
@@ -150,8 +150,8 @@ description: >-
 | [WAE SSB](https://www.darc.de/der-club/referate/conteste/wae-dx-contest/) | Sep 11–13 | Sat 00:00 | 48 | SSB | 44w |
 | [SAC CW](https://www.sactest.net/) | Sep 18–19 | Sat 12:00 | 24 | CW | 45w 1d |
 | [CQ WW RTTY](https://www.cqwwrtty.com/) | Sep 25–27 | Sat 00:00 | 48 | RTTY | 46w |
-| [Oceania DX SSB](https://www.oceaniadxcontest.com/) | Oct 02–03 | Sat 06:00 | 24 | SSB | 47w 1d |
-| [Oceania DX CW](https://www.oceaniadxcontest.com/) | Oct 09–10 | Sat 06:00 | 24 | CW | 48w 1d |
+| [Oceania DX SSB](https://www.oceaniadxcontest.com/) | Oct 02–03 | Sat 06:00 | 24 | SSB | 47w |
+| [Oceania DX CW](https://www.oceaniadxcontest.com/) | Oct 09–10 | Sat 06:00 | 24 | CW | 48w |
 | [SAC SSB](https://www.sactest.net/) | Oct 16–17 | Sat 12:00 | 24 | SSB | 49w 1d |
 | [CQ WW SSB](https://www.cqww.com/) | Oct 30–01 | Sat 00:00 | 48 | SSB | 51w |
 
