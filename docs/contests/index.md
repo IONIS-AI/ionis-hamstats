@@ -8,10 +8,10 @@ description: >-
 # Contest Calendar
 
 ![SFI](https://img.shields.io/badge/SFI_127-Elevated-2ea043?style=flat-square)
-![Kp](https://img.shields.io/badge/Kp_4.0-Active-orange?style=flat-square)
-![Conditions](https://img.shields.io/badge/Conditions-Unsettled-orange?style=flat-square)
+![Kp](https://img.shields.io/badge/Kp_5.0-G1_Storm-red?style=flat-square)
+![Conditions](https://img.shields.io/badge/Conditions-Storm-red?style=flat-square)
 
-*Updated 03:02 UTC 2026-11-08*
+*Updated 06:02 UTC 2026-11-08*
 
 ---
 
@@ -31,16 +31,16 @@ description: >-
 
 *Worked All Europe — RTTY, unique QTC exchange system*
 
-**IONIS predictions from KI7MT (DN13) — current conditions (SFI 127, Kp 4.0)**
+**IONIS predictions from KI7MT (DN13) — current conditions (SFI 127, Kp 5.0)**
 
 | Destination | 10m | 15m | 20m | 40m | 80m | 
 |-------------|-----|-----|-----|-----|-----|
-| Europe (JN48) | — | — | FT8 | CW | CW | 
-| Japan (PM95) | — | — | CW | FT8 | FT8 | 
+| Europe (JN48) | — | — | FT8 | FT8 | FT8 | 
+| Japan (PM95) | — | — | FT8 | FT8 | FT8 | 
 | S. America (GG87) | — | — | FT8 | FT8 | FT8 | 
 | Africa (KG33) | — | — | WSPR | WSPR | WSPR | 
 | Oceania (QF56) | — | — | FT8 | FT8 | FT8 | 
-| Caribbean (FK68) | — | — | FT8 | FT8 | FT8 | 
+| Caribbean (FK68) | — | — | WSPR | WSPR | FT8 | 
 
 ---
 
@@ -58,16 +58,16 @@ description: >-
 
 *Japan International DX — SSB, JA stations work the world*
 
-**IONIS predictions from KI7MT (DN13) — current conditions (SFI 127, Kp 4.0)**
+**IONIS predictions from KI7MT (DN13) — current conditions (SFI 127, Kp 5.0)**
 
 | Destination | 10m | 15m | 20m | 40m | 80m | 
 |-------------|-----|-----|-----|-----|-----|
-| Europe (JN48) | — | — | FT8 | CW | CW | 
-| Japan (PM95) | — | — | CW | FT8 | FT8 | 
+| Europe (JN48) | — | — | FT8 | FT8 | FT8 | 
+| Japan (PM95) | — | — | FT8 | FT8 | FT8 | 
 | S. America (GG87) | — | — | FT8 | FT8 | FT8 | 
 | Africa (KG33) | — | — | WSPR | WSPR | WSPR | 
 | Oceania (QF56) | — | — | FT8 | FT8 | FT8 | 
-| Caribbean (FK68) | — | — | FT8 | FT8 | FT8 | 
+| Caribbean (FK68) | — | — | WSPR | WSPR | FT8 | 
 
 ---
 
@@ -85,16 +85,16 @@ description: >-
 
 *Largest CW contest — worldwide activity on all HF bands*
 
-**IONIS predictions from KI7MT (DN13) — current conditions (SFI 127, Kp 4.0)**
+**IONIS predictions from KI7MT (DN13) — current conditions (SFI 127, Kp 5.0)**
 
 | Destination | 10m | 15m | 20m | 40m | 80m | 160m | 
 |-------------|-----|-----|-----|-----|-----|-----|
-| Europe (JN48) | — | — | FT8 | CW | CW | CW | 
-| Japan (PM95) | — | — | CW | FT8 | FT8 | WSPR | 
-| S. America (GG87) | — | — | FT8 | FT8 | FT8 | FT8 | 
+| Europe (JN48) | — | — | FT8 | FT8 | FT8 | FT8 | 
+| Japan (PM95) | — | — | FT8 | FT8 | FT8 | FT8 | 
+| S. America (GG87) | — | — | FT8 | FT8 | FT8 | WSPR | 
 | Africa (KG33) | — | — | WSPR | WSPR | WSPR | WSPR | 
 | Oceania (QF56) | — | — | FT8 | FT8 | FT8 | FT8 | 
-| Caribbean (FK68) | — | — | FT8 | FT8 | FT8 | FT8 | 
+| Caribbean (FK68) | — | — | WSPR | WSPR | FT8 | FT8 | 
 
 ---
 
@@ -112,13 +112,13 @@ description: >-
 
 *Top Band CW — 160m only, 42 hours from Friday evening*
 
-**IONIS predictions from KI7MT (DN13) — current conditions (SFI 127, Kp 4.0)**
+**IONIS predictions from KI7MT (DN13) — current conditions (SFI 127, Kp 5.0)**
 
 | Destination | 160m | 
 |-------------|-----|
-| Europe (JN48) | CW | 
-| Japan (PM95) | WSPR | 
-| S. America (GG87) | FT8 | 
+| Europe (JN48) | FT8 | 
+| Japan (PM95) | FT8 | 
+| S. America (GG87) | WSPR | 
 | Africa (KG33) | WSPR | 
 | Oceania (QF56) | FT8 | 
 | Caribbean (FK68) | FT8 | 
@@ -150,8 +150,8 @@ description: >-
 | [WAE SSB](https://www.darc.de/der-club/referate/conteste/wae-dx-contest/) | Sep 11–13 | Sat 00:00 | 48 | SSB | 43w 5d |
 | [SAC CW](https://www.sactest.net/) | Sep 18–19 | Sat 12:00 | 24 | CW | 44w 6d |
 | [CQ WW RTTY](https://www.cqwwrtty.com/) | Sep 25–27 | Sat 00:00 | 48 | RTTY | 45w 5d |
-| [Oceania DX SSB](https://www.oceaniadxcontest.com/) | Oct 02–03 | Sat 06:00 | 24 | SSB | 46w 6d |
-| [Oceania DX CW](https://www.oceaniadxcontest.com/) | Oct 09–10 | Sat 06:00 | 24 | CW | 47w 6d |
+| [Oceania DX SSB](https://www.oceaniadxcontest.com/) | Oct 02–03 | Sat 06:00 | 24 | SSB | 46w 5d |
+| [Oceania DX CW](https://www.oceaniadxcontest.com/) | Oct 09–10 | Sat 06:00 | 24 | CW | 47w 5d |
 | [SAC SSB](https://www.sactest.net/) | Oct 16–17 | Sat 12:00 | 24 | SSB | 48w 6d |
 | [CQ WW SSB](https://www.cqww.com/) | Oct 30–01 | Sat 00:00 | 48 | SSB | 50w 5d |
 
