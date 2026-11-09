@@ -1,7 +1,7 @@
 # PSK Reporter
 
 PSK Reporter collects automatic reception reports from stations running digital
-mode software (WSJT-X, JTDX, fldigi, and others). When a station decodes
+mode software (WSJT-X, fldigi, and others). When a station decodes
 an FT8, FT4, WSPR, or other digital transmission, the software silently
 reports the reception to pskreporter.info. No operator action required.
 
