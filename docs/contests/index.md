@@ -11,7 +11,7 @@ description: >-
 ![Kp](https://img.shields.io/badge/Kp_3.0-Unsettled-ffea00?style=flat-square)
 ![Conditions](https://img.shields.io/badge/Conditions-Unsettled-ffea00?style=flat-square)
 
-*Updated 06:00 UTC 2026-11-10*
+*Updated 09:01 UTC 2026-11-10*
 
 ---
 
@@ -35,17 +35,17 @@ description: >-
 
 | Destination | 10m | 15m | 20m | 40m | 80m | 
 |-------------|-----|-----|-----|-----|-----|
-| Europe (JN48) | — | — | FT8 | CW | CW | 
+| Europe (JN48) | — | — | CW | CW | CW | 
 | Japan (PM95) | — | — | FT8 | FT8 | FT8 | 
 | S. America (GG87) | — | — | FT8 | FT8 | FT8 | 
-| Africa (KG33) | — | — | WSPR | WSPR | WSPR | 
+| Africa (KG33) | — | — | WSPR | WSPR | FT8 | 
 | Oceania (QF56) | — | — | FT8 | FT8 | FT8 | 
-| Caribbean (FK68) | — | — | FT8 | FT8 | FT8 | 
+| Caribbean (FK68) | — | — | WSPR | FT8 | FT8 | 
 
 ---
 
 ### JIDX SSB
-**4 days** until start
+**3 days** until start
 
 | | |
 |---|---|
@@ -62,12 +62,12 @@ description: >-
 
 | Destination | 10m | 15m | 20m | 40m | 80m | 
 |-------------|-----|-----|-----|-----|-----|
-| Europe (JN48) | — | — | FT8 | CW | CW | 
+| Europe (JN48) | — | — | CW | CW | CW | 
 | Japan (PM95) | — | — | FT8 | FT8 | FT8 | 
 | S. America (GG87) | — | — | FT8 | FT8 | FT8 | 
-| Africa (KG33) | — | — | WSPR | WSPR | WSPR | 
+| Africa (KG33) | — | — | WSPR | WSPR | FT8 | 
 | Oceania (QF56) | — | — | FT8 | FT8 | FT8 | 
-| Caribbean (FK68) | — | — | FT8 | FT8 | FT8 | 
+| Caribbean (FK68) | — | — | WSPR | FT8 | FT8 | 
 
 ---
 
@@ -89,12 +89,12 @@ description: >-
 
 | Destination | 10m | 15m | 20m | 40m | 80m | 160m | 
 |-------------|-----|-----|-----|-----|-----|-----|
-| Europe (JN48) | — | — | FT8 | CW | CW | CW | 
+| Europe (JN48) | — | — | CW | CW | CW | CW | 
 | Japan (PM95) | — | — | FT8 | FT8 | FT8 | FT8 | 
 | S. America (GG87) | — | — | FT8 | FT8 | FT8 | FT8 | 
-| Africa (KG33) | — | — | WSPR | WSPR | WSPR | WSPR | 
+| Africa (KG33) | — | — | WSPR | WSPR | FT8 | FT8 | 
 | Oceania (QF56) | — | — | FT8 | FT8 | FT8 | FT8 | 
-| Caribbean (FK68) | — | — | FT8 | FT8 | FT8 | FT8 | 
+| Caribbean (FK68) | — | — | WSPR | FT8 | FT8 | FT8 | 
 
 ---
 
@@ -119,7 +119,7 @@ description: >-
 | Europe (JN48) | CW | 
 | Japan (PM95) | FT8 | 
 | S. America (GG87) | FT8 | 
-| Africa (KG33) | WSPR | 
+| Africa (KG33) | FT8 | 
 | Oceania (QF56) | FT8 | 
 | Caribbean (FK68) | FT8 | 
 
@@ -131,7 +131,7 @@ description: >-
 | Contest | Date (UTC) | Start | Hours | Modes | Countdown |
 |---------|-----------|-------|-------|-------|-----------|
 | [WAE RTTY](https://www.darc.de/der-club/referate/conteste/wae-dx-contest/) | Nov 14–16 | Sat 00:00 | 48 | RTTY | 3 days |
-| [JIDX SSB](https://jidx.org/) | Nov 14–15 | Sat 07:00 | 30 | SSB | 4 days |
+| [JIDX SSB](https://jidx.org/) | Nov 14–15 | Sat 07:00 | 30 | SSB | 3 days |
 | [CQ WW CW](https://www.cqww.com/) | Nov 28–30 | Sat 00:00 | 48 | CW | 2w 3d |
 | [ARRL 160m](https://www.arrl.org/160-meter) | Dec 04–06 | Fri 22:00 | 42 | CW | 3w 3d |
 | [ARRL 10m](https://www.arrl.org/10-meter) | Dec 12–14 | Sat 00:00 | 48 | SSB/CW | 4w 3d |
@@ -141,7 +141,7 @@ description: >-
 | [CQ 160m SSB](https://www.cq160.com/) | Feb 26–28 | Fri 22:00 | 48 | SSB | 15w 3d |
 | [ARRL DX SSB](https://www.arrl.org/arrl-dx) | Mar 06–08 | Sat 00:00 | 48 | SSB | 16w 3d |
 | [CQ WPX SSB](https://www.cqwpx.com/) | Mar 27–29 | Sat 00:00 | 48 | SSB | 19w 3d |
-| [JIDX CW](https://jidx.org/) | Apr 10–11 | Sat 07:00 | 30 | CW | 21w 4d |
+| [JIDX CW](https://jidx.org/) | Apr 10–11 | Sat 07:00 | 30 | CW | 21w 3d |
 | [CQ WPX CW](https://www.cqwpx.com/) | May 29–31 | Sat 00:00 | 48 | CW | 28w 3d |
 | [All Asian DX CW](https://www.jarl.org/English/4_Library/A-4-3_Contests/) | Jun 19–21 | Sat 00:00 | 48 | CW | 31w 3d |
 | [IARU HF Championship](https://www.arrl.org/iaru-hf-championship) | Jul 10–11 | Sat 12:00 | 24 | SSB/CW | 34w 4d |
