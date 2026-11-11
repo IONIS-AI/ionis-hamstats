@@ -6,11 +6,11 @@ description: >-
 
 # Band Reports
 
-![SFI](https://img.shields.io/badge/SFI_129-Elevated-2ea043?style=flat-square)
-![Kp](https://img.shields.io/badge/Kp_3.0-Unsettled-ffea00?style=flat-square)
-![Conditions](https://img.shields.io/badge/Conditions-Unsettled-ffea00?style=flat-square)
+![SFI](https://img.shields.io/badge/SFI_132-Elevated-2ea043?style=flat-square)
+![Kp](https://img.shields.io/badge/Kp_2.0-Quiet-teal?style=flat-square)
+![Conditions](https://img.shields.io/badge/Conditions-Quiet_+_Radio_Blackout-teal?style=flat-square)
 
-*Updated 21:02 UTC 2026-11-10*
+*Updated 03:01 UTC 2026-11-11*
 
 Per-band propagation reports generated from measured spot data across all
 sources. Each page shows activity from the last 24 hours with spot volume,
@@ -22,13 +22,13 @@ Select a band from the navigation to see its current report.
 
 | Band | Freq (MHz) | WSPR | RBN | PSKR | Peak SNR | Status |
 |------|-----------|------|-----|------|----------|--------|
-| [160m](160m.md) | 1.8 | 98,477 | 2,537 | 0 | +48 dB | Strong |
-| [80m](80m.md) | 3.5 | 573,863 | 8,378 | 0 | +65 dB | Strong |
+| [160m](160m.md) | 1.8 | 63,971 | 0 | 0 | +38 dB | Strong |
+| [80m](80m.md) | 3.5 | 418,712 | 0 | 0 | +39 dB | Strong |
 | [60m](60m.md) | 5.3 | — | — | — | — | — |
-| [40m](40m.md) | 7.0 | 2.1M | 11,815 | 0 | +72 dB | Strong |
-| [30m](30m.md) | 10.1 | 939,784 | 3,055 | 0 | +46 dB | Strong |
-| [20m](20m.md) | 14.0 | 1.9M | 9,596 | 0 | +66 dB | Strong |
-| [17m](17m.md) | 18.1 | 345,578 | 2,714 | 0 | +61 dB | Strong |
-| [15m](15m.md) | 21.0 | 403,588 | 3,299 | 0 | +54 dB | Strong |
-| [12m](12m.md) | 24.9 | 125,186 | 661 | 0 | +47 dB | Strong |
-| [10m](10m.md) | 28.0 | 245,981 | 4,326 | 0 | +51 dB | Strong |
+| [40m](40m.md) | 7.0 | 1.7M | 0 | 0 | +39 dB | Strong |
+| [30m](30m.md) | 10.1 | 759,638 | 0 | 0 | +40 dB | Strong |
+| [20m](20m.md) | 14.0 | 1.5M | 0 | 0 | +41 dB | Strong |
+| [17m](17m.md) | 18.1 | 273,925 | 0 | 0 | +40 dB | Strong |
+| [15m](15m.md) | 21.0 | 325,172 | 0 | 0 | +42 dB | Strong |
+| [12m](12m.md) | 24.9 | 101,447 | 0 | 0 | +39 dB | Strong |
+| [10m](10m.md) | 28.0 | 202,079 | 0 | 0 | +40 dB | Strong |
