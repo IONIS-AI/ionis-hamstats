@@ -28,7 +28,7 @@ For technical details on the model and methodology, see
 ![Kp](https://img.shields.io/badge/Kp_1.33-Quiet-teal?style=flat-square)
 ![Conditions](https://img.shields.io/badge/Conditions-Quiet-teal?style=flat-square)
 
-*Updated 06:02 UTC · NOAA SWPC*
+*Updated 12:02 UTC · NOAA SWPC*
 
 ---
 
@@ -65,7 +65,7 @@ For technical details on the model and methodology, see
 | Destination | 10m | 12m | 15m | 17m | 20m | 30m | 40m | 60m | 80m | 160m |
 |-------------|-----|-----|-----|-----|-----|-----|-----|-----|-----|-----|
 | Europe (JN48) | — | — | — | CW | CW | CW | CW | CW | CW | CW |
-| Japan (PM95) | — | — | — | CW | CW | CW | CW | CW | FT8 | FT8 |
+| Japan (PM95) | — | — | — | FT8 | FT8 | FT8 | FT8 | FT8 | FT8 | FT8 |
 | S. America (GG87) | — | — | — | FT8 | FT8 | FT8 | FT8 | FT8 | FT8 | FT8 |
 | Africa (KG33) | — | — | — | FT8 | FT8 | FT8 | FT8 | FT8 | FT8 | FT8 |
 | Oceania (QF56) | — | — | — | FT8 | FT8 | FT8 | FT8 | FT8 | FT8 | FT8 |
@@ -83,15 +83,15 @@ RBN archives lag ~24 hours; zeroes indicate no data in the window, not band clos
 
 | Band | WSPR Spots | RBN Spots | PSKR Spots | Peak SNR | Status |
 |------|-----------|-----------|------------|----------|--------|
-| 10m | 94,378 | 0 | 0 | +40 dB | Strong |
-| 12m | 53,318 | 0 | 0 | +39 dB | Strong |
-| 15m | 171,125 | 0 | 0 | +44 dB | Strong |
-| 17m | 154,174 | 0 | 0 | +38 dB | Strong |
-| 20m | 755,119 | 0 | 0 | +40 dB | Strong |
-| 30m | 386,854 | 0 | 0 | +41 dB | Strong |
-| 40m | 739,900 | 0 | 0 | +39 dB | Strong |
-| 80m | 146,187 | 0 | 0 | +28 dB | Strong |
-| 160m | 17,166 | 0 | 0 | +40 dB | Open |
+| 10m | 68,250 | 0 | 0 | +40 dB | Strong |
+| 12m | 39,840 | 0 | 0 | +39 dB | Open |
+| 15m | 124,543 | 0 | 0 | +44 dB | Strong |
+| 17m | 106,095 | 0 | 0 | +38 dB | Strong |
+| 20m | 466,434 | 0 | 0 | +39 dB | Strong |
+| 30m | 207,354 | 0 | 0 | +41 dB | Strong |
+| 40m | 365,395 | 0 | 0 | +39 dB | Strong |
+| 80m | 62,281 | 0 | 0 | +28 dB | Strong |
+| 160m | 8,128 | 0 | 0 | +40 dB | Open |
 
 ---
 
