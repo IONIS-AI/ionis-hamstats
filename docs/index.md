@@ -28,7 +28,7 @@ For technical details on the model and methodology, see
 ![Kp](https://img.shields.io/badge/Kp_1.0-Quiet-teal?style=flat-square)
 ![Conditions](https://img.shields.io/badge/Conditions-Quiet_+_Radio_Blackout-teal?style=flat-square)
 
-*Updated 21:02 UTC · NOAA SWPC*
+*Updated 00:00 UTC · NOAA SWPC*
 
 ---
 
@@ -64,12 +64,12 @@ For technical details on the model and methodology, see
 
 | Destination | 10m | 12m | 15m | 17m | 20m | 30m | 40m | 60m | 80m | 160m |
 |-------------|-----|-----|-----|-----|-----|-----|-----|-----|-----|-----|
-| Europe (JN48) | CW | CW | CW | CW | CW | CW | CW | RTTY | RTTY | RTTY |
-| Japan (PM95) | CW | CW | CW | CW | CW | CW | CW | CW | CW | CW |
-| S. America (GG87) | CW | CW | CW | CW | CW | CW | — | — | — | — |
+| Europe (JN48) | FT8 | FT8 | FT8 | FT8 | CW | CW | CW | CW | RTTY | RTTY |
+| Japan (PM95) | RTTY | RTTY | RTTY | RTTY | CW | CW | — | — | — | — |
+| S. America (GG87) | CW | CW | CW | CW | CW | CW | CW | CW | CW | CW |
 | Africa (KG33) | FT8 | FT8 | FT8 | FT8 | FT8 | FT8 | FT8 | FT8 | FT8 | WSPR |
 | Oceania (QF56) | CW | CW | CW | CW | CW | CW | — | — | — | — |
-| Caribbean (FK68) | CW | CW | CW | CW | CW | CW | — | — | — | — |
+| Caribbean (FK68) | FT8 | FT8 | CW | CW | CW | CW | CW | CW | CW | FT8 |
 
 *Mode thresholds: SSB &ge; +3 dB, RTTY &ge; -5 dB, CW &ge; -15 dB, FT8 &ge; -21 dB, WSPR &ge; -28 dB.
 Predictions update every 3 hours with current solar conditions.*
@@ -83,15 +83,15 @@ RBN archives lag ~24 hours; zeroes indicate no data in the window, not band clos
 
 | Band | WSPR Spots | RBN Spots | PSKR Spots | Peak SNR | Status |
 |------|-----------|-----------|------------|----------|--------|
-| 10m | 216,437 | 3,544 | 0 | +67 dB | Strong |
-| 12m | 114,148 | 824 | 0 | +53 dB | Strong |
-| 15m | 390,748 | 3,293 | 0 | +63 dB | Strong |
-| 17m | 375,575 | 2,074 | 0 | +56 dB | Strong |
-| 20m | 1.9M | 9,387 | 0 | +59 dB | Strong |
-| 30m | 979,196 | 2,578 | 0 | +69 dB | Strong |
-| 40m | 2.1M | 16,155 | 0 | +92 dB | Strong |
-| 80m | 621,398 | 11,289 | 0 | +57 dB | Strong |
-| 160m | 121,886 | 1,389 | 0 | +53 dB | Strong |
+| 10m | 194,245 | 421 | 0 | +67 dB | Strong |
+| 12m | 100,641 | 114 | 0 | +48 dB | Strong |
+| 15m | 346,010 | 912 | 0 | +63 dB | Strong |
+| 17m | 336,925 | 292 | 0 | +50 dB | Strong |
+| 20m | 1.7M | 2,146 | 0 | +59 dB | Strong |
+| 30m | 906,771 | 744 | 0 | +42 dB | Strong |
+| 40m | 2.0M | 4,318 | 0 | +92 dB | Strong |
+| 80m | 562,601 | 1,811 | 0 | +53 dB | Strong |
+| 160m | 107,967 | 415 | 0 | +53 dB | Strong |
 
 ---
 
@@ -99,11 +99,11 @@ RBN archives lag ~24 hours; zeroes indicate no data in the window, not band clos
 
 | Source | Latest Date | Total Rows | Status |
 |--------|------------|------------|--------|
-| WSPR | 2026-09-22 | 12.68B | 52 days behind |
+| WSPR | 2026-09-22 | 12.68B | 53 days behind |
 | RBN | 2026-09-21 | 2.38B | 53 days behind |
-| PSK Reporter | 2026-09-22 | 7.13B | 53 days behind |
+| PSK Reporter | 2026-09-22 | 7.13B | 54 days behind |
 | Contest | Archive | 384.4M | Static |
-| Solar | 2026-09-22 | 78,338 | 53 days behind |
+| Solar | 2026-09-22 | 78,338 | 54 days behind |
 
 ---
 
