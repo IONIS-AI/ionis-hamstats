@@ -7,46 +7,18 @@ description: >-
 
 # Contest Calendar
 
-![SFI](https://img.shields.io/badge/SFI_124-Elevated-2ea043?style=flat-square)
-![Kp](https://img.shields.io/badge/Kp_0.67-Quiet-teal?style=flat-square)
+![SFI](https://img.shields.io/badge/SFI_122-Elevated-2ea043?style=flat-square)
+![Kp](https://img.shields.io/badge/Kp_0.33-Quiet-teal?style=flat-square)
 ![Conditions](https://img.shields.io/badge/Conditions-Quiet-teal?style=flat-square)
 
-*Updated 18:02 UTC 2026-11-15*
+*Updated 06:02 UTC 2026-11-16*
 
 ---
 
 ## Next 30 Days
 
-### WAE RTTY — ON THE AIR
-!!! success "Active Now"
-    This contest is currently running. Ends 2026-11-16 00:00 UTC.
-
-| | |
-|---|---|
-| **Start** | 2026-11-14 00:00 UTC |
-| **End** | 2026-11-16 00:00 UTC |
-| **Duration** | 48 hours |
-| **Modes** | RTTY |
-| **Bands** | 80m, 40m, 20m, 15m, 10m |
-| **Sponsor** | [DARC](https://www.darc.de/der-club/referate/conteste/wae-dx-contest/) |
-
-*Worked All Europe — RTTY, unique QTC exchange system*
-
-**IONIS predictions from KI7MT (DN13) — current conditions (SFI 124, Kp 0.67)**
-
-| Destination | 10m | 15m | 20m | 40m | 80m | 
-|-------------|-----|-----|-----|-----|-----|
-| Europe (JN48) | CW | RTTY | RTTY | RTTY | RTTY | 
-| Japan (PM95) | FT8 | FT8 | FT8 | CW | CW | 
-| S. America (GG87) | CW | CW | CW | — | — | 
-| Africa (KG33) | FT8 | FT8 | FT8 | FT8 | FT8 | 
-| Oceania (QF56) | CW | CW | CW | CW | FT8 | 
-| Caribbean (FK68) | CW | CW | CW | — | — | 
-
----
-
 ### CQ WW CW
-**12 days** until start
+**11 days** until start
 
 | | |
 |---|---|
@@ -59,21 +31,21 @@ description: >-
 
 *Largest CW contest — worldwide activity on all HF bands*
 
-**IONIS predictions from KI7MT (DN13) — current conditions (SFI 124, Kp 0.67)**
+**IONIS predictions from KI7MT (DN13) — current conditions (SFI 122, Kp 0.33)**
 
 | Destination | 10m | 15m | 20m | 40m | 80m | 160m | 
 |-------------|-----|-----|-----|-----|-----|-----|
-| Europe (JN48) | CW | RTTY | RTTY | RTTY | RTTY | CW | 
-| Japan (PM95) | FT8 | FT8 | FT8 | CW | CW | CW | 
-| S. America (GG87) | CW | CW | CW | — | — | — | 
-| Africa (KG33) | FT8 | FT8 | FT8 | FT8 | FT8 | FT8 | 
-| Oceania (QF56) | CW | CW | CW | CW | FT8 | FT8 | 
-| Caribbean (FK68) | CW | CW | CW | — | — | — | 
+| Europe (JN48) | — | — | CW | CW | CW | CW | 
+| Japan (PM95) | — | — | CW | CW | CW | CW | 
+| S. America (GG87) | — | — | FT8 | FT8 | FT8 | FT8 | 
+| Africa (KG33) | — | — | FT8 | FT8 | FT8 | FT8 | 
+| Oceania (QF56) | — | — | CW | CW | CW | CW | 
+| Caribbean (FK68) | — | — | FT8 | FT8 | FT8 | FT8 | 
 
 ---
 
 ### ARRL 160m
-**2w 5d** until start
+**2w 4d** until start
 
 | | |
 |---|---|
@@ -86,21 +58,21 @@ description: >-
 
 *Top Band CW — 160m only, 42 hours from Friday evening*
 
-**IONIS predictions from KI7MT (DN13) — current conditions (SFI 124, Kp 0.67)**
+**IONIS predictions from KI7MT (DN13) — current conditions (SFI 122, Kp 0.33)**
 
 | Destination | 160m | 
 |-------------|-----|
 | Europe (JN48) | CW | 
 | Japan (PM95) | CW | 
-| S. America (GG87) | — | 
+| S. America (GG87) | FT8 | 
 | Africa (KG33) | FT8 | 
-| Oceania (QF56) | FT8 | 
-| Caribbean (FK68) | — | 
+| Oceania (QF56) | CW | 
+| Caribbean (FK68) | FT8 | 
 
 ---
 
 ### ARRL 10m
-**3w 5d** until start
+**3w 4d** until start
 
 | | |
 |---|---|
@@ -113,16 +85,16 @@ description: >-
 
 *10 meters only — SSB and CW, great solar cycle indicator*
 
-**IONIS predictions from KI7MT (DN13) — current conditions (SFI 124, Kp 0.67)**
+**IONIS predictions from KI7MT (DN13) — current conditions (SFI 122, Kp 0.33)**
 
 | Destination | 10m | 
 |-------------|-----|
-| Europe (JN48) | CW | 
-| Japan (PM95) | FT8 | 
-| S. America (GG87) | CW | 
-| Africa (KG33) | FT8 | 
-| Oceania (QF56) | CW | 
-| Caribbean (FK68) | CW | 
+| Europe (JN48) | — | 
+| Japan (PM95) | — | 
+| S. America (GG87) | — | 
+| Africa (KG33) | — | 
+| Oceania (QF56) | — | 
+| Caribbean (FK68) | — | 
 
 ---
 
@@ -131,30 +103,29 @@ description: >-
 
 | Contest | Date (UTC) | Start | Hours | Modes | Countdown |
 |---------|-----------|-------|-------|-------|-----------|
-| [WAE RTTY](https://www.darc.de/der-club/referate/conteste/wae-dx-contest/) | Nov 14–16 | Sat 00:00 | 48 | RTTY | NOW |
-| [CQ WW CW](https://www.cqww.com/) | Nov 28–30 | Sat 00:00 | 48 | CW | 12 days |
-| [ARRL 160m](https://www.arrl.org/160-meter) | Dec 04–06 | Fri 22:00 | 42 | CW | 2w 5d |
-| [ARRL 10m](https://www.arrl.org/10-meter) | Dec 12–14 | Sat 00:00 | 48 | SSB/CW | 3w 5d |
-| [CQ 160m CW](https://www.cq160.com/) | Jan 29–31 | Fri 22:00 | 48 | CW | 10w 5d |
-| [CQ WPX RTTY](https://www.cqwpxrtty.com/) | Feb 13–15 | Sat 00:00 | 48 | RTTY | 12w 5d |
-| [ARRL DX CW](https://www.arrl.org/arrl-dx) | Feb 20–22 | Sat 00:00 | 48 | CW | 13w 5d |
-| [CQ 160m SSB](https://www.cq160.com/) | Feb 26–28 | Fri 22:00 | 48 | SSB | 14w 5d |
-| [ARRL DX SSB](https://www.arrl.org/arrl-dx) | Mar 06–08 | Sat 00:00 | 48 | SSB | 15w 5d |
-| [CQ WPX SSB](https://www.cqwpx.com/) | Mar 27–29 | Sat 00:00 | 48 | SSB | 18w 5d |
+| [CQ WW CW](https://www.cqww.com/) | Nov 28–30 | Sat 00:00 | 48 | CW | 11 days |
+| [ARRL 160m](https://www.arrl.org/160-meter) | Dec 04–06 | Fri 22:00 | 42 | CW | 2w 4d |
+| [ARRL 10m](https://www.arrl.org/10-meter) | Dec 12–14 | Sat 00:00 | 48 | SSB/CW | 3w 4d |
+| [CQ 160m CW](https://www.cq160.com/) | Jan 29–31 | Fri 22:00 | 48 | CW | 10w 4d |
+| [CQ WPX RTTY](https://www.cqwpxrtty.com/) | Feb 13–15 | Sat 00:00 | 48 | RTTY | 12w 4d |
+| [ARRL DX CW](https://www.arrl.org/arrl-dx) | Feb 20–22 | Sat 00:00 | 48 | CW | 13w 4d |
+| [CQ 160m SSB](https://www.cq160.com/) | Feb 26–28 | Fri 22:00 | 48 | SSB | 14w 4d |
+| [ARRL DX SSB](https://www.arrl.org/arrl-dx) | Mar 06–08 | Sat 00:00 | 48 | SSB | 15w 4d |
+| [CQ WPX SSB](https://www.cqwpx.com/) | Mar 27–29 | Sat 00:00 | 48 | SSB | 18w 4d |
 | [JIDX CW](https://jidx.org/) | Apr 10–11 | Sat 07:00 | 30 | CW | 20w 5d |
-| [CQ WPX CW](https://www.cqwpx.com/) | May 29–31 | Sat 00:00 | 48 | CW | 27w 5d |
-| [All Asian DX CW](https://www.jarl.org/English/4_Library/A-4-3_Contests/) | Jun 19–21 | Sat 00:00 | 48 | CW | 30w 5d |
+| [CQ WPX CW](https://www.cqwpx.com/) | May 29–31 | Sat 00:00 | 48 | CW | 27w 4d |
+| [All Asian DX CW](https://www.jarl.org/English/4_Library/A-4-3_Contests/) | Jun 19–21 | Sat 00:00 | 48 | CW | 30w 4d |
 | [IARU HF Championship](https://www.arrl.org/iaru-hf-championship) | Jul 10–11 | Sat 12:00 | 24 | SSB/CW | 33w 5d |
-| [WAE CW](https://www.darc.de/der-club/referate/conteste/wae-dx-contest/) | Aug 14–16 | Sat 00:00 | 48 | CW | 38w 5d |
-| [All Asian DX SSB](https://www.jarl.org/English/4_Library/A-4-3_Contests/) | Sep 04–06 | Sat 00:00 | 48 | SSB | 41w 5d |
-| [WAE SSB](https://www.darc.de/der-club/referate/conteste/wae-dx-contest/) | Sep 11–13 | Sat 00:00 | 48 | SSB | 42w 5d |
+| [WAE CW](https://www.darc.de/der-club/referate/conteste/wae-dx-contest/) | Aug 14–16 | Sat 00:00 | 48 | CW | 38w 4d |
+| [All Asian DX SSB](https://www.jarl.org/English/4_Library/A-4-3_Contests/) | Sep 04–06 | Sat 00:00 | 48 | SSB | 41w 4d |
+| [WAE SSB](https://www.darc.de/der-club/referate/conteste/wae-dx-contest/) | Sep 11–13 | Sat 00:00 | 48 | SSB | 42w 4d |
 | [SAC CW](https://www.sactest.net/) | Sep 18–19 | Sat 12:00 | 24 | CW | 43w 5d |
-| [CQ WW RTTY](https://www.cqwwrtty.com/) | Sep 25–27 | Sat 00:00 | 48 | RTTY | 44w 5d |
-| [Oceania DX SSB](https://www.oceaniadxcontest.com/) | Oct 02–03 | Sat 06:00 | 24 | SSB | 45w 5d |
-| [Oceania DX CW](https://www.oceaniadxcontest.com/) | Oct 09–10 | Sat 06:00 | 24 | CW | 46w 5d |
+| [CQ WW RTTY](https://www.cqwwrtty.com/) | Sep 25–27 | Sat 00:00 | 48 | RTTY | 44w 4d |
+| [Oceania DX SSB](https://www.oceaniadxcontest.com/) | Oct 02–03 | Sat 06:00 | 24 | SSB | 45w 4d |
+| [Oceania DX CW](https://www.oceaniadxcontest.com/) | Oct 09–10 | Sat 06:00 | 24 | CW | 46w 4d |
 | [SAC SSB](https://www.sactest.net/) | Oct 16–17 | Sat 12:00 | 24 | SSB | 47w 5d |
-| [CQ WW SSB](https://www.cqww.com/) | Oct 30–01 | Sat 00:00 | 48 | SSB | 49w 5d |
-| [WAE RTTY](https://www.darc.de/der-club/referate/conteste/wae-dx-contest/) | Nov 13–15 | Sat 00:00 | 48 | RTTY | 51w 5d |
+| [CQ WW SSB](https://www.cqww.com/) | Oct 30–01 | Sat 00:00 | 48 | SSB | 49w 4d |
+| [WAE RTTY](https://www.darc.de/der-club/referate/conteste/wae-dx-contest/) | Nov 13–15 | Sat 00:00 | 48 | RTTY | 51w 4d |
 | [JIDX SSB](https://jidx.org/) | Nov 13–14 | Sat 07:00 | 30 | SSB | 51w 5d |
 
 ---
