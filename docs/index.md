@@ -28,7 +28,7 @@ For technical details on the model and methodology, see
 ![Kp](https://img.shields.io/badge/Kp_0.67-Quiet-teal?style=flat-square)
 ![Conditions](https://img.shields.io/badge/Conditions-Quiet_+_Radio_Blackout-teal?style=flat-square)
 
-*Updated 00:02 UTC · NOAA SWPC*
+*Updated 03:00 UTC · NOAA SWPC*
 
 ---
 
@@ -64,12 +64,12 @@ For technical details on the model and methodology, see
 
 | Destination | 10m | 12m | 15m | 17m | 20m | 30m | 40m | 60m | 80m | 160m |
 |-------------|-----|-----|-----|-----|-----|-----|-----|-----|-----|-----|
-| Europe (JN48) | FT8 | FT8 | FT8 | FT8 | CW | CW | CW | CW | RTTY | RTTY |
-| Japan (PM95) | RTTY | RTTY | RTTY | RTTY | CW | CW | — | — | — | — |
-| S. America (GG87) | CW | CW | CW | CW | CW | CW | CW | CW | CW | CW |
-| Africa (KG33) | FT8 | FT8 | FT8 | FT8 | FT8 | FT8 | FT8 | FT8 | FT8 | WSPR |
-| Oceania (QF56) | CW | CW | CW | CW | CW | CW | — | — | — | — |
-| Caribbean (FK68) | CW | CW | CW | CW | CW | CW | CW | CW | CW | CW |
+| Europe (JN48) | — | — | — | CW | CW | CW | CW | CW | CW | CW |
+| Japan (PM95) | — | — | — | CW | CW | CW | CW | CW | FT8 | FT8 |
+| S. America (GG87) | — | — | — | CW | CW | CW | CW | FT8 | FT8 | FT8 |
+| Africa (KG33) | — | — | — | FT8 | FT8 | FT8 | FT8 | FT8 | FT8 | WSPR |
+| Oceania (QF56) | — | — | — | CW | CW | CW | FT8 | FT8 | FT8 | FT8 |
+| Caribbean (FK68) | — | — | — | FT8 | FT8 | FT8 | FT8 | FT8 | CW | CW |
 
 *Mode thresholds: SSB &ge; +3 dB, RTTY &ge; -5 dB, CW &ge; -15 dB, FT8 &ge; -21 dB, WSPR &ge; -28 dB.
 Predictions update every 3 hours with current solar conditions.*
@@ -83,15 +83,15 @@ RBN archives lag ~24 hours; zeroes indicate no data in the window, not band clos
 
 | Band | WSPR Spots | RBN Spots | PSKR Spots | Peak SNR | Status |
 |------|-----------|-----------|------------|----------|--------|
-| 10m | 148,085 | 0 | 0 | +40 dB | Strong |
-| 12m | 82,446 | 0 | 0 | +39 dB | Strong |
-| 15m | 318,727 | 0 | 0 | +43 dB | Strong |
-| 17m | 305,715 | 0 | 0 | +41 dB | Strong |
-| 20m | 1.6M | 0 | 0 | +42 dB | Strong |
-| 30m | 838,500 | 0 | 0 | +43 dB | Strong |
-| 40m | 2.1M | 0 | 0 | +39 dB | Strong |
-| 80m | 570,720 | 0 | 0 | +39 dB | Strong |
-| 160m | 97,776 | 0 | 0 | +38 dB | Strong |
+| 10m | 145,666 | 0 | 0 | +40 dB | Strong |
+| 12m | 81,345 | 0 | 0 | +39 dB | Strong |
+| 15m | 313,474 | 0 | 0 | +43 dB | Strong |
+| 17m | 301,079 | 0 | 0 | +41 dB | Strong |
+| 20m | 1.5M | 0 | 0 | +42 dB | Strong |
+| 30m | 789,662 | 0 | 0 | +43 dB | Strong |
+| 40m | 2.0M | 0 | 0 | +39 dB | Strong |
+| 80m | 487,514 | 0 | 0 | +39 dB | Strong |
+| 160m | 81,734 | 0 | 0 | +38 dB | Strong |
 
 ---
 
