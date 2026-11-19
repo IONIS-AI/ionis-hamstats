@@ -7,10 +7,10 @@ description: >-
 # Band Reports
 
 ![SFI](https://img.shields.io/badge/SFI_118-Moderate-2ea043?style=flat-square)
-![Kp](https://img.shields.io/badge/Kp_2.67-Quiet-teal?style=flat-square)
-![Conditions](https://img.shields.io/badge/Conditions-Quiet_+_Radio_Blackout-teal?style=flat-square)
+![Kp](https://img.shields.io/badge/Kp_1.33-Quiet-teal?style=flat-square)
+![Conditions](https://img.shields.io/badge/Conditions-Quiet-teal?style=flat-square)
 
-*Updated 21:01 UTC 2026-11-18*
+*Updated 00:02 UTC 2026-11-19*
 
 Per-band propagation reports generated from measured spot data across all
 sources. Each page shows activity from the last 24 hours with spot volume,
@@ -22,13 +22,13 @@ Select a band from the navigation to see its current report.
 
 | Band | Freq (MHz) | WSPR | RBN | PSKR | Peak SNR | Status |
 |------|-----------|------|-----|------|----------|--------|
-| [160m](160m.md) | 1.8 | 87,453 | 1,670 | 0 | +61 dB | Strong |
-| [80m](80m.md) | 3.5 | 709,174 | 8,210 | 0 | +58 dB | Strong |
+| [160m](160m.md) | 1.8 | 69,490 | 0 | 0 | +38 dB | Strong |
+| [80m](80m.md) | 3.5 | 597,336 | 0 | 0 | +38 dB | Strong |
 | [60m](60m.md) | 5.3 | — | — | — | — | — |
-| [40m](40m.md) | 7.0 | 2.6M | 12,795 | 0 | +60 dB | Strong |
-| [30m](30m.md) | 10.1 | 1.2M | 2,981 | 0 | +46 dB | Strong |
-| [20m](20m.md) | 14.0 | 2.1M | 12,569 | 0 | +65 dB | Strong |
-| [17m](17m.md) | 18.1 | 451,208 | 3,023 | 0 | +57 dB | Strong |
-| [15m](15m.md) | 21.0 | 455,052 | 3,871 | 0 | +65 dB | Strong |
-| [12m](12m.md) | 24.9 | 139,282 | 787 | 0 | +55 dB | Strong |
-| [10m](10m.md) | 28.0 | 239,858 | 5,309 | 0 | +53 dB | Strong |
+| [40m](40m.md) | 7.0 | 2.3M | 0 | 0 | +44 dB | Strong |
+| [30m](30m.md) | 10.1 | 1.1M | 0 | 0 | +43 dB | Strong |
+| [20m](20m.md) | 14.0 | 1.8M | 0 | 0 | +41 dB | Strong |
+| [17m](17m.md) | 18.1 | 368,479 | 0 | 0 | +42 dB | Strong |
+| [15m](15m.md) | 21.0 | 376,233 | 0 | 0 | +43 dB | Strong |
+| [12m](12m.md) | 24.9 | 108,994 | 0 | 0 | +39 dB | Strong |
+| [10m](10m.md) | 28.0 | 200,652 | 0 | 0 | +41 dB | Strong |
