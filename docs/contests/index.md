@@ -8,10 +8,10 @@ description: >-
 # Contest Calendar
 
 ![SFI](https://img.shields.io/badge/SFI_118-Moderate-2ea043?style=flat-square)
-![Kp](https://img.shields.io/badge/Kp_2.0-Quiet-teal?style=flat-square)
-![Conditions](https://img.shields.io/badge/Conditions-Quiet_+_Radio_Blackout-teal?style=flat-square)
+![Kp](https://img.shields.io/badge/Kp_2.67-Quiet-teal?style=flat-square)
+![Conditions](https://img.shields.io/badge/Conditions-Quiet-teal?style=flat-square)
 
-*Updated 18:01 UTC 2026-11-19*
+*Updated 21:03 UTC 2026-11-19*
 
 ---
 
@@ -31,16 +31,16 @@ description: >-
 
 *Largest CW contest — worldwide activity on all HF bands*
 
-**IONIS predictions from KI7MT (DN13) — current conditions (SFI 118, Kp 2.0)**
+**IONIS predictions from KI7MT (DN13) — current conditions (SFI 118, Kp 2.67)**
 
 | Destination | 10m | 15m | 20m | 40m | 80m | 160m | 
 |-------------|-----|-----|-----|-----|-----|-----|
-| Europe (JN48) | CW | CW | CW | CW | CW | CW | 
-| Japan (PM95) | FT8 | FT8 | FT8 | FT8 | CW | CW | 
+| Europe (JN48) | FT8 | CW | CW | CW | CW | RTTY | 
+| Japan (PM95) | CW | CW | CW | CW | CW | CW | 
 | S. America (GG87) | CW | CW | CW | — | — | — | 
-| Africa (KG33) | FT8 | FT8 | FT8 | FT8 | FT8 | WSPR | 
-| Oceania (QF56) | CW | CW | CW | FT8 | FT8 | FT8 | 
-| Caribbean (FK68) | CW | CW | FT8 | — | — | — | 
+| Africa (KG33) | FT8 | FT8 | FT8 | WSPR | WSPR | WSPR | 
+| Oceania (QF56) | CW | CW | CW | — | — | — | 
+| Caribbean (FK68) | CW | CW | CW | — | — | — | 
 
 ---
 
@@ -58,15 +58,15 @@ description: >-
 
 *Top Band CW — 160m only, 42 hours from Friday evening*
 
-**IONIS predictions from KI7MT (DN13) — current conditions (SFI 118, Kp 2.0)**
+**IONIS predictions from KI7MT (DN13) — current conditions (SFI 118, Kp 2.67)**
 
 | Destination | 160m | 
 |-------------|-----|
-| Europe (JN48) | CW | 
+| Europe (JN48) | RTTY | 
 | Japan (PM95) | CW | 
 | S. America (GG87) | — | 
 | Africa (KG33) | WSPR | 
-| Oceania (QF56) | FT8 | 
+| Oceania (QF56) | — | 
 | Caribbean (FK68) | — | 
 
 ---
@@ -85,12 +85,12 @@ description: >-
 
 *10 meters only — SSB and CW, great solar cycle indicator*
 
-**IONIS predictions from KI7MT (DN13) — current conditions (SFI 118, Kp 2.0)**
+**IONIS predictions from KI7MT (DN13) — current conditions (SFI 118, Kp 2.67)**
 
 | Destination | 10m | 
 |-------------|-----|
-| Europe (JN48) | CW | 
-| Japan (PM95) | FT8 | 
+| Europe (JN48) | FT8 | 
+| Japan (PM95) | CW | 
 | S. America (GG87) | CW | 
 | Africa (KG33) | FT8 | 
 | Oceania (QF56) | CW | 
