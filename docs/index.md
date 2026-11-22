@@ -25,10 +25,10 @@ For technical details on the model and methodology, see
 [ionis-ai.com](https://ionis-ai.com/).
 
 ![SFI](https://img.shields.io/badge/SFI_99-Moderate-ffea00?style=flat-square)
-![Kp](https://img.shields.io/badge/Kp_1.0-Quiet-teal?style=flat-square)
+![Kp](https://img.shields.io/badge/Kp_2.33-Quiet-teal?style=flat-square)
 ![Conditions](https://img.shields.io/badge/Conditions-Quiet-teal?style=flat-square)
 
-*Updated 09:02 UTC · NOAA SWPC*
+*Updated 12:01 UTC · NOAA SWPC*
 
 ---
 
@@ -60,12 +60,12 @@ For technical details on the model and methodology, see
     The predictions represent a typical path — your actual results will vary with
     your antenna and power, but the path is either open or it isn't.
 
-*IONIS predictions from KI7MT (DN13) for the current solar conditions (SFI 99, Kp 1.0).*
+*IONIS predictions from KI7MT (DN13) for the current solar conditions (SFI 99, Kp 2.33).*
 
 | Destination | 10m | 12m | 15m | 17m | 20m | 30m | 40m | 60m | 80m | 160m |
 |-------------|-----|-----|-----|-----|-----|-----|-----|-----|-----|-----|
 | Europe (JN48) | — | — | — | CW | CW | CW | CW | CW | CW | CW |
-| Japan (PM95) | — | — | — | FT8 | FT8 | FT8 | FT8 | CW | CW | CW |
+| Japan (PM95) | — | — | — | FT8 | FT8 | FT8 | FT8 | FT8 | FT8 | FT8 |
 | S. America (GG87) | — | — | — | FT8 | FT8 | FT8 | FT8 | FT8 | FT8 | FT8 |
 | Africa (KG33) | — | — | — | WSPR | WSPR | WSPR | FT8 | FT8 | FT8 | FT8 |
 | Oceania (QF56) | — | — | — | FT8 | FT8 | FT8 | FT8 | FT8 | FT8 | FT8 |
@@ -83,15 +83,15 @@ RBN archives lag ~24 hours; zeroes indicate no data in the window, not band clos
 
 | Band | WSPR Spots | RBN Spots | PSKR Spots | Peak SNR | Status |
 |------|-----------|-----------|------------|----------|--------|
-| 10m | 135,962 | 0 | 0 | +40 dB | Strong |
-| 12m | 86,490 | 0 | 0 | +39 dB | Strong |
-| 15m | 309,812 | 0 | 0 | +43 dB | Strong |
-| 17m | 311,757 | 0 | 0 | +42 dB | Strong |
-| 20m | 1.4M | 0 | 0 | +40 dB | Strong |
-| 30m | 622,346 | 0 | 0 | +42 dB | Strong |
-| 40m | 1.2M | 0 | 0 | +44 dB | Strong |
-| 80m | 254,181 | 0 | 0 | +35 dB | Strong |
-| 160m | 33,208 | 0 | 0 | +38 dB | Open |
+| 10m | 109,835 | 0 | 0 | +40 dB | Strong |
+| 12m | 70,430 | 0 | 0 | +39 dB | Strong |
+| 15m | 246,666 | 0 | 0 | +43 dB | Strong |
+| 17m | 256,438 | 0 | 0 | +42 dB | Strong |
+| 20m | 1.1M | 0 | 0 | +40 dB | Strong |
+| 30m | 451,820 | 0 | 0 | +41 dB | Strong |
+| 40m | 813,104 | 0 | 0 | +42 dB | Strong |
+| 80m | 182,480 | 0 | 0 | +35 dB | Strong |
+| 160m | 25,963 | 0 | 0 | +38 dB | Open |
 
 ---
 
