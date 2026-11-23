@@ -25,10 +25,10 @@ For technical details on the model and methodology, see
 [ionis-ai.com](https://ionis-ai.com/).
 
 ![SFI](https://img.shields.io/badge/SFI_94-Moderate-ffea00?style=flat-square)
-![Kp](https://img.shields.io/badge/Kp_0.67-Quiet-teal?style=flat-square)
+![Kp](https://img.shields.io/badge/Kp_1.67-Quiet-teal?style=flat-square)
 ![Conditions](https://img.shields.io/badge/Conditions-Quiet-teal?style=flat-square)
 
-*Updated 18:01 UTC · NOAA SWPC*
+*Updated 21:00 UTC · NOAA SWPC*
 
 ---
 
@@ -60,15 +60,15 @@ For technical details on the model and methodology, see
     The predictions represent a typical path — your actual results will vary with
     your antenna and power, but the path is either open or it isn't.
 
-*IONIS predictions from KI7MT (DN13) for the current solar conditions (SFI 94, Kp 0.67).*
+*IONIS predictions from KI7MT (DN13) for the current solar conditions (SFI 94, Kp 1.67).*
 
 | Destination | 10m | 12m | 15m | 17m | 20m | 30m | 40m | 60m | 80m | 160m |
 |-------------|-----|-----|-----|-----|-----|-----|-----|-----|-----|-----|
-| Europe (JN48) | CW | CW | CW | CW | CW | CW | CW | CW | CW | CW |
-| Japan (PM95) | FT8 | FT8 | FT8 | FT8 | FT8 | FT8 | CW | CW | CW | CW |
+| Europe (JN48) | FT8 | FT8 | CW | CW | CW | CW | CW | CW | RTTY | RTTY |
+| Japan (PM95) | CW | CW | CW | CW | CW | CW | CW | CW | CW | CW |
 | S. America (GG87) | CW | CW | CW | CW | CW | CW | — | — | — | — |
-| Africa (KG33) | FT8 | FT8 | FT8 | FT8 | FT8 | FT8 | FT8 | FT8 | FT8 | FT8 |
-| Oceania (QF56) | CW | CW | CW | CW | CW | CW | CW | FT8 | FT8 | FT8 |
+| Africa (KG33) | FT8 | FT8 | FT8 | FT8 | FT8 | FT8 | FT8 | WSPR | WSPR | WSPR |
+| Oceania (QF56) | CW | CW | CW | CW | CW | CW | — | — | — | — |
 | Caribbean (FK68) | CW | CW | CW | CW | CW | FT8 | — | — | — | — |
 
 *Mode thresholds: SSB &ge; +3 dB, RTTY &ge; -5 dB, CW &ge; -15 dB, FT8 &ge; -21 dB, WSPR &ge; -28 dB.
@@ -83,15 +83,15 @@ RBN archives lag ~24 hours; zeroes indicate no data in the window, not band clos
 
 | Band | WSPR Spots | RBN Spots | PSKR Spots | Peak SNR | Status |
 |------|-----------|-----------|------------|----------|--------|
-| 10m | 24,303 | 4,994 | 0 | +49 dB | Open |
-| 12m | 13,577 | 1,365 | 0 | +47 dB | Open |
-| 15m | 49,883 | 9,417 | 0 | +69 dB | Strong |
-| 17m | 52,959 | 4,553 | 0 | +54 dB | Strong |
-| 20m | 201,525 | 27,971 | 0 | +174 dB | Strong |
-| 30m | 72,866 | 5,380 | 0 | +65 dB | Strong |
-| 40m | 155,704 | 37,223 | 0 | +57 dB | Strong |
-| 80m | 57,009 | 20,177 | 0 | +64 dB | Strong |
-| 160m | 10,152 | 7,189 | 0 | +65 dB | Open |
+| 10m | 242 | 2,506 | 0 | +49 dB | Open |
+| 12m | 136 | 549 | 0 | +47 dB | Marginal |
+| 15m | 471 | 5,307 | 0 | +69 dB | Open |
+| 17m | 835 | 3,008 | 0 | +54 dB | Open |
+| 20m | 2,597 | 17,428 | 0 | +174 dB | Open |
+| 30m | 845 | 3,763 | 0 | +65 dB | Open |
+| 40m | 2,077 | 23,061 | 0 | +57 dB | Open |
+| 80m | 1,489 | 10,683 | 0 | +60 dB | Open |
+| 160m | 174 | 4,697 | 0 | +65 dB | Open |
 
 ---
 
