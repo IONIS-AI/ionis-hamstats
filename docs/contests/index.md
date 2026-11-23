@@ -11,7 +11,7 @@ description: >-
 ![Kp](https://img.shields.io/badge/Kp_0.67-Quiet-teal?style=flat-square)
 ![Conditions](https://img.shields.io/badge/Conditions-Quiet-teal?style=flat-square)
 
-*Updated 03:02 UTC 2026-11-23*
+*Updated 06:02 UTC 2026-11-23*
 
 ---
 
@@ -36,10 +36,10 @@ description: >-
 | Destination | 10m | 15m | 20m | 40m | 80m | 160m | 
 |-------------|-----|-----|-----|-----|-----|-----|
 | Europe (JN48) | — | — | CW | CW | CW | CW | 
-| Japan (PM95) | — | — | CW | CW | FT8 | FT8 | 
+| Japan (PM95) | — | — | CW | CW | CW | FT8 | 
 | S. America (GG87) | — | — | FT8 | FT8 | FT8 | FT8 | 
-| Africa (KG33) | — | — | FT8 | FT8 | WSPR | WSPR | 
-| Oceania (QF56) | — | — | CW | FT8 | FT8 | FT8 | 
+| Africa (KG33) | — | — | FT8 | FT8 | FT8 | FT8 | 
+| Oceania (QF56) | — | — | FT8 | FT8 | FT8 | FT8 | 
 | Caribbean (FK68) | — | — | FT8 | FT8 | FT8 | FT8 | 
 
 ---
@@ -65,7 +65,7 @@ description: >-
 | Europe (JN48) | CW | 
 | Japan (PM95) | FT8 | 
 | S. America (GG87) | FT8 | 
-| Africa (KG33) | WSPR | 
+| Africa (KG33) | FT8 | 
 | Oceania (QF56) | FT8 | 
 | Caribbean (FK68) | FT8 | 
 
@@ -121,8 +121,8 @@ description: >-
 | [WAE SSB](https://www.darc.de/der-club/referate/conteste/wae-dx-contest/) | Sep 11–13 | Sat 00:00 | 48 | SSB | 41w 4d |
 | [SAC CW](https://www.sactest.net/) | Sep 18–19 | Sat 12:00 | 24 | CW | 42w 5d |
 | [CQ WW RTTY](https://www.cqwwrtty.com/) | Sep 25–27 | Sat 00:00 | 48 | RTTY | 43w 4d |
-| [Oceania DX SSB](https://www.oceaniadxcontest.com/) | Oct 02–03 | Sat 06:00 | 24 | SSB | 44w 5d |
-| [Oceania DX CW](https://www.oceaniadxcontest.com/) | Oct 09–10 | Sat 06:00 | 24 | CW | 45w 5d |
+| [Oceania DX SSB](https://www.oceaniadxcontest.com/) | Oct 02–03 | Sat 06:00 | 24 | SSB | 44w 4d |
+| [Oceania DX CW](https://www.oceaniadxcontest.com/) | Oct 09–10 | Sat 06:00 | 24 | CW | 45w 4d |
 | [SAC SSB](https://www.sactest.net/) | Oct 16–17 | Sat 12:00 | 24 | SSB | 46w 5d |
 | [CQ WW SSB](https://www.cqww.com/) | Oct 30–01 | Sat 00:00 | 48 | SSB | 48w 4d |
 | [WAE RTTY](https://www.darc.de/der-club/referate/conteste/wae-dx-contest/) | Nov 13–15 | Sat 00:00 | 48 | RTTY | 50w 4d |
