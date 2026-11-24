@@ -25,10 +25,10 @@ For technical details on the model and methodology, see
 [ionis-ai.com](https://ionis-ai.com/).
 
 ![SFI](https://img.shields.io/badge/SFI_90-Moderate-ffea00?style=flat-square)
-![Kp](https://img.shields.io/badge/Kp_0.33-Quiet-teal?style=flat-square)
+![Kp](https://img.shields.io/badge/Kp_1.67-Quiet-teal?style=flat-square)
 ![Conditions](https://img.shields.io/badge/Conditions-Quiet-teal?style=flat-square)
 
-*Updated 09:00 UTC · NOAA SWPC*
+*Updated 12:02 UTC · NOAA SWPC*
 
 ---
 
@@ -60,15 +60,15 @@ For technical details on the model and methodology, see
     The predictions represent a typical path — your actual results will vary with
     your antenna and power, but the path is either open or it isn't.
 
-*IONIS predictions from KI7MT (DN13) for the current solar conditions (SFI 90, Kp 0.33).*
+*IONIS predictions from KI7MT (DN13) for the current solar conditions (SFI 90, Kp 1.67).*
 
 | Destination | 10m | 12m | 15m | 17m | 20m | 30m | 40m | 60m | 80m | 160m |
 |-------------|-----|-----|-----|-----|-----|-----|-----|-----|-----|-----|
 | Europe (JN48) | — | — | — | CW | CW | CW | CW | CW | CW | CW |
-| Japan (PM95) | — | — | — | FT8 | FT8 | FT8 | CW | CW | CW | CW |
+| Japan (PM95) | — | — | — | FT8 | FT8 | FT8 | FT8 | FT8 | FT8 | FT8 |
 | S. America (GG87) | — | — | — | FT8 | FT8 | FT8 | FT8 | FT8 | FT8 | FT8 |
-| Africa (KG33) | — | — | — | WSPR | WSPR | WSPR | FT8 | FT8 | FT8 | FT8 |
-| Oceania (QF56) | — | — | — | FT8 | FT8 | FT8 | CW | CW | CW | CW |
+| Africa (KG33) | — | — | — | FT8 | FT8 | FT8 | FT8 | FT8 | FT8 | FT8 |
+| Oceania (QF56) | — | — | — | FT8 | FT8 | FT8 | FT8 | FT8 | FT8 | FT8 |
 | Caribbean (FK68) | — | — | — | FT8 | FT8 | FT8 | FT8 | FT8 | FT8 | FT8 |
 
 *Mode thresholds: SSB &ge; +3 dB, RTTY &ge; -5 dB, CW &ge; -15 dB, FT8 &ge; -21 dB, WSPR &ge; -28 dB.
@@ -83,15 +83,15 @@ RBN archives lag ~24 hours; zeroes indicate no data in the window, not band clos
 
 | Band | WSPR Spots | RBN Spots | PSKR Spots | Peak SNR | Status |
 |------|-----------|-----------|------------|----------|--------|
-| 10m | 66,687 | 0 | 0 | +42 dB | Strong |
-| 12m | 52,105 | 0 | 0 | +39 dB | Strong |
-| 15m | 235,910 | 0 | 0 | +44 dB | Strong |
-| 17m | 271,189 | 0 | 0 | +43 dB | Strong |
-| 20m | 1.3M | 0 | 0 | +41 dB | Strong |
-| 30m | 608,432 | 0 | 0 | +41 dB | Strong |
-| 40m | 1.4M | 0 | 0 | +39 dB | Strong |
-| 80m | 290,378 | 0 | 0 | +39 dB | Strong |
-| 160m | 34,101 | 0 | 0 | +40 dB | Open |
+| 10m | 55,662 | 0 | 0 | +39 dB | Strong |
+| 12m | 43,671 | 0 | 0 | +39 dB | Open |
+| 15m | 199,161 | 0 | 0 | +44 dB | Strong |
+| 17m | 231,083 | 0 | 0 | +43 dB | Strong |
+| 20m | 990,957 | 0 | 0 | +40 dB | Strong |
+| 30m | 411,746 | 0 | 0 | +39 dB | Strong |
+| 40m | 847,798 | 0 | 0 | +39 dB | Strong |
+| 80m | 182,821 | 0 | 0 | +39 dB | Strong |
+| 160m | 25,728 | 0 | 0 | +40 dB | Open |
 
 ---
 
